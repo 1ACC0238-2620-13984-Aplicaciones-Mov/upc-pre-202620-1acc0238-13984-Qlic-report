@@ -12,16 +12,16 @@ Qlic es una propuesta móvil para que propietarios y administradores de PYMES, a
 
 **Pregunta de análisis.** ¿Qué capacidades de producto y enfoques de mercado de las soluciones de monitoreo hídrico deben guiar una propuesta móvil diferenciada para PYMES y hogares de Lima Metropolitana?
 
-Para la versión exportada del informe, cada cabecera debe incluir el nombre y el logotipo oficial autorizado de Qlic, Wint, Flo by Moen y Phyn. Los archivos de marca no se incorporan aún para no reutilizar logotipos de terceros sin autorización.
+**Activo pendiente del equipo.** Para satisfacer la cabecera visual solicitada por la rúbrica, antes de exportar el informe deben incorporarse en images/competitors/ los logotipos oficiales autorizados de Qlic, Wint, Flo by Moen y Phyn. No se incorporan en esta rama para no reutilizar activos de marca de terceros sin autorización.
 
-| Dimensión | Qlic (propuesta) | Wint | Flo by Moen | Phyn |
+| Dimensión | Qlic (propuesta) | [Wint](https://wint.ai/) | [Flo by Moen](https://manuals.meetflo.com/Smart-Water-Shutoff-Manual.pdf) | [Phyn](https://phyn.com/products/phyn) |
 |---|---|---|---|---|
 | **Perfil / overview** | Propuesta orientada a PYMES y hogares peruanos para interpretar consumo, alertas y oportunidades de ahorro desde una experiencia móvil en español. | Plataforma de inteligencia hídrica para edificios comerciales e institucionales; combina monitoreo en tiempo real, detección de anomalías y corte remoto. | Sistema doméstico de seguridad hídrica que se administra desde una aplicación móvil y alerta ante fugas o uso anómalo. | Monitor doméstico autoinstalable para una vivienda; detecta fugas, analiza uso por accesorios y notifica mediante su aplicación. |
 | **Ventaja competitiva** | Hipótesis de diferenciación: acompañamiento local, lenguaje claro, flujos móviles de baja fricción y priorización de PYMES que no disponen de equipos especializados. | Cobertura empresarial, analítica basada en IA y capacidad de cerrar el suministro ante incidentes. | Integración entre dispositivo de corte y aplicación con panel de consumo, alertas y modos de uso. | Instalación bajo un lavadero, análisis de consumo y notificaciones de fuga mediante aplicación, SMS y soporte para contactar a un gasfitero. |
 | **Mercado objetivo** | PYMES con consumo operativo de agua y hogares responsables de su recibo y mantenimiento básico. | Instalaciones comerciales, institucionales, construcción y portafolios de inmuebles. | Hogares que buscan proteger su instalación principal de agua. | Hogares que desean detectar fugas y comprender su consumo doméstico. |
 | **Estrategias de marketing observables** | Por validar mediante entrevistas: comunicación de ahorro, continuidad operativa y sostenibilidad en canales digitales locales. | Posicionamiento de prevención de daños, sostenibilidad y eficiencia para organizaciones. | Comunicación de seguridad del hogar y control desde la aplicación. | Comunicación de instalación sencilla, protección del hogar, alertas y visibilidad del consumo. |
 | **Productos y servicios** | Futuro sistema móvil de monitoreo, alertas, historial y acompañamiento de instalación; las funcionalidades finales dependen de la investigación de usuarios. | Plataforma, unidades de control y servicios de monitoreo para prevenir fugas y desperdicios. | Dispositivo Smart Water Shutoff y aplicación Flo by Moen para control, consumo y alertas. | Phyn Smart Water Assistant, aplicación móvil, alertas y funciones de revisión de instalaciones. |
-| **Precios y costos** | Modelo y precio por validar; no se debe publicar una tarifa antes de contrastarla con usuarios y costos de operación. | Precio público no identificado en la información revisada; su sitio dirige a una solicitud comercial. | Precio sujeto al distribuidor y mercado; el manual revisado no establece una tarifa oficial. | El sitio de Phyn muestra US$299.99 para Smart Water Assistant al momento de la revisión. |
+| **Precios y costos** | Modelo y precio por validar; no se debe publicar una tarifa antes de contrastarla con usuarios y costos de operación. | Precio público no identificado en la información revisada; su sitio dirige a una solicitud comercial. | Precio sujeto al distribuidor y mercado; el manual revisado no establece una tarifa oficial. | El sitio de Phyn muestra US$299.99 para Smart Water Assistant (consulta: 2026-09-15); el precio debe verificarse nuevamente antes de publicar el informe. |
 | **Canales de distribución** | Hipótesis: aplicación móvil, instalación con aliados locales y canales digitales dirigidos a PYMES y hogares. | Venta consultiva y operación de plataforma en canales empresariales. | Dispositivo físico y aplicación para iOS y Android. | Venta directa del dispositivo y aplicación disponible para iOS y Android. |
 
 Las características comparadas se verificaron en las páginas oficiales de cada producto. Wint describe monitoreo, detección de anomalías y cierre remoto para instalaciones de mayor escala; Flo by Moen documenta en su aplicación el panel de consumo y alertas; Phyn presenta alertas por aplicación y SMS, análisis de uso y el precio publicado de Smart Water Assistant (Wint, s. f.; Flo by Moen, s. f.; Phyn, s. f.).
@@ -172,8 +172,8 @@ Copiar esta ficha una vez por cada participante y reemplazar los campos entre co
 | Distrito de residencia o trabajo | **[COMPLETAR]** |
 | Fecha y modalidad | **[COMPLETAR: presencial / videollamada]** |
 | Inicio y duración en video | **[mm:ss] / [mm:ss]** |
-| Enlace al video consolidado | **[PEGAR URL]** |
-| Captura de evidencia | **[INSERTAR captura del video en images/interviews/ y referenciarla aquí]** |
+| Enlace al video consolidado | **[PEGAR LA MISMA URL PRIVADA DE ONEDRIVE REGISTRADA EN LA TABLA "VIDEO CONSOLIDADO DE ENTREVISTAS"]** |
+| Captura de evidencia | **[INSERTAR una captura independiente de esta entrevista en images/interviews/ y referenciarla aquí]** |
 | Autorización de uso académico | **[Sí / No; indicar modalidad de consentimiento]** |
 
 **Resumen descriptivo de la entrevista.**
@@ -187,10 +187,6 @@ Copiar esta ficha una vez por cada participante y reemplazar los campos entre co
 - **Tecnología y canales de interacción:** [celular, sistema operativo si lo mencionó, navegador, aplicaciones, canales preferidos y frecuencia de uso].
 - **Citas o evidencias relevantes:** [paráfrasis fiel o cita textual breve con el minuto del video].
 - **Datos para el análisis posterior:** [variables observables que podrán contabilizarse, sin concluir ni generalizar antes de completar la muestra].
-
-### 2.2.3. Análisis de entrevistas
-
-Pendiente de elaboración tras completar las entrevistas reales y las fichas de registro. El equipo deberá consolidar por segmento las variables objetivas y subjetivas en cuadros con frecuencias y porcentajes, indicando el tamaño de muestra utilizado. Cada conclusión deberá poder rastrearse a los registros y a los videos; esta sección no debe llenarse con supuestos previos ni datos inventados.
 
 ## Referencias
 
