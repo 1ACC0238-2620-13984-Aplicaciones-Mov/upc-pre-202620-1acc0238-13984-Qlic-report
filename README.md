@@ -547,146 +547,139 @@ cita APA 7.]**
 
 ## 2.1. Competidores
 
-**[COMPLETAR: párrafo introductorio sobre el mercado y el criterio de selección
-de competidores.]**
+Qlic propone una solución móvil para que propietarios y administradores de PYMES, así como responsables de hogares, visualicen el consumo de agua, identifiquen anomalías y tomen decisiones oportunas. Se tomó como punto de partida el repositorio guía de WASD25, cuya rama `chapter-2` analiza los segmentos PYMES y hogares y propone como referentes a Badger Meter, Itron y OptiRTC. La selección fue corroborada con las páginas oficiales de cada organización (WASD25, 2026; Badger Meter, s. f.; Itron, s. f.; Opti, s. f.).
 
-| Competidor | Logo | Tipo (directo/indirecto) | Descripción breve |
+| Competidor | Logo | Tipo | Descripción breve |
 |---|---|---|---|
-| **[COMPLETAR]** | ![](images/competitors/c1.png) | **[COMPLETAR]** | **[COMPLETAR]** |
-| **[COMPLETAR]** | ![](images/competitors/c2.png) | **[COMPLETAR]** | **[COMPLETAR]** |
-| **[COMPLETAR]** | ![](images/competitors/c3.png) | **[COMPLETAR]** | **[COMPLETAR]** |
+| **Badger Meter** | [![Badger Meter](images/competitors/badger-meter.jpg)](https://www.badgermeter.com/blueedge/) | Directo | Suite BlueEdge de medición, conectividad, analítica y control para utilities y clientes comerciales o industriales. |
+| **Itron** | [![Itron](images/competitors/itron.jpg)](https://emea.itron.com/categories/smart-water-solutions) | Directo | Soluciones de smart water con dispositivos, redes, gestión de datos y detección de fugas para utilities y ciudades. |
+| **OptiRTC / Opti** | [![Opti](images/competitors/optirtc.jpg)](https://www.optirtc.com/solution) | Adyacente | Monitoreo continuo y control adaptativo de aguas pluviales mediante sensores, pronósticos, dashboard y APIs. |
+
+Wint se conserva únicamente como benchmark secundario de detección de fugas comerciales; no reemplaza el conjunto base de la guía.
 
 ### 2.1.1. Análisis competitivo
 
 #### Competitive Analysis Landscape
 
-<table>
-<tr>
-<td colspan="2"><strong>¿Por qué llevar a cabo este análisis?</strong></td>
-<td colspan="4"><strong>[COMPLETAR: pregunta que se busca responder u objetivo del análisis]</strong></td>
-</tr>
-<tr>
-<td colspan="2"></td>
-<td align="center"><strong>[Tu startup]</strong><br><img src="images/brand/logo.png" width="70"/></td>
-<td align="center"><strong>[COMPLETAR: Competidor 1]</strong><br><img src="images/competitors/c1.png" width="70"/></td>
-<td align="center"><strong>[COMPLETAR: Competidor 2]</strong><br><img src="images/competitors/c2.png" width="70"/></td>
-<td align="center"><strong>[COMPLETAR: Competidor 3]</strong><br><img src="images/competitors/c3.png" width="70"/></td>
-</tr>
-<tr>
-<td rowspan="2"><strong>Perfil</strong></td>
-<td>Overview</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td>Ventaja competitiva<br>¿Qué valor ofrece a los clientes?</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td rowspan="2"><strong>Perfil de Marketing</strong></td>
-<td>Mercado objetivo</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td>Estrategias de marketing</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td rowspan="3"><strong>Perfil de Producto</strong></td>
-<td>Productos &amp; Servicios</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td>Precios &amp; Costos</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td>Canales de distribución (Web y/o Móvil)</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td rowspan="4"><strong>Análisis SWOT</strong></td>
-<td>Fortalezas</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td>Debilidades</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td>Oportunidades</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-<tr>
-<td>Amenazas</td>
-<td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td><td>[COMPLETAR]</td>
-</tr>
-</table>
+**Pregunta de análisis:** ¿Qué capacidades y enfoques de los referentes de smart water debe adoptar o evitar Qlic para ofrecer una experiencia móvil diferenciada a PYMES y hogares de Lima Metropolitana?
+
+| Dimensión | Qlic (propuesta) | Badger Meter | Itron | OptiRTC |
+|---|---|---|---|---|
+| **Overview** | Startup propuesta para interpretar consumo, alertas y oportunidades de ahorro desde el móvil. | Medición, conectividad, software y servicios BlueEdge para utilities y clientes comerciales o industriales. | Dispositivos, redes, plataformas y analítica para transformar datos hídricos en decisiones operativas. | Monitoreo continuo y control adaptativo de aguas pluviales con sensores y pronósticos. |
+| **Ventaja competitiva** | Hipótesis: lenguaje claro, experiencia móvil en español, acompañamiento local y foco en PYMES y hogares. | Escala, experiencia en medición y suite integrada. | Cobertura de infraestructura, conectividad y analítica interoperable. | Control predictivo, sensores externos y automatización basada en pronósticos. |
+| **Mercado objetivo** | PYMES con consumo operativo y hogares responsables del recibo y mantenimiento. | Utilities, municipios y clientes comerciales e industriales. | Utilities, ciudades y operadores de infraestructura. | Autoridades, municipios y operadores de aguas pluviales. |
+| **Marketing** | Por validar: ahorro, continuidad operativa y sostenibilidad en canales móviles y redes locales. | Venta consultiva, demostraciones, casos de uso y cotización. | Modernización de utilities, eficiencia, conservación y resiliencia. | Casos de proyectos, implementación y resiliencia urbana. |
+| **Productos y servicios** | Propuesta futura de aplicación móvil, alertas, historial, recomendaciones y acompañamiento. | Medidores, sensores, válvulas, conectividad y analítica BlueEdge. | Medición inteligente, comunicación, gestión de datos y detección de fugas. | CMAC, gateways, portal, API e integración de sensores y actuadores. |
+| **Precios y costos** | Por validar con usuarios y costos de operación; no se declara tarifa en AV1. | No publica tarifa estándar; deriva a cotización. | Dependen del despliegue, infraestructura y servicio. | Dependen de activos, integración y operación del proyecto. |
+| **Canales** | Aplicación móvil, aliados de instalación y canales digitales locales. | Venta consultiva, implementación y plataformas web/campo. | Venta a utilities, partners e infraestructura conectada. | Proyectos de infraestructura, portal web, APIs e implementación. |
+
+*Fuente de logotipos:* assets de la rama `chapter-2` del repositorio guía de WASD25. Antes de la entrega se debe conservar únicamente material cuyo uso académico esté autorizado y mantener la atribución de las marcas.
+
+#### Análisis SWOT
+
+| Producto | Fortalezas | Debilidades | Oportunidades | Amenazas |
+|---|---|---|---|---|
+| **Qlic** | Foco móvil en español y segmentos locales. | Propuesta, sensores, conectividad e instalación aún por validar. | Alianzas locales, planes para PYMES y educación de ahorro. | Suites globales, resistencia al hardware y sensibilidad al precio. |
+| **Badger Meter** | Suite integrada y experiencia en medición. | Complejidad y probable costo para hogares y microempresas. | Paquetes pequeños, partners y experiencias móviles. | Startups de menor costo y proveedores locales. |
+| **Itron** | Infraestructura, conectividad y analítica a escala. | Enfoque de infraestructura distante del uso cotidiano. | Integraciones, conservación y educación del consumidor. | Ciclos largos de compra y alternativas simples. |
+| **OptiRTC / Opti** | Control adaptativo, pronósticos, sensores y APIs. | Dominio principal distinto al monitoreo de fugas residenciales. | Extender analítica a sistemas pequeños y alianzas municipales. | Complejidad de infraestructura y soluciones especializadas. |
+
+Las capacidades se corroboraron con las fuentes oficiales; las columnas de Qlic, precios, canales y el FODA de adaptación son hipótesis para validar, no funcionalidades implementadas (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-**[COMPLETAR: párrafo introductorio.]**
+Las estrategias convierten la comparación en hipótesis accionables para Qlic. Deben validarse mediante entrevistas antes de convertirse en requisitos.
 
-| # | Origen (SWOT) | Estrategia | Tácticas |
+| Estrategia | Tácticas iniciales | Hallazgo atendido | Indicador a validar |
 |---|---|---|---|
-| E01 | Fortaleza + Oportunidad (FO) | **[COMPLETAR]** | **[COMPLETAR]** |
-| E02 | Fortaleza + Amenaza (FA) | **[COMPLETAR]** | **[COMPLETAR]** |
-| E03 | Debilidad + Oportunidad (DO) | **[COMPLETAR]** | **[COMPLETAR]** |
-| E04 | Debilidad + Amenaza (DA) | **[COMPLETAR]** | **[COMPLETAR]** |
+| **Diferenciación móvil y local** | Alertas en español claro, niveles de urgencia y acciones concretas. | Las soluciones guía priorizan infraestructura; Qlic acerca el dato al usuario. | Comprensión de la alerta y acción elegida. |
+| **Escala progresiva para PYMES** | Onboarding por etapas, sensor inicial y reportes simples. | Las suites amplias pueden tener una barrera de complejidad. | Tiempo de configuración y funciones mínimas. |
+| **Interoperabilidad** | Validar medidores, conectividad, APIs y exportación de datos. | Itron y Opti muestran valor en redes e integraciones. | Dispositivos actuales y formato preferido. |
+| **Respuesta ante fugas** | Flujo de alerta, confirmación, escalamiento y soporte. | Wint y las suites de medición convierten detección en acción. | Tiempo de respuesta y confianza. |
+| **Soporte y confianza local** | Instalación guiada, privacidad, continuidad sin conexión y técnicos. | La escala global no garantiza acompañamiento cercano. | Canal de soporte y señales de confianza. |
+| **Sostenibilidad con evidencia** | Mostrar ahorro y tendencias relacionados con decisiones. | La eficiencia debe traducirse en una métrica útil. | Métrica consultada y decisión modificada. |
 
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
 
-**[COMPLETAR: párrafo sobre las buenas prácticas de diseño de entrevistas
-aplicadas y el tipo de información que se busca recolectar.]**
+La investigación utilizará entrevistas semiestructuradas: se mantendrán preguntas comunes para comparar participantes y se profundizará en situaciones reales de consumo, fugas, mantenimiento, decisiones y uso de tecnología. No se debe presentar Qlic como una solución terminada ni inducir respuestas favorables.
+
+**Objetivo:** identificar características, procesos actuales, problemas, canales digitales y condiciones de confianza de los segmentos PYMES y hogares frente a una futura solución móvil de monitoreo hídrico.
+
+| Segmento | Perfil de inclusión | Muestra | Exclusión |
+|---|---|---:|---|
+| **PYMES y comercios locales** | Propietario, administrador o responsable de operaciones/mantenimiento que participa en decisiones sobre consumo o incidencias de agua. | 3–5 | No conoce el consumo, mantenimiento ni decisiones asociadas. |
+| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre recibo, mantenimiento o uso de agua. | 3–5 | No tiene experiencia ni responsabilidad sobre consumo o mantenimiento. |
+
+#### Protocolo de sesión
+
+| Momento | Tiempo | Actividad | Evidencia |
+|---|---:|---|---|
+| Apertura | 3 min | Objetivo, uso académico, duración, video y consentimiento. | Consentimiento y fecha. |
+| Contexto | 5 min | Rol, edad, distrito, ocupación, hogar o negocio. | Variables demográficas. |
+| Situación actual | 12 min | Consumo, recibos, mantenimiento, incidentes y decisiones. | Ejemplos concretos. |
+| Hábitos digitales | 8 min | Dispositivos, navegador, canales, marcas e influencias. | Variables de interacción. |
+| Necesidades | 8 min | Objetivos, costos, tiempos y resultados esperados. | Pains, gains y tareas. |
+| Cierre | 4 min | Reflexión final, autorización y agradecimiento. | Confirmación de uso académico. |
 
 #### Preguntas generales (ambos segmentos)
 
-1. ¿Cuál es tu nombre completo, edad y en qué distrito vives?
-2. ¿A qué te dedicas actualmente y cómo es un día típico para ti?
-3. ¿Cuál es tu estado civil y con quiénes vives?
-4. ¿Qué dispositivos usas con mayor frecuencia y para qué?
-5. ¿Qué aplicaciones o plataformas digitales usas a diario?
-6. ¿Qué marcas admiras o sigues, y por qué?
-7. ¿Cómo te describirías en cuanto a tu forma de ser y de organizarte?
+1. ¿Cuál es su relación con el consumo, pago o mantenimiento del agua en su hogar o negocio?
+2. ¿Cómo se informa actualmente sobre el consumo y qué hace con esa información?
+3. ¿Recuerda una fuga, consumo inusual, corte o recibo inesperado? ¿Qué ocurrió hasta resolverlo?
+4. ¿Qué personas intervienen cuando aparece un problema y cómo se coordinan?
+5. ¿Qué consecuencias tienen estos problemas en tiempo, dinero, tranquilidad u operación?
+6. ¿Qué dispositivo utiliza con mayor frecuencia y para qué decisiones usa el teléfono?
+7. ¿Qué aplicaciones, marcas o personas influyen al probar una herramienta digital o contratar mantenimiento?
+8. ¿Qué canal prefiere para recibir información importante: llamada, WhatsApp, correo, SMS o notificación?
+9. ¿Qué información le sería útil antes de decidir sobre el uso del agua y cómo la entendería mejor?
+10. ¿Qué tendría que ocurrir para confiar o desconfiar de un dispositivo o aplicación que avise sobre consumo o fugas?
 
-#### Segmento objetivo 1: **[COMPLETAR: nombre del segmento]**
+**Profundización:** ¿Puede darme un ejemplo?, ¿qué hizo primero?, ¿quién decidió?, ¿con qué frecuencia sucede?, ¿qué fue difícil?, ¿qué alternativa intentó?
 
-**Preguntas principales**
-
-1. **[COMPLETAR]**
-2. **[COMPLETAR]**
-3. **[COMPLETAR]**
-4. **[COMPLETAR]**
-5. **[COMPLETAR]**
-
-**Preguntas complementarias**
-
-1. **[COMPLETAR]**
-2. **[COMPLETAR]**
-3. **[COMPLETAR]**
-
-#### Segmento objetivo 2: **[COMPLETAR: nombre del segmento]**
+#### Segmento objetivo 1: **PYMES y comercios locales**
 
 **Preguntas principales**
 
-1. **[COMPLETAR]**
-2. **[COMPLETAR]**
-3. **[COMPLETAR]**
-4. **[COMPLETAR]**
-5. **[COMPLETAR]**
+1. ¿Qué tipo de negocio es, cuántas personas trabajan y en qué actividades se utiliza agua?
+2. ¿Quién revisa el recibo, el medidor y las instalaciones? ¿Qué decide cada rol?
+3. ¿En qué horarios o procesos una fuga, corte o baja presión afectaría más la operación?
+4. ¿Cómo registra el consumo, recibos e incidentes? ¿Qué información falta para decidir?
+5. ¿Qué costos directos o interrupciones causó un problema reciente?
+6. ¿Cómo encuentra y coordina al técnico o proveedor?
+7. ¿Qué alertas recibe hoy y cuáles son útiles o molestas?
+8. ¿Qué tan cómodo se siente usando aplicaciones para controlar gastos, inventario o tareas?
+9. ¿Qué dispositivos y canales emplea durante la jornada?
+10. ¿Qué indicadores necesitaría para justificar ahorro o mantenimiento?
+11. ¿Qué instalación, soporte o costo aceptaría para evaluar una solución nueva?
+12. Si pudiera cambiar una parte del proceso actual, ¿cuál sería y por qué?
 
-**Preguntas complementarias**
+#### Segmento objetivo 2: **Hogares y familias**
 
-1. **[COMPLETAR]**
-2. **[COMPLETAR]**
-3. **[COMPLETAR]**
+**Preguntas principales**
+
+1. ¿Quiénes viven en el hogar y quién revisa o paga el recibo?
+2. ¿Cómo se enteran de cuánto consumen y deciden si el monto es normal?
+3. ¿Ha tenido una fuga o cobro inesperado? ¿Qué señales observó y qué hizo?
+4. ¿Qué espacios del hogar le preocupan respecto al agua y por qué?
+5. ¿Cómo se coordina con otras personas cuando aparece un problema?
+6. ¿Cómo encuentra a un gasfitero o decide reparar? ¿Qué le genera confianza?
+7. ¿Qué aplicaciones usa para pagos, avisos del hogar o gastos? ¿Qué le gusta o frustra?
+8. ¿Qué celular, navegador y canales utiliza con más frecuencia?
+9. ¿Qué aviso le ayudaría a actuar a tiempo y cuál preferiría no recibir?
+10. ¿Qué información sobre consumo sería útil y con qué frecuencia la revisaría?
+11. ¿Qué dudas tendría antes de permitir un dispositivo que monitoree el agua?
+12. ¿Qué resultado demostraría que una nueva herramienta le aportó valor?
 
 ### 2.2.2. Registro de entrevistas
 
-**URL del video consolidado de entrevistas (OneDrive):** **[COMPLETAR]**
+> **Plantilla obligatoria.** El equipo debe completar esta sección únicamente después de realizar entrevistas reales. La rúbrica exige entre 3 y 5 entrevistas por segmento, nombres y apellidos, edad, distrito, captura, minuto de inicio, URL del video consolidado y resumen descriptivo. No se deben inventar datos.
 
-#### Segmento 1: **[COMPLETAR]**
+**Archivo del video consolidado:** `upc-pre-202620-1acc0238-13984-Qlic-needfinding-av1.mp4`<br>
+**URL privada de OneDrive:** **[PEGAR URL cuando el equipo la tenga]**
+
+#### Segmento 1: **PYMES y comercios locales**
 
 **Entrevista 1**
 
@@ -742,7 +735,7 @@ antecedentes.]**
 
 **Resumen:** **[COMPLETAR]**
 
-#### Segmento 2: **[COMPLETAR]**
+#### Segmento 2: **Hogares y familias**
 
 **Entrevista 4**
 
@@ -1358,6 +1351,18 @@ aplicaciones móviles.]**
 **[COMPLETAR: referencias APA 7. Debe incluir al menos 2 papers Q1/Q2 con
 antigüedad máxima de 2 años, además de reportes de mercado, estudios
 estadísticos e informes de organismos oficiales.]**
+
+### Fuentes del análisis competitivo
+
+> Badger Meter. (s. f.). *BlueEdge Suite of Scalable Solutions*. https://www.badgermeter.com/blueedge/
+
+> Itron. (s. f.). *Smart Water Solutions*. https://emea.itron.com/categories/smart-water-solutions
+
+> Opti. (s. f.). *The Opti Solution*. https://www.optirtc.com/solution
+
+> Wint. (s. f.). *Commercial Water Management & Leak Prevention Solutions*. https://wint.ai/
+
+> WASD25. (2026). *Final report* [Repositorio de referencia, commit de la rama chapter-2]. https://github.com/wasd25/final-report/commit/d20b2590634c838e893e4e25daf8ed83b41054a5
 
 Ejemplo de formato APA 7 para artículo con DOI:
 
