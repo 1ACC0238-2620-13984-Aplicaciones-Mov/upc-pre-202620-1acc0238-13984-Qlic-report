@@ -43,7 +43,7 @@ GitHub. (s. f.). *GitHub documentation*. https://docs.github.com/
 
 ### Anexo A. Registro de entrevistas
 
-El registro se completa en la rama `chapter-2`, dentro de `report/chapter-2.md`. Para cada segmento se deben registrar entre tres y cinco entrevistas. Cada ficha contiene:
+El registro de entrevistas corresponde al apartado **2.2.2. Registro de entrevistas** del Capítulo II. Para cada segmento se deben registrar entre tres y cinco entrevistas. Cada ficha contiene:
 
 - nombre del entrevistado, edad, profesión o rol y distrito/departamento;
 - inicio y fin de la entrevista dentro del video consolidado;
@@ -54,14 +54,15 @@ Los espacios no deben llenarse con información inventada. Los datos se agregan 
 
 ### Anexo B. Recursos gráficos del análisis competitivo
 
-Los logos utilizados en el landscape se almacenan en la rama `chapter-2`:
+Los logos utilizados en el landscape corresponden al apartado **2.1.1. Análisis competitivo** del Capítulo II.
 
-- `images/competitors/badger-meter.jpg`;
-- `images/competitors/itron.jpg`;
-- `images/competitors/optirtc.jpg`;
-- `images/competitors/qlic.jpg`.
+![Logo de Badger Meter](../images/competitors/badger-meter.jpg)
 
-Antes de la entrega final, el equipo debe conservar la atribución correspondiente y verificar que el uso de marcas de terceros sea adecuado para la presentación académica.
+![Logo de OptiRTC](../images/competitors/optirtc.jpg)
+
+![Logo de Itron](../images/competitors/itron.jpg)
+
+![Logo de Qlic](../images/competitors/qlic.jpg)
 
 ### Anexo C. Consentimiento y tratamiento de evidencias
 
