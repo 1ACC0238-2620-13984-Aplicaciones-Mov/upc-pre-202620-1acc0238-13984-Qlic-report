@@ -193,6 +193,68 @@ Esta sección se completará con entrevistas reales. Se requieren de 3 a 5 entre
 | Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
 | Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
 
+##### ENTREVISTA 3
+
+| Campo | Registro |
+|---|---|
+| **ENTREVISTA 3** | **[COMPLETAR]** |
+| Nombre entrevistado | **[COMPLETAR]** |
+| Edad | **[COMPLETAR]** |
+| Profesión / rol | **[COMPLETAR]** |
+| Distrito / departamento | **[COMPLETAR]** |
+| Inicio del video | **[hh:mm:ss]** |
+| Fin del video | **[hh:mm:ss]** |
+| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
+| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
+| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
+
+#### Segundo segmento - Hogares y familias
+
+##### ENTREVISTA 1
+
+| Campo | Registro |
+|---|---|
+| **ENTREVISTA 1** | **[COMPLETAR]** |
+| Nombre entrevistado | **[COMPLETAR]** |
+| Edad | **[COMPLETAR]** |
+| Profesión / rol | **[COMPLETAR]** |
+| Distrito / departamento | **[COMPLETAR]** |
+| Inicio del video | **[hh:mm:ss]** |
+| Fin del video | **[hh:mm:ss]** |
+| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
+| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
+| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [edad, género, distrito, profesión y composición familiar]<br><br>**Características subjetivas:** [personalidad, habilidades, objetivos, frustraciones, marcas e influencias]<br><br>**Tecnología y canales:** [dispositivos, navegador, aplicaciones y canales de interacción]<br><br>**Evidencia:** [minuto o cita breve que sustenta el resumen] |
+
+##### ENTREVISTA 2
+
+| Campo | Registro |
+|---|---|
+| **ENTREVISTA 2** | **[COMPLETAR]** |
+| Nombre entrevistado | **[COMPLETAR]** |
+| Edad | **[COMPLETAR]** |
+| Profesión / rol | **[COMPLETAR]** |
+| Distrito / departamento | **[COMPLETAR]** |
+| Inicio del video | **[hh:mm:ss]** |
+| Fin del video | **[hh:mm:ss]** |
+| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
+| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
+| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
+
+##### ENTREVISTA 3
+
+| Campo | Registro |
+|---|---|
+| **ENTREVISTA 3** | **[COMPLETAR]** |
+| Nombre entrevistado | **[COMPLETAR]** |
+| Edad | **[COMPLETAR]** |
+| Profesión / rol | **[COMPLETAR]** |
+| Distrito / departamento | **[COMPLETAR]** |
+| Inicio del video | **[hh:mm:ss]** |
+| Fin del video | **[hh:mm:ss]** |
+| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
+| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
+| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
@@ -262,65 +324,3 @@ Esta sección se completará con entrevistas reales. Se requieren de 3 a 5 entre
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
-
-##### ENTREVISTA 3
-
-| Campo | Registro |
-|---|---|
-| **ENTREVISTA 3** | **[COMPLETAR]** |
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
-
-#### Segundo segmento - Hogares y familias
-
-##### ENTREVISTA 1
-
-| Campo | Registro |
-|---|---|
-| **ENTREVISTA 1** | **[COMPLETAR]** |
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [edad, género, distrito, profesión y composición familiar]<br><br>**Características subjetivas:** [personalidad, habilidades, objetivos, frustraciones, marcas e influencias]<br><br>**Tecnología y canales:** [dispositivos, navegador, aplicaciones y canales de interacción]<br><br>**Evidencia:** [minuto o cita breve que sustenta el resumen] |
-
-##### ENTREVISTA 2
-
-| Campo | Registro |
-|---|---|
-| **ENTREVISTA 2** | **[COMPLETAR]** |
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
-
-##### ENTREVISTA 3
-
-| Campo | Registro |
-|---|---|
-| **ENTREVISTA 3** | **[COMPLETAR]** |
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
