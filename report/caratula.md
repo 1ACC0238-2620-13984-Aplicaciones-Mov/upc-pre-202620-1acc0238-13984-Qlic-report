@@ -49,7 +49,7 @@
 | 1.3     | 2026-09-13                  | Briceño Llanos, Ayrton Omar         | Definición y desarrollo de la sección 1.3 Segmentos Objetivos (PYMES y Hogares) con perfiles demográficos, canales digitales, dispositivos y sustento estadístico APA 7. |
 | 1.4     | 2026-09-14                  | Briceño Llanos, Ayrton Omar         | Elaboración de la sección Objetivos SMART profesionales individuales post-graduación estructurados por dimensiones S-M-A-R-T.                                            |
 | 1.5     | 2026-09-15                  | Briceño Llanos, Ayrton Omar         | Ajustes de estilo, centrado de portada y actualización del control de versiones del informe.                                                                             |
-| 1.6     | **[COMPLETAR]**             | **[COMPLETAR]**                     | **[COMPLETAR: p. ej. Incorporación del análisis competitivo y entrevistas.]**                                                                                            |
+| 1.6     | 2026-09-15                  | Avila Palacios, Aaron Alexander     | Incorporación del análisis competitivo de Badger Meter, Itron y OptiRTC; definición de estrategias y diseño de entrevistas para PYMES y hogares en el Capítulo II.       |
 | 1.7     | **[COMPLETAR]**             | **[COMPLETAR]**                     | **[COMPLETAR: p. ej. Needfinding y Requirements Specification.]**                                                                                                        |
 | 1.8     | **[COMPLETAR]**             | **[COMPLETAR]**                     | **[COMPLETAR: p. ej. Strategic y Tactical-Level DDD. Cierre de versión para AV1.]**                                                                                      |
 ---
