@@ -134,7 +134,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 #### Segmento 1: PYMES y comercios locales
 
-**Preguntas principales**
+**Preguntas**
 
 1. ¿Cómo controlan actualmente el consumo de agua en su negocio y quién se encarga de revisar esa información?
 2. ¿Qué problemas han tenido relacionados con desperdicios, fugas, medidores o cobros inesperados?
@@ -147,7 +147,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 #### Segmento 2: Hogares y familias
 
-**Preguntas principales**
+**Preguntas**
 
 1. ¿Cómo controlan actualmente el consumo de agua en su hogar y quién revisa o paga el recibo?
 2. ¿Han tenido problemas con medidores defectuosos, fugas o cobros inesperados en sus recibos de agua?
@@ -160,7 +160,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 ### 2.2.2. Registro de entrevistas
 
-Esta sección se completará con entrevistas reales. Se requieren de 3 a 5 entrevistas por segmento, un video consolidado en OneDrive, una captura de cada entrevista, el momento de inicio y fin, el enlace al video y un resumen descriptivo basado en las respuestas. El equipo debe duplicar el formato para las entrevistas cuarta y quinta si corresponde.
+Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir los datos del entrevistado, el inicio y fin dentro del video, el enlace, una captura y un resumen de sus respuestas. Si se realizan cuatro o cinco entrevistas, se copia la misma ficha para cada participante.
 
 **Archivo del video consolidado:** `upc-pre-202620-1acc0238-13984-Qlic-needfinding-av1.mp4`<br>
 **URL privada de OneDrive:** **[PEGAR URL DEL VIDEO]**
