@@ -3,8 +3,8 @@
 ## 5.1. Conclusiones
 
 1. Qlic aborda la necesidad de mejorar la visibilidad del consumo de agua y la detección oportuna de anomalías en PYMES, comercios locales y hogares.
-2. El análisis competitivo permitió reconocer capacidades relevantes del mercado: medición conectada, analítica, alertas, interoperabilidad y soporte para la toma de decisiones. La oportunidad preliminar de Qlic está en traducir esos datos a una experiencia móvil clara, accesible y cercana para usuarios locales.
-3. Badger Meter e Itron representan soluciones directas de smart water, mientras que OptiRTC aporta un referente adyacente de monitoreo y control de aguas pluviales. Wint se conserva como referencia secundaria para la respuesta ante fugas comerciales.
+2. El análisis competitivo permitió reconocer capacidades relevantes del mercado: medición conectada, analítica, alertas, interoperabilidad y soporte para la toma de decisiones. La oportunidad preliminar de Qlic está en traducir esos datos a una experiencia móvil clara, accesible y cercana para usuarios locales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
+3. Badger Meter e Itron representan soluciones directas de smart water, mientras que OptiRTC aporta un referente adyacente de monitoreo y control de aguas pluviales. Wint se conserva como referencia secundaria para la respuesta ante fugas comerciales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
 4. Las estrategias propuestas —diferenciación móvil y local, escala progresiva, interoperabilidad, respuesta ante fugas, soporte cercano y sostenibilidad con evidencia— son hipótesis de diseño. Deben validarse con entrevistas antes de convertirse en requisitos del producto.
 5. El diseño de entrevistas quedó preparado para obtener información objetiva y subjetiva de ambos segmentos. El equipo debe completar entre tres y cinco registros por segmento con datos verificables, capturas, tiempos del video consolidado y resúmenes descriptivos.
 6. En este avance no se afirma que la aplicación móvil, los sensores IoT ni los servicios hayan sido implementados. Las decisiones de desarrollo deberán basarse en los resultados de needfinding y en los siguientes hitos del proyecto.
@@ -71,4 +71,4 @@ Antes de grabar una entrevista, el entrevistador debe explicar el propósito aca
 
 ### Anexo C. Evidencias de colaboración y control de versiones
 
-La evidencia final debe incluir capturas del historial de GitHub, ramas por capítulo, commits con Conventional Commits y la integración de los avances mediante GitFlow. Las capturas de colaboración, exposición y herramientas se agregarán cuando el equipo consolide la versión final del informe.
+La evidencia final debe incluir capturas del historial de GitHub, ramas por capítulo, commits con Conventional Commits y la integración de los avances mediante GitFlow (Driessen, 2010; GitHub, s. f.). Las capturas de colaboración, exposición y herramientas se agregarán cuando el equipo consolide la versión final del informe.
