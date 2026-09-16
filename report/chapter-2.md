@@ -136,23 +136,27 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 **Preguntas principales**
 
-1. ¿Podría describir su edad, género, distrito, estado civil, composición familiar, profesión, rol en el negocio y un día habitual de trabajo?
-2. ¿Cómo controla actualmente el consumo, los recibos, el medidor y las incidencias de agua? Cuénteme el último caso de fuga, cobro inesperado o interrupción que recuerde.
-3. ¿Qué consecuencias, frustraciones y costos genera ese problema para la operación, y qué resultado espera conseguir al gestionarlo?
-4. ¿Qué dispositivos, aplicaciones, navegador y canales digitales utiliza para trabajar y coordinarse? ¿Qué habilidades o dificultades tiene al usar herramientas digitales?
-5. ¿Quiénes influyen en sus decisiones de compra o mantenimiento, qué marcas o proveedores considera confiables y por qué?
-6. ¿Qué información, alerta, soporte y condiciones de costo o instalación necesitaría para probar una solución móvil de monitoreo de agua?
+1. ¿Cómo controlan actualmente el consumo de agua en su negocio y quién se encarga de revisar esa información?
+2. ¿Qué problemas han tenido relacionados con desperdicios, fugas, medidores o cobros inesperados?
+3. ¿Con qué frecuencia revisan los medidores, recibos o registros de consumo y cómo guardan esa información?
+4. ¿De qué manera el consumo de agua afecta sus costos operativos, la continuidad del negocio o las decisiones de mantenimiento?
+5. ¿Qué tan útil sería consultar desde el celular reportes semanales o mensuales sobre el consumo? ¿Qué datos debería mostrar el reporte?
+6. ¿Qué opinan de recibir alertas móviles en tiempo real sobre fugas o consumos inusuales? ¿Qué debería incluir una alerta para ayudarles a actuar?
+7. ¿Qué características esperan de una aplicación móvil para gestionar el agua y qué tan fácil debería ser usarla desde sus dispositivos actuales?
+8. ¿Qué condiciones de precio, suscripción, instalación y soporte considerarían razonables si la aplicación ayudara a reducir costos y mejorar la gestión del agua?
 
 #### Segmento 2: Hogares y familias
 
 **Preguntas principales**
 
-1. ¿Podría describir su edad, género, distrito, estado civil, composición familiar, profesión, responsabilidades en el hogar y un día habitual?
-2. ¿Cómo revisa actualmente el recibo y el consumo de agua? Cuénteme el último caso de fuga, cobro inesperado o reparación que recuerde.
-3. ¿Qué consecuencias, frustraciones y gastos genera ese problema, y qué resultado espera conseguir para su familia?
-4. ¿Qué celular, aplicaciones, navegador y canales digitales utiliza? ¿Qué habilidades o dificultades tiene al usar herramientas digitales?
-5. ¿Quiénes influyen en sus decisiones de compra o reparación, qué marcas o técnicos considera confiables y por qué?
-6. ¿Qué información, alerta, privacidad, soporte y costo necesitaría para probar una solución móvil que monitoree el agua de su hogar?
+1. ¿Cómo controlan actualmente el consumo de agua en su hogar y quién revisa o paga el recibo?
+2. ¿Han tenido problemas con medidores defectuosos, fugas o cobros inesperados en sus recibos de agua?
+3. ¿Cómo suelen identificar una fuga en casa y qué hacen después de detectarla?
+4. ¿Qué medidas aplican en el día a día para ahorrar agua y cómo evalúan si están funcionando?
+5. ¿Qué tan útil sería recibir en el celular alertas sobre consumos excesivos o fugas? ¿Qué información debería mostrar una alerta?
+6. ¿Preferirían un plan móvil básico con funciones esenciales o uno avanzado con reportes detallados? ¿Qué tendría que incluir cada opción?
+7. ¿Qué importancia tiene el ahorro de agua en la economía familiar y qué decisiones cambiarían con información más clara del consumo?
+8. ¿Qué esperan de una aplicación móvil para gestionar el consumo del hogar y qué condiciones de privacidad, soporte y costo les generarían confianza?
 
 ### 2.2.2. Registro de entrevistas
 
