@@ -4,52 +4,73 @@
 
 ## 2.1. Competidores
 
-Qlic es una propuesta móvil para que propietarios y administradores de PYMES, así como responsables de hogares, visualicen el consumo de agua, identifiquen anomalías y tomen decisiones oportunas. El análisis considera tres productos digitales con capacidades similares: Wint, Flo by Moen y Phyn. Se clasifican como competidores indirectos mientras Qlic no se comercialice: atienden mercados y canales distintos, pero compiten por la necesidad de monitorear, detectar fugas y reducir el desperdicio de agua.
+Qlic propone una solución móvil para que propietarios y administradores de PYMES, así como responsables de hogares, visualicen el consumo de agua, identifiquen anomalías y tomen decisiones oportunas. Para evitar comparar productos de dominios distintos sin explicarlo, se tomó como punto de partida el repositorio guía de WASD25, cuya rama chapter-2 analiza Qlic con los segmentos PYMES y hogares y propone como referentes a Badger Meter, Itron y OptiRTC. La selección fue corroborada con las páginas oficiales vigentes de cada organización.
+
+Badger Meter e Itron son referentes directos de smart water a escala de utilities, ciudades y operaciones comerciales; OptiRTC es un competidor adyacente de gestión de agua pluvial con IoT y control adaptativo. Los tres compiten por la necesidad de convertir datos hídricos en decisiones, aunque Qlic busca una experiencia móvil localizada para PYMES y hogares. Wint se conserva como benchmark secundario de detección de fugas comerciales, pero no reemplaza el conjunto comparable de la guía.
 
 ### 2.1.1. Análisis competitivo
 
+#### Evidencia de consistencia con el repositorio guía
+
+| Criterio | Repositorio guía | Qlic en este informe | Decisión |
+|---|---|---|---|
+| Problema | Gestión inteligente del agua, desperdicio, costos y monitoreo. | Monitoreo móvil, alertas y optimización del consumo en PYMES y hogares. | Consistente. |
+| Segmentos | PYMES, locales e instituciones y hogares/familias. | PYMES y comercios locales; hogares y familias. | Consistente para AV1. |
+| Competidores base | Badger Meter, Itron y OptiRTC. | Mismos tres referentes, corroborados en sus sitios oficiales. | Se mantienen para comparabilidad. |
+| Diferenciación | Solución digital accesible y sostenible. | Experiencia móvil en español, onboarding de baja fricción y soporte local por validar. | Se adapta a la visión móvil. |
+
 #### Competitive Analysis Landscape
 
-**Pregunta de análisis.** ¿Qué capacidades de producto y enfoques de mercado de las soluciones de monitoreo hídrico deben guiar una propuesta móvil diferenciada para PYMES y hogares de Lima Metropolitana?
+**Pregunta de análisis.** ¿Qué capacidades y enfoques de los referentes de smart water debe adoptar o evitar Qlic para ofrecer una experiencia móvil diferenciada a PYMES y hogares de Lima Metropolitana?
 
-**Activo pendiente del equipo.** Para satisfacer la cabecera visual solicitada por la rúbrica, antes de exportar el informe deben incorporarse en images/competitors/ los logotipos oficiales autorizados de Qlic, Wint, Flo by Moen y Phyn. No se incorporan en esta rama para no reutilizar activos de marca de terceros sin autorización.
+| Qlic | Badger Meter | Itron | OptiRTC |
+|---|---|---|---|
+| <img src="../images/competitors/qlic.jpg" alt="Logotipo de Qlic" width="150"><br>**Qlic** | <img src="../images/competitors/badger-meter.jpg" alt="Logotipo de Badger Meter" width="150"><br>[**Badger Meter**](https://www.badgermeter.com/blueedge/) | <img src="../images/competitors/itron.jpg" alt="Logotipo de Itron" width="150"><br>[**Itron**](https://emea.itron.com/categories/smart-water-solutions) | <img src="../images/competitors/optirtc.jpg" alt="Logotipo de Opti" width="150"><br>[**OptiRTC / Opti**](https://www.optirtc.com/solution) |
 
-| Dimensión | Qlic (propuesta) | [Wint](https://wint.ai/) | [Flo by Moen](https://manuals.meetflo.com/Smart-Water-Shutoff-Manual.pdf) | [Phyn](https://phyn.com/products/phyn) |
+*Fuente de los logotipos:* assets de la rama chapter-2 del repositorio guía de WASD25. Antes de la entrega, el equipo debe conservar únicamente activos cuyo uso académico esté autorizado.
+
+| Dimensión | Qlic (propuesta) | Badger Meter | Itron | OptiRTC |
 |---|---|---|---|---|
-| **Perfil / overview** | Propuesta orientada a PYMES y hogares peruanos para interpretar consumo, alertas y oportunidades de ahorro desde una experiencia móvil en español. | Plataforma de inteligencia hídrica para edificios comerciales e institucionales; combina monitoreo en tiempo real, detección de anomalías y corte remoto. | Sistema doméstico de seguridad hídrica que se administra desde una aplicación móvil y alerta ante fugas o uso anómalo. | Monitor doméstico autoinstalable para una vivienda; detecta fugas, analiza uso por accesorios y notifica mediante su aplicación. |
-| **Ventaja competitiva** | Hipótesis de diferenciación: acompañamiento local, lenguaje claro, flujos móviles de baja fricción y priorización de PYMES que no disponen de equipos especializados. | Cobertura empresarial, analítica basada en IA y capacidad de cerrar el suministro ante incidentes. | Integración entre dispositivo de corte y aplicación con panel de consumo, alertas y modos de uso. | Instalación bajo un lavadero, análisis de consumo y notificaciones de fuga mediante aplicación, SMS y soporte para contactar a un gasfitero. |
-| **Mercado objetivo** | PYMES con consumo operativo de agua y hogares responsables de su recibo y mantenimiento básico. | Instalaciones comerciales, institucionales, construcción y portafolios de inmuebles. | Hogares que buscan proteger su instalación principal de agua. | Hogares que desean detectar fugas y comprender su consumo doméstico. |
-| **Estrategias de marketing observables** | Por validar mediante entrevistas: comunicación de ahorro, continuidad operativa y sostenibilidad en canales digitales locales. | Posicionamiento de prevención de daños, sostenibilidad y eficiencia para organizaciones. | Comunicación de seguridad del hogar y control desde la aplicación. | Comunicación de instalación sencilla, protección del hogar, alertas y visibilidad del consumo. |
-| **Productos y servicios** | Futuro sistema móvil de monitoreo, alertas, historial y acompañamiento de instalación; las funcionalidades finales dependen de la investigación de usuarios. | Plataforma, unidades de control y servicios de monitoreo para prevenir fugas y desperdicios. | Dispositivo Smart Water Shutoff y aplicación Flo by Moen para control, consumo y alertas. | Phyn Smart Water Assistant, aplicación móvil, alertas y funciones de revisión de instalaciones. |
-| **Precios y costos** | Modelo y precio por validar; no se debe publicar una tarifa antes de contrastarla con usuarios y costos de operación. | Precio público no identificado en la información revisada; su sitio dirige a una solicitud comercial. | Precio sujeto al distribuidor y mercado; el manual revisado no establece una tarifa oficial. | El sitio de Phyn muestra US$299.99 para Smart Water Assistant (consulta: 2026-09-15); el precio debe verificarse nuevamente antes de publicar el informe. |
-| **Canales de distribución** | Hipótesis: aplicación móvil, instalación con aliados locales y canales digitales dirigidos a PYMES y hogares. | Venta consultiva y operación de plataforma en canales empresariales. | Dispositivo físico y aplicación para iOS y Android. | Venta directa del dispositivo y aplicación disponible para iOS y Android. |
+| **Perfil / overview** | Startup propuesta para ayudar a PYMES y hogares peruanos a interpretar consumo, alertas y oportunidades de ahorro desde el móvil. | BlueEdge integra medición, conectividad, software y servicios para gestionar agua de forma continua en utilities, clientes comerciales e industriales. | Portafolio de smart water para utilities y ciudades que combina dispositivos, redes, plataformas y analítica para transformar datos en decisiones operativas. | Plataforma de monitoreo continuo y control adaptativo de aguas pluviales que combina sensores, pronósticos y reglas de control en la nube. |
+| **Ventaja competitiva** | Hipótesis de diferenciación: lenguaje claro, experiencia móvil en español, acompañamiento local y foco en necesidades de PYMES que no disponen de equipos especializados. | Escala, experiencia histórica en medición y suite integrada de dispositivos, software y soporte. | Cobertura de infraestructura, conectividad y analítica interoperable para utilities y ciudades. | Control predictivo de infraestructura pluvial, integración con sensores externos y automatización basada en pronósticos. |
+| **Mercado objetivo** | PYMES con consumo operativo de agua y hogares responsables del recibo y mantenimiento básico. | Utilities, municipios y clientes comerciales e industriales. | Utilities de agua, ciudades y operadores de infraestructura. | Autoridades, municipios y operadores de infraestructura de aguas pluviales. |
+| **Estrategias de marketing observables** | Por validar: comunicar ahorro, continuidad operativa y sostenibilidad en canales móviles y redes locales. | Venta consultiva, demostraciones técnicas, casos de uso y solicitud de cotización. | Posicionamiento como socio de modernización de utilities y comunicación de eficiencia, conservación y resiliencia. | Casos de proyectos, metodología de implementación y comunicación de resiliencia urbana. |
+| **Productos y servicios** | Propuesta futura de aplicación móvil, alertas, historial, recomendaciones y acompañamiento de instalación; el alcance depende de la investigación. | Medidores, sensores, válvulas, conectividad y analítica BlueEdge para medición y control. | Medición inteligente, módulos de comunicación, gestión de datos, detección de fugas y plataformas para utilities. | CMAC, gateways, paneles, portal web, API e integración de sensores y actuadores para stormwater. |
+| **Precios y costos** | Modelo y precio por validar con usuarios y costos de operación; no se declara una tarifa en AV1. | No publica una tarifa estándar; su sitio dirige a solicitar una cotización. | Soluciones empresariales cuyo costo depende del despliegue, infraestructura y servicio contratado. | Precio sujeto al proyecto, activos, integración y operación; no se muestra una tarifa estándar. |
+| **Canales de distribución** | Aplicación móvil, aliados de instalación y canales digitales dirigidos a PYMES y hogares; hipótesis por validar. | Venta consultiva, servicios de implementación y plataformas web/campo. | Venta a utilities, partners, infraestructura conectada y plataformas de gestión. | Proyectos de infraestructura, portal web, APIs y servicios de implementación. |
 
-Las características comparadas se verificaron en las páginas oficiales de cada producto. Wint describe monitoreo, detección de anomalías y cierre remoto para instalaciones de mayor escala; Flo by Moen documenta en su aplicación el panel de consumo y alertas; Phyn presenta alertas por aplicación y SMS, análisis de uso y el precio publicado de Smart Water Assistant (Wint, s. f.; Flo by Moen, s. f.; Phyn, s. f.).
-
-La comparación muestra dos espacios de aprendizaje para Qlic. Por un lado, Wint demuestra que la detección de anomalías debe traducirse en una acción clara y oportuna, no solo en la visualización de datos. Por otro, Flo by Moen y Phyn confirman que las alertas, el consumo comprensible y el acompañamiento desde el teléfono son capacidades centrales para el segmento residencial. Qlic debe validar si estos patrones se trasladan a PYMES locales y qué barreras aparecen en la instalación, conectividad, confianza y disposición de pago.
+Las capacidades se corroboraron con las fuentes oficiales: BlueEdge declara medición, conectividad y analítica para operaciones de agua; Itron documenta dispositivos, redes, leak sensing y plataformas para utilities; Opti describe monitoreo continuo, pronósticos, control adaptativo, dashboard y APIs. Estas evidencias confirman que la guía escogió competidores del mismo dominio, aunque a una escala mayor que el alcance inicial de Qlic. Wint se mantiene como referencia secundaria porque su plataforma comercial añade detección de anomalías y cierre remoto, útil para comparar la respuesta ante fugas, pero no forma parte del conjunto base de la guía.
 
 #### Análisis SWOT
 
-El siguiente análisis es preliminar y sirve para formular preguntas de investigación; no sustituye la evidencia que el equipo obtendrá en las entrevistas.
+El FODA es preliminar y orienta las entrevistas; no sustituye evidencia de usuarios ni demuestra implementación.
 
 | Producto | Fortalezas | Debilidades | Oportunidades | Amenazas |
 |---|---|---|---|---|
-| **Qlic** | Enfoque móvil en español, propuesta para dos segmentos locales y posibilidad de traducir datos de agua en decisiones simples. | Marca sin validación, ausencia de evidencia de uso e incertidumbre sobre instalación, costos y soporte. | Diseñar una experiencia ajustada al contexto peruano, alianzas con instaladores y mensajes de ahorro verificable. | Competidores consolidados, dependencia de hardware/conectividad y desconfianza frente a sensores nuevos. |
-| **Wint** | Monitoreo en tiempo real, detección basada en IA, corte remoto y experiencia empresarial. | Enfoque corporativo que puede resultar complejo o costoso para micro y pequeñas empresas. | Paquetes de menor escala y alianzas regionales para expandir su mercado. | Soluciones móviles más simples, proveedores locales y restricciones presupuestales de sus clientes. |
-| **Flo by Moen** | Aplicación con alertas, panel de consumo y controles de seguridad doméstica. | Alcance centrado en hogar; no se evidencia una propuesta específica para la operación cotidiana de PYMES peruanas. | Extender servicios para propiedades múltiples y distribuidores regionales. | Diferencias de infraestructura, soporte e instalación entre mercados; alternativas que adapten lenguaje y operación local. |
-| **Phyn** | Instalación doméstica guiada, analítica de uso, alertas por aplicación y SMS, y orientación de soporte. | Producto focalizado en viviendas y dependiente de condiciones de instalación compatibles. | Integraciones de hogar conectado y expansión de servicios de mantenimiento. | Disponibilidad local, sensibilidad al precio y propuestas que combinen soporte cercano con flujos móviles más sencillos. |
+| **Qlic** | Foco móvil en español, segmentos locales y posibilidad de convertir datos hídricos en decisiones simples. | Marca y propuesta aún por validar; dependencia de sensores, conectividad, instalación y soporte. | Alianzas con instaladores, planes para PYMES, educación de ahorro y acompañamiento local. | Suites globales con mayor escala, resistencia al hardware y sensibilidad al precio. |
+| **Badger Meter** | Suite integrada, experiencia en medición y cobertura de clientes municipales, comerciales e industriales. | Complejidad y probable costo de adopción para hogares y microempresas. | Paquetes pequeños, partners locales y experiencias móviles para usuarios finales. | Startups de menor costo, plataformas especializadas y proveedores locales. |
+| **Itron** | Infraestructura, conectividad, analítica y experiencia con utilities y ciudades en múltiples países. | Enfoque de infraestructura que puede quedar lejos de la necesidad cotidiana de un hogar o una PYME. | Integraciones con utilities, educación del consumidor y soluciones de conservación. | Licitaciones, ciclos de compra largos y alternativas más simples de instalación. |
+| **OptiRTC / Opti** | Control adaptativo, pronósticos, sensores, APIs y experiencia en resiliencia de aguas pluviales. | Dominio principal distinto al monitoreo de fugas de consumo; no es una solución residencial directa. | Extender analítica a pequeños sistemas y crear alianzas con municipios. | Soluciones especializadas en stormwater, cambios regulatorios y complejidad de infraestructura. |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Las estrategias de Qlic se plantean como hipótesis para validar con los dos segmentos objetivo antes de decidir el alcance del producto.
+Las siguientes estrategias convierten la comparación en hipótesis accionables para Qlic. Deben validarse mediante el diseño de entrevistas antes de convertirse en requisitos.
 
-| Estrategia | Tácticas iniciales | Competidor / hallazgo atendido | Indicador a validar en entrevistas |
+| Estrategia | Tácticas iniciales | Competidor / hallazgo atendido | Indicador a validar |
 |---|---|---|---|
-| **Diseño móvil local y comprensible** | Redactar alertas en español claro, mostrar el nivel de urgencia y proponer el siguiente paso según el tipo de incidente. | Las alertas móviles son una capacidad esperada en Flo by Moen y Phyn; Qlic debe diferenciarse por contexto y claridad. | Comprensión de una alerta y acción que la persona declara que tomaría. |
-| **Valor para la operación de PYMES** | Investigar horarios críticos, responsables de mantenimiento, impacto de cortes y reportes requeridos para decidir si se priorizan funciones operativas. | Wint atiende instalaciones de mayor escala; existe una hipótesis de necesidad no cubierta para PYMES. | Problemas operativos recurrentes, costo percibido y disposición a probar una solución. |
-| **Onboarding y soporte de baja fricción** | Validar preferencias sobre instalación guiada, acompañamiento remoto y derivación a un técnico cuando corresponda. | Flo by Moen y Phyn hacen visible el valor de la instalación y el control desde la aplicación. | Barreras de confianza, tiempo aceptable de instalación y canal de soporte preferido. |
-| **Decisiones basadas en evidencia** | Probar qué resumen de consumo, alerta o comparación resulta útil antes de definir visualizaciones y notificaciones. | Wint y Phyn convierten datos de agua en analítica; Qlic debe evitar presentar métricas que no sean accionables. | Datos que el usuario consulta, periodicidad y decisión que espera tomar con ellos. |
-| **Confianza y protección de datos** | Preguntar por autorizaciones, datos que generarían confianza y expectativas de continuidad cuando falle la conectividad. | Los productos IoT dependen de datos, conectividad y dispositivos instalados. | Condiciones mínimas para permitir el uso de sensores y notificaciones. |
+| **Diferenciación móvil y local** | Diseñar alertas en español claro, niveles de urgencia y acciones concretas para cada segmento. | Las soluciones guía priorizan infraestructura; Qlic debe acercar el dato al usuario cotidiano. | El participante entiende una alerta y puede explicar qué acción tomaría. |
+| **Escala progresiva para PYMES** | Proponer onboarding por etapas, sensor inicial y reportes que no requieran una plataforma empresarial completa. | Badger Meter e Itron ofrecen suites amplias; la barrera de complejidad debe comprobarse. | Tiempo aceptable de configuración, roles que usarían la solución y funciones mínimas. |
+| **Interoperabilidad antes que encierro tecnológico** | Preguntar por medidores existentes, conectividad, APIs y necesidad de exportar datos. | Itron y Opti muestran valor en redes, integraciones y APIs. | Dispositivos actuales, restricciones de integración y formato de datos preferido. |
+| **Respuesta ante fugas y anomalías** | Diseñar un flujo de alerta, confirmación, escalamiento y contacto de soporte; no prometer corte automático antes de validar riesgos. | Wint y las suites de medición convierten detección en acción. | Tipo de incidente, tiempo de respuesta y confianza para seguir una recomendación. |
+| **Soporte y confianza local** | Validar instalación guiada, acompañamiento remoto, privacidad, continuidad sin conexión y derivación a técnicos. | La escala de los competidores no garantiza soporte cercano para PYMES y hogares locales. | Condiciones para autorizar sensores, canal de soporte y señales de confianza. |
+| **Sostenibilidad con evidencia** | Mostrar ahorro, consumo y tendencias solo cuando el usuario pueda interpretarlos y relacionarlos con una decisión. | Los competidores comunican eficiencia y conservación; Qlic debe probar qué métrica es útil. | Métricas consultadas, frecuencia de revisión y decisión que cambia gracias al dato. |
+
+#### Referentes oficiales consultados
+
+- Badger Meter. (s. f.). *BlueEdge Suite of Scalable Solutions*. https://www.badgermeter.com/blueedge/
+- Itron. (s. f.). *Smart Water Solutions*. https://emea.itron.com/categories/smart-water-solutions
+- Opti. (s. f.). *The Opti Solution*. https://www.optirtc.com/solution
+- Wint. (s. f.). *Commercial Water Management & Leak Prevention Solutions*. https://wint.ai/
 
 ## 2.2. Entrevistas
 
@@ -190,6 +211,8 @@ Copiar esta ficha una vez por cada participante y reemplazar los campos entre co
 
 ## Referencias
 
-- Flo by Moen. (s. f.). *Smart water shutoff manual*. https://manuals.meetflo.com/Smart-Water-Shutoff-Manual.pdf
-- Phyn. (s. f.). *Phyn Smart Water Assistant*. https://phyn.com/products/phyn
-- Wint. (s. f.). *Commercial water management and leak prevention solutions*. https://wint.ai/
+- Badger Meter. (s. f.). *BlueEdge Suite of Scalable Solutions*. https://www.badgermeter.com/blueedge/
+- Itron. (s. f.). *Smart Water Solutions*. https://emea.itron.com/categories/smart-water-solutions
+- Opti. (s. f.). *The Opti Solution*. https://www.optirtc.com/solution
+- Wint. (s. f.). *Commercial Water Management & Leak Prevention Solutions*. https://wint.ai/
+- WASD25. (2026). *Final report* [Repositorio de referencia, rama chapter-2]. https://github.com/wasd25/final-report/tree/chapter-2
