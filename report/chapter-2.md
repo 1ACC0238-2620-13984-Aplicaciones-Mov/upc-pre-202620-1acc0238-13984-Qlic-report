@@ -10,11 +10,11 @@ Qlic se ubica en el mercado de soluciones digitales para la gestión inteligente
 
 <table>
   <tr>
-    <th colspan="6">Competitive Analysis Landscape</th>
+    <th colspan="22">Competitive Analysis Landscape</th>
   </tr>
   <tr>
-    <td colspan="2">¿Por qué llevar a cabo el análisis?</td>
-    <td colspan="4">¿Qué capacidades y enfoques debe adoptar o evitar Qlic para diferenciarse en PYMES y hogares?</td>
+    <td colspan="1">¿Por qué llevar a cabo el análisis?</td>
+    <td colspan="17">¿Qué capacidades y enfoques debe adoptar o evitar Qlic para diferenciarse en PYMES y hogares?</td>
   </tr>
   <tr>
     <td colspan="2"></td>
@@ -40,14 +40,14 @@ Qlic se ubica en el mercado de soluciones digitales para la gestión inteligente
   </tr>
   <tr>
     <td rowspan="2">Perfil de Marketing</td>
-    <td>Mercado objetivo</td>
+    <td>Mercado Objetivo</td>
     <td>Utilities, municipios y clientes comerciales e industriales.</td>
     <td>Ciudades, gobiernos locales y organizaciones que gestionan aguas pluviales.</td>
     <td>Utilities de agua, ciudades y operadores de infraestructura.</td>
     <td>PYMES con consumo operativo y hogares responsables del recibo y mantenimiento.</td>
   </tr>
   <tr>
-    <td>Estrategias de marketing</td>
+    <td>Estrategias de Marketing</td>
     <td>Venta consultiva, demostraciones técnicas, casos de uso y cotización.</td>
     <td>Casos de proyectos, educación sobre resiliencia y conferencias ambientales.</td>
     <td>Comunicación de innovación, sostenibilidad, alianzas y eventos de smart cities.</td>
