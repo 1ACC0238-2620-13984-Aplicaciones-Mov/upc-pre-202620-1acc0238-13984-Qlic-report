@@ -35,7 +35,7 @@ WASD es una startup enfocada en la gestión inteligente del agua. Utilizamos tec
 
 En el contexto actual de creciente preocupación por la sostenibilidad y la gestión de recursos básicos, el uso eficiente del agua potable representa un desafío crítico a nivel global y nacional. En el Perú, esta problemática se manifiesta tanto en la red pública como en las instalaciones del usuario final: según reportes de la Superintendencia Nacional de Servicios de Saneamiento [SUNASS] (2025), el índice de Agua No Facturada (ANF) supera el 43 % a nivel nacional, generado por deficiencias comerciales, conexiones clandestinas y fugas físicas no detectadas. Esta ineficiencia estructural deteriora la continuidad del servicio e impacta directamente en los costos operativos de los usuarios.
 
-De acuerdo con el Ministerio de Vivienda, Construcción y Saneamiento [MVCS] (2025), a pesar de que más de 600 mil peruanos se incorporaron a la red de cobertura formal de agua potable tras el cierre del Plan Bicentenario, persiste una brecha severa en la cultura de micromedición y fiscalización. La expansión de las redes no ha venido acompañada de herramientas digitales accesibles que permitan a los usuarios finales fiscalizar su consumo diario, derivando en pérdidas constantes por averías internas.
+De acuerdo con el Ministerio de Vivienda, Construcción y Saneamiento [MVCS] (2024), a pesar de que más de 600 mil peruanos se incorporaron a la red de cobertura formal de agua potable tras el cierre del Plan Bicentenario, persiste una brecha severa en la cultura de micromedición y fiscalización. La expansión de las redes no ha venido acompañada de herramientas digitales accesibles que permitan a los usuarios finales fiscalizar su consumo diario, derivando en pérdidas constantes por averías internas.
 
 En el ámbito regional, el Banco Interamericano de Desarrollo [BID] (2025) advierte que en América Latina las pérdidas físicas y comerciales alcanzan en promedio el 40 % del agua tratada, generando un impacto financiero negativo multimillonario anual. En el segmento comercial y residencial, la Environmental Protection Agency [EPA] (2024) y Zipdo (2025) señalan que entre el 12 % y el 30 % del agua suministrada a comercios y viviendas se desperdicia por fugas desapercibidas en tuberías internas, inodoros y tanques de almacenamiento.
 
@@ -59,7 +59,7 @@ Ante esta situación, surge la imperiosa necesidad de soluciones tecnológicas q
 
 En esta sección se aplica el enfoque Lean UX para alinear el desarrollo del producto con las necesidades reales del negocio y los usuarios.
 Se define la visión del modelo de negocio que respaldará el software, abarcando elementos clave como los Problem Statements (con información sobre el dominio, segmentos de clientes, puntos de dolor, brechas, visión y estrategia), así como las suposiciones (Assumptions) y las hipótesis (Hypothesis Statements) iniciales.
-La sección concluye con la elaboración del Lean UX Canvas, herramienta central para guiar el proceso iterativo de diseño enfocado en generar valor desde las primeras etapas.
+La sección concluye con la elaboración del Lean UX Canvas, herramienta central para guiar el proceso iterativo de diseño enfocado en generar valor desde las primeras etapas (Gothelf & Seiden, 2021).
 
 #### 1.2.2.1. Lean UX Problem Statements.
 
@@ -110,7 +110,7 @@ Frente a esta problemática, planteamos la siguiente pregunta:
 
 La imagen representa un Lean UX Canvas del proyecto Qlic, una herramienta estratégica que organiza de forma visual los elementos clave para diseñar una solución centrada en el usuario. El canvas parte del problema central —las pérdidas económicas y riesgos por fugas, evaporación o almacenamiento inadecuado de líquidos en fábricas— y propone una solución basada en sensores IoT, monitoreo en tiempo real, alarmas automáticas y un dashboard personalizable, con beneficios como reducción de pérdidas, mayor seguridad y optimización de la producción.
 
-Se identifican claramente los usuarios directos (operadores y supervisores) e indirectos (gerentes y responsables de seguridad), junto con sus necesidades, hipótesis a validar y los aprendizajes clave para definir el producto. Además, se establecen las acciones mínimas necesarias, como entrevistas, prototipos y simulaciones, para validar la propuesta de manera ágil. En conjunto, este canvas guía el desarrollo de Qlic desde la comprensión del problema hasta la validación y mejora continua de la solución.
+Se identifican claramente los usuarios directos (operadores y supervisores) e indirectos (gerentes y responsables de seguridad), junto con sus necesidades, hipótesis a validar y los aprendizajes clave para definir el producto. Además, se establecen las acciones mínimas necesarias, como entrevistas, prototipos y simulaciones, para validar la propuesta de manera ágil. En conjunto, este canvas guía el desarrollo de Qlic desde la comprensión del problema hasta la validación y mejora continua de la solución (Gothelf, s. f.).
 
 ![canva.png](../images/canva.png)
 
