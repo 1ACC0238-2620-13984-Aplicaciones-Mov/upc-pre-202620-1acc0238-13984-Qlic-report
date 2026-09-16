@@ -263,17 +263,314 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 
 ## 2.3. Needfinding
 
+En esta sección se presenta el proceso de análisis de la información recolectada durante las entrevistas con representantes de los segmentos objetivo de Qlic. A partir de dicha información se construyen los artefactos que permiten comprender en profundidad las necesidades, motivaciones y frustraciones de los usuarios. Los artefactos elaborados incluyen los User Personas, el User Task Matrix, los User Journey Maps y los Empathy Maps. Cada uno fue elaborado en UXPressia, tomando como base los hallazgos identificados en el análisis de entrevistas de la sección 2.2.
+
+Dado que Qlic es una **aplicación móvil nativa y multiplataforma** (desarrollada en Kotlin para Android y Flutter para compatibilidad multiplataforma), el needfinding incorpora el contexto de uso móvil: acceso desde el smartphone en cualquier momento y lugar, notificaciones push como canal de alerta prioritario, consulta rápida del estado del sistema sin necesidad de abrir un computador, y acceso a recursos del dispositivo como la cámara para registrar dispositivos IoT mediante código QR.
+
+---
+
 ### 2.3.1. User Personas
+
+En esta sección se incluyen las fichas de User Persona que representan arquetipos de los segmentos objetivo de Qlic. Estos arquetipos fueron construidos a partir del análisis estadístico de las entrevistas realizadas (ver sección 2.2.3), buscando capturar las características, necesidades y comportamientos más representativos de cada segmento.
+
+Se elaboró una ficha por cada segmento objetivo: hogares y familias, y pequeñas y medianas empresas (PYMES).
+
+#### User Persona #1 – Segmento Hogares y Familias
+
+> *Elaborado en UXPressia.*
+> *[Insertar captura: images/user-persona-hogar.png]*
+
+| Campo | Detalle |
+|---|---|
+| **Nombre** | [Nombre del User Persona – completar tras análisis de entrevistas] |
+| **Edad** | [Edad representativa del segmento] |
+| **Ocupación** | [Ocupación más frecuente entre los entrevistados] |
+| **Distrito** | [Distrito más frecuente entre los entrevistados] |
+| **Estado civil** | [Estado civil más frecuente] |
+| **Dispositivo principal** | [Dispositivo más usado por el segmento] |
+| **Nivel tecnológico** | [Nivel tecnológico representativo] |
+| **Navegador preferido** | [Navegador más mencionado] |
+
+**Biografía:**
+[Redactar párrafo biográfico representativo del segmento tras el análisis de entrevistas.]
+
+**Objetivos:**
+- [Objetivo 1 – extraído del análisis de entrevistas]
+- [Objetivo 2 – extraído del análisis de entrevistas]
+- [Objetivo 3 – extraído del análisis de entrevistas]
+
+**Frustraciones:**
+- [Frustración 1 – extraída del análisis de entrevistas]
+- [Frustración 2 – extraída del análisis de entrevistas]
+- [Frustración 3 – extraída del análisis de entrevistas]
+
+**Canales digitales:** [Completar con los canales más mencionados en entrevistas]
+
+**Motivaciones:** [Completar con las motivaciones identificadas en entrevistas]
+
+**Personalidad:** [Completar con rasgos de personalidad representativos del segmento]
+
+---
+
+#### User Persona #2 – Segmento PYMES
+
+> *Elaborado en UXPressia.*
+> *[Insertar captura: images/user-persona-pyme.png]*
+
+| Campo | Detalle |
+|---|---|
+| **Nombre** | [Nombre del User Persona – completar tras análisis de entrevistas] |
+| **Edad** | [Edad representativa del segmento] |
+| **Ocupación** | [Ocupación más frecuente entre los entrevistados] |
+| **Distrito** | [Distrito más frecuente entre los entrevistados] |
+| **Estado civil** | [Estado civil más frecuente] |
+| **Dispositivo principal** | [Dispositivo más usado por el segmento] |
+| **Nivel tecnológico** | [Nivel tecnológico representativo] |
+| **Navegador preferido** | [Navegador más mencionado] |
+
+**Biografía:**
+[Redactar párrafo biográfico representativo del segmento tras el análisis de entrevistas.]
+
+**Objetivos:**
+- [Objetivo 1 – extraído del análisis de entrevistas]
+- [Objetivo 2 – extraído del análisis de entrevistas]
+- [Objetivo 3 – extraído del análisis de entrevistas]
+
+**Frustraciones:**
+- [Frustración 1 – extraída del análisis de entrevistas]
+- [Frustración 2 – extraída del análisis de entrevistas]
+- [Frustración 3 – extraída del análisis de entrevistas]
+
+**Canales digitales:** [Completar con los canales más mencionados en entrevistas]
+
+**Motivaciones:** [Completar con las motivaciones identificadas en entrevistas]
+
+**Personalidad:** [Completar con rasgos de personalidad representativos del segmento]
+
+---
 
 ### 2.3.2. User Task Matrix
 
+En esta sección se presenta el User Task Matrix, que concentra las tareas que los User Personas realizan para cumplir sus objetivos en relación con la gestión del agua. Es importante destacar que estas tareas son realizadas por los usuarios **independientemente de la existencia de Qlic**, pues representan comportamientos y necesidades actuales de cada segmento.
+
+Se consideran los dos User Personas identificados: el representante del segmento Hogares y Familias, y el representante del segmento PYMES. Para cada tarea se indica la frecuencia (Alta / Media / Baja) y la importancia (Alta / Media / Baja) con la que cada User Persona la realiza.
+
+| Tarea | Hogares y Familias | | PYMES | |
+|---|---|---|---|---|
+| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| Revisar el recibo mensual de agua | Alta | Alta | Alta | Alta |
+| Detectar fugas o consumos anómalos en las instalaciones | Media | Alta | Media | Alta |
+| Llamar a un técnico ante sospechas de fuga | Baja | Alta | Media | Alta |
+| Controlar el consumo de agua por punto o área de uso | Baja | Media | Alta | Alta |
+| Comparar el gasto de agua entre periodos distintos | Media | Media | Alta | Alta |
+| Verificar el nivel de agua en tanques o cisternas | Media | Alta | Alta | Alta |
+| Buscar formas de reducir el consumo de agua | Media | Alta | Media | Alta |
+| Comunicar incidencias de agua a otros miembros o personal | Baja | Media | Media | Alta |
+| Tomar decisiones de mantenimiento preventivo | Baja | Media | Media | Alta |
+| Gestionar el pago del servicio de agua | Alta | Alta | Alta | Alta |
+
+**Análisis:**
+
+Las tareas con mayor frecuencia e importancia para ambos segmentos son la revisión del recibo de agua, la detección de fugas y la verificación del nivel de tanques. El segmento PYMES realiza con mayor frecuencia tareas de control granular por área y toma de decisiones de mantenimiento, dado que el impacto económico del desperdicio es más crítico para su operación. El segmento Hogares y Familias, en cambio, concentra su atención en el control del gasto mensual y en la detección temprana de fugas que afectan el presupuesto familiar.
+
+La principal coincidencia entre ambos segmentos es la necesidad de **detectar anomalías en el consumo de forma anticipada** y de **acceder a información de consumo de manera sencilla y rápida**. La principal diferencia radica en el nivel de detalle requerido: las PYMES necesitan control por áreas y reportes comparativos avanzados, mientras que los hogares priorizan la simplicidad y las alertas inmediatas.
+
+Estas necesidades justifican el enfoque móvil de Qlic: el acceso desde el smartphone permite a ambos segmentos consultar el estado de sus instalaciones en cualquier momento, y las notificaciones push garantizan que las alertas lleguen de forma inmediata sin que el usuario tenga que buscar la información activamente.
+
+---
+
 ### 2.3.3. User Journey Mapping
+
+En esta sección se presentan los User Journey Maps en su versión **As-Is**, es decir, el recorrido actual del usuario sin la existencia de Qlic. El objetivo es identificar los momentos de mayor fricción y frustración que la aplicación móvil puede transformar positivamente. Se elaboró un User Journey Map por cada User Persona, vinculado a su ficha correspondiente en UXPressia.
+
+#### User Journey Map #1 – Segmento Hogares y Familias
+
+> *Elaborado en UXPressia.*
+> *[Insertar captura: images/journey-map-hogar.png]*
+
+**Resumen del journey:** [Completar con el end-to-end journey del User Persona de hogares tras el análisis de entrevistas. Describir el recorrido desde que detecta un posible problema con el consumo de agua hasta que intenta resolverlo con los medios actuales disponibles.]
+
+| Fase | Acción | Pensamiento | Emoción | Punto de dolor |
+|---|---|---|---|---|
+| [Fase 1] | [Completar] | [Completar] | [Completar] | [Completar] |
+| [Fase 2] | [Completar] | [Completar] | [Completar] | [Completar] |
+| [Fase 3] | [Completar] | [Completar] | [Completar] | [Completar] |
+| [Fase 4] | [Completar] | [Completar] | [Completar] | [Completar] |
+| [Fase 5] | [Completar] | [Completar] | [Completar] | [Completar] |
+
+---
+
+#### User Journey Map #2 – Segmento PYMES
+
+> *Elaborado en UXPressia.*
+> *[Insertar captura: images/journey-map-pyme.png]*
+
+**Resumen del journey:** [Completar con el end-to-end journey del User Persona de PYMES tras el análisis de entrevistas. Describir el recorrido desde que detecta un problema de consumo o fuga en su local hasta que intenta resolverlo con los medios actuales disponibles.]
+
+| Fase | Acción | Pensamiento | Emoción | Punto de dolor |
+|---|---|---|---|---|
+| [Fase 1] | [Completar] | [Completar] | [Completar] | [Completar] |
+| [Fase 2] | [Completar] | [Completar] | [Completar] | [Completar] |
+| [Fase 3] | [Completar] | [Completar] | [Completar] | [Completar] |
+| [Fase 4] | [Completar] | [Completar] | [Completar] | [Completar] |
+| [Fase 5] | [Completar] | [Completar] | [Completar] | [Completar] |
+
+---
 
 ### 2.3.4. Empathy Mapping
 
+En esta sección se presentan los Empathy Maps elaborados para cada User Persona. El proceso de elaboración incluyó una sesión colaborativa del equipo en la que cada miembro aportó observaciones en torno a las preguntas guía del artefacto: ¿Qué dice?, ¿Qué piensa y siente?, ¿Qué ve?, ¿Qué hace?, ¿Qué escucha?, y la identificación de Pains y Gains. Los mapas fueron elaborados en UXPressia a partir de los hallazgos del análisis de entrevistas.
+
+#### Empathy Map #1 – Segmento Hogares y Familias
+
+> *Elaborado en UXPressia.*
+> *[Insertar captura: images/empathy-map-hogar.png]*
+
+**¿Con quién estamos empatizando?**
+[Completar con la descripción del User Persona de hogares: nombre, edad, ocupación, contexto general.]
+
+**¿Qué necesita hacer?**
+[Completar con las principales tareas y responsabilidades del User Persona relacionadas con la gestión del agua en el hogar.]
+
+**¿Qué está diciendo?**
+- [Frase representativa 1 – extraída de entrevistas]
+- [Frase representativa 2 – extraída de entrevistas]
+- [Frase representativa 3 – extraída de entrevistas]
+
+**¿Qué está viendo?**
+- [Completar con elementos del entorno que observa el User Persona]
+- [Completar]
+- [Completar]
+
+**¿Qué está haciendo?**
+- [Completar con comportamientos y acciones actuales del User Persona]
+- [Completar]
+- [Completar]
+
+**¿Qué está escuchando?**
+- [Completar con influencias externas: familia, medios, publicidad, vecinos]
+- [Completar]
+- [Completar]
+
+**¿Qué piensa y siente?**
+- [Completar con motivaciones profundas, preocupaciones y aspiraciones]
+- [Completar]
+- [Completar]
+
+**Pains:**
+- [Pain 1 – extraído del análisis de entrevistas]
+- [Pain 2 – extraído del análisis de entrevistas]
+- [Pain 3 – extraído del análisis de entrevistas]
+
+**Gains:**
+- [Gain 1 – qué valora y qué le ayudaría en la app móvil]
+- [Gain 2 – completar]
+- [Gain 3 – completar]
+
+---
+
+#### Empathy Map #2 – Segmento PYMES
+
+> *Elaborado en UXPressia.*
+> *[Insertar captura: images/empathy-map-pyme.png]*
+
+**¿Con quién estamos empatizando?**
+[Completar con la descripción del User Persona de PYMES: nombre, edad, ocupación, tipo de negocio, contexto general.]
+
+**¿Qué necesita hacer?**
+[Completar con las principales tareas y responsabilidades del User Persona relacionadas con la gestión del agua en su negocio.]
+
+**¿Qué está diciendo?**
+- [Frase representativa 1 – extraída de entrevistas]
+- [Frase representativa 2 – extraída de entrevistas]
+- [Frase representativa 3 – extraída de entrevistas]
+
+**¿Qué está viendo?**
+- [Completar con elementos del entorno que observa el User Persona]
+- [Completar]
+- [Completar]
+
+**¿Qué está haciendo?**
+- [Completar con comportamientos y acciones actuales del User Persona]
+- [Completar]
+- [Completar]
+
+**¿Qué está escuchando?**
+- [Completar con influencias externas: empleados, proveedores, medios, colegas del rubro]
+- [Completar]
+- [Completar]
+
+**¿Qué piensa y siente?**
+- [Completar con motivaciones profundas, preocupaciones y aspiraciones]
+- [Completar]
+- [Completar]
+
+**Pains:**
+- [Pain 1 – extraído del análisis de entrevistas]
+- [Pain 2 – extraído del análisis de entrevistas]
+- [Pain 3 – extraído del análisis de entrevistas]
+
+**Gains:**
+- [Gain 1 – qué valora y qué le ayudaría en la app móvil]
+- [Gain 2 – completar]
+- [Gain 3 – completar]
+
+---
+
 ### 2.3.5. Big Picture EventStorming
 
+El Big Picture EventStorming se realizó en una sesión colaborativa del equipo con una duración aproximada de 90 minutos, utilizando la herramienta indicada. La sesión permitió mapear los eventos de negocio más relevantes del dominio de gestión inteligente del agua, identificando los procesos clave, los actores involucrados y las oportunidades de mejora en el flujo de valor de Qlic.
+
+> *[Insertar captura de la sesión de Big Picture EventStorming: images/big-picture-eventstorming.png]*
+
+Los eventos de dominio más significativos identificados durante la sesión fueron los siguientes:
+
+- Sensor IoT registró lectura de consumo
+- Consumo anómalo detectado por el sistema
+- Alerta de posible fuga generada
+- Notificación push enviada al dispositivo móvil del usuario
+- Usuario visualizó el estado de sus dispositivos en la app
+- Usuario configuró umbral de alerta personalizado
+- Reporte de consumo generado automáticamente
+- Nivel de tanque bajo detectado
+- Predicción de reabastecimiento calculada
+- Técnico asignado para revisión en sitio
+- Incidencia registrada y resuelta
+- Dispositivo IoT registrado en el sistema
+- Sesión de usuario iniciada en la app móvil
+- Usuario suscribió plan de servicio
+- Pago de suscripción procesado
+
+A partir del análisis de estos eventos se identificaron los bounded contexts candidatos para la solución: **IAM** (gestión de identidad y acceso), **Device Monitoring** (monitoreo de dispositivos IoT), **Alerting** (generación y envío de alertas), **Consumption Analytics** (análisis de consumo y reportes) y **Subscriptions** (gestión de planes y pagos). Estos bounded contexts se detallan en la sección 2.5.
+
+---
+
 ### 2.3.6. Ubiquitous Language
+
+A continuación se presenta el glosario de términos y conceptos del dominio de negocio de Qlic. Este glosario fue construido a partir del proceso de Big Picture EventStorming y del análisis del dominio del problema. Los términos corresponden exclusivamente al dominio de negocio y no incluyen términos técnicos de ingeniería de software. Se presentan en inglés, con el equivalente en español entre paréntesis cuando aplica, y la definición en español.
+
+| Término | Equivalente en español | Definición |
+|---|---|---|
+| **Water Point** | Punto de agua | Ubicación física específica dentro de un hogar o local donde se instala un sensor IoT para monitorear el flujo y consumo de agua. Puede corresponder a un grifo, tubería principal, entrada de tanque u otro punto de uso relevante. |
+| **IoT Device** | Dispositivo IoT | Sensor físico conectado a internet instalado en un Water Point, encargado de registrar lecturas periódicas de consumo de agua y transmitirlas al sistema Qlic para su procesamiento y análisis. |
+| **Consumption Reading** | Lectura de consumo | Dato registrado por un IoT Device en un momento determinado, que expresa la cantidad de agua que fluye por un Water Point en un periodo específico, medida en litros o metros cúbicos. |
+| **Anomalous Consumption** | Consumo anómalo | Situación en la que una Consumption Reading supera el umbral definido por el usuario o calculado automáticamente por el sistema, lo que puede indicar la presencia de una fuga, un consumo inusual o una falla en el dispositivo. |
+| **Leak Alert** | Alerta de fuga | Notificación generada automáticamente por el sistema cuando se detecta un Anomalous Consumption sostenido que sugiere la presencia de una fuga de agua. Se envía como notificación push al dispositivo móvil del Subscriber. |
+| **Consumption Threshold** | Umbral de consumo | Valor máximo de consumo de agua por periodo (diario, semanal o mensual) establecido por el usuario o calculado por el sistema, a partir del cual se genera una Leak Alert. |
+| **Water Tank** | Tanque de agua | Depósito de almacenamiento de agua en un hogar o local cuyo nivel es monitoreado por un IoT Device. El sistema puede predecir el momento en que será necesario el reabastecimiento. |
+| **Replenishment Prediction** | Predicción de reabastecimiento | Estimación calculada por el sistema sobre el momento en que el nivel de un Water Tank alcanzará un punto crítico, basada en el patrón histórico de Consumption Readings del usuario. |
+| **Consumption Report** | Reporte de consumo | Vista dentro de la aplicación móvil que resume el consumo de agua de un Subscriber en un periodo definido, mostrando tendencias, comparativas entre periodos anteriores y recomendaciones de ahorro. |
+| **Subscriber** | Suscriptor | Persona natural o jurídica que ha contratado un Subscription Plan de Qlic y tiene acceso a las funcionalidades de monitoreo, alertas y reportes de la aplicación móvil. |
+| **Subscription Plan** | Plan de suscripción | Modalidad de contratación del servicio Qlic. Actualmente existen dos planes: Plan Básico y Plan Gestión Pro, cada uno con un conjunto diferente de funcionalidades y dispositivos incluidos. |
+| **Monitoring Dashboard** | Panel de monitoreo | Vista principal de la aplicación móvil que presenta el estado actual de todos los Water Points y dispositivos IoT registrados por el Subscriber, con indicadores visuales de consumo y alertas activas. |
+| **Push Notification** | Notificación push | Mensaje enviado directamente al dispositivo móvil del Subscriber a través del sistema operativo, que informa sobre eventos relevantes como Leak Alerts, niveles bajos en Water Tanks o generación de nuevos Consumption Reports. |
+| **Device Registration** | Registro de dispositivo | Proceso mediante el cual un nuevo IoT Device es vinculado al perfil del Subscriber en la aplicación móvil, asignándole un Water Point específico y configurando sus parámetros de monitoreo iniciales. |
+| **Water Waste** | Desperdicio de agua | Volumen de agua consumido de manera innecesaria o involuntaria, ya sea por fugas, malos hábitos de uso o fallas en las instalaciones. La reducción del Water Waste es uno de los objetivos principales de Qlic. |
+| **Consumption Baseline** | Línea base de consumo | Patrón de consumo histórico de un Subscriber o Water Point, calculado por el sistema a partir de las Consumption Readings registradas, que sirve como referencia para identificar Anomalous Consumptions. |
+| **Incident** | Incidencia | Evento registrado en el sistema que documenta una situación problemática detectada, como una fuga confirmada o un dispositivo desconectado, junto con su estado de atención y resolución. |
+| **Technical Visit** | Visita técnica | Servicio de soporte presencial en el que un técnico de WASD acude al domicilio o local del Subscriber para instalar, revisar o reparar dispositivos IoT o instalaciones relacionadas con el servicio Qlic. |
+| **Water Cost** | Costo de agua | Gasto económico que representa el consumo de agua para un Subscriber en un periodo determinado, expresado en la factura del servicio. Qlic busca ayudar a reducir este indicador mediante el monitoreo y las recomendaciones de optimización. |
+| **Sustainability Goal** | Objetivo de sostenibilidad | Meta establecida por el Subscriber orientada a reducir su huella hídrica y contribuir al uso responsable del agua, que puede ser configurada en la aplicación móvil para recibir seguimiento y recomendaciones personalizadas. |
 
 ## 2.4. Requirements specification
 
