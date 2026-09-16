@@ -15,15 +15,25 @@
 
 Badger Meter. (s. f.). *BlueEdge Suite of Scalable Solutions*. https://www.badgermeter.com/blueedge/
 
-Environmental Protection Agency. (s. f.). *Fix a Leak Week*. https://www.epa.gov/watersense/fix-leak-week
+Banco Interamericano de Desarrollo. (2025). *Peril and promise: Tackling climate change in Latin America and the Caribbean*. https://publications.iadb.org/publications/english/document/Peril-and-Promise-Tackling-Climate-Change-in-Latin-America-and-the-Caribbean.pdf
 
 Itron. (s. f.). *Smart Water Solutions*. https://emea.itron.com/categories/smart-water-solutions
 
+Ministerio de Vivienda, Construcción y Saneamiento. (2024). *¡Cifra histórica! Casi 600 mil peruanos accedieron al servicio de agua potable durante el último año con obras del MVCS*. https://www.gob.pe/institucion/vivienda/noticias/954978-cifra-historica-casi-600-mil-peruanos-accedieron-al-servicio-de-agua-potable-durante-el-ultimo-ano-con-obras-del-mvcs
+
 Opti. (s. f.). *The Opti Solution*. https://www.optirtc.com/solution
+
+Superintendencia Nacional de Servicios de Saneamiento. (2023). *El buen dato Sunass: El impacto del agua potable y saneamiento en la calidad de vida*. https://www.gob.pe/institucion/sunass/colecciones/47085-el-buen-dato-sunass
+
+Superintendencia Nacional de Servicios de Saneamiento. (2025). *Agua no facturada en el Perú: Un desafío de gestión para las empresas prestadoras de servicios de agua potable*. https://cdn.www.gob.pe/uploads/document/file/8960946/7375591-agua-no-facturada-en-el-peru-un-desafio-de-gestion-para-las-empresas-prestadoras-de-servicios-de-agua-potable.pdf
+
+U.S. Environmental Protection Agency. (2024). *The WaterSense current: Winter 2024*. https://www.epa.gov/watersense/watersense-current-winter-2024
+
+Zipdo. (2025). *Water crisis statistics*. https://zipdo.co/water-crisis-statistics/
 
 Wint. (s. f.). *Commercial Water Management & Leak Prevention Solutions*. https://wint.ai/
 
-### 5.2.2. Métodos y gestión del proyecto
+### 5.2.2. Métodos y técnicas de ingeniería de software
 
 Driessen, V. (2010). *A successful Git branching model*. https://nvie.com/posts/a-successful-git-branching-model/
 
@@ -35,9 +45,9 @@ Universidad Peruana de Ciencias Aplicadas. (2026). *Trabajo Final 1ACC0238 20262
 
 ### 5.2.3. Herramientas y documentación técnica
 
-Google. (s. f.). *Android Developers documentation*. https://developer.android.com/
-
 GitHub. (s. f.). *GitHub documentation*. https://docs.github.com/
+
+Google. (s. f.). *Android Developers documentation*. https://developer.android.com/
 
 ## 5.3. Anexos
 
@@ -52,6 +62,8 @@ Los logos utilizados en el landscape corresponden al apartado **2.1.1. Análisis
 ![Logo de Itron](../images/competitors/itron.jpg)
 
 ![Logo de Qlic](../images/competitors/qlic.jpg)
+
+**Nota.** Logotipos reproducidos con fines académicos. Fuentes: Badger Meter (s. f.), Opti (s. f.) e Itron (s. f.); el logotipo de Qlic es elaboración propia.
 
 ### Anexo B. Consentimiento y tratamiento de evidencias
 
