@@ -43,14 +43,7 @@ GitHub. (s. f.). *GitHub documentation*. https://docs.github.com/
 
 ### Anexo A. Registro de entrevistas
 
-El registro de entrevistas corresponde al apartado **2.2.2. Registro de entrevistas** del Capítulo II. Para cada segmento se deben registrar entre tres y cinco entrevistas. Cada ficha contiene:
-
-- nombre del entrevistado, edad, profesión o rol y distrito/departamento;
-- inicio y fin de la entrevista dentro del video consolidado;
-- enlace al video de OneDrive y captura de la entrevista;
-- resumen de respuestas, características objetivas y subjetivas, tecnología, canales y evidencia temporal.
-
-Los espacios no deben llenarse con información inventada. Los datos se agregan después de realizar y revisar cada entrevista.
+El registro de entrevistas se presenta en el apartado **2.2.2. Registro de entrevistas** del Capítulo II.
 
 ### Anexo B. Recursos gráficos del análisis competitivo
 
