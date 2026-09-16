@@ -41,18 +41,7 @@ GitHub. (s. f.). *GitHub documentation*. https://docs.github.com/
 
 ## 5.3. Anexos
 
-### Anexo A. Registro de entrevistas
-
-El registro de entrevistas se presenta en el apartado **2.2.2. Registro de entrevistas** del Capítulo II. Para cada segmento se consideran entre tres y cinco entrevistas. Cada ficha incluye:
-
-- nombre del entrevistado, edad, profesión o rol y distrito/departamento;
-- inicio y fin de la entrevista dentro del video consolidado;
-- enlace al video y captura de la entrevista;
-- resumen de respuestas, características objetivas y subjetivas, tecnología, canales y evidencia temporal.
-
-La información se completa después de realizar y revisar cada entrevista.
-
-### Anexo B. Recursos gráficos del análisis competitivo
+### Anexo A. Recursos gráficos del análisis competitivo
 
 Los logos utilizados en el landscape corresponden al apartado **2.1.1. Análisis competitivo** del Capítulo II.
 
@@ -64,10 +53,10 @@ Los logos utilizados en el landscape corresponden al apartado **2.1.1. Análisis
 
 ![Logo de Qlic](../images/competitors/qlic.jpg)
 
-### Anexo C. Consentimiento y tratamiento de evidencias
+### Anexo B. Consentimiento y tratamiento de evidencias
 
 Antes de grabar una entrevista, el entrevistador debe explicar el propósito académico, la duración, el uso del video y la posibilidad de no responder. La captura y el enlace se incluirán únicamente cuando exista autorización del participante. Los nombres, imágenes y enlaces privados deben manejarse solo para la evaluación del curso.
 
-### Anexo D. Evidencias de colaboración y control de versiones
+### Anexo C. Evidencias de colaboración y control de versiones
 
 La evidencia final debe incluir capturas del historial de GitHub, ramas por capítulo, commits con Conventional Commits y la integración de los avances mediante GitFlow. Las capturas de colaboración, exposición y herramientas se agregarán cuando el equipo consolide la versión final del informe.
