@@ -4,9 +4,9 @@
 
 ## 2.1. Competidores
 
-Qlic propone una solución móvil para que propietarios y administradores de PYMES, así como responsables de hogares, visualicen el consumo de agua, identifiquen anomalías y tomen decisiones oportunas. Para evitar comparar productos de dominios distintos sin explicarlo, se tomó como punto de partida el repositorio guía de WASD25, cuya rama chapter-2 analiza Qlic con los segmentos PYMES y hogares y propone como referentes a Badger Meter, Itron y OptiRTC. La selección fue corroborada con las páginas oficiales vigentes de cada organización.
+Qlic propone una solución móvil para que propietarios y administradores de PYMES, así como responsables de hogares, visualicen el consumo de agua, identifiquen anomalías y tomen decisiones oportunas. Para evitar comparar productos de dominios distintos sin explicarlo, se tomó como punto de partida el repositorio guía de WASD25, cuya rama chapter-2 analiza Qlic con los segmentos PYMES y hogares y propone como referentes a Badger Meter, Itron y OptiRTC. La selección fue corroborada con las páginas oficiales vigentes de cada organización (WASD25, 2026; Badger Meter, s. f.; Itron, s. f.; Opti, s. f.).
 
-Badger Meter e Itron son referentes directos de smart water a escala de utilities, ciudades y operaciones comerciales; OptiRTC es un competidor adyacente de gestión de agua pluvial con IoT y control adaptativo. Los tres compiten por la necesidad de convertir datos hídricos en decisiones, aunque Qlic busca una experiencia móvil localizada para PYMES y hogares. Wint se conserva como benchmark secundario de detección de fugas comerciales, pero no reemplaza el conjunto comparable de la guía.
+Badger Meter e Itron son referentes directos de smart water a escala de utilities, ciudades y operaciones comerciales; OptiRTC es un competidor adyacente de gestión de agua pluvial con IoT y control adaptativo. Los tres compiten por la necesidad de convertir datos hídricos en decisiones, aunque Qlic busca una experiencia móvil localizada para PYMES y hogares. Wint se conserva como benchmark secundario de detección de fugas comerciales, pero no reemplaza el conjunto comparable de la guía (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
 
 ### 2.1.1. Análisis competitivo
 
@@ -27,7 +27,7 @@ Badger Meter e Itron son referentes directos de smart water a escala de utilitie
 |---|---|---|---|
 | <img src="../images/competitors/qlic.jpg" alt="Logotipo de Qlic" width="150"><br>**Qlic** | <img src="../images/competitors/badger-meter.jpg" alt="Logotipo de Badger Meter" width="150"><br>[**Badger Meter**](https://www.badgermeter.com/blueedge/) | <img src="../images/competitors/itron.jpg" alt="Logotipo de Itron" width="150"><br>[**Itron**](https://emea.itron.com/categories/smart-water-solutions) | <img src="../images/competitors/optirtc.jpg" alt="Logotipo de Opti" width="150"><br>[**OptiRTC / Opti**](https://www.optirtc.com/solution) |
 
-*Fuente de los logotipos:* assets de la rama chapter-2 del repositorio guía de WASD25. Antes de la entrega, el equipo debe conservar únicamente activos cuyo uso académico esté autorizado.
+*Fuente de los logotipos:* assets de la rama chapter-2 del repositorio guía de WASD25 (WASD25, 2026). Antes de la entrega, el equipo debe conservar únicamente activos cuyo uso académico esté autorizado y mantener la atribución de las marcas de terceros.
 
 | Dimensión | Qlic (propuesta) | Badger Meter | Itron | OptiRTC |
 |---|---|---|---|---|
@@ -39,7 +39,7 @@ Badger Meter e Itron son referentes directos de smart water a escala de utilitie
 | **Precios y costos** | Modelo y precio por validar con usuarios y costos de operación; no se declara una tarifa en AV1. | No publica una tarifa estándar; su sitio dirige a solicitar una cotización. | Soluciones empresariales cuyo costo depende del despliegue, infraestructura y servicio contratado. | Precio sujeto al proyecto, activos, integración y operación; no se muestra una tarifa estándar. |
 | **Canales de distribución** | Aplicación móvil, aliados de instalación y canales digitales dirigidos a PYMES y hogares; hipótesis por validar. | Venta consultiva, servicios de implementación y plataformas web/campo. | Venta a utilities, partners, infraestructura conectada y plataformas de gestión. | Proyectos de infraestructura, portal web, APIs y servicios de implementación. |
 
-Las capacidades se corroboraron con las fuentes oficiales: BlueEdge declara medición, conectividad y analítica para operaciones de agua; Itron documenta dispositivos, redes, leak sensing y plataformas para utilities; Opti describe monitoreo continuo, pronósticos, control adaptativo, dashboard y APIs. Estas evidencias confirman que la guía escogió competidores del mismo dominio, aunque a una escala mayor que el alcance inicial de Qlic. Wint se mantiene como referencia secundaria porque su plataforma comercial añade detección de anomalías y cierre remoto, útil para comparar la respuesta ante fugas, pero no forma parte del conjunto base de la guía.
+Las capacidades se corroboraron con las fuentes oficiales: BlueEdge declara medición, conectividad y analítica para operaciones de agua; Itron documenta dispositivos, redes, leak sensing y plataformas para utilities; Opti describe monitoreo continuo, pronósticos, control adaptativo, dashboard y APIs. Estas evidencias confirman que la guía escogió competidores del mismo dominio, aunque a una escala mayor que el alcance inicial de Qlic. Wint se mantiene como referencia secundaria porque su plataforma comercial añade detección de anomalías y cierre remoto, útil para comparar la respuesta ante fugas, pero no forma parte del conjunto base de la guía (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.). Las columnas de Qlic, precios y canales son hipótesis o inferencias de alcance para validar; no constituyen funcionalidades implementadas.
 
 #### Análisis SWOT
 
@@ -52,9 +52,11 @@ El FODA es preliminar y orienta las entrevistas; no sustituye evidencia de usuar
 | **Itron** | Infraestructura, conectividad, analítica y experiencia con utilities y ciudades en múltiples países. | Enfoque de infraestructura que puede quedar lejos de la necesidad cotidiana de un hogar o una PYME. | Integraciones con utilities, educación del consumidor y soluciones de conservación. | Licitaciones, ciclos de compra largos y alternativas más simples de instalación. |
 | **OptiRTC / Opti** | Control adaptativo, pronósticos, sensores, APIs y experiencia en resiliencia de aguas pluviales. | Dominio principal distinto al monitoreo de fugas de consumo; no es una solución residencial directa. | Extender analítica a pequeños sistemas y crear alianzas con municipios. | Soluciones especializadas en stormwater, cambios regulatorios y complejidad de infraestructura. |
 
+*Base del FODA:* las fortalezas, oportunidades y amenazas se derivan de las capacidades y mercados comunicados por cada organización; las debilidades y oportunidades de adaptación de Qlic son hipótesis de investigación para validar con entrevistas (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.).
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-Las siguientes estrategias convierten la comparación en hipótesis accionables para Qlic. Deben validarse mediante el diseño de entrevistas antes de convertirse en requisitos.
+Las siguientes estrategias convierten la comparación en hipótesis accionables para Qlic. Deben validarse mediante el diseño de entrevistas antes de convertirse en requisitos. Se apoyan en la escala, interoperabilidad y automatización comunicadas por los referentes; la aplicación móvil, el soporte local y los indicadores propuestos siguen siendo decisiones de diseño por comprobar (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
 
 | Estrategia | Tácticas iniciales | Competidor / hallazgo atendido | Indicador a validar |
 |---|---|---|---|
@@ -64,13 +66,6 @@ Las siguientes estrategias convierten la comparación en hipótesis accionables 
 | **Respuesta ante fugas y anomalías** | Diseñar un flujo de alerta, confirmación, escalamiento y contacto de soporte; no prometer corte automático antes de validar riesgos. | Wint y las suites de medición convierten detección en acción. | Tipo de incidente, tiempo de respuesta y confianza para seguir una recomendación. |
 | **Soporte y confianza local** | Validar instalación guiada, acompañamiento remoto, privacidad, continuidad sin conexión y derivación a técnicos. | La escala de los competidores no garantiza soporte cercano para PYMES y hogares locales. | Condiciones para autorizar sensores, canal de soporte y señales de confianza. |
 | **Sostenibilidad con evidencia** | Mostrar ahorro, consumo y tendencias solo cuando el usuario pueda interpretarlos y relacionarlos con una decisión. | Los competidores comunican eficiencia y conservación; Qlic debe probar qué métrica es útil. | Métricas consultadas, frecuencia de revisión y decisión que cambia gracias al dato. |
-
-#### Referentes oficiales consultados
-
-- Badger Meter. (s. f.). *BlueEdge Suite of Scalable Solutions*. https://www.badgermeter.com/blueedge/
-- Itron. (s. f.). *Smart Water Solutions*. https://emea.itron.com/categories/smart-water-solutions
-- Opti. (s. f.). *The Opti Solution*. https://www.optirtc.com/solution
-- Wint. (s. f.). *Commercial Water Management & Leak Prevention Solutions*. https://wint.ai/
 
 ## 2.2. Entrevistas
 
@@ -215,4 +210,4 @@ Copiar esta ficha una vez por cada participante y reemplazar los campos entre co
 - Itron. (s. f.). *Smart Water Solutions*. https://emea.itron.com/categories/smart-water-solutions
 - Opti. (s. f.). *The Opti Solution*. https://www.optirtc.com/solution
 - Wint. (s. f.). *Commercial Water Management & Leak Prevention Solutions*. https://wint.ai/
-- WASD25. (2026). *Final report* [Repositorio de referencia, rama chapter-2]. https://github.com/wasd25/final-report/tree/chapter-2
+- WASD25. (2026). *Final report* [Repositorio de referencia, commit de la rama chapter-2]. https://github.com/wasd25/final-report/commit/d20b2590634c838e893e4e25daf8ed83b41054a5
