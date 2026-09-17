@@ -1,9 +1,3 @@
-# Qlic — Project Report
-
-Informe integrado del trabajo final del curso **Aplicaciones para Dispositivos Móviles** (1ACC0238, NRC 13984), Universidad Peruana de Ciencias Aplicadas.
-
----
-
 <div align="center">
    <img src="images/upc_logo.png" alt="upc_logo.png" style="display: block; margin: 0 auto;" width="180"/>
 
