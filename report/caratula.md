@@ -1,0 +1,230 @@
+<div align="center">
+   <img src="../images/upc_logo.png" alt="upc_logo.png" style="display: block; margin: 0 auto;" width="180"/>
+
+<br><br>
+
+   <p>Universidad Peruana de Ciencias Aplicadas</p>
+   <p>Carrera de Ingeniería de Software</p>
+
+   <br>
+   <p><strong>1ACC0238</strong></p>
+   <p><strong>Aplicaciones para Dispositivos Móviles</strong></p>
+   <p>NRC</p>
+   <p><strong>13984</strong></p>
+   <h3>Informe del Trabajo Final</h3>
+   <p>Docente</p>
+   <p><strong>Quevedo Velasco, David Gerardo</strong></p>
+   <p>Equipo</p>
+   <p><strong>WASD</strong></p>
+
+   <br>
+   <p>Proyecto</p>
+   <p><strong>Qlic</strong></p>
+
+   <br>
+   <p><strong>Integrantes</strong></p>
+   <p><strong>Código&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apellidos y Nombres</strong></p>
+   <p>u201823654&nbsp;&nbsp;&nbsp;&nbsp;Avila Palacios, Aaron Alexander</p>
+   <p>u202311077&nbsp;&nbsp;&nbsp;&nbsp;Briceño Llanos, Ayrton Omar</p>
+   <p>u20241e356&nbsp;&nbsp;&nbsp;&nbsp;Conde Huashuayo, Sebasthian Alex</p>
+   <p>u20211a118&nbsp;&nbsp;&nbsp;&nbsp;Condori Lozano, Alessandro Ramiro</p>
+
+   <br>
+   <p><strong>Período 202620</strong></p>
+   <br>
+   <p><strong>Setiembre 2026</strong></p>
+</div>
+
+<div style="page-break-before: always;"></div>
+
+---
+# Registro de Versiones del Informe
+
+| Versión | Fecha                       | Autor                               | Descripción de modificación                                                                                                                                              |
+|---------|-----------------------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0     | 2026-09-01                  | Condori Lozano, Alessandro Ramiro   | Creación del repositorio del Project Report y estructura inicial del informe.                                                                                            |
+| 1.1     | 2026-09-10                  | Briceño Llanos, Ayrton Omar         | Redacción de la sección 1.2.1 Antecedentes y Problemática aplicando la técnica 5W-2H y referencias bibliográficas en formato APA 7.                                      |
+| 1.2     | 2026-09-12                  | Briceño Llanos, Ayrton Omar         | Reestructuración de la sección 1.2.2 Lean UX: formulación de assumptions en 5 categorías y redacción de hypothesis statements 1:1 con criterios de validación.           |
+| 1.3     | 2026-09-13                  | Briceño Llanos, Ayrton Omar         | Definición y desarrollo de la sección 1.3 Segmentos Objetivos (PYMES y Hogares) con perfiles demográficos, canales digitales, dispositivos y sustento estadístico APA 7. |
+| 1.4     | 2026-09-14                  | Conde Huashuayo, Sebasthian Alex    | Incorporación de objetivos SMART profesionales y redacción del aporte individual para la matriz ABET Student Outcome 7 (AV1).                                            |
+| 1.5     | 2026-09-14                  | Briceño Llanos, Ayrton Omar         | Elaboración de la sección Objetivos SMART profesionales individuales post-graduación estructurados por dimensiones S-M-A-R-T.                                            |
+| 1.6     | 2026-09-15                  | Briceño Llanos, Ayrton Omar         | Ajustes de estilo, centrado de portada y actualización del control de versiones del informe.                                                                             |
+| 1.7     | 2026-09-15                  | Avila Palacios, Aaron Alexander     | Incorporación del análisis competitivo de Badger Meter, Itron y OptiRTC; definición de estrategias y diseño de entrevistas para PYMES y hogares en el Capítulo II.       |
+| 1.8     | 2026-09-16                  | Condori Lozano, Alessandro Ramiro   | Adaptación de la sección 1.1 Startup Profile al enfoque de Aplicaciones para Dispositivos Móviles; incorporación del perfil y fotografía del integrante Alessandro Ramiro Condori Lozano. |
+| 1.9     | 2026-09-16                  | Briceño Llanos, Ayrton Omar         | Redacción de la organización colaborativa del equipo (Trello, WhatsApp, Gitflow) y redacción del aporte individual para la matriz de evaluación ABET Student Outcome 7. |
+| 2.0     | 2026-09-17                  | Briceño Llanos, Ayrton Omar         | Elaboración del resumen de entrevista, ficha de User Persona (Claudia Morales) y Empathy Map para el segmento Hogares y Familias.                                        |
+| 2.1     | 2026-09-17                  | Briceño Llanos, Ayrton Omar         | Depuración y priorización por valor de negocio del Product Backlog (US01 a US38), asignación de Story Points y estructuración del User Journey Map As-Is del segmento Hogares. |---
+
+# Project Report Collaboration Insights
+
+**Organización de GitHub:** **https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov**
+
+**Repositorio del Project Report:** **https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report**
+
+**Convenciones aplicadas:** GitFlow y Conventional Commits.
+
+## Entrega AV1
+
+Para la elaboración del presente informe, el equipo coordinó sus actividades combinando metodologías ágiles y herramientas digitales colaborativas. La gestión y asignación de tareas se centralizó en Trello mediante un tablero estructurado por entregables y estados de avance, mientras que WhatsApp se utilizó como canal principal para la comunicación rápida, sincronización diaria y resolución de dudas puntuales. Cada integrante asumió la responsabilidad de secciones específicas del documento, complementando el trabajo individual con sesiones periódicas de revisión conjunta para asegurar la coherencia temática y técnica en todo el contenido.
+
+En cuanto al control de versiones, el proyecto se gestionó en GitHub siguiendo el modelo de trabajo Gitflow y las pautas de Conventional Commits para mantener un historial trazable y estandarizado. El equipo organizó el desarrollo del reporte creando ramas dedicadas para cada capítulo del documento (por ejemplo, `chapter1`), lo que permitió trabajar de manera paralela e independiente sin generar conflictos. Asimismo, se mantuvo una frecuencia constante de commits a medida que se completaban los artefactos, validando y fusionando los avances en la rama principal tras revisiones colaborativas del equipo.
+
+**Evidencia de colaboración:**
+
+El historial del repositorio muestra trabajo distribuido en ramas dedicadas a
+la carátula y a los capítulos 1, 2 y 5. Los cambios se integraron mediante
+commits con mensajes descriptivos y revisiones entre integrantes. Las capturas
+de GitHub Insights se conservarán como evidencia visual en la versión final
+del PDF cuando se exporten desde el repositorio.
+
+**Interpretación del equipo:** El trabajo se organizó de forma paralela por
+entregable. La mayor actividad se concentró en el capítulo 2, donde se
+consolidaron entrevistas, needfinding, backlog y diseño de la solución;
+carátula, capítulo 1 y capítulo 5 reunieron los componentes complementarios
+del informe. Para mantener un aporte equilibrado, el equipo revisó los cambios
+antes de integrarlos y mantuvo una rama por capítulo, reduciendo conflictos y
+facilitando la trazabilidad.
+
+---
+
+# Contenido
+
+- [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
+    - [Entrega AV1](#entrega-av1)
+- [Contenido](#contenido)
+- [Student Outcome](#student-outcome)
+- [Objetivos SMART](#objetivos-smart)
+    - [Avila Palacios, Aaron Alexander](#avila-palacios-aaron-alexander)
+    - [Briceño Llanos, Ayrton Omar](#briceño-llanos-ayrton-omar)
+    - [Conde Huashuayo, Sebasthian Alex](#conde-huashuayo-sebasthian-alex)
+    - [Condori Lozano, Alessandro Ramiro](#condori-lozano-alessandro-ramiro)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
+    - [1.1. Startup Profile](#11-startup-profile)
+        - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+        - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+    - [1.2. Solution Profile](#12-solution-profile)
+        - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+        - [1.2.2. Lean UX Process](#122-lean-ux-process)
+            - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+            - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+            - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+            - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+    - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+        - [Segmento objetivo #1: PYMES y Comercios Locales](#segmento-objetivo-1-pymes-y-comercios-locales)
+        - [Segmento objetivo #2: Hogares y Familias](#segmento-objetivo-2-hogares-y-familias)
+- [Capítulo II: Requirements Development and Software Solution Design](#capítulo-ii-requirements-development-and-software-solution-design)
+    - [2.1. Competidores](#21-competidores)
+        - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+            - [Competitive Analysis Landscape](#competitive-analysis-landscape)
+        - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+    - [2.2. Entrevistas](#22-entrevistas)
+        - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+            - [Participantes y muestra](#participantes-y-muestra)
+            - [Segmento 1: PYMES y comercios locales](#segmento-1-pymes-y-comercios-locales)
+            - [Segmento 2: Hogares y familias](#segmento-2-hogares-y-familias)
+        - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+            - [Primer segmento - PYMES y comercios locales](#primer-segmento---pymes-y-comercios-locales)
+            - [Segundo segmento - Hogares y familias](#segundo-segmento---hogares-y-familias)
+        - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+            - [Análisis del segmento PYMES y comercios locales](#análisis-del-segmento-pymes-y-comercios-locales)
+            - [Análisis del segmento hogares y familias](#análisis-del-segmento-hogares-y-familias)
+    - [2.3. Needfinding](#23-needfinding)
+        - [2.3.1. User Personas](#231-user-personas)
+        - [2.3.2. User Task Matrix](#232-user-task-matrix)
+        - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+        - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+        - [2.3.5. Big Picture EventStorming](#235-big-picture-eventstorming)
+        - [2.3.6. Ubiquitous Language](#236-ubiquitous-language)
+    - [2.4. Requirements specification](#24-requirements-specification)
+        - [2.4.1. User Stories](#241-user-stories)
+            - [Epics](#epics)
+            - [User Stories](#user-stories)
+            - [Technical Stories](#technical-stories)
+            - [Spike Stories](#spike-stories)
+        - [2.4.2. Impact Mapping](#242-impact-mapping)
+        - [2.4.3. Product Backlog](#243-product-backlog)
+    - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
+        - [2.5.1. EventStorming](#251-eventstorming)
+            - [2.5.1.1. Candidate Context Discovery](#2511-candidate-context-discovery)
+            - [2.5.1.2. Domain Message Flows Modeling](#2512-domain-message-flows-modeling)
+            - [2.5.1.3. Bounded Context Canvases](#2513-bounded-context-canvases)
+        - [2.5.2. Context Mapping](#252-context-mapping)
+        - [2.5.3. Software Architecture](#253-software-architecture)
+            - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
+            - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
+            - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
+    - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+        - [2.6.1. Bounded Context: Alerting](#261-bounded-context-alerting)
+            - [2.6.1.1. Domain Layer](#2611-domain-layer)
+            - [2.6.1.2. Interface Layer](#2612-interface-layer)
+            - [2.6.1.3. Application Layer](#2613-application-layer)
+            - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
+            - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+            - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+                - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+                - [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
+        - [2.6.2. Bounded Context: Consumption Analytics](#262-bounded-context-consumption-analytics)
+        - [2.6.3. Bounded Context: Device Monitoring](#263-bounded-context-device-monitoring)
+        - [2.6.4. Bounded Context: Subscriptions](#264-bounded-context-subscriptions)
+        - [2.6.5. Bounded Context: IAM](#265-bounded-context-iam)
+        - [2.6.6. Bounded Context: Support](#266-bounded-context-support)
+- [Capítulo V: Conclusiones, Bibliografía y Anexos](#capítulo-v-conclusiones-bibliografía-y-anexos)
+    - [5.1. Conclusiones](#51-conclusiones)
+    - [5.2. Bibliografía](#52-bibliografía)
+        - [5.2.1. Dominio de negocio y competidores](#521-dominio-de-negocio-y-competidores)
+        - [5.2.2. Métodos y técnicas de ingeniería de software](#522-métodos-y-técnicas-de-ingeniería-de-software)
+        - [5.2.3. Herramientas y documentación técnica](#523-herramientas-y-documentación-técnica)
+    - [5.3. Anexos](#53-anexos)
+        - [Anexo A. Recursos gráficos del análisis competitivo](#anexo-a-recursos-gráficos-del-análisis-competitivo)
+---
+
+# Student Outcome
+
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC – Student Outcome 7**
+
+**Criterio:** La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC – Student Outcome 7.
+
+| Criterio específico                                                                                                                     | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Conclusiones                                         |
+|-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Avila Palacios, Aaron Alexander**<br>*AV1:* Investigué las capacidades de monitoreo hídrico, detección de fugas y alertas móviles de Wint, Flo by Moen y Phyn. Transformé los hallazgos en el Competitive Analysis Landscape, el análisis SWOT y las estrategias de diferenciación de Qlic. Asimismo, diseñé el protocolo semiestructurado y la plantilla de registro de entrevistas para PYMES y hogares, vinculando cada pregunta con variables necesarias para los User Personas.<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* Investigué y apliqué de forma autónoma la metodología Lean UX para estructurar los supuestos del proyecto en cinco categorías formales y formular hipótesis testeables con criterios de validación medibles. Asimismo, analicé normativas y reportes estadísticos actualizados (SUNASS, MVCS, BID) y estándares de citación APA 7 para contextualizar con rigor técnico la problemática hídrica del producto Qlic.<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Apliqué técnicas de needfinding para convertir las entrevistas en User Personas, User Task Matrix, User Journey y Empathy Maps. También estudié EventStorming y Ubiquitous Language para representar el dominio de Qlic y conectar las necesidades de PYMES y hogares con una solución móvil e IoT.<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* Revisé y adapté la descripción de la startup WASD al enfoque del curso de Aplicaciones para Dispositivos Móviles, manteniendo la propuesta de valor de Qlic como solución móvil conectada con dispositivos IoT. Asimismo, completé mi perfil de integrante con información sobre mi formación en Ingeniería de Software, experiencia en el área de sistemas y habilidades técnicas. | *AV1:* Como equipo, actualizamos conocimientos de benchmarking, Lean UX, entrevistas, needfinding y modelado del dominio. La integración de estos aprendizajes permitió reducir supuestos y sustentar la propuesta móvil de Qlic en evidencia de usuarios y criterios técnicos. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  | **Avila Palacios, Aaron Alexander**<br>*AV1:* Identifiqué que el desarrollo profesional en aplicaciones móviles exige actualizar de manera continua competencias en arquitectura móvil, integración de servicios IoT, investigación UX y accesibilidad. Por ello definí objetivos SMART orientados a construir un portafolio móvil verificable y a incorporarme a un rol de desarrollo móvil después de la graduación.<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* Reconocí la importancia de la capacitación continua al formular mis metas profesionales post-graduación bajo el estándar SMART, identificando que la certificación internacional de inglés y el dominio de nuevas arquitecturas de software son esenciales para mantener la competitividad profesional ante las constantes demandas de la industria tecnológica.<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Reconocí que el desarrollo móvil requiere aprendizaje continuo en Kotlin, arquitectura, integración de APIs e IoT, UX y accesibilidad. La elaboración de los artefactos de needfinding me mostró la importancia de validar las decisiones con usuarios y de actualizarme mediante documentación y buenas prácticas.<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* Reconocí la importancia del aprendizaje permanente para fortalecer mis competencias en desarrollo de software y aplicaciones móviles. A partir de mi experiencia en el área de sistemas de un grupo de clínicas, identifiqué la necesidad de seguir actualizándome en frameworks, integración de servicios, bases de datos, control de versiones y buenas prácticas de desarrollo para responder a necesidades reales de las organizaciones. | *AV1:* El equipo reconoce que la mejora continua será necesaria para validar y desarrollar Qlic. Mantendremos objetivos de aprendizaje, revisión de documentación y validación con usuarios en los siguientes hitos del proyecto. |
+
+<div style="page-break-before: always;"></div>
+
+# Objetivos SMART
+
+En esta sección cada integrante del equipo formula un plan con al menos dos objetivos SMART orientados a su desarrollo profesional posterior a la graduación.
+
+### Avila Palacios, Aaron Alexander
+
+| # | Objetivo SMART | S (Específico) | M (Medible) | A (Alcanzable) | R (Relevante) | T (Temporal) |
+|---|---|---|---|---|---|---|
+| 1 | Construir y publicar un portafolio de dos aplicaciones Android nativas durante los 12 meses posteriores a mi graduación. | Desarrollar dos aplicaciones con Kotlin y Jetpack Compose que integren una API REST, almacenamiento local y pruebas automatizadas. | Publicar dos repositorios públicos, cada uno con README técnico, al menos 20 pruebas automatizadas y una demostración funcional en video. | Dedicar seis horas semanales a formación práctica, documentación oficial y desarrollo incremental de los proyectos. | Consolida competencias técnicas verificables para desempeñarme como desarrollador de aplicaciones móviles. | Completar y publicar ambos proyectos dentro de los 12 meses posteriores a la graduación. |
+| 2 | Obtener una posición de desarrollo móvil junior durante los 12 meses posteriores a mi graduación. | Postular a roles de desarrollo Android o multiplataforma y preparar un portafolio, CV técnico y entrevistas de programación. | Realizar al menos 20 postulaciones calificadas, cinco simulaciones de entrevista técnica y aceptar una oferta laboral para un rol móvil junior. | Reutilizar los proyectos del portafolio, participar en comunidades técnicas y mantener una rutina semanal de preparación de entrevistas. | Permite aplicar de forma profesional las competencias de desarrollo móvil, colaboración y aprendizaje continuo adquiridas en la carrera. | Aceptar una oferta laboral dentro de los 12 meses posteriores a la graduación. |
+
+### Briceño Llanos, Ayrton Omar
+
+| # | Objetivo SMART                                                                                                                                                                              | S (Específico)                                                                                                                             | M (Medible)                                                                                                                                                           | A (Alcanzable)                                                                                                                                                | R (Relevante)                                                                                                                                                                                 | T (Temporal)                                                                                                        |
+|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| 1 | Obtener el certificado internacional de inglés C1 Advanced (CAE) o C2 Proficiency (CPE) de Cambridge Assessment English mediante un plan intensivo de preparación lingüística.              | Rendir y aprobar el examen oficial de Cambridge English para certificar formalmente un dominio avanzado/bilingüe del idioma inglés.        | Lograr un puntaje general mínimo de 180 (C1) o superior en la escala Cambridge English Scale en el reporte de resultados oficial.                                     | Dedicar 6 horas semanales a la práctica dirigida de papers de evaluación (Reading, Use of English, Writing, Listening y Speaking) y simulacros cronometrados. | Acredita internacionalmente el dominio profesional del idioma ante corporaciones tecnológicas globales, facilitando la postulación a empleos remotos y programas de posgrado internacionales. | Rendir y aprobar el examen en un plazo no mayor a 6 meses posteriores a la culminación de la carrera universitaria. |
+| 2 | Alcanzar la posición de Ingeniero de Software Mid-Level en una empresa tecnológica con alcance regional o internacional mediante la participación activa en procesos de selección técnicos. | Postular, superar los filtros de arquitectura/código y ser contratado como Software Engineer (Mid-Level) en el área de desarrollo backend. | Recibir y aceptar al menos una oferta laboral formal para un rol Mid-Level con un incremento salarial competitivo y responsabilidades directas en diseño de sistemas. | Desarrollar un portafolio de proyectos open source en GitHub con buenas prácticas de arquitectura de software, patrones de diseño y testing automatizado.     | Consolida la transición de egresado junior a ingeniero autónomo capaz de liderar módulos críticos y tomar decisiones de arquitectura técnica.                                                 | Conseguir la contratación dentro de los primeros 12 meses posteriores a la graduación.                              |
+
+### Conde Huashuayo, Sebasthian Alex
+
+| # | Objetivo SMART | S | M | A | R | T |
+|---|---|---|---|---|---|---|
+| 1 | Completar y publicar un portafolio de dos aplicaciones móviles centradas en la experiencia de usuario durante los 12 meses posteriores a mi graduación. | Diseñar y desarrollar dos aplicaciones Android con Kotlin que integren navegación, una API REST y pruebas de usabilidad. | Publicar dos repositorios documentados y realizar al menos 10 pruebas de usabilidad por proyecto, registrando resultados y mejoras. | Dedicar seis horas semanales a Kotlin, Jetpack Compose, UX y documentación oficial. | Fortalece mis competencias de desarrollo móvil y diseño centrado en usuarios, alineadas con mi participación en Qlic. | Completar y publicar ambos proyectos en los 12 meses posteriores a la graduación. |
+| 2 | Conseguir una posición junior en desarrollo móvil o UX técnico dentro de los 12 meses posteriores a mi graduación. | Preparar CV, portafolio y demostraciones para postular a roles Android, frontend móvil o UX engineering. | Realizar al menos 20 postulaciones y cinco simulaciones de entrevista, obteniendo al menos tres entrevistas reales. | Usar los proyectos del portafolio y participar en cursos y comunidades técnicas para mejorar mis habilidades. | Permite aplicar la investigación de usuarios y el modelado de requisitos junto con el desarrollo móvil en un entorno profesional. | Conseguir una oferta dentro de los 12 meses posteriores a la graduación. |
+
+### Condori Lozano, Alessandro Ramiro
+
+| # | Objetivo SMART | S | M | A | R | T |
+|---|---|---|---|---|---|---|
+| 1 | Desarrollar y publicar una aplicación móvil funcional relacionada con la gestión de recursos durante los 12 meses posteriores a mi graduación. | Diseñar y desarrollar una aplicación móvil que integre una interfaz intuitiva, consumo de una API REST, almacenamiento de datos y una funcionalidad útil para usuarios reales. | Publicar un repositorio documentado, una demostración funcional y completar al menos 20 pruebas o casos de validación. | Dedicar seis horas semanales al aprendizaje y desarrollo, utilizando recursos oficiales, proyectos prácticos y revisiones periódicas. | Me permitirá fortalecer mis competencias en desarrollo móvil y aplicar los conocimientos adquiridos en la carrera y en mi experiencia laboral en sistemas. | Completar y publicar la aplicación dentro de los 12 meses posteriores a la graduación. |
+| 2 | Conseguir una posición como desarrollador de software junior o desarrollador de aplicaciones móviles dentro de los 12 meses posteriores a mi graduación. | Preparar un CV técnico, portafolio y postular a oportunidades relacionadas con desarrollo web, backend o aplicaciones móviles. | Realizar al menos 20 postulaciones, completar cinco simulaciones de entrevistas técnicas y participar en procesos de selección. | Mantener una rutina semanal de preparación, mejorar mis conocimientos de JavaScript, Java, bases de datos, frameworks y control de versiones. | Permitirá consolidar mi desarrollo profesional y aprovechar mi experiencia previa en el área de sistemas de una organización de salud. | Conseguir una oferta laboral dentro de los 12 meses posteriores a la graduación. |
+---
