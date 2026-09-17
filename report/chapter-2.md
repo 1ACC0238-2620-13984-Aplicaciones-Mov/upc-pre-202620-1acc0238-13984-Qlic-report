@@ -187,7 +187,6 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 
 | Campo | Registro |
 |---|---|
-| **ENTREVISTA 2** | **[COMPLETAR]** |
 | Nombre entrevistado | **[COMPLETAR]** |
 | Edad | **[COMPLETAR]** |
 | Profesión / rol | **[COMPLETAR]** |
@@ -202,7 +201,6 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 
 | Campo | Registro |
 |---|---|
-| **ENTREVISTA 3** | **[COMPLETAR]** |
 | Nombre entrevistado | **[COMPLETAR]** |
 | Edad | **[COMPLETAR]** |
 | Profesión / rol | **[COMPLETAR]** |
@@ -219,7 +217,6 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 
 | Campo | Registro |
 |---|---|
-| **ENTREVISTA 1** | **[COMPLETAR]** |
 | Nombre entrevistado | **[COMPLETAR]** |
 | Edad | **[COMPLETAR]** |
 | Profesión / rol | **[COMPLETAR]** |
@@ -234,7 +231,6 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 
 | Campo | Registro |
 |---|---|
-| **ENTREVISTA 2** | **[COMPLETAR]** |
 | Nombre entrevistado | **[COMPLETAR]** |
 | Edad | **[COMPLETAR]** |
 | Profesión / rol | **[COMPLETAR]** |
@@ -249,7 +245,6 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 
 | Campo | Registro |
 |---|---|
-| **ENTREVISTA 3** | **[COMPLETAR]** |
 | Nombre entrevistado | **[COMPLETAR]** |
 | Edad | **[COMPLETAR]** |
 | Profesión / rol | **[COMPLETAR]** |
