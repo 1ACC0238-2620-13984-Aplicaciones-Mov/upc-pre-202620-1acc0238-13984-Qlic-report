@@ -162,7 +162,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 ### 2.2.2. Registro de entrevistas
 
-En este avance se registran tres entrevistas: dos de PYMES y comercios locales, y una de hogares y familias. Cada ficha contiene los datos disponibles del entrevistado, el tramo de video, el enlace, la captura y el resumen de sus respuestas.
+Se registran tres entrevistas: dos de PYMES y comercios locales, y una de hogares y familias. Cada ficha contiene los datos disponibles del entrevistado, el tramo de video, el enlace, la captura y el resumen de sus respuestas.
 
 #### Primer segmento - PYMES y comercios locales
 
@@ -235,7 +235,7 @@ Este avance consolida tres entrevistas: dos del segmento PYMES y comercios local
 | Uso de smartphone y aplicaciones digitales | 1 de 1 | 100 % | Wendy: Android, Chrome, WhatsApp, banca móvil y apps de servicios |
 | Preferencia por una solución sencilla, preventiva y de costo accesible | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
 
-La entrevista de hogares se interpreta como evidencia exploratoria del caso de Wendy Zuñiga. Se requieren más participantes para generalizar estos patrones al segmento completo.
+La entrevista de hogares se interpreta como evidencia exploratoria del caso de Wendy Zuñiga; sus hallazgos se utilizan para orientar las decisiones iniciales de diseño del segmento.
 
 ## 2.3. Needfinding
 
