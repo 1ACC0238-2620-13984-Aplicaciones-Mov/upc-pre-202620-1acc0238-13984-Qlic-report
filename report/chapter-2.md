@@ -1264,7 +1264,7 @@ Para cada bounded context identificado el equipo elaboró su Bounded Context Can
 
 Con los bounded contexts diseñados, el equipo elaboró el Context Map que visualiza las relaciones estructurales entre ellos. El proceso consistió en revisar cada dependencia identificada en los Domain Message Flows y discutir alternativas de diseño mediante preguntas del tipo "¿qué ocurriría si movemos esta capability a otro bounded context?" o "¿qué ocurriría si duplicamos esta funcionalidad para romper la dependencia?".
 
-> *[Insertar el Context Map: images/context_mapping/Context_Map_Qlic.png]*
+<img src="../images/context_mapping/Context_Map_Qlic.png" alt="Context Map de la solución Qlic con los patrones de relación entre bounded contexts" width="1000">
 
 **Alternativas evaluadas y decisiones**
 
