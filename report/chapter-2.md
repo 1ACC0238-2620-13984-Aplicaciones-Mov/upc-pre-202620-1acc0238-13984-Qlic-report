@@ -131,8 +131,8 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 | Segmento | Perfil de inclusión | Cantidad requerida | Exclusión | Modalidad sugerida |
 |---|---|---:|---|---|
-| **PYMES y comercios locales** | Propietario, administrador o responsable de operaciones/mantenimiento de una PYME que participa en decisiones sobre consumo o incidencias de agua. | **3 entrevistas** | Personas que no conocen el consumo, mantenimiento ni decisiones asociadas al agua del negocio. | Presencial en el negocio o videollamada, con autorización de grabación. |
-| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre el recibo, el mantenimiento o el uso de agua del hogar. | **3 entrevistas** | Personas que no tienen experiencia ni responsabilidad sobre el consumo o mantenimiento del hogar. | Presencial o videollamada, con autorización de grabación. |
+| **PYMES y comercios locales** | Propietario, administrador o responsable de operaciones/mantenimiento de una PYME que participa en decisiones sobre consumo o incidencias de agua. | **2 entrevistas registradas** | Personas que no conocen el consumo, mantenimiento ni decisiones asociadas al agua del negocio. | Presencial en el negocio o videollamada, con autorización de grabación. |
+| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre el recibo, el mantenimiento o el uso de agua del hogar. | **1 entrevista registrada** | Personas que no tienen experiencia ni responsabilidad sobre el consumo o mantenimiento del hogar. | Presencial o videollamada, con autorización de grabación. |
 
 #### Segmento 1: PYMES y comercios locales
 
@@ -162,7 +162,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 ### 2.2.2. Registro de entrevistas
 
-Aquí registraremos tres entrevistas por cada segmento: PYMES y comercios locales, y hogares y familias. Cada ficha debe incluir los datos del entrevistado, el inicio y fin dentro del video, el enlace, una captura y un resumen descriptivo de sus respuestas.
+En este avance se registran tres entrevistas: dos de PYMES y comercios locales, y una de hogares y familias. Cada ficha contiene los datos disponibles del entrevistado, el tramo de video, el enlace, la captura y el resumen de sus respuestas.
 
 #### Primer segmento - PYMES y comercios locales
 
@@ -180,6 +180,8 @@ Aquí registraremos tres entrevistas por cada segmento: PYMES y comercios locale
 | Foto entrevista | <img src="../images/interviews/entrevista-1-edery-abanto.png" alt="Edery Abanto y Aarón Avila durante la entrevista" width="360"> |
 | Resumen | **Principales respuestas:** Actualmente revisa el recibo una vez al mes, compara el monto con el periodo anterior y registra datos de las máquinas en una libreta. Ha detectado fugas en una manguera y en el baño; una se identificó por humedad en el piso y otra por un recibo elevado. Considera útil consultar desde el celular el consumo total y sus comparaciones semanales o mensuales. Solicita alertas claras únicamente ante variaciones importantes, indicando ubicación, duración y nivel de urgencia.<br><br>**Características objetivas:** Persona entrevistada de 30 años, administrador de una lavandería ubicada en Pueblo Libre, Lima; participa en el control operativo, la revisión de recibos y la coordinación del mantenimiento del negocio.<br><br>**Características subjetivas:** Busca reducir costos y enterarse rápido de las fugas. Prefiere una solución sencilla, visual y sin conocimientos técnicos; aceptaría comenzar con un plan básico, instalación guiada y soporte cercano.<br><br>**Tecnología y canales:** Usa dispositivos Android, el celular y WhatsApp para conservar fotografías de los recibos. Le interesa que más de una persona pueda revisar la información del negocio.<br><br>**Evidencia temporal:** La revisión de recibos y registros se explica entre 00:01:46 y 00:02:16; la necesidad de reportes y alertas entre 00:02:53 y 00:03:50; y las preferencias de uso, precio y soporte entre 00:03:56 y 00:04:59. |
 
+
+
 ##### ENTREVISTA 2
 
 | Campo | Registro |
@@ -193,20 +195,6 @@ Aquí registraremos tres entrevistas por cada segmento: PYMES y comercios locale
 | Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a118_upc_edu_pe/IQCWuVodrizyQr9nL-JYmFKOAXRYdJQ4yafAgHy4TDKS24A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Fehyfa) |
 | Foto entrevista | <img src="../images/user-personas/Entrevista_Arantxa.png" alt="Arantxa Chacón Ruiz durante la entrevista" width="360"> |
 | Resumen | **Principales respuestas:** No cuenta con un control formal del consumo de agua; solo revisa el recibo cuando llega y lo deriva a administración para el pago. En uno de sus locales el agua se cobra prorrateada por el edificio, lo que le impide conocer su consumo real. Sufrió una fuga interna en el inodoro del baño de pacientes que recién detectó tras dos recibos elevados, luego de haber reclamado por error de facturación. Guarda los recibos en físico y digitalizados en Google Drive, pero no lleva un registro comparativo entre periodos. Considera muy valiosas las alertas en tiempo real, siempre que no sean frecuentes e indiquen local, gravedad, tiempo transcurrido, costo estimado y una acción inmediata a seguir. Pide reportes expresados en soles y no solo en metros cúbicos, con comparación mensual, separación por local e identificación de consumo en horarios sin actividad.<br><br>**Características objetivas:** Mujer de 28 años, nutricionista con dos locales comerciales en Lima; administra directamente el negocio, autoriza los pagos y coordina el mantenimiento correctivo. Sus recibos oscilan entre S/ 100 y S/ 150 mensuales por local. Opera en locales alquilados, uno de ellos dentro de un edificio con administración de terceros, lo que condiciona cualquier instalación.<br><br>**Características subjetivas:** Prioriza la previsibilidad de sus gastos y evitar interrupciones en la atención de pacientes, tras haber perdido citas por un corte de agua. Reconoce que actúa de forma reactiva ante fallas por falta de información. Rechaza las soluciones complejas o con exceso de notificaciones; necesita interfaces visuales e inmediatas. Aceptaría un costo cercano a S/ 50–60 mensuales por ambos locales y desconfía de comprometerse sin un periodo de prueba previo.<br><br>**Tecnología y canales:** Usa iPhone; su administradora usa Android. Maneja Instagram para el negocio y una aplicación de agendamiento de citas. Digitaliza recibos en Google Drive y coordina con su contador por WhatsApp. Requiere acceso multiusuario con permisos diferenciados y exportación del resumen para compartirlo.<br><br>**Evidencia temporal:** El control actual y los antecedentes de fugas se abordan entre 00:00:40 y 00:03:10; el impacto en costos y continuidad del negocio entre 00:03:11 y 00:04:20; los requerimientos de reportes y alertas entre 00:04:21 y 00:06:35; y las condiciones de precio, instalación y soporte entre 00:06:36 y 00:08:15. |
-
-##### ENTREVISTA 3
-
-| Campo | Registro |
-|---|---|
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
 
 #### Segundo segmento - Hogares y familias
 
@@ -222,60 +210,32 @@ Aquí registraremos tres entrevistas por cada segmento: PYMES y comercios locale
 | Fin del video | **00:06:46**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Link del video | **https://acortar.link/gfEwHp**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Foto entrevista | **![entrevistasegmento2.png](../images/interviews/entrevistasegmento2.png)**                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Resumen | **Principales respuestas:** Expresa preocupación por cobros atípicos en el recibo de agua y el riesgo de filtraciones no detectadas en su vivienda de dos pisos; manifiesta interés en una herramienta móvil conectada a sensores que alerte sobre anomalías en tiempo real sin requerir revisiones manuales constantes, y señala disposición a pagar una suscripción mensual accesible siempre que el sistema demuestre ahorro preventivo confiable.<br><br>**Características objetivas:** Mujer de 33 años, ingeniera civil que reside en el distrito de El Agustino junto a su esposo y su hijo en vivienda propia de dos niveles. Administra el presupuesto familiar y supervisa los servicios básicos del hogar (recibos de S/ 80 a S/ 120 mensuales); conoce sobre instalaciones sanitarias pero carece de tiempo para revisiones manuales continuas por su jornada laboral.<br><br>**Características subjetivas:** Analítica, metódica y preventiva; orientada a la estabilidad económica y la sostenibilidad familiar. Su principal frustración son las incongruencias de facturación y el riesgo de daños estructurales por fugas ocultas. Busca automatización del control hídrico con datos precisos y sin saturación de notificaciones. Influenciada por marcas de tecnología doméstica (Xiaomi Smart Home, Sodimac) y foros de ingeniería sostenible.<br><br>**Tecnología y canales:** Utiliza smartphone Android de gama media/alta y laptop de trabajo; usa Chrome como navegador principal; interactúa cotidianamente con WhatsApp, banca móvil (BCP, Yape) y apps de servicios. Requiere notificaciones push directas y paneles visuales simples.<br><br>**Evidencia:** [COMPLETAR: minuto de la grabación o cita textual de la entrevista, ej. 04:15 - "A veces el recibo sube sin explicación y no tengo tiempo de estar revisando el medidor a diario"] |
-##### ENTREVISTA 2
-
-| Campo | Registro |
-|---|---|
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
-
-##### ENTREVISTA 3
-
-| Campo | Registro |
-|---|---|
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
+| Resumen | **Principales respuestas:** Expresa preocupación por cobros atípicos en el recibo de agua y el riesgo de filtraciones no detectadas en su vivienda de dos pisos; manifiesta interés en una herramienta móvil conectada a sensores que alerte sobre anomalías en tiempo real sin requerir revisiones manuales constantes, y señala disposición a pagar una suscripción mensual accesible siempre que el sistema demuestre ahorro preventivo confiable.<br><br>**Características objetivas:** Mujer de 33 años, ingeniera civil que reside en el distrito de El Agustino junto a su esposo y su hijo en vivienda propia de dos niveles. Administra el presupuesto familiar y supervisa los servicios básicos del hogar (recibos de S/ 80 a S/ 120 mensuales); conoce sobre instalaciones sanitarias pero carece de tiempo para revisiones manuales continuas por su jornada laboral.<br><br>**Características subjetivas:** Analítica, metódica y preventiva; orientada a la estabilidad económica y la sostenibilidad familiar. Su principal frustración son las incongruencias de facturación y el riesgo de daños estructurales por fugas ocultas. Busca automatización del control hídrico con datos precisos y sin saturación de notificaciones. Influenciada por marcas de tecnología doméstica (Xiaomi Smart Home, Sodimac) y foros de ingeniería sostenible.<br><br>**Tecnología y canales:** Utiliza smartphone Android de gama media/alta y laptop de trabajo; usa Chrome como navegador principal; interactúa cotidianamente con WhatsApp, banca móvil (BCP, Yape) y apps de servicios. Requiere notificaciones push directas y paneles visuales simples.<br><br>**Evidencia temporal:** La ficha registra el video completo de 00:00:00 a 00:06:46; las respuestas se resumen sin atribuir citas textuales no verificadas. |
 
 ### 2.2.3. Análisis de entrevistas
 
-Esta sección consolidará los hallazgos de las tres entrevistas de cada segmento. El análisis presentará, mediante cuadros y porcentajes, las características objetivas y subjetivas más frecuentes: perfil demográfico, problemas relacionados con el consumo, objetivos, frustraciones, tecnología, canales de interacción y disposición frente a una solución móvil. Los porcentajes se calcularán sobre las tres entrevistas efectivamente registradas por segmento y cada hallazgo se vinculará con la ficha y el momento correspondiente del video.
+Este avance consolida tres entrevistas: dos del segmento PYMES y comercios locales y una del segmento hogares y familias. Los porcentajes se calculan dentro de cada segmento; el resultado de hogares es descriptivo porque corresponde a una sola entrevista y no representa estadísticamente a todas las familias.
 
 #### Análisis del segmento PYMES y comercios locales
 
-| Variable a consolidar | Resultado de las 3 entrevistas | Evidencia requerida |
-|---|---|---|
-| Control actual del consumo | Completar al cerrar la tercera entrevista | Registros 1, 2 y 3 |
-| Fugas, desperdicios o cobros inesperados | Completar al cerrar la tercera entrevista | Resúmenes y timing de cada ficha |
-| Necesidad de reportes y alertas móviles | Completar al cerrar la tercera entrevista | Respuestas de las preguntas 5 y 6 |
-| Dispositivos y canales de interacción | Completar al cerrar la tercera entrevista | Respuestas de la pregunta 7 |
-| Precio, instalación y soporte | Completar al cerrar la tercera entrevista | Respuestas de la pregunta 8 |
+| Hallazgo | Frecuencia | Porcentaje | Evidencia |
+|---|---|---|---|
+| Control manual del recibo o registro de consumo | 2 de 2 | 100 % | Edery 00:01:46–00:02:16; Arantxa 00:00:40–00:01:30 |
+| Fugas, desperdicios o cobros inesperados | 2 de 2 | 100 % | Edery 00:02:17–00:02:52; Arantxa 00:01:31–00:03:10 |
+| Interés en reportes y alertas móviles | 2 de 2 | 100 % | Edery 00:02:53–00:03:50; Arantxa 00:04:21–00:06:35 |
+| Uso de smartphone y canales digitales de apoyo | 2 de 2 | 100 % | Edery: Android y WhatsApp; Arantxa: iPhone, Android, Drive y WhatsApp |
+| Preferencia por precio accesible, instalación guiada y soporte | 2 de 2 | 100 % | Edery 00:03:56–00:04:59; Arantxa 00:06:36–00:08:15 |
 
 #### Análisis del segmento hogares y familias
 
-| Variable a consolidar | Resultado de las 3 entrevistas | Evidencia requerida |
-|---|---|---|
-| Control actual del consumo y pago del recibo | Completar al cerrar las tres entrevistas | Registros 1, 2 y 3 |
-| Fugas, medidores o cobros inesperados | Completar al cerrar las tres entrevistas | Resúmenes y timing de cada ficha |
-| Hábitos de ahorro y respuesta ante anomalías | Completar al cerrar las tres entrevistas | Respuestas de las preguntas 3 y 4 |
-| Uso del celular, alertas y privacidad | Completar al cerrar las tres entrevistas | Respuestas de las preguntas 5 y 8 |
-| Plan, costo y soporte esperados | Completar al cerrar las tres entrevistas | Respuestas de la pregunta 6 |
+| Hallazgo | Frecuencia | Porcentaje | Evidencia |
+|---|---|---|---|
+| Revisión del recibo y preocupación por cobros atípicos o filtraciones | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
+| Interés en alertas móviles ante anomalías | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
+| Uso de smartphone y aplicaciones digitales | 1 de 1 | 100 % | Wendy: Android, Chrome, WhatsApp, banca móvil y apps de servicios |
+| Preferencia por una solución sencilla, preventiva y de costo accesible | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
 
-> El cuadro se completará con datos verificables después de registrar las tres entrevistas de cada segmento. No se asignarán porcentajes ni características representativas a partir de respuestas simuladas o de una muestra incompleta.
+La entrevista de hogares se interpreta como evidencia exploratoria del caso de Wendy Zuñiga. Se requieren más participantes para generalizar estos patrones al segmento completo.
 
 ## 2.3. Needfinding
 
@@ -299,7 +259,7 @@ En esta sección se incluyen las fichas de User Persona que representan arquetip
 | **Edad** | 30 años |
 | **Ocupación** | Administrador de negocio local (lavandería) |
 | **Distrito** | Pueblo Libre, Lima |
-| **Estado civil** | [Completar tras más entrevistas] |
+| **Estado civil** | No declarado en la entrevista |
 | **Dispositivo principal** | Smartphone Android |
 | **Nivel tecnológico** | Básico-intermedio – usa el celular para gestión operativa y WhatsApp para registros fotográficos |
 | **Canales digitales** | WhatsApp, celular Android, correo básico |
@@ -332,38 +292,35 @@ Carlos administra una lavandería de tamaño pequeño en Pueblo Libre. Se encarg
 
 #### User Persona #2 – Segmento Hogares y Familias
 
-> *Elaborado en UXPressia.*
-> *[Insertar captura: images/user-persona-pyme.png]*
-
 | Campo | Detalle |
 |---|---|
-| **Nombre** | [Nombre del User Persona – completar tras análisis de entrevistas] |
-| **Edad** | [Edad representativa del segmento] |
-| **Ocupación** | [Ocupación más frecuente entre los entrevistados] |
-| **Distrito** | [Distrito más frecuente entre los entrevistados] |
-| **Estado civil** | [Estado civil más frecuente] |
-| **Dispositivo principal** | [Dispositivo más usado por el segmento] |
-| **Nivel tecnológico** | [Nivel tecnológico representativo] |
-| **Navegador preferido** | [Navegador más mencionado] |
+| **Nombre** | Wendy Zuñiga |
+| **Edad** | 33 años |
+| **Ocupación** | Ingeniera civil |
+| **Distrito** | El Agustino, Lima |
+| **Estado civil** | No declarado; vive con su esposo y su hijo |
+| **Dispositivo principal** | Smartphone Android |
+| **Nivel tecnológico** | Intermedio; usa aplicaciones móviles para comunicación, banca y servicios |
+| **Navegador preferido** | Chrome |
 
 **Biografía:**
-[Redactar párrafo biográfico representativo del segmento tras el análisis de entrevistas.]
+Wendy vive en una vivienda propia de dos niveles y participa en la administración del presupuesto familiar y de los servicios básicos. Revisa los recibos de agua, conoce las instalaciones sanitarias por su formación y busca prevenir filtraciones que puedan generar cobros atípicos o daños estructurales. Su jornada laboral limita el tiempo disponible para inspecciones manuales.
 
 **Objetivos:**
-- [Objetivo 1 – extraído del análisis de entrevistas]
-- [Objetivo 2 – extraído del análisis de entrevistas]
-- [Objetivo 3 – extraído del análisis de entrevistas]
+- Detectar filtraciones o consumos anómalos antes de recibir un cobro elevado.
+- Consultar desde el celular información clara para decidir cuándo revisar o reparar una instalación.
+- Reducir el gasto familiar de agua sin incorporar tareas manuales diarias.
 
 **Frustraciones:**
-- [Frustración 1 – extraída del análisis de entrevistas]
-- [Frustración 2 – extraída del análisis de entrevistas]
-- [Frustración 3 – extraída del análisis de entrevistas]
+- Recibir un cobro atípico sin conocer de inmediato su causa.
+- No contar con una señal que permita ubicar una filtración oculta.
+- Tener que revisar manualmente la vivienda y esperar el siguiente recibo para comprobar una corrección.
 
-**Canales digitales:** [Completar con los canales más mencionados en entrevistas]
+**Canales digitales:** WhatsApp, banca móvil, Yape, Chrome y aplicaciones de servicios.
 
-**Motivaciones:** [Completar con las motivaciones identificadas en entrevistas]
+**Motivaciones:** Prevenir daños en la vivienda, mantener estable el presupuesto familiar y recibir información oportuna que permita actuar.
 
-**Personalidad:** [Completar con rasgos de personalidad representativos del segmento]
+**Personalidad:** Analítica, preventiva y orientada a soluciones prácticas; valora la precisión, la sencillez y las alertas que no saturen.
 
 ---
 
@@ -419,7 +376,7 @@ En esta sección se presentan los User Journey Maps en su versión **As-Is**, es
 
 #### User Journey Map #2 – Segmento Hogares y Familias
 
-> *Recorrido textual preliminar del segmento hogares; debe contrastarse con las tres entrevistas del segmento y con la captura final elaborada en UXPressia.*
+> *Recorrido As-Is del segmento hogares, construido a partir de la entrevista registrada de Wendy Zuñiga.*
 
 **Resumen del journey:** La persona responsable del hogar recibe el recibo mensual y compara el monto con periodos anteriores. Cuando detecta un aumento o una señal física, revisa manualmente grifos, inodoros, tuberías y tanque. Si no identifica la causa, consulta a un familiar, contacta a un técnico o presenta un reclamo. Después de aplicar una corrección, espera el siguiente recibo para comprobar si el consumo volvió a la normalidad.
 
@@ -438,49 +395,46 @@ En esta sección se presentan los Empathy Maps elaborados para cada User Persona
 
 #### Empathy Map #1 – Segmento Hogares y Familias
 
-> *Elaborado en UXPressia.*
-> *[Insertar captura: images/empathy-map-hogar.png]*
-
 **¿Con quién estamos empatizando?**
-[Completar con la descripción del User Persona de hogares: nombre, edad, ocupación, contexto general.]
+Wendy Zuñiga, 33 años, ingeniera civil de El Agustino. Vive con su esposo y su hijo en una vivienda de dos niveles y participa en la administración de los servicios básicos.
 
 **¿Qué necesita hacer?**
-[Completar con las principales tareas y responsabilidades del User Persona relacionadas con la gestión del agua en el hogar.]
+Revisar el recibo, identificar variaciones de consumo, prevenir filtraciones y decidir cuándo solicitar una revisión o reparación.
 
 **¿Qué está diciendo?**
-- [Frase representativa 1 – extraída de entrevistas]
-- [Frase representativa 2 – extraída de entrevistas]
-- [Frase representativa 3 – extraída de entrevistas]
+- Le preocupa recibir cobros atípicos sin conocer la causa.
+- Necesita una alerta que le permita reaccionar antes de que el problema genere daños.
+- Prefiere una solución móvil clara y accesible.
 
 **¿Qué está viendo?**
-- [Completar con elementos del entorno que observa el User Persona]
-- [Completar]
-- [Completar]
+- Recibos mensuales cuyo monto puede variar sin explicación inmediata.
+- Instalaciones domésticas que no puede inspeccionar de forma continua por falta de tiempo.
+- Riesgo de humedad o daño estructural cuando una filtración permanece oculta.
 
 **¿Qué está haciendo?**
-- [Completar con comportamientos y acciones actuales del User Persona]
-- [Completar]
-- [Completar]
+- Revisa los recibos y compara el gasto del hogar.
+- Supervisa las instalaciones cuando aparece una señal de anomalía.
+- Usa el smartphone para comunicación, banca y servicios.
 
 **¿Qué está escuchando?**
-- [Completar con influencias externas: familia, medios, publicidad, vecinos]
-- [Completar]
-- [Completar]
+- Recomendaciones de familiares y técnicos sobre mantenimiento del hogar.
+- Conversaciones sobre ahorro familiar y consumo responsable.
+- Alertas y mensajes de las aplicaciones que usa a diario.
 
 **¿Qué piensa y siente?**
-- [Completar con motivaciones profundas, preocupaciones y aspiraciones]
-- [Completar]
-- [Completar]
+- Quiere prevenir gastos imprevistos y daños en la vivienda.
+- Valora la información precisa, oportuna y fácil de interpretar.
+- Le preocupa recibir demasiadas notificaciones sin una acción clara.
 
 **Pains:**
-- [Pain 1 – extraído del análisis de entrevistas]
-- [Pain 2 – extraído del análisis de entrevistas]
-- [Pain 3 – extraído del análisis de entrevistas]
+- Cobros elevados cuya causa solo se conoce después del cierre del periodo.
+- Falta de visibilidad sobre filtraciones ocultas.
+- Tiempo limitado para realizar verificaciones manuales.
 
 **Gains:**
-- [Gain 1 – qué valora y qué le ayudaría en la app móvil]
-- [Gain 2 – completar]
-- [Gain 3 – completar]
+- Alertas móviles que indiquen la anomalía y su nivel de urgencia.
+- Historial y comparación del consumo en soles y por periodos.
+- Recomendaciones concretas para actuar y prevenir nuevos cobros.
 
 ---
 
@@ -541,8 +495,6 @@ Controlar el consumo de agua de su negocio, detectar fugas a tiempo sin depender
 ### 2.3.5. Big Picture EventStorming
 
 El Big Picture EventStorming se realizó en una sesión colaborativa del equipo con una duración aproximada de 90 minutos, utilizando la herramienta indicada. La sesión permitió mapear los eventos de negocio más relevantes del dominio de gestión inteligente del agua, identificando los procesos clave, los actores involucrados y las oportunidades de mejora en el flujo de valor de Qlic.
-
-> *[Insertar captura de la sesión de Big Picture EventStorming: images/big-picture-eventstorming.png]*
 
 Los eventos de dominio más significativos identificados durante la sesión fueron los siguientes:
 
@@ -618,311 +570,359 @@ Los criterios de aceptación se redactan en tercera persona, en tiempo presente,
 
 ##### EP01 – Landing Page informativo
 
-| Story ID | US01 | Priority | Alta | Epic | EP01 |
-|---|---|---|---|---|---|
-| **Title** | Conocer la propuesta de valor de Qlic | | | | |
-| **Description** | Como visitante del Landing Page, deseo conocer en qué consiste Qlic y qué problema resuelve, para evaluar si la solución se ajusta a mi situación. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Visualización de la propuesta de valor**<br>**Dado** que el visitante ingresa al Landing Page,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta el propósito de la solución, sus beneficios principales y una opción para solicitar información adicional.<br><br>**Escenario 2: Acceso a la explicación ampliada**<br>**Dado** que el visitante solicita información adicional sobre Qlic,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta la explicación del funcionamiento de la solución. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US01 | visitante del Landing Page | Alta | EP01 |
+| **Title** | Conocer la propuesta de valor de Qlic |  |  |
+| **Description** | Como visitante del Landing Page, deseo conocer en qué consiste Qlic y qué problema resuelve, para evaluar si la solución se ajusta a mi situación. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Visualización de la propuesta de valor**<br>**Dado** que el visitante ingresa al Landing Page,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta el propósito de la solución, sus beneficios principales y una opción para solicitar información adicional.<br><br>**Escenario 2: Acceso a la explicación ampliada**<br>**Dado** que el visitante solicita información adicional sobre Qlic,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta la explicación del funcionamiento de la solución. |  |  |
 
-| Story ID | US02 | Priority | Alta | Epic | EP01 |
-|---|---|---|---|---|---|
-| **Title** | Comparar los planes de suscripción disponibles | | | | |
-| **Description** | Como visitante del Landing Page, deseo comparar los planes de suscripción disponibles, para identificar cuál corresponde al tamaño de mi negocio u hogar. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Comparación de planes**<br>**Dado** que el visitante solicita información sobre los planes,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta cada plan con sus funcionalidades incluidas, la cantidad de dispositivos soportados y su precio.<br><br>**Regla de negocio**<br>Los planes disponibles son Plan Básico y Plan Gestión Pro. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US02 | visitante del Landing Page | Alta | EP01 |
+| **Title** | Comparar los planes de suscripción disponibles |  |  |
+| **Description** | Como visitante del Landing Page, deseo comparar los planes de suscripción disponibles, para identificar cuál corresponde al tamaño de mi negocio u hogar. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Comparación de planes**<br>**Dado** que el visitante solicita información sobre los planes,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta cada plan con sus funcionalidades incluidas, la cantidad de dispositivos soportados y su precio.<br><br>**Regla de negocio**<br>Los planes disponibles son Plan Básico y Plan Gestión Pro. |  |  |
 
-| Story ID | US03 | Priority | Media | Epic | EP01 |
-|---|---|---|---|---|---|
-| **Title** | Contactar al equipo desde el Landing Page | | | | |
-| **Description** | Como visitante del Landing Page, deseo comunicarme con el equipo de Qlic, para resolver dudas sobre instalación, cobertura o condiciones del servicio antes de suscribirme. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Envío de una consulta**<br>**Dado** que el visitante completa el formulario de contacto con datos válidos,<br>**Cuando** confirma el envío,<br>**Entonces** el sistema registra la consulta y presenta una confirmación de recepción.<br><br>**Escenario 2: Datos incompletos**<br>**Dado** que el visitante omite un dato obligatorio del formulario,<br>**Cuando** intenta confirmar el envío,<br>**Entonces** el sistema no registra la consulta e indica qué dato falta. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US03 | visitante del Landing Page | Media | EP01 |
+| **Title** | Contactar al equipo desde el Landing Page |  |  |
+| **Description** | Como visitante del Landing Page, deseo comunicarme con el equipo de Qlic, para resolver dudas sobre instalación, cobertura o condiciones del servicio antes de suscribirme. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Envío de una consulta**<br>**Dado** que el visitante completa el formulario de contacto con datos válidos,<br>**Cuando** confirma el envío,<br>**Entonces** el sistema registra la consulta y presenta una confirmación de recepción.<br><br>**Escenario 2: Datos incompletos**<br>**Dado** que el visitante omite un dato obligatorio del formulario,<br>**Cuando** intenta confirmar el envío,<br>**Entonces** el sistema no registra la consulta e indica qué dato falta. |  |  |
 
-| Story ID | US04 | Priority | Media | Epic | EP01 |
-|---|---|---|---|---|---|
-| **Title** | Consultar el Landing Page en el idioma de preferencia | | | | |
-| **Description** | Como visitante del Landing Page, deseo consultar el contenido en inglés o español latinoamericano, para comprender la propuesta en el idioma que domino. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Cambio de idioma**<br>**Dado** que el visitante solicita un idioma soportado,<br>**Cuando** el sistema procesa la preferencia regional,<br>**Entonces** presenta el contenido en el idioma seleccionado.<br><br>**Regla de negocio**<br>Los idiomas soportados son English (en_US) y Latin American Spanish (es_419), siendo el inglés el idioma por defecto. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US04 | visitante del Landing Page | Media | EP01 |
+| **Title** | Consultar el Landing Page en el idioma de preferencia |  |  |
+| **Description** | Como visitante del Landing Page, deseo consultar el contenido en inglés o español latinoamericano, para comprender la propuesta en el idioma que domino. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Cambio de idioma**<br>**Dado** que el visitante solicita un idioma soportado,<br>**Cuando** el sistema procesa la preferencia regional,<br>**Entonces** presenta el contenido en el idioma seleccionado.<br><br>**Regla de negocio**<br>Los idiomas soportados son English (en_US) y Latin American Spanish (es_419), siendo el inglés el idioma por defecto. |  |  |
 
 ##### EP02 – Gestión de identidad y acceso
 
-| Story ID | US05 | Priority | Alta | Epic | EP02 |
-|---|---|---|---|---|---|
-| **Title** | Registrar una cuenta de suscriptor | | | | |
-| **Description** | Como visitante interesado en el servicio, deseo registrar una cuenta en la aplicación móvil, para acceder a las funcionalidades de monitoreo de consumo. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Registro exitoso**<br>**Dado** que el visitante proporciona datos válidos y acepta los términos y condiciones del servicio,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema crea la cuenta del suscriptor y habilita el acceso a la aplicación.<br><br>**Escenario 2: Correo ya registrado**<br>**Dado** que el visitante proporciona un correo asociado a una cuenta existente,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema no crea una nueva cuenta e informa que el correo ya se encuentra registrado. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US05 | visitante interesado en el servicio | Alta | EP02 |
+| **Title** | Registrar una cuenta de suscriptor |  |  |
+| **Description** | Como visitante interesado en el servicio, deseo registrar una cuenta en la aplicación móvil, para acceder a las funcionalidades de monitoreo de consumo. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Registro exitoso**<br>**Dado** que el visitante proporciona datos válidos y acepta los términos y condiciones del servicio,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema crea la cuenta del suscriptor y habilita el acceso a la aplicación.<br><br>**Escenario 2: Correo ya registrado**<br>**Dado** que el visitante proporciona un correo asociado a una cuenta existente,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema no crea una nueva cuenta e informa que el correo ya se encuentra registrado. |  |  |
 
-| Story ID | US06 | Priority | Alta | Epic | EP02 |
-|---|---|---|---|---|---|
-| **Title** | Iniciar sesión en la aplicación móvil | | | | |
-| **Description** | Como suscriptor, deseo iniciar sesión en la aplicación móvil, para consultar la información de mis dispositivos y mi consumo. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Credenciales válidas**<br>**Dado** que el suscriptor ingresa credenciales válidas,<br>**Cuando** confirma el inicio de sesión,<br>**Entonces** el sistema inicia la sesión y presenta el panel de monitoreo.<br><br>**Escenario 2: Credenciales inválidas**<br>**Dado** que el suscriptor ingresa credenciales incorrectas,<br>**Cuando** confirma el inicio de sesión,<br>**Entonces** el sistema no inicia la sesión e informa que las credenciales no son válidas. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US06 | suscriptor | Alta | EP02 |
+| **Title** | Iniciar sesión en la aplicación móvil |  |  |
+| **Description** | Como suscriptor, deseo iniciar sesión en la aplicación móvil, para consultar la información de mis dispositivos y mi consumo. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Credenciales válidas**<br>**Dado** que el suscriptor ingresa credenciales válidas,<br>**Cuando** confirma el inicio de sesión,<br>**Entonces** el sistema inicia la sesión y presenta el panel de monitoreo.<br><br>**Escenario 2: Credenciales inválidas**<br>**Dado** que el suscriptor ingresa credenciales incorrectas,<br>**Cuando** confirma el inicio de sesión,<br>**Entonces** el sistema no inicia la sesión e informa que las credenciales no son válidas. |  |  |
 
-| Story ID | US07 | Priority | Media | Epic | EP02 |
-|---|---|---|---|---|---|
-| **Title** | Recuperar el acceso a la cuenta | | | | |
-| **Description** | Como suscriptor que olvidó su contraseña, deseo restablecerla, para recuperar el acceso a la información de mi consumo. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Solicitud de restablecimiento**<br>**Dado** que el suscriptor indica un correo asociado a una cuenta existente,<br>**Cuando** solicita el restablecimiento,<br>**Entonces** el sistema envía un mensaje con un enlace de restablecimiento de vigencia limitada.<br><br>**Escenario 2: Enlace vencido**<br>**Dado** que el suscriptor utiliza un enlace de restablecimiento vencido,<br>**Cuando** intenta definir una nueva contraseña,<br>**Entonces** el sistema rechaza la operación e indica que debe solicitar un nuevo enlace. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US07 | suscriptor que olvidó su contraseña | Media | EP02 |
+| **Title** | Recuperar el acceso a la cuenta |  |  |
+| **Description** | Como suscriptor que olvidó su contraseña, deseo restablecerla, para recuperar el acceso a la información de mi consumo. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Solicitud de restablecimiento**<br>**Dado** que el suscriptor indica un correo asociado a una cuenta existente,<br>**Cuando** solicita el restablecimiento,<br>**Entonces** el sistema envía un mensaje con un enlace de restablecimiento de vigencia limitada.<br><br>**Escenario 2: Enlace vencido**<br>**Dado** que el suscriptor utiliza un enlace de restablecimiento vencido,<br>**Cuando** intenta definir una nueva contraseña,<br>**Entonces** el sistema rechaza la operación e indica que debe solicitar un nuevo enlace. |  |  |
 
-| Story ID | US08 | Priority | Alta | Epic | EP02 |
-|---|---|---|---|---|---|
-| **Title** | Compartir el acceso con otro usuario | | | | |
-| **Description** | Como suscriptor responsable de un negocio, deseo otorgar acceso a otra persona de mi equipo, para que pueda revisar el consumo cuando yo no esté disponible. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Invitación a un usuario adicional**<br>**Dado** que el suscriptor titular indica el correo de la persona a invitar y un nivel de permiso,<br>**Cuando** confirma la invitación,<br>**Entonces** el sistema registra la invitación y notifica a la persona invitada.<br><br>**Escenario 2: Acceso de solo consulta**<br>**Dado** que un usuario invitado con permiso de consulta inicia sesión,<br>**Cuando** intenta modificar la configuración de un dispositivo,<br>**Entonces** el sistema rechaza la operación e informa que no cuenta con el permiso requerido.<br><br>**Regla de negocio**<br>La cantidad de usuarios adicionales permitidos está determinada por el plan de suscripción contratado. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US08 | suscriptor responsable de un negocio | Alta | EP02 |
+| **Title** | Compartir el acceso con otro usuario |  |  |
+| **Description** | Como suscriptor responsable de un negocio, deseo otorgar acceso a otra persona de mi equipo, para que pueda revisar el consumo cuando yo no esté disponible. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Invitación a un usuario adicional**<br>**Dado** que el suscriptor titular indica el correo de la persona a invitar y un nivel de permiso,<br>**Cuando** confirma la invitación,<br>**Entonces** el sistema registra la invitación y notifica a la persona invitada.<br><br>**Escenario 2: Acceso de solo consulta**<br>**Dado** que un usuario invitado con permiso de consulta inicia sesión,<br>**Cuando** intenta modificar la configuración de un dispositivo,<br>**Entonces** el sistema rechaza la operación e informa que no cuenta con el permiso requerido.<br><br>**Regla de negocio**<br>La cantidad de usuarios adicionales permitidos está determinada por el plan de suscripción contratado. |  |  |
 
-| Story ID | US09 | Priority | Baja | Epic | EP02 |
-|---|---|---|---|---|---|
-| **Title** | Actualizar los datos del perfil | | | | |
-| **Description** | Como suscriptor, deseo actualizar los datos de mi perfil y de mis locales, para que la información del servicio corresponda a mi situación actual. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Actualización válida**<br>**Dado** que el suscriptor modifica uno o más datos de su perfil con valores válidos,<br>**Cuando** confirma la actualización,<br>**Entonces** el sistema registra los cambios y los refleja en las siguientes consultas.<br><br>**Escenario 2: Dato obligatorio vacío**<br>**Dado** que el suscriptor deja vacío un dato obligatorio,<br>**Cuando** confirma la actualización,<br>**Entonces** el sistema no registra los cambios e indica el dato pendiente. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US09 | suscriptor | Baja | EP02 |
+| **Title** | Actualizar los datos del perfil |  |  |
+| **Description** | Como suscriptor, deseo actualizar los datos de mi perfil y de mis locales, para que la información del servicio corresponda a mi situación actual. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Actualización válida**<br>**Dado** que el suscriptor modifica uno o más datos de su perfil con valores válidos,<br>**Cuando** confirma la actualización,<br>**Entonces** el sistema registra los cambios y los refleja en las siguientes consultas.<br><br>**Escenario 2: Dato obligatorio vacío**<br>**Dado** que el suscriptor deja vacío un dato obligatorio,<br>**Cuando** confirma la actualización,<br>**Entonces** el sistema no registra los cambios e indica el dato pendiente. |  |  |
 
 ##### EP03 – Registro y monitoreo de dispositivos IoT
 
-| Story ID | US10 | Priority | Alta | Epic | EP03 |
-|---|---|---|---|---|---|
-| **Title** | Registrar un dispositivo IoT mediante código QR | | | | |
-| **Description** | Como suscriptor, deseo registrar un dispositivo IoT escaneando su código QR con la cámara del smartphone, para vincularlo a mi cuenta sin ingresar códigos manualmente. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Registro exitoso**<br>**Dado** que el suscriptor escanea el código QR de un dispositivo no vinculado,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema vincula el dispositivo a la cuenta del suscriptor y solicita asignarle un Water Point.<br><br>**Escenario 2: Dispositivo ya vinculado**<br>**Dado** que el suscriptor escanea el código QR de un dispositivo vinculado a otra cuenta,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema rechaza la operación e informa que el dispositivo ya se encuentra registrado. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US10 | suscriptor | Alta | EP03 |
+| **Title** | Registrar un dispositivo IoT mediante código QR |  |  |
+| **Description** | Como suscriptor, deseo registrar un dispositivo IoT escaneando su código QR con la cámara del smartphone, para vincularlo a mi cuenta sin ingresar códigos manualmente. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Registro exitoso**<br>**Dado** que el suscriptor escanea el código QR de un dispositivo no vinculado,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema vincula el dispositivo a la cuenta del suscriptor y solicita asignarle un Water Point.<br><br>**Escenario 2: Dispositivo ya vinculado**<br>**Dado** que el suscriptor escanea el código QR de un dispositivo vinculado a otra cuenta,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema rechaza la operación e informa que el dispositivo ya se encuentra registrado. |  |  |
 
-| Story ID | US11 | Priority | Alta | Epic | EP03 |
-|---|---|---|---|---|---|
-| **Title** | Asignar un dispositivo a un Water Point | | | | |
-| **Description** | Como suscriptor, deseo asignar cada dispositivo a un punto de agua identificado, para saber a qué parte de mi local u hogar corresponde cada lectura. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Asignación de un Water Point**<br>**Dado** que el suscriptor cuenta con un dispositivo registrado sin Water Point asignado,<br>**Cuando** indica el nombre y la ubicación del punto de agua y confirma,<br>**Entonces** el sistema asocia el dispositivo al Water Point y comienza a registrar sus lecturas bajo esa ubicación.<br><br>**Regla de negocio**<br>Un dispositivo IoT se asocia a un único Water Point a la vez. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US11 | suscriptor | Alta | EP03 |
+| **Title** | Asignar un dispositivo a un Water Point |  |  |
+| **Description** | Como suscriptor, deseo asignar cada dispositivo a un punto de agua identificado, para saber a qué parte de mi local u hogar corresponde cada lectura. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Asignación de un Water Point**<br>**Dado** que el suscriptor cuenta con un dispositivo registrado sin Water Point asignado,<br>**Cuando** indica el nombre y la ubicación del punto de agua y confirma,<br>**Entonces** el sistema asocia el dispositivo al Water Point y comienza a registrar sus lecturas bajo esa ubicación.<br><br>**Regla de negocio**<br>Un dispositivo IoT se asocia a un único Water Point a la vez. |  |  |
 
-| Story ID | US12 | Priority | Alta | Epic | EP03 |
-|---|---|---|---|---|---|
-| **Title** | Consultar el estado de los dispositivos registrados | | | | |
-| **Description** | Como suscriptor, deseo consultar el estado de todos mis dispositivos desde el panel de monitoreo, para saber cuáles están operativos y cuáles requieren atención. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Panel con dispositivos operativos**<br>**Dado** que el suscriptor cuenta con dispositivos registrados,<br>**Cuando** accede al panel de monitoreo,<br>**Entonces** el sistema presenta cada dispositivo con su Water Point, su última lectura y su estado de conexión.<br><br>**Escenario 2: Dispositivo desconectado**<br>**Dado** que un dispositivo no reporta lecturas durante el periodo definido como límite,<br>**Cuando** el suscriptor accede al panel de monitoreo,<br>**Entonces** el sistema presenta ese dispositivo con estado de desconexión. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US12 | suscriptor | Alta | EP03 |
+| **Title** | Consultar el estado de los dispositivos registrados |  |  |
+| **Description** | Como suscriptor, deseo consultar el estado de todos mis dispositivos desde el panel de monitoreo, para saber cuáles están operativos y cuáles requieren atención. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Panel con dispositivos operativos**<br>**Dado** que el suscriptor cuenta con dispositivos registrados,<br>**Cuando** accede al panel de monitoreo,<br>**Entonces** el sistema presenta cada dispositivo con su Water Point, su última lectura y su estado de conexión.<br><br>**Escenario 2: Dispositivo desconectado**<br>**Dado** que un dispositivo no reporta lecturas durante el periodo definido como límite,<br>**Cuando** el suscriptor accede al panel de monitoreo,<br>**Entonces** el sistema presenta ese dispositivo con estado de desconexión. |  |  |
 
-| Story ID | US13 | Priority | Media | Epic | EP03 |
-|---|---|---|---|---|---|
-| **Title** | Organizar los dispositivos por local | | | | |
-| **Description** | Como suscriptor con más de un local, deseo agrupar mis dispositivos por local, para comparar el comportamiento de cada uno por separado. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Consulta por local**<br>**Dado** que el suscriptor cuenta con dispositivos asignados a más de un local,<br>**Cuando** solicita las lecturas de un local,<br>**Entonces** el sistema devuelve únicamente los dispositivos y las lecturas correspondientes a ese local. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US13 | suscriptor con más de un local | Media | EP03 |
+| **Title** | Organizar los dispositivos por local |  |  |
+| **Description** | Como suscriptor con más de un local, deseo agrupar mis dispositivos por local, para comparar el comportamiento de cada uno por separado. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Consulta por local**<br>**Dado** que el suscriptor cuenta con dispositivos asignados a más de un local,<br>**Cuando** solicita las lecturas de un local,<br>**Entonces** el sistema devuelve únicamente los dispositivos y las lecturas correspondientes a ese local. |  |  |
 
-| Story ID | US14 | Priority | Baja | Epic | EP03 |
-|---|---|---|---|---|---|
-| **Title** | Consultar el panel de monitoreo sin conexión | | | | |
-| **Description** | Como suscriptor, deseo consultar la última información sincronizada cuando no cuento con conexión a internet, para no quedarme sin referencia del estado de mis dispositivos. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Consulta sin conexión**<br>**Dado** que el dispositivo móvil del suscriptor no cuenta con conexión a internet,<br>**Cuando** el suscriptor accede al panel de monitoreo,<br>**Entonces** el sistema presenta la información almacenada localmente e indica la fecha y hora de la última sincronización. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US14 | suscriptor | Baja | EP03 |
+| **Title** | Consultar el panel de monitoreo sin conexión |  |  |
+| **Description** | Como suscriptor, deseo consultar la última información sincronizada cuando no cuento con conexión a internet, para no quedarme sin referencia del estado de mis dispositivos. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Consulta sin conexión**<br>**Dado** que el dispositivo móvil del suscriptor no cuenta con conexión a internet,<br>**Cuando** el suscriptor accede al panel de monitoreo,<br>**Entonces** el sistema presenta la información almacenada localmente e indica la fecha y hora de la última sincronización. |  |  |
 
 ##### EP04 – Alertas de fugas y consumo anómalo
 
-| Story ID | US15 | Priority | Alta | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Recibir una alerta de posible fuga | | | | |
-| **Description** | Como suscriptor, deseo recibir una notificación en el celular cuando se detecte un consumo anómalo sostenido, para actuar antes de que el problema se refleje en el recibo. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Consumo anómalo sostenido**<br>**Dado** que un Water Point registra un consumo superior a su umbral durante el periodo definido,<br>**Cuando** el sistema procesa las lecturas,<br>**Entonces** el sistema genera una alerta de fuga y envía una notificación push al suscriptor.<br><br>**Escenario 2: Variación puntual**<br>**Dado** que un Water Point registra un consumo superior a su umbral en una lectura aislada,<br>**Cuando** el sistema procesa las lecturas,<br>**Entonces** el sistema no genera una alerta de fuga. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US15 | suscriptor | Alta | EP04 |
+| **Title** | Recibir una alerta de posible fuga |  |  |
+| **Description** | Como suscriptor, deseo recibir una notificación en el celular cuando se detecte un consumo anómalo sostenido, para actuar antes de que el problema se refleje en el recibo. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Consumo anómalo sostenido**<br>**Dado** que un Water Point registra un consumo superior a su umbral durante el periodo definido,<br>**Cuando** el sistema procesa las lecturas,<br>**Entonces** el sistema genera una alerta de fuga y envía una notificación push al suscriptor.<br><br>**Escenario 2: Variación puntual**<br>**Dado** que un Water Point registra un consumo superior a su umbral en una lectura aislada,<br>**Cuando** el sistema procesa las lecturas,<br>**Entonces** el sistema no genera una alerta de fuga. |  |  |
 
-| Story ID | US16 | Priority | Alta | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Comprender el contenido de una alerta | | | | |
-| **Description** | Como suscriptor sin conocimientos técnicos, deseo que la alerta indique dónde ocurre el problema y qué tan grave es, para decidir qué hacer sin depender de un especialista. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Detalle de la alerta**<br>**Dado** que el suscriptor consulta una alerta generada,<br>**Cuando** accede a su detalle,<br>**Entonces** el sistema presenta el local y el Water Point afectados, el tiempo transcurrido desde la detección, el nivel de urgencia, el consumo estimado acumulado y la acción recomendada.<br><br>**Regla de negocio**<br>Los niveles de urgencia son informativo, moderado y crítico, determinados por la magnitud de la desviación respecto de la línea base de consumo. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US16 | suscriptor sin conocimientos técnicos | Alta | EP04 |
+| **Title** | Comprender el contenido de una alerta |  |  |
+| **Description** | Como suscriptor sin conocimientos técnicos, deseo que la alerta indique dónde ocurre el problema y qué tan grave es, para decidir qué hacer sin depender de un especialista. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Detalle de la alerta**<br>**Dado** que el suscriptor consulta una alerta generada,<br>**Cuando** accede a su detalle,<br>**Entonces** el sistema presenta el local y el Water Point afectados, el tiempo transcurrido desde la detección, el nivel de urgencia, el consumo estimado acumulado y la acción recomendada.<br><br>**Regla de negocio**<br>Los niveles de urgencia son informativo, moderado y crítico, determinados por la magnitud de la desviación respecto de la línea base de consumo. |  |  |
 
-| Story ID | US17 | Priority | Alta | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Configurar el umbral de consumo | | | | |
-| **Description** | Como suscriptor, deseo definir el umbral de consumo a partir del cual se me notifica, para recibir alertas acordes al comportamiento real de mi local u hogar. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Definición de un umbral propio**<br>**Dado** que el suscriptor indica un valor de umbral válido para un Water Point y un periodo,<br>**Cuando** confirma la configuración,<br>**Entonces** el sistema aplica ese umbral en la evaluación de las siguientes lecturas.<br><br>**Escenario 2: Umbral automático**<br>**Dado** que el suscriptor no ha definido un umbral propio para un Water Point,<br>**Cuando** el sistema evalúa sus lecturas,<br>**Entonces** el sistema aplica el umbral calculado a partir de la línea base de consumo de ese Water Point. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US17 | suscriptor | Alta | EP04 |
+| **Title** | Configurar el umbral de consumo |  |  |
+| **Description** | Como suscriptor, deseo definir el umbral de consumo a partir del cual se me notifica, para recibir alertas acordes al comportamiento real de mi local u hogar. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Definición de un umbral propio**<br>**Dado** que el suscriptor indica un valor de umbral válido para un Water Point y un periodo,<br>**Cuando** confirma la configuración,<br>**Entonces** el sistema aplica ese umbral en la evaluación de las siguientes lecturas.<br><br>**Escenario 2: Umbral automático**<br>**Dado** que el suscriptor no ha definido un umbral propio para un Water Point,<br>**Cuando** el sistema evalúa sus lecturas,<br>**Entonces** el sistema aplica el umbral calculado a partir de la línea base de consumo de ese Water Point. |  |  |
 
-| Story ID | US18 | Priority | Media | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Limitar la frecuencia de las notificaciones | | | | |
-| **Description** | Como suscriptor, deseo recibir notificaciones solo ante variaciones relevantes, para que las alertas conserven su valor y no terminen ignoradas. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Alerta activa sin resolver**<br>**Dado** que existe una alerta activa para un Water Point,<br>**Cuando** el sistema detecta una nueva anomalía en el mismo Water Point dentro del periodo de agrupación,<br>**Entonces** el sistema actualiza la alerta existente y no envía una nueva notificación.<br><br>**Escenario 2: Preferencias de notificación**<br>**Dado** que el suscriptor define un nivel mínimo de urgencia para ser notificado,<br>**Cuando** se genera una alerta de urgencia inferior a ese nivel,<br>**Entonces** el sistema registra la alerta en la aplicación sin enviar una notificación push. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US18 | suscriptor | Media | EP04 |
+| **Title** | Limitar la frecuencia de las notificaciones |  |  |
+| **Description** | Como suscriptor, deseo recibir notificaciones solo ante variaciones relevantes, para que las alertas conserven su valor y no terminen ignoradas. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Alerta activa sin resolver**<br>**Dado** que existe una alerta activa para un Water Point,<br>**Cuando** el sistema detecta una nueva anomalía en el mismo Water Point dentro del periodo de agrupación,<br>**Entonces** el sistema actualiza la alerta existente y no envía una nueva notificación.<br><br>**Escenario 2: Preferencias de notificación**<br>**Dado** que el suscriptor define un nivel mínimo de urgencia para ser notificado,<br>**Cuando** se genera una alerta de urgencia inferior a ese nivel,<br>**Entonces** el sistema registra la alerta en la aplicación sin enviar una notificación push. |  |  |
 
-| Story ID | US19 | Priority | Media | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Notificar la alerta a los usuarios autorizados | | | | |
-| **Description** | Como suscriptor titular, deseo que las alertas también lleguen a los usuarios con acceso a mi cuenta, para que alguien pueda reaccionar cuando yo no esté disponible. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Notificación a usuarios autorizados**<br>**Dado** que una cuenta cuenta con usuarios adicionales habilitados para recibir alertas,<br>**Cuando** se genera una alerta de fuga,<br>**Entonces** el sistema envía la notificación push a cada uno de esos usuarios. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US19 | suscriptor titular | Media | EP04 |
+| **Title** | Notificar la alerta a los usuarios autorizados |  |  |
+| **Description** | Como suscriptor titular, deseo que las alertas también lleguen a los usuarios con acceso a mi cuenta, para que alguien pueda reaccionar cuando yo no esté disponible. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Notificación a usuarios autorizados**<br>**Dado** que una cuenta cuenta con usuarios adicionales habilitados para recibir alertas,<br>**Cuando** se genera una alerta de fuga,<br>**Entonces** el sistema envía la notificación push a cada uno de esos usuarios. |  |  |
 
-| Story ID | US20 | Priority | Media | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Confirmar la atención de una alerta | | | | |
-| **Description** | Como suscriptor, deseo marcar una alerta como atendida, para llevar control de qué problemas ya fueron resueltos. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Cierre de una alerta**<br>**Dado** que el suscriptor consulta una alerta activa,<br>**Cuando** la marca como atendida e indica la acción realizada,<br>**Entonces** el sistema cambia el estado de la alerta a atendida y registra la acción en el historial.<br><br>**Escenario 2: Reaparición de la anomalía**<br>**Dado** que una alerta fue marcada como atendida,<br>**Cuando** el sistema detecta nuevamente consumo anómalo en el mismo Water Point,<br>**Entonces** el sistema genera una nueva alerta referenciando la anterior. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US20 | suscriptor | Media | EP04 |
+| **Title** | Confirmar la atención de una alerta |  |  |
+| **Description** | Como suscriptor, deseo marcar una alerta como atendida, para llevar control de qué problemas ya fueron resueltos. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Cierre de una alerta**<br>**Dado** que el suscriptor consulta una alerta activa,<br>**Cuando** la marca como atendida e indica la acción realizada,<br>**Entonces** el sistema cambia el estado de la alerta a atendida y registra la acción en el historial.<br><br>**Escenario 2: Reaparición de la anomalía**<br>**Dado** que una alerta fue marcada como atendida,<br>**Cuando** el sistema detecta nuevamente consumo anómalo en el mismo Water Point,<br>**Entonces** el sistema genera una nueva alerta referenciando la anterior. |  |  |
 
 ##### EP05 – Reportes y analítica de consumo
 
-| Story ID | US21 | Priority | Alta | Epic | EP05 |
-|---|---|---|---|---|---|
-| **Title** | Consultar el reporte de consumo del periodo | | | | |
-| **Description** | Como suscriptor, deseo consultar desde el celular cuánto he consumido en el periodo actual, para conocer mi situación sin esperar el recibo mensual. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Reporte del periodo actual**<br>**Dado** que el suscriptor cuenta con lecturas registradas en el periodo,<br>**Cuando** accede al reporte de consumo,<br>**Entonces** el sistema presenta el consumo acumulado del periodo y su distribución por Water Point.<br><br>**Escenario 2: Sin lecturas registradas**<br>**Dado** que el suscriptor no cuenta con lecturas en el periodo,<br>**Cuando** accede al reporte de consumo,<br>**Entonces** el sistema informa que aún no hay información disponible para ese periodo. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US21 | suscriptor | Alta | EP05 |
+| **Title** | Consultar el reporte de consumo del periodo |  |  |
+| **Description** | Como suscriptor, deseo consultar desde el celular cuánto he consumido en el periodo actual, para conocer mi situación sin esperar el recibo mensual. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Reporte del periodo actual**<br>**Dado** que el suscriptor cuenta con lecturas registradas en el periodo,<br>**Cuando** accede al reporte de consumo,<br>**Entonces** el sistema presenta el consumo acumulado del periodo y su distribución por Water Point.<br><br>**Escenario 2: Sin lecturas registradas**<br>**Dado** que el suscriptor no cuenta con lecturas en el periodo,<br>**Cuando** accede al reporte de consumo,<br>**Entonces** el sistema informa que aún no hay información disponible para ese periodo. |  |  |
 
-| Story ID | US22 | Priority | Alta | Epic | EP05 |
-|---|---|---|---|---|---|
-| **Title** | Comparar el consumo entre periodos | | | | |
-| **Description** | Como suscriptor, deseo comparar mi consumo actual con el de periodos anteriores, para identificar si mi gasto está aumentando. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Comparación disponible**<br>**Dado** que el suscriptor cuenta con lecturas de al menos dos periodos,<br>**Cuando** accede a la comparación de consumo,<br>**Entonces** el sistema presenta la variación entre el periodo actual y el anterior, expresada en volumen y en porcentaje.<br><br>**Escenario 2: Histórico insuficiente**<br>**Dado** que el suscriptor cuenta con lecturas de un solo periodo,<br>**Cuando** accede a la comparación de consumo,<br>**Entonces** el sistema informa que aún no existe histórico suficiente para comparar. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US22 | suscriptor | Alta | EP05 |
+| **Title** | Comparar el consumo entre periodos |  |  |
+| **Description** | Como suscriptor, deseo comparar mi consumo actual con el de periodos anteriores, para identificar si mi gasto está aumentando. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Comparación disponible**<br>**Dado** que el suscriptor cuenta con lecturas de al menos dos periodos,<br>**Cuando** accede a la comparación de consumo,<br>**Entonces** el sistema presenta la variación entre el periodo actual y el anterior, expresada en volumen y en porcentaje.<br><br>**Escenario 2: Histórico insuficiente**<br>**Dado** que el suscriptor cuenta con lecturas de un solo periodo,<br>**Cuando** accede a la comparación de consumo,<br>**Entonces** el sistema informa que aún no existe histórico suficiente para comparar. |  |  |
 
-| Story ID | US23 | Priority | Alta | Epic | EP05 |
-|---|---|---|---|---|---|
-| **Title** | Conocer el costo estimado del consumo | | | | |
-| **Description** | Como suscriptor, deseo ver mi consumo expresado también en dinero, para relacionarlo con el presupuesto de mi negocio u hogar. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Costo estimado del periodo**<br>**Dado** que el suscriptor consulta el reporte de consumo de un periodo,<br>**Cuando** el reporte se presenta,<br>**Entonces** el sistema incluye el costo estimado correspondiente a ese consumo e indica que se trata de una estimación referencial.<br><br>**Regla de negocio**<br>El costo estimado se calcula aplicando la tarifa vigente configurada para la categoría de servicio del suscriptor. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US23 | suscriptor | Alta | EP05 |
+| **Title** | Conocer el costo estimado del consumo |  |  |
+| **Description** | Como suscriptor, deseo ver mi consumo expresado también en dinero, para relacionarlo con el presupuesto de mi negocio u hogar. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Costo estimado del periodo**<br>**Dado** que el suscriptor consulta el reporte de consumo de un periodo,<br>**Cuando** el reporte se presenta,<br>**Entonces** el sistema incluye el costo estimado correspondiente a ese consumo e indica que se trata de una estimación referencial.<br><br>**Regla de negocio**<br>El costo estimado se calcula aplicando la tarifa vigente configurada para la categoría de servicio del suscriptor. |  |  |
 
-| Story ID | US24 | Priority | Media | Epic | EP05 |
-|---|---|---|---|---|---|
-| **Title** | Identificar consumo en horarios sin actividad | | | | |
-| **Description** | Como suscriptor responsable de un local, deseo identificar consumo registrado en horarios en los que el local está cerrado, para detectar desperdicios que pasan desapercibidos. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Consumo fuera del horario de actividad**<br>**Dado** que el suscriptor definió el horario de actividad de un local,<br>**Cuando** consulta el reporte de consumo de ese local,<br>**Entonces** el sistema diferencia el consumo registrado dentro y fuera del horario de actividad. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US24 | suscriptor responsable de un local | Media | EP05 |
+| **Title** | Identificar consumo en horarios sin actividad |  |  |
+| **Description** | Como suscriptor responsable de un local, deseo identificar consumo registrado en horarios en los que el local está cerrado, para detectar desperdicios que pasan desapercibidos. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Consumo fuera del horario de actividad**<br>**Dado** que el suscriptor definió el horario de actividad de un local,<br>**Cuando** consulta el reporte de consumo de ese local,<br>**Entonces** el sistema diferencia el consumo registrado dentro y fuera del horario de actividad. |  |  |
 
-| Story ID | US25 | Priority | Media | Epic | EP05 |
-|---|---|---|---|---|---|
-| **Title** | Recibir recomendaciones de ahorro | | | | |
-| **Description** | Como suscriptor, deseo recibir recomendaciones basadas en mi propio consumo, para tomar decisiones concretas orientadas a reducirlo. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Recomendaciones basadas en el histórico**<br>**Dado** que el suscriptor cuenta con lecturas suficientes para establecer una línea base,<br>**Cuando** accede al reporte de consumo,<br>**Entonces** el sistema presenta recomendaciones relacionadas con los Water Points de mayor consumo del periodo. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US25 | suscriptor | Media | EP05 |
+| **Title** | Recibir recomendaciones de ahorro |  |  |
+| **Description** | Como suscriptor, deseo recibir recomendaciones basadas en mi propio consumo, para tomar decisiones concretas orientadas a reducirlo. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Recomendaciones basadas en el histórico**<br>**Dado** que el suscriptor cuenta con lecturas suficientes para establecer una línea base,<br>**Cuando** accede al reporte de consumo,<br>**Entonces** el sistema presenta recomendaciones relacionadas con los Water Points de mayor consumo del periodo. |  |  |
 
-| Story ID | US26 | Priority | Media | Epic | EP05 |
-|---|---|---|---|---|---|
-| **Title** | Compartir el reporte de consumo | | | | |
-| **Description** | Como suscriptor, deseo exportar o compartir el reporte de consumo, para remitirlo a mi contador o a otra persona del negocio. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Exportación del reporte**<br>**Dado** que el suscriptor consulta un reporte de consumo,<br>**Cuando** solicita compartirlo,<br>**Entonces** el sistema genera un resumen del periodo y lo pone a disposición a través de las opciones de compartición del dispositivo. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US26 | suscriptor | Media | EP05 |
+| **Title** | Compartir el reporte de consumo |  |  |
+| **Description** | Como suscriptor, deseo exportar o compartir el reporte de consumo, para remitirlo a mi contador o a otra persona del negocio. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Exportación del reporte**<br>**Dado** que el suscriptor consulta un reporte de consumo,<br>**Cuando** solicita compartirlo,<br>**Entonces** el sistema genera un resumen del periodo y lo pone a disposición a través de las opciones de compartición del dispositivo. |  |  |
 
-| Story ID | US27 | Priority | Baja | Epic | EP05 |
-|---|---|---|---|---|---|
-| **Title** | Establecer un objetivo de sostenibilidad | | | | |
-| **Description** | Como suscriptor interesado en el uso responsable del agua, deseo definir una meta de reducción de consumo, para hacer seguimiento a mi avance. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Definición de la meta**<br>**Dado** que el suscriptor indica una meta de reducción válida para un periodo,<br>**Cuando** confirma la configuración,<br>**Entonces** el sistema registra la meta y presenta el avance respecto de ella en el reporte de consumo.<br><br>**Escenario 2: Meta alcanzada**<br>**Dado** que el consumo del periodo se mantiene por debajo de la meta establecida,<br>**Cuando** concluye el periodo,<br>**Entonces** el sistema informa al suscriptor que la meta fue alcanzada. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US27 | suscriptor interesado en el uso responsable del agua | Baja | EP05 |
+| **Title** | Establecer un objetivo de sostenibilidad |  |  |
+| **Description** | Como suscriptor interesado en el uso responsable del agua, deseo definir una meta de reducción de consumo, para hacer seguimiento a mi avance. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Definición de la meta**<br>**Dado** que el suscriptor indica una meta de reducción válida para un periodo,<br>**Cuando** confirma la configuración,<br>**Entonces** el sistema registra la meta y presenta el avance respecto de ella en el reporte de consumo.<br><br>**Escenario 2: Meta alcanzada**<br>**Dado** que el consumo del periodo se mantiene por debajo de la meta establecida,<br>**Cuando** concluye el periodo,<br>**Entonces** el sistema informa al suscriptor que la meta fue alcanzada. |  |  |
 
 ##### EP06 – Gestión de tanques y reabastecimiento
 
-| Story ID | US28 | Priority | Alta | Epic | EP06 |
-|---|---|---|---|---|---|
-| **Title** | Consultar el nivel del tanque de agua | | | | |
-| **Description** | Como suscriptor que depende de un tanque, deseo consultar su nivel actual desde el celular, para anticipar problemas de abastecimiento. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Nivel disponible**<br>**Dado** que el suscriptor cuenta con un tanque monitoreado por un dispositivo IoT,<br>**Cuando** accede al panel de monitoreo,<br>**Entonces** el sistema presenta el nivel actual del tanque y la fecha y hora de la última lectura. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US28 | suscriptor que depende de un tanque | Alta | EP06 |
+| **Title** | Consultar el nivel del tanque de agua |  |  |
+| **Description** | Como suscriptor que depende de un tanque, deseo consultar su nivel actual desde el celular, para anticipar problemas de abastecimiento. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Nivel disponible**<br>**Dado** que el suscriptor cuenta con un tanque monitoreado por un dispositivo IoT,<br>**Cuando** accede al panel de monitoreo,<br>**Entonces** el sistema presenta el nivel actual del tanque y la fecha y hora de la última lectura. |  |  |
 
-| Story ID | US29 | Priority | Alta | Epic | EP06 |
-|---|---|---|---|---|---|
-| **Title** | Recibir aviso de nivel bajo en el tanque | | | | |
-| **Description** | Como suscriptor, deseo ser notificado cuando el nivel del tanque llegue a un punto crítico, para gestionar el reabastecimiento antes de quedarme sin agua. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Nivel crítico alcanzado**<br>**Dado** que el nivel de un tanque desciende por debajo del valor crítico configurado,<br>**Cuando** el sistema procesa la lectura,<br>**Entonces** el sistema envía una notificación push al suscriptor indicando el tanque afectado y su nivel actual. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US29 | suscriptor | Alta | EP06 |
+| **Title** | Recibir aviso de nivel bajo en el tanque |  |  |
+| **Description** | Como suscriptor, deseo ser notificado cuando el nivel del tanque llegue a un punto crítico, para gestionar el reabastecimiento antes de quedarme sin agua. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Nivel crítico alcanzado**<br>**Dado** que el nivel de un tanque desciende por debajo del valor crítico configurado,<br>**Cuando** el sistema procesa la lectura,<br>**Entonces** el sistema envía una notificación push al suscriptor indicando el tanque afectado y su nivel actual. |  |  |
 
-| Story ID | US30 | Priority | Media | Epic | EP06 |
-|---|---|---|---|---|---|
-| **Title** | Conocer la predicción de reabastecimiento | | | | |
-| **Description** | Como suscriptor, deseo conocer en cuánto tiempo estimado se agotará el tanque, para planificar el reabastecimiento con anticipación. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Predicción disponible**<br>**Dado** que el sistema cuenta con histórico suficiente de consumo del tanque,<br>**Cuando** el suscriptor consulta el detalle del tanque,<br>**Entonces** el sistema presenta la fecha estimada en que se alcanzará el nivel crítico.<br><br>**Escenario 2: Histórico insuficiente**<br>**Dado** que el sistema no cuenta con histórico suficiente,<br>**Cuando** el suscriptor consulta el detalle del tanque,<br>**Entonces** el sistema informa que la predicción aún no se encuentra disponible. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US30 | suscriptor | Media | EP06 |
+| **Title** | Conocer la predicción de reabastecimiento |  |  |
+| **Description** | Como suscriptor, deseo conocer en cuánto tiempo estimado se agotará el tanque, para planificar el reabastecimiento con anticipación. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Predicción disponible**<br>**Dado** que el sistema cuenta con histórico suficiente de consumo del tanque,<br>**Cuando** el suscriptor consulta el detalle del tanque,<br>**Entonces** el sistema presenta la fecha estimada en que se alcanzará el nivel crítico.<br><br>**Escenario 2: Histórico insuficiente**<br>**Dado** que el sistema no cuenta con histórico suficiente,<br>**Cuando** el suscriptor consulta el detalle del tanque,<br>**Entonces** el sistema informa que la predicción aún no se encuentra disponible. |  |  |
 
 ##### EP07 – Suscripciones y planes
 
-| Story ID | US31 | Priority | Alta | Epic | EP07 |
-|---|---|---|---|---|---|
-| **Title** | Contratar un plan de suscripción | | | | |
-| **Description** | Como suscriptor registrado, deseo contratar un plan, para habilitar las funcionalidades de monitoreo correspondientes a mi necesidad. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Contratación exitosa**<br>**Dado** que el suscriptor selecciona un plan y completa el pago correctamente,<br>**Cuando** el pago es confirmado,<br>**Entonces** el sistema activa la suscripción y habilita las funcionalidades del plan contratado.<br><br>**Escenario 2: Pago rechazado**<br>**Dado** que el medio de pago del suscriptor es rechazado,<br>**Cuando** intenta completar la contratación,<br>**Entonces** el sistema no activa la suscripción e informa que el pago no pudo procesarse. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US31 | suscriptor registrado | Alta | EP07 |
+| **Title** | Contratar un plan de suscripción |  |  |
+| **Description** | Como suscriptor registrado, deseo contratar un plan, para habilitar las funcionalidades de monitoreo correspondientes a mi necesidad. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Contratación exitosa**<br>**Dado** que el suscriptor selecciona un plan y finaliza el pago correctamente,<br>**Cuando** el pago es confirmado,<br>**Entonces** el sistema activa la suscripción y habilita las funcionalidades del plan contratado.<br><br>**Escenario 2: Pago rechazado**<br>**Dado** que el medio de pago del suscriptor es rechazado,<br>**Cuando** intenta contratar el plan,<br>**Entonces** el sistema no activa la suscripción e informa que el pago no pudo procesarse. |  |  |
 
-| Story ID | US32 | Priority | Media | Epic | EP07 |
-|---|---|---|---|---|---|
-| **Title** | Acceder a un periodo de prueba | | | | |
-| **Description** | Como suscriptor nuevo, deseo probar el servicio durante un periodo inicial, para verificar su utilidad antes de comprometerme con un plan pagado. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Activación del periodo de prueba**<br>**Dado** que el suscriptor no ha utilizado previamente un periodo de prueba,<br>**Cuando** lo solicita,<br>**Entonces** el sistema activa el periodo de prueba e indica su fecha de término.<br><br>**Escenario 2: Término del periodo de prueba**<br>**Dado** que el periodo de prueba de un suscriptor concluye sin contratación de un plan,<br>**Cuando** el suscriptor accede a la aplicación,<br>**Entonces** el sistema restringe las funcionalidades pagadas e informa las opciones de contratación.<br><br>**Regla de negocio**<br>El periodo de prueba se otorga una única vez por suscriptor. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US32 | suscriptor nuevo | Media | EP07 |
+| **Title** | Acceder a un periodo de prueba |  |  |
+| **Description** | Como suscriptor nuevo, deseo probar el servicio durante un periodo inicial, para verificar su utilidad antes de comprometerme con un plan pagado. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Activación del periodo de prueba**<br>**Dado** que el suscriptor no ha utilizado previamente un periodo de prueba,<br>**Cuando** lo solicita,<br>**Entonces** el sistema activa el periodo de prueba e indica su fecha de término.<br><br>**Escenario 2: Término del periodo de prueba**<br>**Dado** que el periodo de prueba de un suscriptor concluye sin contratación de un plan,<br>**Cuando** el suscriptor accede a la aplicación,<br>**Entonces** el sistema restringe las funcionalidades pagadas e informa las opciones de contratación.<br><br>**Regla de negocio**<br>El periodo de prueba se otorga una única vez por suscriptor. |  |  |
 
-| Story ID | US33 | Priority | Media | Epic | EP07 |
-|---|---|---|---|---|---|
-| **Title** | Cambiar o cancelar el plan contratado | | | | |
-| **Description** | Como suscriptor, deseo cambiar o cancelar mi plan, para ajustar el servicio a la evolución de mi negocio u hogar. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Cambio de plan**<br>**Dado** que el suscriptor cuenta con una suscripción activa,<br>**Cuando** selecciona otro plan y confirma el cambio,<br>**Entonces** el sistema aplica el nuevo plan a partir del siguiente periodo de facturación.<br><br>**Escenario 2: Cancelación**<br>**Dado** que el suscriptor solicita la cancelación de su suscripción,<br>**Cuando** confirma la solicitud,<br>**Entonces** el sistema mantiene el acceso hasta el término del periodo pagado y no genera nuevos cobros. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US33 | suscriptor | Media | EP07 |
+| **Title** | Cambiar o cancelar el plan contratado |  |  |
+| **Description** | Como suscriptor, deseo cambiar o cancelar mi plan, para ajustar el servicio a la evolución de mi negocio u hogar. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Cambio de plan**<br>**Dado** que el suscriptor cuenta con una suscripción activa,<br>**Cuando** selecciona otro plan y confirma el cambio,<br>**Entonces** el sistema aplica el nuevo plan a partir del siguiente periodo de facturación.<br><br>**Escenario 2: Cancelación**<br>**Dado** que el suscriptor solicita la cancelación de su suscripción,<br>**Cuando** confirma la solicitud,<br>**Entonces** el sistema mantiene el acceso hasta el término del periodo pagado y no genera nuevos cobros. |  |  |
 
-| Story ID | US34 | Priority | Baja | Epic | EP07 |
-|---|---|---|---|---|---|
-| **Title** | Consultar el historial de pagos | | | | |
-| **Description** | Como suscriptor, deseo consultar mis pagos anteriores, para llevar control de lo que he abonado por el servicio. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Historial disponible**<br>**Dado** que el suscriptor registra pagos anteriores,<br>**Cuando** accede al historial de pagos,<br>**Entonces** el sistema presenta cada pago con su fecha, monto, plan asociado y estado. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US34 | suscriptor | Baja | EP07 |
+| **Title** | Consultar el historial de pagos |  |  |
+| **Description** | Como suscriptor, deseo consultar mis pagos anteriores, para llevar control de lo que he abonado por el servicio. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Historial disponible**<br>**Dado** que el suscriptor registra pagos anteriores,<br>**Cuando** accede al historial de pagos,<br>**Entonces** el sistema presenta cada pago con su fecha, monto, plan asociado y estado. |  |  |
 
 ##### EP08 – Soporte e incidencias
 
-| Story ID | US35 | Priority | Alta | Epic | EP08 |
-|---|---|---|---|---|---|
-| **Title** | Registrar una incidencia | | | | |
-| **Description** | Como suscriptor, deseo registrar una incidencia cuando detecto un problema con un dispositivo o una fuga confirmada, para dejar constancia y recibir atención. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Registro de la incidencia**<br>**Dado** que el suscriptor describe el problema y selecciona el dispositivo o Water Point afectado,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema crea la incidencia en estado pendiente y confirma su recepción.<br><br>**Escenario 2: Incidencia originada en una alerta**<br>**Dado** que el suscriptor consulta una alerta activa,<br>**Cuando** solicita registrar una incidencia desde esa alerta,<br>**Entonces** el sistema crea la incidencia asociada a la alerta correspondiente. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US35 | suscriptor | Alta | EP08 |
+| **Title** | Registrar una incidencia |  |  |
+| **Description** | Como suscriptor, deseo registrar una incidencia cuando detecto un problema con un dispositivo o una fuga confirmada, para dejar constancia y recibir atención. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Registro de la incidencia**<br>**Dado** que el suscriptor describe el problema y selecciona el dispositivo o Water Point afectado,<br>**Cuando** confirma el registro,<br>**Entonces** el sistema crea la incidencia en estado pendiente y confirma su recepción.<br><br>**Escenario 2: Incidencia originada en una alerta**<br>**Dado** que el suscriptor consulta una alerta activa,<br>**Cuando** solicita registrar una incidencia desde esa alerta,<br>**Entonces** el sistema crea la incidencia asociada a la alerta correspondiente. |  |  |
 
-| Story ID | US36 | Priority | Media | Epic | EP08 |
-|---|---|---|---|---|---|
-| **Title** | Solicitar una visita técnica | | | | |
-| **Description** | Como suscriptor, deseo solicitar la visita de un técnico, para resolver problemas de instalación o reparación que no puedo atender por mi cuenta. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Solicitud registrada**<br>**Dado** que el suscriptor cuenta con una incidencia pendiente,<br>**Cuando** solicita una visita técnica indicando su disponibilidad,<br>**Entonces** el sistema registra la solicitud y actualiza el estado de la incidencia a visita solicitada.<br><br>**Escenario 2: Técnico asignado**<br>**Dado** que una solicitud de visita técnica es atendida,<br>**Cuando** se asigna un técnico,<br>**Entonces** el sistema notifica al suscriptor la asignación y la fecha programada. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US36 | suscriptor | Media | EP08 |
+| **Title** | Solicitar una visita técnica |  |  |
+| **Description** | Como suscriptor, deseo solicitar la visita de un técnico, para resolver problemas de instalación o reparación que no puedo atender por mi cuenta. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Solicitud registrada**<br>**Dado** que el suscriptor cuenta con una incidencia pendiente,<br>**Cuando** solicita una visita técnica indicando su disponibilidad,<br>**Entonces** el sistema registra la solicitud y actualiza el estado de la incidencia a visita solicitada.<br><br>**Escenario 2: Técnico asignado**<br>**Dado** que una solicitud de visita técnica es atendida,<br>**Cuando** se asigna un técnico,<br>**Entonces** el sistema notifica al suscriptor la asignación y la fecha programada. |  |  |
 
-| Story ID | US37 | Priority | Media | Epic | EP08 |
-|---|---|---|---|---|---|
-| **Title** | Hacer seguimiento a una incidencia | | | | |
-| **Description** | Como suscriptor, deseo consultar el estado de mis incidencias, para saber si ya fueron atendidas o siguen pendientes. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Consulta del historial**<br>**Dado** que el suscriptor registra incidencias previas,<br>**Cuando** accede al listado de incidencias,<br>**Entonces** el sistema presenta cada incidencia con su fecha de registro, dispositivo asociado y estado actual.<br><br>**Regla de negocio**<br>Los estados de una incidencia son pendiente, visita solicitada, en atención y resuelta. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US37 | suscriptor | Media | EP08 |
+| **Title** | Hacer seguimiento a una incidencia |  |  |
+| **Description** | Como suscriptor, deseo consultar el estado de mis incidencias, para saber si ya fueron atendidas o siguen pendientes. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Consulta del historial**<br>**Dado** que el suscriptor registra incidencias previas,<br>**Cuando** accede al listado de incidencias,<br>**Entonces** el sistema presenta cada incidencia con su fecha de registro, dispositivo asociado y estado actual.<br><br>**Regla de negocio**<br>Los estados de una incidencia son pendiente, visita solicitada, en atención y resuelta. |  |  |
 
-| Story ID | US38 | Priority | Baja | Epic | EP08 |
-|---|---|---|---|---|---|
-| **Title** | Consultar los términos y condiciones del servicio | | | | |
-| **Description** | Como suscriptor, deseo consultar los términos y condiciones y la política de tratamiento de datos, para conocer las condiciones bajo las que se maneja la información de mi consumo. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Acceso desde la aplicación**<br>**Dado** que el suscriptor solicita los términos y condiciones,<br>**Cuando** el sistema procesa la consulta,<br>**Entonces** devuelve el documento vigente indicando su fecha de actualización.<br><br>**Regla de negocio**<br>Los términos y condiciones se encuentran accesibles tanto desde el Landing Page como desde la aplicación móvil al momento del registro. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| US38 | suscriptor | Baja | EP08 |
+| **Title** | Consultar los términos y condiciones del servicio |  |  |
+| **Description** | Como suscriptor, deseo consultar los términos y condiciones y la política de tratamiento de datos, para conocer las condiciones bajo las que se maneja la información de mi consumo. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Acceso desde la aplicación**<br>**Dado** que el suscriptor solicita los términos y condiciones,<br>**Cuando** el sistema procesa la consulta,<br>**Entonces** devuelve el documento vigente indicando su fecha de actualización.<br><br>**Regla de negocio**<br>Los términos y condiciones se encuentran accesibles tanto desde el Landing Page como desde la aplicación móvil al momento del registro. |  |  |
 
 #### Technical Stories
 
-| Story ID | TS01 | Priority | Alta | Epic | EP02 |
-|---|---|---|---|---|---|
-| **Title** | Endpoints de autenticación y emisión de token | | | | |
-| **Description** | Como Developer, deseo disponer de endpoints RESTful para el registro y la autenticación de suscriptores con emisión de token, para que las aplicaciones móviles puedan acceder de forma segura a los recursos protegidos del API. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Autenticación válida**<br>**Dado** que se envía una solicitud POST al endpoint de autenticación con credenciales válidas,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y un token de acceso con su tiempo de expiración.<br><br>**Escenario 2: Autenticación inválida**<br>**Dado** que se envía una solicitud POST al endpoint de autenticación con credenciales inválidas,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 401 y un mensaje de error.<br><br>**Escenario 3: Recurso protegido sin token**<br>**Dado** que se envía una solicitud a un recurso protegido sin token,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 401. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| TS01 | Developer | Alta | EP02 |
+| **Title** | Endpoints de autenticación y emisión de token |  |  |
+| **Description** | Como Developer, deseo disponer de endpoints RESTful para el registro y la autenticación de suscriptores con emisión de token, para que las aplicaciones móviles puedan acceder de forma segura a los recursos protegidos del API. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Autenticación válida**<br>**Dado** que se envía una solicitud POST al endpoint de autenticación con credenciales válidas,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y un token de acceso con su tiempo de expiración.<br><br>**Escenario 2: Autenticación inválida**<br>**Dado** que se envía una solicitud POST al endpoint de autenticación con credenciales inválidas,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 401 y un mensaje de error.<br><br>**Escenario 3: Recurso protegido sin token**<br>**Dado** que se envía una solicitud a un recurso protegido sin token,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 401. |  |  |
 
-| Story ID | TS02 | Priority | Alta | Epic | EP03 |
-|---|---|---|---|---|---|
-| **Title** | Endpoints de gestión de dispositivos y Water Points | | | | |
-| **Description** | Como Developer, deseo disponer de endpoints RESTful para registrar, consultar, actualizar y dar de baja dispositivos IoT y sus Water Points, para que las aplicaciones móviles gestionen los dispositivos del suscriptor. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Registro de dispositivo**<br>**Dado** que se envía una solicitud POST al endpoint de dispositivos con un identificador no registrado,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 201 y el recurso creado.<br><br>**Escenario 2: Dispositivo duplicado**<br>**Dado** que se envía una solicitud POST con un identificador ya registrado,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 409.<br><br>**Escenario 3: Consulta de dispositivo inexistente**<br>**Dado** que se envía una solicitud GET al endpoint de un dispositivo que no existe,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 404. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| TS02 | Developer | Alta | EP03 |
+| **Title** | Endpoints de gestión de dispositivos y Water Points |  |  |
+| **Description** | Como Developer, deseo disponer de endpoints RESTful para registrar, consultar, actualizar y dar de baja dispositivos IoT y sus Water Points, para que las aplicaciones móviles gestionen los dispositivos del suscriptor. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Registro de dispositivo**<br>**Dado** que se envía una solicitud POST al endpoint de dispositivos con un identificador no registrado,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 201 y el recurso creado.<br><br>**Escenario 2: Dispositivo duplicado**<br>**Dado** que se envía una solicitud POST con un identificador ya registrado,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 409.<br><br>**Escenario 3: Consulta de dispositivo inexistente**<br>**Dado** que se envía una solicitud GET al endpoint de un dispositivo que no existe,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 404. |  |  |
 
-| Story ID | TS03 | Priority | Alta | Epic | EP03 |
-|---|---|---|---|---|---|
-| **Title** | Endpoint de ingesta de lecturas de consumo | | | | |
-| **Description** | Como Developer, deseo disponer de un endpoint RESTful que reciba las lecturas enviadas por los dispositivos IoT, para que el sistema disponga de la información necesaria para el análisis de consumo y la detección de anomalías. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Lectura válida**<br>**Dado** que se envía una solicitud POST al endpoint de lecturas con un payload válido y un dispositivo registrado,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 201 y registra la lectura.<br><br>**Escenario 2: Payload inválido**<br>**Dado** que se envía una solicitud POST con un payload que no cumple el contrato definido,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 400 e indica los campos inválidos. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| TS03 | Developer | Alta | EP03 |
+| **Title** | Endpoint de ingesta de lecturas de consumo |  |  |
+| **Description** | Como Developer, deseo disponer de un endpoint RESTful que reciba las lecturas enviadas por los dispositivos IoT, para que el sistema disponga de la información necesaria para el análisis de consumo y la detección de anomalías. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Lectura válida**<br>**Dado** que se envía una solicitud POST al endpoint de lecturas con un payload válido y un dispositivo registrado,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 201 y registra la lectura.<br><br>**Escenario 2: Payload inválido**<br>**Dado** que se envía una solicitud POST con un payload que no cumple el contrato definido,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 400 e indica los campos inválidos. |  |  |
 
-| Story ID | TS04 | Priority | Alta | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Endpoints de alertas y umbrales de consumo | | | | |
-| **Description** | Como Developer, deseo disponer de endpoints RESTful para consultar alertas, actualizar su estado y administrar los umbrales de consumo, para que las aplicaciones móviles presenten y gestionen las alertas del suscriptor. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Consulta de alertas**<br>**Dado** que se envía una solicitud GET al endpoint de alertas con un token válido,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y la relación de alertas del suscriptor autenticado.<br><br>**Escenario 2: Actualización de estado**<br>**Dado** que se envía una solicitud PATCH al endpoint de una alerta existente con un estado válido,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y el recurso actualizado.<br><br>**Escenario 3: Alerta de otro suscriptor**<br>**Dado** que se envía una solicitud sobre una alerta que no pertenece al suscriptor autenticado,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 403. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| TS04 | Developer | Alta | EP04 |
+| **Title** | Endpoints de alertas y umbrales de consumo |  |  |
+| **Description** | Como Developer, deseo disponer de endpoints RESTful para consultar alertas, actualizar su estado y administrar los umbrales de consumo, para que las aplicaciones móviles presenten y gestionen las alertas del suscriptor. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Consulta de alertas**<br>**Dado** que se envía una solicitud GET al endpoint de alertas con un token válido,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y la relación de alertas del suscriptor autenticado.<br><br>**Escenario 2: Actualización de estado**<br>**Dado** que se envía una solicitud PATCH al endpoint de una alerta existente con un estado válido,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y el recurso actualizado.<br><br>**Escenario 3: Alerta de otro suscriptor**<br>**Dado** que se envía una solicitud sobre una alerta que no pertenece al suscriptor autenticado,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 403. |  |  |
 
-| Story ID | TS05 | Priority | Alta | Epic | EP05 |
-|---|---|---|---|---|---|
-| **Title** | Endpoints de reportes de consumo | | | | |
-| **Description** | Como Developer, deseo disponer de endpoints RESTful que expongan el consumo agregado por periodo, local y Water Point, para que las aplicaciones móviles construyan los reportes y comparativas de consumo. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Reporte de un periodo con datos**<br>**Dado** que se envía una solicitud GET al endpoint de reportes indicando un periodo con lecturas registradas,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y el consumo agregado del periodo.<br><br>**Escenario 2: Periodo sin datos**<br>**Dado** que se envía una solicitud GET indicando un periodo sin lecturas registradas,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y una colección vacía.<br><br>**Escenario 3: Parámetro de periodo inválido**<br>**Dado** que se envía una solicitud GET con un formato de periodo inválido,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 400. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| TS05 | Developer | Alta | EP05 |
+| **Title** | Endpoints de reportes de consumo |  |  |
+| **Description** | Como Developer, deseo disponer de endpoints RESTful que expongan el consumo agregado por periodo, local y Water Point, para que las aplicaciones móviles construyan los reportes y comparativas de consumo. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Reporte de un periodo con datos**<br>**Dado** que se envía una solicitud GET al endpoint de reportes indicando un periodo con lecturas registradas,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y el consumo agregado del periodo.<br><br>**Escenario 2: Periodo sin datos**<br>**Dado** que se envía una solicitud GET indicando un periodo sin lecturas registradas,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y una colección vacía.<br><br>**Escenario 3: Parámetro de periodo inválido**<br>**Dado** que se envía una solicitud GET con un formato de periodo inválido,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 400. |  |  |
 
-| Story ID | TS06 | Priority | Media | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Integración con el servicio externo de notificaciones push | | | | |
-| **Description** | Como Developer, deseo integrar el envío de notificaciones push con un servicio externo de terceros, para que las alertas lleguen al dispositivo móvil del suscriptor en tiempo real. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Envío exitoso**<br>**Dado** que se genera una alerta para un suscriptor con un token de dispositivo registrado,<br>**Cuando** el servicio solicita el envío de la notificación,<br>**Entonces** el proveedor externo acepta la solicitud y el sistema registra el envío.<br><br>**Escenario 2: Token de dispositivo inválido**<br>**Dado** que el token de dispositivo registrado no es válido,<br>**Cuando** el servicio solicita el envío de la notificación,<br>**Entonces** el sistema registra el fallo y marca el token como no vigente. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| TS06 | Developer | Media | EP04 |
+| **Title** | Integración con el servicio externo de notificaciones push |  |  |
+| **Description** | Como Developer, deseo integrar el envío de notificaciones push con un servicio externo de terceros, para que las alertas lleguen al dispositivo móvil del suscriptor en tiempo real. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Envío exitoso**<br>**Dado** que se genera una alerta para un suscriptor con un token de dispositivo registrado,<br>**Cuando** el servicio solicita el envío de la notificación,<br>**Entonces** el proveedor externo acepta la solicitud y el sistema registra el envío.<br><br>**Escenario 2: Token de dispositivo inválido**<br>**Dado** que el token de dispositivo registrado no es válido,<br>**Cuando** el servicio solicita el envío de la notificación,<br>**Entonces** el sistema registra el fallo y marca el token como no vigente. |  |  |
 
-| Story ID | TS07 | Priority | Media | Epic | EP07 |
-|---|---|---|---|---|---|
-| **Title** | Endpoints de suscripciones y planes | | | | |
-| **Description** | Como Developer, deseo disponer de endpoints RESTful para consultar planes, contratar, cambiar y cancelar suscripciones, para que la aplicación móvil gestione el ciclo de vida de la suscripción del usuario. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Consulta de planes**<br>**Dado** que se envía una solicitud GET al endpoint de planes,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y la relación de planes vigentes.<br><br>**Escenario 2: Contratación válida**<br>**Dado** que se envía una solicitud POST al endpoint de suscripciones con un plan vigente,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 201 y la suscripción creada.<br><br>**Escenario 3: Plan inexistente**<br>**Dado** que se envía una solicitud POST referenciando un plan que no existe,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 404. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| TS07 | Developer | Media | EP07 |
+| **Title** | Endpoints de suscripciones y planes |  |  |
+| **Description** | Como Developer, deseo disponer de endpoints RESTful para consultar planes, contratar, cambiar y cancelar suscripciones, para que la aplicación móvil gestione el ciclo de vida de la suscripción del usuario. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Consulta de planes**<br>**Dado** que se envía una solicitud GET al endpoint de planes,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 200 y la relación de planes vigentes.<br><br>**Escenario 2: Contratación válida**<br>**Dado** que se envía una solicitud POST al endpoint de suscripciones con un plan vigente,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 201 y la suscripción creada.<br><br>**Escenario 3: Plan inexistente**<br>**Dado** que se envía una solicitud POST referenciando un plan que no existe,<br>**Cuando** el servicio procesa la solicitud,<br>**Entonces** el servicio responde con código 404. |  |  |
 
-| Story ID | TS08 | Priority | Media | Epic | EP01 |
-|---|---|---|---|---|---|
-| **Title** | Soporte de internacionalización y accesibilidad | | | | |
-| **Description** | Como Developer, deseo implementar el soporte de i18n y a11y en el Landing Page y la aplicación móvil, para que la solución sea utilizable por usuarios con distintos idiomas y capacidades. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Resolución del idioma**<br>**Dado** que el usuario accede a la solución con una configuración regional soportada,<br>**Cuando** el sistema determina la configuración regional,<br>**Entonces** entrega los mensajes en el idioma correspondiente.<br><br>**Escenario 2: Configuración regional no soportada**<br>**Dado** que el usuario accede con una configuración regional no soportada,<br>**Cuando** el sistema determina la configuración regional,<br>**Entonces** entrega los mensajes en el idioma por defecto.<br><br>**Regla de negocio**<br>Los idiomas soportados son en_US y es_419, siendo en_US el idioma por defecto. El Landing Page incorpora atributos ARIA en sus elementos interactivos. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| TS08 | Developer | Media | EP01 |
+| **Title** | Soporte de internacionalización y accesibilidad |  |  |
+| **Description** | Como Developer, deseo implementar el soporte de i18n y a11y en el Landing Page y la aplicación móvil, para que la solución sea utilizable por usuarios con distintos idiomas y capacidades. |  |  |
+| **Acceptance Criteria** | **Escenario 1: Resolución del idioma**<br>**Dado** que el usuario accede a la solución con una configuración regional soportada,<br>**Cuando** el sistema determina la configuración regional,<br>**Entonces** entrega los mensajes en el idioma correspondiente.<br><br>**Escenario 2: Configuración regional no soportada**<br>**Dado** que el usuario accede con una configuración regional no soportada,<br>**Cuando** el sistema determina la configuración regional,<br>**Entonces** entrega los mensajes en el idioma por defecto.<br><br>**Regla de negocio**<br>Los idiomas soportados son en_US y es_419, siendo en_US el idioma por defecto. El Landing Page incorpora atributos ARIA en sus elementos interactivos. |  |  |
 
 #### Spike Stories
 
-| Story ID | SP01 | Priority | Alta | Epic | EP03 |
-|---|---|---|---|---|---|
-| **Title** | Investigar la lectura de códigos QR y el acceso a la cámara en Kotlin y Flutter | | | | |
-| **Description** | Como equipo de desarrollo, deseo investigar y prototipar la lectura de códigos QR mediante el acceso a la cámara del dispositivo en la aplicación nativa Kotlin y en la versión multiplataforma Flutter, para determinar la biblioteca más adecuada, los permisos requeridos y el esfuerzo de implementación del registro de dispositivos IoT. | | | | |
-| **Acceptance Criteria** | **Objetivo de investigación**<br>Determinar qué biblioteca de lectura de códigos QR utilizar en cada plataforma, cómo se gestionan los permisos de cámara y qué comportamiento adoptar cuando el permiso es denegado.<br><br>**Escenario 1: Comparación de bibliotecas**<br>**Dado** que el equipo requiere seleccionar una biblioteca de lectura de códigos QR,<br>**Cuando** el desarrollador evalúa al menos dos alternativas por plataforma,<br>**Entonces** documenta para cada una su licencia, versión, compatibilidad y limitaciones en un informe compartido.<br><br>**Escenario 2: Prototipo funcional**<br>**Dado** que el equipo requiere validar la viabilidad técnica,<br>**Cuando** el desarrollador construye un prototipo que lee un código QR y devuelve su contenido,<br>**Entonces** el prototipo queda registrado en una rama del repositorio y referenciado en el informe.<br><br>**Escenario 3: Estimación**<br>**Dado** que el Spike concluye,<br>**Cuando** el desarrollador descompone la implementación en tareas,<br>**Entonces** entrega una estimación en Story Points para las historias de registro de dispositivo.<br><br>**Definition of Done**<br>El informe es revisado en una sesión de refinamiento del backlog, el prototipo está registrado en el repositorio y el Spike se completa dentro del Sprint sin exceder las 16 horas. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| SP01 | equipo de desarrollo | Alta | EP03 |
+| **Title** | Investigar la lectura de códigos QR y el acceso a la cámara en Kotlin y Flutter |  |  |
+| **Description** | Como equipo de desarrollo, deseo investigar y prototipar la lectura de códigos QR mediante el acceso a la cámara del dispositivo en la aplicación nativa Kotlin y en la versión multiplataforma Flutter, para determinar la biblioteca más adecuada, los permisos requeridos y el esfuerzo de implementación del registro de dispositivos IoT. |  |  |
+| **Acceptance Criteria** | **Objetivo de investigación**<br>Determinar qué biblioteca de lectura de códigos QR utilizar en cada plataforma, cómo se gestionan los permisos de cámara y qué comportamiento adoptar cuando el permiso es denegado.<br><br>**Escenario 1: Comparación de bibliotecas**<br>**Dado** que el equipo requiere seleccionar una biblioteca de lectura de códigos QR,<br>**Cuando** el desarrollador evalúa al menos dos alternativas por plataforma,<br>**Entonces** documenta para cada una su licencia, versión, compatibilidad y limitaciones en un informe compartido.<br><br>**Escenario 2: Prototipo funcional**<br>**Dado** que el equipo requiere validar la viabilidad técnica,<br>**Cuando** el desarrollador construye un prototipo que lee un código QR y devuelve su contenido,<br>**Entonces** el prototipo queda registrado en una rama del repositorio y referenciado en el informe.<br><br>**Escenario 3: Estimación**<br>**Dado** que el Spike concluye,<br>**Cuando** el desarrollador descompone la implementación en tareas,<br>**Entonces** entrega una estimación en Story Points para las historias de registro de dispositivo.<br><br>**Definition of Done**<br>El informe es revisado en una sesión de refinamiento del backlog, el prototipo está registrado en el repositorio y el Spike se completa dentro del Sprint sin exceder las 16 horas. |  |  |
 
-| Story ID | SP02 | Priority | Alta | Epic | EP04 |
-|---|---|---|---|---|---|
-| **Title** | Investigar la integración de un servicio externo de notificaciones push | | | | |
-| **Description** | Como equipo de desarrollo, deseo investigar y prototipar la integración de un servicio externo de notificaciones push con la aplicación móvil y el backend, para determinar su viabilidad, sus implicancias de seguridad y el esfuerzo requerido para el envío de alertas en tiempo real. Este Spike corresponde al feature de aprendizaje autónomo del proyecto, al incorporar una tecnología no abordada en clase. | | | | |
-| **Acceptance Criteria** | **Objetivo de investigación**<br>Determinar el proveedor de notificaciones push a utilizar, el flujo de registro y renovación de tokens de dispositivo, y el manejo de fallos de entrega.<br><br>**Escenario 1: Evaluación del proveedor**<br>**Dado** que el equipo requiere seleccionar un proveedor de notificaciones push,<br>**Cuando** el desarrollador evalúa las alternativas disponibles,<br>**Entonces** documenta para cada una su modelo de costos, límites de envío, soporte para Android y compatibilidad con el backend en un informe compartido.<br><br>**Escenario 2: Implicancias de seguridad**<br>**Dado** que las notificaciones transportan información del consumo del suscriptor,<br>**Cuando** el desarrollador analiza el flujo de envío,<br>**Entonces** documenta el tratamiento de credenciales del proveedor, el almacenamiento de los tokens de dispositivo y la información que no debe incluirse en el cuerpo de la notificación.<br><br>**Escenario 3: Prototipo funcional**<br>**Dado** que el equipo requiere validar la viabilidad técnica,<br>**Cuando** el desarrollador construye un prototipo que envía una notificación desde el backend y la recibe en un dispositivo físico,<br>**Entonces** el prototipo queda registrado en una rama del repositorio y referenciado en el informe.<br><br>**Escenario 4: Estimación y documentación del aprendizaje**<br>**Dado** que el Spike concluye,<br>**Cuando** el desarrollador consolida los hallazgos,<br>**Entonces** entrega la justificación de la selección, el registro del proceso de aprendizaje y una estimación en Story Points para las historias de alertas.<br><br>**Definition of Done**<br>El informe es revisado en una sesión de refinamiento del backlog, el prototipo está registrado en el repositorio y el Spike se completa dentro del Sprint sin exceder las 16 horas. | | | | |
+| Story ID | User | Priority | Epic |
+|---|---|---|---|
+| SP02 | equipo de desarrollo | Alta | EP04 |
+| **Title** | Investigar la integración de un servicio externo de notificaciones push |  |  |
+| **Description** | Como equipo de desarrollo, deseo investigar y prototipar la integración de un servicio externo de notificaciones push con la aplicación móvil y el backend, para determinar su viabilidad, sus implicancias de seguridad y el esfuerzo requerido para el envío de alertas en tiempo real. Este Spike corresponde al feature de aprendizaje autónomo del proyecto, al incorporar una tecnología no abordada en clase. |  |  |
+| **Acceptance Criteria** | **Objetivo de investigación**<br>Determinar el proveedor de notificaciones push a utilizar, el flujo de registro y renovación de tokens de dispositivo, y el manejo de fallos de entrega.<br><br>**Escenario 1: Evaluación del proveedor**<br>**Dado** que el equipo requiere seleccionar un proveedor de notificaciones push,<br>**Cuando** el desarrollador evalúa las alternativas disponibles,<br>**Entonces** documenta para cada una su modelo de costos, límites de envío, soporte para Android y compatibilidad con el backend en un informe compartido.<br><br>**Escenario 2: Implicancias de seguridad**<br>**Dado** que las notificaciones transportan información del consumo del suscriptor,<br>**Cuando** el desarrollador analiza el flujo de envío,<br>**Entonces** documenta el tratamiento de credenciales del proveedor, el almacenamiento de los tokens de dispositivo y la información que no debe incluirse en el cuerpo de la notificación.<br><br>**Escenario 3: Prototipo funcional**<br>**Dado** que el equipo requiere validar la viabilidad técnica,<br>**Cuando** el desarrollador construye un prototipo que envía una notificación desde el backend y la recibe en un dispositivo físico,<br>**Entonces** el prototipo queda registrado en una rama del repositorio y referenciado en el informe.<br><br>**Escenario 4: Estimación y documentación del aprendizaje**<br>**Dado** que el Spike concluye,<br>**Cuando** el desarrollador consolida los hallazgos,<br>**Entonces** entrega la justificación de la selección, el registro del proceso de aprendizaje y una estimación en Story Points para las historias de alertas.<br><br>**Definition of Done**<br>El informe es revisado en una sesión de refinamiento del backlog, el prototipo está registrado en el repositorio y el Spike se completa dentro del Sprint sin exceder las 16 horas. |  |  |
 
 ### 2.4.2. Impact Mapping
 
@@ -930,8 +930,6 @@ En esta sección el equipo presenta el Impact Mapping elaborado para el modelo d
 
 El artefacto fue elaborado en UXPressia, tomando como base las fichas de User Persona previamente construidas en la misma herramienta.
 
-> *[Insertar captura: images/impact_map/Impact_Map_Qlic.png]*
-> *Enlace público del artefacto: [PEGAR URL DE UXPRESSIA]*
 
 #### Business Goals
 
@@ -953,8 +951,8 @@ El artefacto fue elaborado en UXPressia, tomando como base las fichas de User Pe
 | **BG02** | Carlos Abanto (PYMES) | Prueba el servicio y comprueba su utilidad antes de comprometerse con un plan pagado. | Periodo de prueba con acceso a las funcionalidades esenciales de monitoreo. | US32: Como suscriptor nuevo, deseo probar el servicio durante un periodo inicial, para verificar su utilidad antes de comprometerme con un plan pagado. |
 | **BG02** | Carlos Abanto (PYMES) | Percibe durante el periodo de prueba un ahorro concreto que justifica la contratación. | Reportes de consumo con costo estimado y comparativas entre periodos. | US21: Como suscriptor, deseo consultar desde el celular cuánto he consumido en el periodo actual, para conocer mi situación sin esperar el recibo mensual.<br>US22: Como suscriptor, deseo comparar mi consumo actual con el de periodos anteriores, para identificar si mi gasto está aumentando.<br>US23: Como suscriptor, deseo ver mi consumo expresado también en dinero, para relacionarlo con el presupuesto de mi negocio u hogar. |
 | **BG02** | Carlos Abanto (PYMES) | Contrata el plan que corresponde a su operación al concluir el periodo de prueba. | Proceso de contratación de plan con pago integrado en la aplicación móvil. | US31: Como suscriptor registrado, deseo contratar un plan, para habilitar las funcionalidades de monitoreo correspondientes a mi necesidad. |
-| **BG03** | User Persona #2 (Hogares) *[completar al definir la ficha]* | Consulta la aplicación de forma recurrente y la incorpora a su rutina de control del gasto del hogar. | Panel de monitoreo con estado de dispositivos y consumo del periodo accesible desde el smartphone. | US12: Como suscriptor, deseo consultar el estado de todos mis dispositivos desde el panel de monitoreo, para saber cuáles están operativos y cuáles requieren atención.<br>US21: Como suscriptor, deseo consultar desde el celular cuánto he consumido en el periodo actual, para conocer mi situación sin esperar el recibo mensual. |
-| **BG03** | User Persona #2 (Hogares) *[completar al definir la ficha]* | Mantiene la suscripción porque identifica decisiones concretas derivadas de la información recibida. | Recomendaciones de ahorro basadas en el consumo histórico y objetivos de sostenibilidad con seguimiento. | US25: Como suscriptor, deseo recibir recomendaciones basadas en mi propio consumo, para tomar decisiones concretas orientadas a reducirlo.<br>US27: Como suscriptor interesado en el uso responsable del agua, deseo definir una meta de reducción de consumo, para hacer seguimiento a mi avance. |
+| **BG03** | User Persona #2 (Hogares) | Consulta la aplicación de forma recurrente y la incorpora a su rutina de control del gasto del hogar. | Panel de monitoreo con estado de dispositivos y consumo del periodo accesible desde el smartphone. | US12: Como suscriptor, deseo consultar el estado de todos mis dispositivos desde el panel de monitoreo, para saber cuáles están operativos y cuáles requieren atención.<br>US21: Como suscriptor, deseo consultar desde el celular cuánto he consumido en el periodo actual, para conocer mi situación sin esperar el recibo mensual. |
+| **BG03** | User Persona #2 (Hogares) | Mantiene la suscripción porque identifica decisiones concretas derivadas de la información recibida. | Recomendaciones de ahorro basadas en el consumo histórico y objetivos de sostenibilidad con seguimiento. | US25: Como suscriptor, deseo recibir recomendaciones basadas en mi propio consumo, para tomar decisiones concretas orientadas a reducirlo.<br>US27: Como suscriptor interesado en el uso responsable del agua, deseo definir una meta de reducción de consumo, para hacer seguimiento a mi avance. |
 | **BG03** | Carlos Abanto (PYMES) | Incorpora a otra persona de su negocio al uso de la solución, aumentando la dependencia organizacional del servicio. | Acceso multiusuario con permisos diferenciados sobre una misma cuenta. | US08: Como suscriptor responsable de un negocio, deseo otorgar acceso a otra persona de mi equipo, para que pueda revisar el consumo cuando yo no esté disponible. |
 | **BG04** | Carlos Abanto (PYMES) | Reacciona ante una alerta sin necesidad de interpretar información técnica ni consultar a un especialista. | Alertas con local afectado, nivel de urgencia, tiempo transcurrido, costo estimado y acción recomendada. | US15: Como suscriptor, deseo recibir una notificación en el celular cuando se detecte un consumo anómalo sostenido, para actuar antes de que el problema se refleje en el recibo.<br>US16: Como suscriptor sin conocimientos técnicos, deseo que la alerta indique dónde ocurre el problema y qué tan grave es, para decidir qué hacer sin depender de un especialista. |
 | **BG04** | Carlos Abanto (PYMES) | Deja de ignorar las notificaciones porque estas conservan su carácter excepcional. | Configuración de umbrales de consumo y control de la frecuencia de notificaciones. | US17: Como suscriptor, deseo definir el umbral de consumo a partir del cual se me notifica, para recibir alertas acordes al comportamiento real de mi local u hogar.<br>US18: Como suscriptor, deseo recibir notificaciones solo ante variaciones relevantes, para que las alertas conserven su valor y no terminen ignoradas. |
@@ -967,8 +965,6 @@ El artefacto fue elaborado en UXPressia, tomando como base las fichas de User Pe
 
 El Product Backlog reúne la totalidad de los requisitos especificados en la sección 2.4.1, estimados en Story Points según la escala de Fibonacci (1, 2, 3, 5, 8) y ordenados según el valor que aportan al negocio. El orden responde a la necesidad de validar tempranamente la propuesta de valor de Qlic: la detección de fugas y la visibilidad del consumo, que constituyen el núcleo de los hallazgos del Needfinding, se ubican en las primeras posiciones, junto con el sitio web estático que presenta el modelo de negocio. Las funcionalidades de autenticación se incorporan en la medida en que habilitan el acceso a las funcionalidades core, sin encabezar el ordenamiento. Las Spike Stories se ubican en las primeras posiciones porque su resultado condiciona la estimación y la implementación de las historias de registro de dispositivos y de alertas.
 
-> *[Insertar captura del Product Backlog en la herramienta indicada: images/product_backlog/Product_Backlog_Qlic.png]*
-> *URL pública del Product Backlog: [PEGAR URL DEL BOARD]*
 
 | # Orden | User Story Id | Título | Story Points | Sprint |
 |---:|---|---|---:|---:|
@@ -1040,7 +1036,6 @@ El equipo desarrolló la sesión de EventStorming en una reunión colaborativa d
 
 Como insumo se utilizaron los hallazgos del Needfinding de la sección 2.3, en particular las frustraciones asociadas a la detección tardía de fugas, la falta de visibilidad del consumo y la dependencia de terceros para el diagnóstico de incidencias. La sesión permitió visualizar el recorrido completo del dominio, desde la incorporación de un dispositivo IoT hasta la resolución de una incidencia derivada de una alerta.
 
-> *[Insertar captura de la sesión: images/eventstorming/01_big_picture_eventstorming.png]*
 
 Los domain events identificados, ordenados temporalmente, se agruparon en cinco tramos del proceso de negocio:
 
@@ -1089,7 +1084,6 @@ A partir del EventStorm ordenado, el equipo ejecutó una sesión de Candidate Co
 
 El análisis de valor confirmó que el core del dominio se concentra en la detección de consumo anómalo y en la comunicación accionable de esa detección al suscriptor, dado que constituye la razón de contratación manifestada por los entrevistados. Los procesos de identidad, suscripciones y soporte se identificaron como capacidades de soporte necesarias pero no diferenciadoras.
 
-> *[Insertar capturas de la evolución del EventStorm: images/eventstorming/02_candidate_context_discovery.png]*
 
 Los pivotal events identificados fueron los siguientes:
 
@@ -1120,7 +1114,6 @@ La separación entre **Alerting** y **Support** responde al pivotal event *Incid
 
 Para visualizar la colaboración entre los bounded contexts identificados, el equipo aplicó la técnica de Domain Storytelling sobre los escenarios de negocio más representativos. Cada flujo describe a los actores participantes, los mensajes intercambiados y el orden en que ocurren, permitiendo verificar que los límites definidos en la sección anterior soportan los casos reales del negocio.
 
-> *[Insertar diagramas de Domain Storytelling: images/domain_message_flows/]*
 
 **Flujo 1: Incorporación de un dispositivo IoT**
 
@@ -1185,7 +1178,6 @@ Para visualizar la colaboración entre los bounded contexts identificados, el eq
 
 Para cada bounded context identificado el equipo elaboró su Bounded Context Canvas siguiendo un proceso iterativo con los pasos de Context Overview Definition, Business Rules Distillation & Ubiquitous Language Capture, Capability Analysis, Dependencies Capture y Design Critique. Los canvases se presentan en orden de importancia para el negocio.
 
-> *[Insertar capturas de los canvases: images/bounded_context_canvas/]*
 
 **Canvas 1: Alerting**
 
