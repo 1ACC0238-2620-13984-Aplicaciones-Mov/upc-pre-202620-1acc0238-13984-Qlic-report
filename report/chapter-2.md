@@ -185,17 +185,19 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 
 ##### ENTREVISTA 2
 
+##### ENTREVISTA 2
+
 | Campo | Registro |
 |---|---|
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
+| Nombre entrevistado | **Arantxa Chacón Ruiz** |
+| Edad | **28 años** |
+| Profesión / rol | **Nutricionista, propietaria de dos locales (consultorio nutricional y venta de suplementos)** |
+| Distrito / departamento | **San Borja, Lima** |
+| Inicio del video | **00:00:05** |
+| Fin del video | **00:08:21** |
+| Link del video | [Ver entrevista en YouTube](https://youtu.be/-gLZbX4tVs0) |
+| Foto entrevista | <img src="../images/user-personas/Entrevista_Arantxa.png" alt="Arantxa Chacón Ruiz durante la entrevista" width="360"> |
+| Resumen | **Principales respuestas:** No cuenta con un control formal del consumo de agua; solo revisa el recibo cuando llega y lo deriva a administración para el pago. En uno de sus locales el agua se cobra prorrateada por el edificio, lo que le impide conocer su consumo real. Sufrió una fuga interna en el inodoro del baño de pacientes que recién detectó tras dos recibos elevados, luego de haber reclamado por error de facturación. Guarda los recibos en físico y digitalizados en Google Drive, pero no lleva un registro comparativo entre periodos. Considera muy valiosas las alertas en tiempo real, siempre que no sean frecuentes e indiquen local, gravedad, tiempo transcurrido, costo estimado y una acción inmediata a seguir. Pide reportes expresados en soles y no solo en metros cúbicos, con comparación mensual, separación por local e identificación de consumo en horarios sin actividad.<br><br>**Características objetivas:** Mujer de 28 años, nutricionista con dos locales comerciales en Lima; administra directamente el negocio, autoriza los pagos y coordina el mantenimiento correctivo. Sus recibos oscilan entre S/ 100 y S/ 150 mensuales por local. Opera en locales alquilados, uno de ellos dentro de un edificio con administración de terceros, lo que condiciona cualquier instalación.<br><br>**Características subjetivas:** Prioriza la previsibilidad de sus gastos y evitar interrupciones en la atención de pacientes, tras haber perdido citas por un corte de agua. Reconoce que actúa de forma reactiva ante fallas por falta de información. Rechaza las soluciones complejas o con exceso de notificaciones; necesita interfaces visuales e inmediatas. Aceptaría un costo cercano a S/ 50–60 mensuales por ambos locales y desconfía de comprometerse sin un periodo de prueba previo.<br><br>**Tecnología y canales:** Usa iPhone; su administradora usa Android. Maneja Instagram para el negocio y una aplicación de agendamiento de citas. Digitaliza recibos en Google Drive y coordina con su contador por WhatsApp. Requiere acceso multiusuario con permisos diferenciados y exportación del resumen para compartirlo.<br><br>**Evidencia temporal:** El control actual y los antecedentes de fugas se abordan entre 00:00:40 y 00:03:10; el impacto en costos y continuidad del negocio entre 00:03:11 y 00:04:20; los requerimientos de reportes y alertas entre 00:04:21 y 00:06:35; y las condiciones de precio, instalación y soporte entre 00:06:36 y 00:08:15. |
 
 ##### ENTREVISTA 3
 
