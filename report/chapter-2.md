@@ -1437,20 +1437,1388 @@ workspace "Qlic" "Gestión inteligente del agua con IoT" {
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
-### 2.6.1. Bounded Context: **[COMPLETAR: nombre del BC]**
+En esta sección el equipo presenta la perspectiva táctica del diseño de la solución Qlic. Para cada uno de los seis bounded contexts identificados en la sección 2.5 se detallan las clases que conforman sus cuatro capas, a manera de diccionario, explicando el propósito de cada una junto con sus atributos, métodos y relaciones. Se incluye además, por cada bounded context, el Component Diagram de C4 Model correspondiente a su container, el Class Diagram de UML del Domain Layer y el Database Diagram con los objetos de persistencia asociados.
+
+Los bounded contexts se presentan en el mismo orden de importancia adoptado en la sección 2.5.1.3, iniciando por los dos contextos core de la solución.
+
+Todos los contextos comparten la organización en cuatro capas y las siguientes convenciones de nomenclatura, aplicadas en inglés conforme a lo establecido para el proyecto:
+
+| Capa | Sufijos y convenciones |
+|---|---|
+| Domain Layer | Entidades y Aggregates sin sufijo · Value Objects sin sufijo · Servicios de dominio con sufijo `Service` · Repositorios como interfaces con sufijo `Repository` · Eventos de dominio en pasado con sufijo `Event` |
+| Interface Layer | Controladores con sufijo `Controller` · Recursos de entrada y salida con sufijo `Resource` · Consumidores de eventos con sufijo `Consumer` |
+| Application Layer | Comandos con sufijo `Command` · Consultas con sufijo `Query` · Manejadores con sufijo `CommandHandler`, `QueryHandler` o `EventHandler` |
+| Infrastructure Layer | Implementaciones de repositorio con sufijo `RepositoryImpl` · Adaptadores a servicios externos con sufijo `Adapter` · Entidades de persistencia con sufijo `Entity` cuando difieren del modelo de dominio |
+
+---
+
+### 2.6.1. Bounded Context: Alerting
+
+Alerting constituye el núcleo diferenciador de la solución. Su responsabilidad es evaluar las lecturas de consumo frente a los umbrales vigentes, determinar cuándo una desviación configura una situación que requiere la atención del suscriptor, y comunicarla de forma accionable. El modelo gira en torno al agregado `LeakAlert`, que concentra el ciclo de vida de una alerta desde su generación hasta su atención.
 
 #### 2.6.1.1. Domain Layer
 
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `LeakAlert` | Aggregate Root | Representa una situación de consumo anómalo detectada sobre un Water Point, con su ciclo de vida completo desde la generación hasta la atención. |
+| `AlertState` | Value Object (enum) | Expresa el estado de una alerta: `ACTIVE`, `ACKNOWLEDGED`, `RESOLVED`. |
+| `UrgencyLevel` | Value Object (enum) | Expresa la gravedad de la desviación detectada: `INFORMATIONAL`, `MODERATE`, `CRITICAL`. |
+| `ConsumptionThreshold` | Entity | Umbral de consumo aplicable a un Water Point para un periodo, definido por el suscriptor o derivado de la línea base. |
+| `ThresholdSource` | Value Object (enum) | Indica el origen del umbral vigente: `USER_DEFINED`, `SYSTEM_CALCULATED`. |
+| `AnomalyEvaluation` | Value Object | Resultado de evaluar una lectura contra el umbral: incluye la desviación, su duración acumulada y el nivel de urgencia resultante. |
+| `EstimatedImpact` | Value Object | Volumen y costo estimado acumulado por la anomalía desde su detección. |
+| `AlertRecipient` | Value Object | Destinatario de una notificación, compuesto por el identificador del usuario y su token de dispositivo. |
+| `NotificationPreference` | Entity | Preferencia del suscriptor sobre el nivel mínimo de urgencia a notificar y la ventana de agrupación de alertas. |
+| `AnomalyDetectionService` | Domain Service | Determina si una lectura configura consumo anómalo sostenido, aplicando las reglas de duración mínima y de desviación respecto del umbral. |
+| `UrgencyClassificationService` | Domain Service | Asigna el nivel de urgencia a partir de la magnitud de la desviación respecto de la línea base. |
+| `AlertDeduplicationService` | Domain Service | Determina si una nueva anomalía actualiza una alerta activa existente o genera una nueva. |
+| `LeakAlertRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de alertas. |
+| `ConsumptionThresholdRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de umbrales. |
+| `NotificationGateway` | Interface | Abstracción del envío de notificaciones push, implementada en la capa de infraestructura. |
+| `ConsumptionBaselineProvider` | Interface | Abstracción de la consulta de la línea base de consumo, provista por Consumption Analytics mediante el Shared Kernel. |
+| `LeakAlertGeneratedEvent` | Domain Event | Se publica al generarse una nueva alerta de fuga. |
+| `AlertAcknowledgedEvent` | Domain Event | Se publica cuando el suscriptor marca una alerta como atendida. |
+
+**Detalle del agregado `LeakAlert`**
+
+| Miembro | Tipo | Scope | Descripción |
+|---|---|---|---|
+| `id` | `AlertId` | private | Identificador único de la alerta. |
+| `accountId` | `AccountId` | private | Cuenta a la que pertenece la alerta. |
+| `waterPointId` | `WaterPointId` | private | Water Point sobre el que se detectó la anomalía. |
+| `state` | `AlertState` | private | Estado actual de la alerta. |
+| `urgency` | `UrgencyLevel` | private | Nivel de urgencia asignado. |
+| `detectedAt` | `DateTime` | private | Momento de la detección inicial. |
+| `estimatedImpact` | `EstimatedImpact` | private | Volumen y costo estimado acumulado. |
+| `previousAlertId` | `AlertId` | private | Alerta anterior referenciada cuando la anomalía reaparece. |
+| `acknowledge(action)` | `void` | public | Marca la alerta como atendida y registra la acción realizada. |
+| `escalate(evaluation)` | `void` | public | Actualiza la urgencia y el impacto estimado ante el sostenimiento de la anomalía. |
+| `isActive()` | `boolean` | public | Indica si la alerta se encuentra en estado activo. |
+| `linkTo(previousAlert)` | `void` | public | Asocia la alerta a una alerta previa atendida cuya anomalía reapareció. |
+
+**Reglas de negocio implementadas en el dominio**
+
+- Una alerta se genera únicamente cuando la desviación se sostiene durante el periodo mínimo definido; las lecturas aisladas no la producen.
+- Ante ausencia de umbral definido por el suscriptor, `ConsumptionThreshold` se construye a partir de la línea base provista por `ConsumptionBaselineProvider`.
+- Una anomalía sobre un Water Point con alerta activa invoca `escalate` en lugar de crear una nueva instancia.
+- Una alerta en estado `ACKNOWLEDGED` cuya anomalía reaparece genera una nueva instancia enlazada mediante `linkTo`.
+
 #### 2.6.1.2. Interface Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `LeakAlertController` | Controller | Expone los endpoints de consulta de alertas y actualización de su estado. |
+| `ConsumptionThresholdController` | Controller | Expone los endpoints de administración de umbrales de consumo. |
+| `NotificationPreferenceController` | Controller | Expone los endpoints de configuración de preferencias de notificación. |
+| `ConsumptionReadingConsumer` | Consumer | Recibe el evento `ConsumptionReadingRegisteredEvent` publicado por Device Monitoring y dispara la evaluación de la lectura. |
+| `IncidentResolvedConsumer` | Consumer | Recibe el evento `IncidentResolvedEvent` publicado por Support y cierra el seguimiento de la alerta asociada. |
+| `LeakAlertResource` | Resource | Representación de salida de una alerta para las aplicaciones móviles. |
+| `AcknowledgeAlertResource` | Resource | Representación de entrada para el cierre de una alerta. |
+| `ThresholdResource` | Resource | Representación de entrada y salida de un umbral de consumo. |
 
 #### 2.6.1.3. Application Layer
 
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `EvaluateConsumptionReadingCommand` | Command | Solicita la evaluación de una lectura recién registrada. |
+| `EvaluateConsumptionReadingCommandHandler` | Command Handler | Coordina la evaluación: recupera el umbral vigente, invoca `AnomalyDetectionService` y `AlertDeduplicationService`, y persiste o actualiza la alerta resultante. |
+| `AcknowledgeAlertCommand` | Command | Solicita marcar una alerta como atendida. |
+| `AcknowledgeAlertCommandHandler` | Command Handler | Valida los permisos del solicitante, invoca `acknowledge` sobre el agregado y persiste el cambio. |
+| `ConfigureThresholdCommand` | Command | Solicita definir o actualizar el umbral de un Water Point. |
+| `ConfigureThresholdCommandHandler` | Command Handler | Valida el valor recibido, registra el umbral con origen `USER_DEFINED` y lo persiste. |
+| `GetAlertsByAccountQuery` | Query | Solicita las alertas de una cuenta, con filtros de estado y periodo. |
+| `GetAlertsByAccountQueryHandler` | Query Handler | Recupera las alertas verificando que pertenezcan a la cuenta del solicitante. |
+| `LeakAlertGeneratedEventHandler` | Event Handler | Reacciona a la generación de una alerta: determina los destinatarios habilitados y solicita el envío de la notificación a través de `NotificationGateway`. |
+| `IncidentResolvedEventHandler` | Event Handler | Reacciona a la resolución de una incidencia cerrando la alerta que la originó. |
+
 #### 2.6.1.4. Infrastructure Layer
 
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `JpaLeakAlertRepositoryImpl` | Repository Impl | Implementa `LeakAlertRepository` mediante Spring Data JPA sobre PostgreSQL. |
+| `JpaConsumptionThresholdRepositoryImpl` | Repository Impl | Implementa `ConsumptionThresholdRepository` mediante Spring Data JPA. |
+| `PushNotificationAdapter` | Adapter | Implementa `NotificationGateway` traduciendo el modelo de dominio al contrato del proveedor externo de notificaciones push. Constituye la Anticorruption Layer definida en el Context Mapping. |
+| `ConsumptionBaselineAdapter` | Adapter | Implementa `ConsumptionBaselineProvider` consultando al contexto Consumption Analytics. |
+| `DeviceTokenRegistry` | Infrastructure Service | Administra el registro y la vigencia de los tokens de dispositivo utilizados para las notificaciones. |
+| `LeakAlertEntity` | Persistence Entity | Representación de persistencia del agregado `LeakAlert`. |
+| `ConsumptionThresholdEntity` | Persistence Entity | Representación de persistencia de un umbral de consumo. |
+
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+> *[Insertar el diagrama: images/c4/components/alerting_components.png]*
+
+El Component Diagram descompone el container RESTful API en los componentes correspondientes a este bounded context. Los controladores y consumidores de la capa de interfaz reciben las solicitudes y los eventos; los manejadores de la capa de aplicación coordinan el flujo; los servicios de dominio aplican las reglas de detección y clasificación; y los adaptadores de infraestructura resuelven la persistencia y la comunicación con el proveedor externo de notificaciones.
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+<img src="../images/uml/alerting_domain_class_diagram.png" alt="Domain Layer Class Diagram del bounded context Alerting" width="900">
+
+```plantuml
+@startuml Alerting Domain Layer
+
+enum AlertState { ACTIVE \n ACKNOWLEDGED \n RESOLVED }
+enum UrgencyLevel { INFORMATIONAL \n MODERATE \n CRITICAL }
+enum ThresholdSource { USER_DEFINED \n SYSTEM_CALCULATED }
+
+class LeakAlert <<Aggregate Root>> {
+  - id : AlertId
+  - accountId : AccountId
+  - waterPointId : WaterPointId
+  - state : AlertState
+  - urgency : UrgencyLevel
+  - detectedAt : DateTime
+  - estimatedImpact : EstimatedImpact
+  - previousAlertId : AlertId
+  + acknowledge(action : String) : void
+  + escalate(evaluation : AnomalyEvaluation) : void
+  + isActive() : boolean
+  + linkTo(previousAlert : AlertId) : void
+}
+
+class ConsumptionThreshold <<Entity>> {
+  - id : ThresholdId
+  - waterPointId : WaterPointId
+  - value : Decimal
+  - period : Period
+  - source : ThresholdSource
+  + applies(reading : Decimal) : boolean
+}
+
+class AnomalyEvaluation <<Value Object>> {
+  - deviation : Decimal
+  - sustainedFor : Duration
+  - urgency : UrgencyLevel
+}
+
+class EstimatedImpact <<Value Object>> {
+  - volume : Decimal
+  - estimatedCost : Money
+}
+
+class AlertRecipient <<Value Object>> {
+  - userId : UserId
+  - deviceToken : String
+}
+
+class NotificationPreference <<Entity>> {
+  - accountId : AccountId
+  - minimumUrgency : UrgencyLevel
+  - groupingWindow : Duration
+  + shouldNotify(urgency : UrgencyLevel) : boolean
+}
+
+class AnomalyDetectionService <<Domain Service>> {
+  + evaluate(reading : Decimal, threshold : ConsumptionThreshold) : AnomalyEvaluation
+}
+
+class UrgencyClassificationService <<Domain Service>> {
+  + classify(deviation : Decimal, baseline : Decimal) : UrgencyLevel
+}
+
+class AlertDeduplicationService <<Domain Service>> {
+  + resolve(waterPointId : WaterPointId, evaluation : AnomalyEvaluation) : LeakAlert
+}
+
+interface LeakAlertRepository <<Repository>> {
+  + save(alert : LeakAlert) : void
+  + findActiveByWaterPoint(id : WaterPointId) : LeakAlert
+  + findByAccount(id : AccountId) : List<LeakAlert>
+}
+
+interface ConsumptionThresholdRepository <<Repository>> {
+  + save(threshold : ConsumptionThreshold) : void
+  + findByWaterPoint(id : WaterPointId) : ConsumptionThreshold
+}
+
+interface NotificationGateway {
+  + send(recipient : AlertRecipient, alert : LeakAlert) : void
+}
+
+interface ConsumptionBaselineProvider {
+  + baselineFor(id : WaterPointId) : Decimal
+}
+
+LeakAlert "1" *-- "1" EstimatedImpact : contiene >
+LeakAlert "0..1" --> "1" LeakAlert : referencia previa >
+LeakAlert "1" --> "1" AlertState : tiene >
+LeakAlert "1" --> "1" UrgencyLevel : tiene >
+ConsumptionThreshold "1" --> "1" ThresholdSource : tiene >
+AnomalyEvaluation "1" --> "1" UrgencyLevel : determina >
+NotificationPreference "1" --> "1" UrgencyLevel : filtra por >
+AnomalyDetectionService ..> ConsumptionThreshold : usa >
+AnomalyDetectionService ..> AnomalyEvaluation : produce >
+UrgencyClassificationService ..> ConsumptionBaselineProvider : consulta >
+AlertDeduplicationService ..> LeakAlertRepository : consulta >
+LeakAlertRepository ..> LeakAlert : administra >
+ConsumptionThresholdRepository ..> ConsumptionThreshold : administra >
+NotificationGateway ..> AlertRecipient : envía a >
+
+@enduml
+```
+
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+> *[Insertar el diagrama: images/database/alerting_database_diagram.png]*
+
+| Tabla | Columnas principales | Constraints |
+|---|---|---|
+| `leak_alerts` | `id` (PK), `account_id`, `water_point_id`, `state`, `urgency`, `detected_at`, `acknowledged_at`, `acknowledged_action`, `estimated_volume`, `estimated_cost`, `previous_alert_id` | PK sobre `id` · FK `previous_alert_id` referencia `leak_alerts(id)` · índice sobre (`water_point_id`, `state`) para la recuperación de la alerta activa |
+| `consumption_thresholds` | `id` (PK), `water_point_id`, `value`, `period`, `source`, `created_at` | PK sobre `id` · restricción de unicidad sobre (`water_point_id`, `period`) |
+| `notification_preferences` | `account_id` (PK), `minimum_urgency`, `grouping_window_minutes` | PK sobre `account_id` |
+| `device_tokens` | `id` (PK), `user_id`, `token`, `platform`, `valid`, `registered_at` | PK sobre `id` · restricción de unicidad sobre `token` |
+
+---
+
+### 2.6.2. Bounded Context: Consumption Analytics
+
+Consumption Analytics convierte el histórico de lecturas en información interpretable por el suscriptor. Su modelo se organiza alrededor del agregado `ConsumptionReport`, que representa el consumo de una cuenta en un periodo, y de `ConsumptionBaseline`, concepto compartido con Alerting mediante el Shared Kernel definido en el Context Mapping.
+
+#### 2.6.2.1. Domain Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `ConsumptionReport` | Aggregate Root | Consumo de una cuenta en un periodo, con su distribución por Water Point, comparativa y costo estimado. |
+| `ConsumptionBaseline` | Entity | Patrón de consumo histórico de un Water Point, empleado como referencia para identificar desviaciones. Forma parte del Shared Kernel con Alerting. |
+| `Period` | Value Object | Intervalo temporal sobre el que se agrega el consumo, con su fecha de inicio y de término. |
+| `ConsumptionSummary` | Value Object | Volumen consumido en un periodo, desagregado por Water Point. |
+| `PeriodComparison` | Value Object | Variación entre dos periodos, expresada en volumen y en porcentaje. |
+| `Money` | Value Object | Importe monetario con su moneda, utilizado para el costo estimado. |
+| `WaterTariff` | Entity | Tarifa vigente aplicable a una categoría de servicio, empleada para el cálculo del costo estimado. |
+| `ActivitySchedule` | Value Object | Horario de actividad declarado para un local, utilizado para diferenciar consumo dentro y fuera de operación. |
+| `SavingRecommendation` | Entity | Recomendación generada a partir de los Water Points de mayor consumo del periodo. |
+| `SustainabilityGoal` | Entity | Meta de reducción de consumo definida por el suscriptor para un periodo, con su seguimiento. |
+| `ReplenishmentPrediction` | Value Object | Fecha estimada en que un Water Tank alcanzará su nivel crítico. |
+| `ConsumptionAggregationService` | Domain Service | Agrega las lecturas del periodo por Water Point y por local. |
+| `CostEstimationService` | Domain Service | Calcula el costo estimado aplicando la tarifa vigente al volumen consumido. |
+| `BaselineCalculationService` | Domain Service | Calcula y actualiza la línea base de consumo de un Water Point a partir del histórico disponible. |
+| `RecommendationService` | Domain Service | Genera las recomendaciones de ahorro según el perfil de consumo del periodo. |
+| `ReplenishmentPredictionService` | Domain Service | Estima el momento de agotamiento de un tanque a partir de su patrón de consumo. |
+| `ConsumptionReportRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de reportes. |
+| `ConsumptionBaselineRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de líneas base. |
+| `SustainabilityGoalRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de metas de sostenibilidad. |
+| `ConsumptionReadingProvider` | Interface | Abstracción de la consulta de lecturas, provista por Device Monitoring. |
+| `ReportGeneratedEvent` | Domain Event | Se publica al generarse un nuevo reporte de consumo del periodo. |
+| `SustainabilityGoalAchievedEvent` | Domain Event | Se publica cuando el consumo del periodo se mantiene por debajo de la meta definida. |
+
+**Reglas de negocio implementadas en el dominio**
+
+- `PeriodComparison` se construye solo cuando existen al menos dos periodos con lecturas registradas; en caso contrario la comparativa no se incluye en el reporte.
+- `CostEstimationService` aplica la tarifa vigente de la categoría del suscriptor y el resultado se marca siempre como referencial.
+- `ReplenishmentPrediction` no se genera cuando el histórico del tanque resulta insuficiente.
+- La diferenciación entre consumo dentro y fuera del horario de actividad se aplica únicamente si el local declaró su `ActivitySchedule`.
+
+#### 2.6.2.2. Interface Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `ConsumptionReportController` | Controller | Expone los endpoints de consulta del reporte del periodo y de la comparativa entre periodos. |
+| `SustainabilityGoalController` | Controller | Expone los endpoints de definición y seguimiento de metas de sostenibilidad. |
+| `ReplenishmentController` | Controller | Expone el endpoint de consulta de la predicción de reabastecimiento de un tanque. |
+| `ConsumptionBaselineController` | Controller | Expone la consulta de la línea base, consumida por Alerting. |
+| `ConsumptionReadingConsumer` | Consumer | Recibe el evento de registro de lecturas y dispara la actualización de la línea base. |
+| `ConsumptionReportResource` | Resource | Representación de salida del reporte de consumo. |
+| `PeriodComparisonResource` | Resource | Representación de salida de la comparativa entre periodos. |
+| `SustainabilityGoalResource` | Resource | Representación de entrada y salida de una meta de sostenibilidad. |
+
+#### 2.6.2.3. Application Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `GenerateConsumptionReportCommand` | Command | Solicita la generación del reporte de un periodo para una cuenta. |
+| `GenerateConsumptionReportCommandHandler` | Command Handler | Recupera las lecturas del periodo, invoca la agregación y la estimación de costo, y persiste el reporte resultante. |
+| `DefineSustainabilityGoalCommand` | Command | Solicita registrar una meta de reducción de consumo. |
+| `DefineSustainabilityGoalCommandHandler` | Command Handler | Valida la meta recibida, la registra y habilita su seguimiento en los reportes del periodo. |
+| `GetConsumptionReportQuery` | Query | Solicita el reporte de un periodo. |
+| `GetConsumptionReportQueryHandler` | Query Handler | Verifica los permisos del solicitante y recupera el reporte, generándolo si no existe. |
+| `ComparePeriodsQuery` | Query | Solicita la comparación entre el periodo actual y el anterior. |
+| `ComparePeriodsQueryHandler` | Query Handler | Construye la comparativa cuando existe histórico suficiente. |
+| `GetReplenishmentPredictionQuery` | Query | Solicita la predicción de reabastecimiento de un tanque. |
+| `GetReplenishmentPredictionQueryHandler` | Query Handler | Invoca el servicio de predicción y responde con la estimación o con su indisponibilidad. |
+| `ConsumptionReadingRegisteredEventHandler` | Event Handler | Reacciona al registro de lecturas invocando `BaselineCalculationService`. |
+| `PeriodClosedEventHandler` | Event Handler | Al cierre de un periodo evalúa el cumplimiento de las metas de sostenibilidad vigentes. |
+
+#### 2.6.2.4. Infrastructure Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `JpaConsumptionReportRepositoryImpl` | Repository Impl | Implementa `ConsumptionReportRepository` mediante Spring Data JPA. |
+| `JpaConsumptionBaselineRepositoryImpl` | Repository Impl | Implementa `ConsumptionBaselineRepository` mediante Spring Data JPA. |
+| `JpaSustainabilityGoalRepositoryImpl` | Repository Impl | Implementa `SustainabilityGoalRepository` mediante Spring Data JPA. |
+| `ConsumptionReadingAdapter` | Adapter | Implementa `ConsumptionReadingProvider` consultando al contexto Device Monitoring. |
+| `TariffConfigurationAdapter` | Adapter | Recupera las tarifas vigentes desde la configuración del sistema. |
+| `ReportSharingAdapter` | Adapter | Genera el resumen exportable del reporte para su compartición desde la aplicación móvil. |
+| `ConsumptionReportEntity` | Persistence Entity | Representación de persistencia del agregado `ConsumptionReport`. |
+| `ConsumptionBaselineEntity` | Persistence Entity | Representación de persistencia de la línea base de consumo. |
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+> *[Insertar el diagrama: images/c4/components/consumption_analytics_components.png]*
+
+El diagrama refleja la separación entre los componentes de consulta, que atienden las solicitudes de las aplicaciones móviles, y los componentes de cálculo, que mantienen actualizada la línea base a partir de los eventos de registro de lecturas. Esta separación responde a que ambos flujos operan con frecuencias y volúmenes distintos.
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="../images/uml/consumption_analytics_domain_class_diagram.png" alt="Domain Layer Class Diagram del bounded context Consumption Analytics" width="1000">
+
+```plantuml
+@startuml Consumption Analytics Domain Layer
+
+class ConsumptionReport <<Aggregate Root>> {
+  - id : ReportId
+  - accountId : AccountId
+  - period : Period
+  - summary : ConsumptionSummary
+  - comparison : PeriodComparison
+  - estimatedCost : Money
+  + hasComparison() : boolean
+  + totalVolume() : Decimal
+  + addRecommendation(r : SavingRecommendation) : void
+}
+
+class ConsumptionBaseline <<Entity>> {
+  - waterPointId : WaterPointId
+  - averageVolume : Decimal
+  - sampleSize : Integer
+  - updatedAt : DateTime
+  + isReliable() : boolean
+  + deviationOf(volume : Decimal) : Decimal
+}
+
+class Period <<Value Object>> {
+  - startDate : Date
+  - endDate : Date
+  + previous() : Period
+  + contains(date : Date) : boolean
+}
+
+class ConsumptionSummary <<Value Object>> {
+  - totalVolume : Decimal
+  - volumeByWaterPoint : Map
+  - insideSchedule : Decimal
+  - outsideSchedule : Decimal
+}
+
+class PeriodComparison <<Value Object>> {
+  - previousVolume : Decimal
+  - currentVolume : Decimal
+  - variationPercentage : Decimal
+}
+
+class Money <<Value Object>> {
+  - amount : Decimal
+  - currency : String
+}
+
+class WaterTariff <<Entity>> {
+  - id : TariffId
+  - serviceCategory : String
+  - ratePerCubicMeter : Money
+  - validFrom : Date
+}
+
+class ActivitySchedule <<Value Object>> {
+  - openingTime : Time
+  - closingTime : Time
+  + isWithin(moment : DateTime) : boolean
+}
+
+class SavingRecommendation <<Entity>> {
+  - id : RecommendationId
+  - waterPointId : WaterPointId
+  - message : String
+  - priority : Integer
+}
+
+class SustainabilityGoal <<Entity>> {
+  - id : GoalId
+  - accountId : AccountId
+  - period : Period
+  - targetReduction : Decimal
+  + isAchievedBy(volume : Decimal) : boolean
+}
+
+class ReplenishmentPrediction <<Value Object>> {
+  - waterTankId : WaterTankId
+  - estimatedDate : Date
+  - available : boolean
+}
+
+class ConsumptionAggregationService <<Domain Service>> {
+  + aggregate(readings : List, period : Period) : ConsumptionSummary
+}
+
+class CostEstimationService <<Domain Service>> {
+  + estimate(volume : Decimal, tariff : WaterTariff) : Money
+}
+
+class BaselineCalculationService <<Domain Service>> {
+  + recalculate(waterPointId : WaterPointId) : ConsumptionBaseline
+}
+
+class RecommendationService <<Domain Service>> {
+  + generate(summary : ConsumptionSummary) : List<SavingRecommendation>
+}
+
+class ReplenishmentPredictionService <<Domain Service>> {
+  + predict(waterTankId : WaterTankId) : ReplenishmentPrediction
+}
+
+interface ConsumptionReportRepository <<Repository>> {
+  + save(report : ConsumptionReport) : void
+  + findByAccountAndPeriod(a : AccountId, p : Period) : ConsumptionReport
+}
+
+interface ConsumptionBaselineRepository <<Repository>> {
+  + save(baseline : ConsumptionBaseline) : void
+  + findByWaterPoint(id : WaterPointId) : ConsumptionBaseline
+}
+
+interface SustainabilityGoalRepository <<Repository>> {
+  + save(goal : SustainabilityGoal) : void
+  + findActiveByAccount(id : AccountId) : SustainabilityGoal
+}
+
+interface ConsumptionReadingProvider {
+  + readingsFor(p : Period, a : AccountId) : List
+}
+
+ConsumptionReport "1" *-- "1" ConsumptionSummary : contiene >
+ConsumptionReport "1" *-- "0..1" PeriodComparison : contiene >
+ConsumptionReport "1" *-- "1" Period : corresponde a >
+ConsumptionReport "1" *-- "1" Money : estima >
+ConsumptionReport "1" o-- "0..*" SavingRecommendation : incluye >
+SustainabilityGoal "1" --> "1" Period : aplica a >
+ConsumptionSummary ..> ActivitySchedule : se segmenta por >
+CostEstimationService ..> WaterTariff : aplica >
+CostEstimationService ..> Money : produce >
+ConsumptionAggregationService ..> ConsumptionReadingProvider : consulta >
+BaselineCalculationService ..> ConsumptionBaseline : produce >
+RecommendationService ..> SavingRecommendation : produce >
+ReplenishmentPredictionService ..> ReplenishmentPrediction : produce >
+ConsumptionReportRepository ..> ConsumptionReport : administra >
+ConsumptionBaselineRepository ..> ConsumptionBaseline : administra >
+SustainabilityGoalRepository ..> SustainabilityGoal : administra >
+
+@enduml
+```
+
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+> *[Insertar el diagrama: images/database/consumption_analytics_database_diagram.png]*
+
+| Tabla | Columnas principales | Constraints |
+|---|---|---|
+| `consumption_reports` | `id` (PK), `account_id`, `period_start`, `period_end`, `total_volume`, `inside_schedule_volume`, `outside_schedule_volume`, `estimated_cost`, `currency`, `generated_at` | PK sobre `id` · restricción de unicidad sobre (`account_id`, `period_start`, `period_end`) |
+| `report_water_point_volumes` | `id` (PK), `report_id` (FK), `water_point_id`, `volume` | FK `report_id` referencia `consumption_reports(id)` con borrado en cascada |
+| `consumption_baselines` | `water_point_id` (PK), `average_volume`, `sample_size`, `updated_at` | PK sobre `water_point_id` |
+| `water_tariffs` | `id` (PK), `service_category`, `rate_per_cubic_meter`, `currency`, `valid_from` | PK sobre `id` · índice sobre (`service_category`, `valid_from`) |
+| `saving_recommendations` | `id` (PK), `report_id` (FK), `water_point_id`, `message`, `priority` | FK `report_id` referencia `consumption_reports(id)` |
+| `sustainability_goals` | `id` (PK), `account_id`, `period_start`, `period_end`, `target_reduction`, `achieved` | PK sobre `id` · restricción de unicidad sobre (`account_id`, `period_start`) |
+
+---
+
+### 2.6.3. Bounded Context: Device Monitoring
+
+Device Monitoring administra el ciclo de vida de los dispositivos IoT y garantiza la captación confiable de las lecturas. Es el contexto que actúa como gateway hacia los sensores instalados en los locales y hogares de los suscriptores, y del que dependen tanto Alerting como Consumption Analytics.
+
+#### 2.6.3.1. Domain Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `IoTDevice` | Aggregate Root | Sensor físico vinculado a una cuenta, con su estado operativo y su Water Point asignado. |
+| `WaterPoint` | Entity | Ubicación física monitoreada dentro de un local u hogar. |
+| `WaterTank` | Entity | Depósito de almacenamiento cuyo nivel es monitoreado por un dispositivo. |
+| `ConsumptionReading` | Entity | Lectura registrada por un dispositivo en un momento determinado. |
+| `Location` | Aggregate Root | Local u hogar del suscriptor que agrupa Water Points y declara su horario de actividad. |
+| `DeviceStatus` | Value Object (enum) | Estado operativo del dispositivo: `ACTIVE`, `DISCONNECTED`, `UNASSIGNED`. |
+| `DeviceSerial` | Value Object | Identificador único del dispositivo, codificado en su código QR. |
+| `Volume` | Value Object | Cantidad de agua con su unidad de medida. |
+| `TankLevel` | Value Object | Nivel de un tanque expresado en porcentaje de su capacidad. |
+| `ReadingTimestamp` | Value Object | Momento de la lectura, con validación de coherencia temporal. |
+| `DeviceRegistrationService` | Domain Service | Valida que el dispositivo no se encuentre vinculado a otra cuenta y que el plan permita el registro. |
+| `DeviceHealthService` | Domain Service | Determina el estado de conexión de un dispositivo según el tiempo transcurrido desde su última lectura. |
+| `ReadingValidationService` | Domain Service | Valida la coherencia de una lectura recibida, incluyendo el orden temporal y el rango admisible. |
+| `IoTDeviceRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de dispositivos. |
+| `WaterPointRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de Water Points. |
+| `ConsumptionReadingRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de lecturas. |
+| `LocationRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de locales. |
+| `PlanEntitlementProvider` | Interface | Abstracción de la consulta de límites del plan, provista por Subscriptions. |
+| `DeviceRegisteredEvent` | Domain Event | Se publica al vincularse un dispositivo a una cuenta. |
+| `ConsumptionReadingRegisteredEvent` | Domain Event | Se publica al registrarse una lectura válida. Consumido por Alerting y Consumption Analytics. |
+| `DeviceDisconnectedEvent` | Domain Event | Se publica cuando un dispositivo deja de reportar lecturas durante el periodo límite. |
+| `TankLevelLowEvent` | Domain Event | Se publica cuando el nivel de un tanque desciende por debajo de su valor crítico. |
+
+**Reglas de negocio implementadas en el dominio**
+
+- Un `IoTDevice` se asocia a un único `WaterPoint` a la vez; la reasignación libera la anterior.
+- Un dispositivo no puede vincularse a más de una cuenta, condición validada por `DeviceRegistrationService`.
+- Un dispositivo que no reporta lecturas durante el periodo límite transiciona a `DISCONNECTED` y publica `DeviceDisconnectedEvent`.
+- La cantidad de dispositivos registrables está determinada por el plan vigente, consultado mediante `PlanEntitlementProvider`.
+
+#### 2.6.3.2. Interface Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `IoTDeviceController` | Controller | Expone los endpoints de registro, consulta, actualización y baja de dispositivos. |
+| `WaterPointController` | Controller | Expone los endpoints de administración de Water Points y su asignación. |
+| `ConsumptionReadingController` | Controller | Expone el endpoint de ingesta de lecturas utilizado por los dispositivos IoT. |
+| `WaterTankController` | Controller | Expone los endpoints de consulta del nivel de los tanques. |
+| `LocationController` | Controller | Expone los endpoints de administración de locales y de su horario de actividad. |
+| `MonitoringDashboardController` | Controller | Expone la vista consolidada del panel de monitoreo para las aplicaciones móviles. |
+| `DeviceResource` | Resource | Representación de entrada y salida de un dispositivo. |
+| `ReadingResource` | Resource | Representación de entrada de una lectura de consumo. |
+| `DashboardResource` | Resource | Representación de salida del panel de monitoreo. |
+
+#### 2.6.3.3. Application Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `RegisterDeviceCommand` | Command | Solicita vincular un dispositivo a una cuenta a partir de su número de serie. |
+| `RegisterDeviceCommandHandler` | Command Handler | Verifica permisos, consulta el límite del plan, invoca `DeviceRegistrationService` y publica `DeviceRegisteredEvent`. |
+| `AssignWaterPointCommand` | Command | Solicita asignar un dispositivo a un Water Point. |
+| `AssignWaterPointCommandHandler` | Command Handler | Valida que el dispositivo no tenga asignación vigente y registra la nueva asociación. |
+| `RegisterReadingCommand` | Command | Solicita registrar una lectura recibida de un dispositivo. |
+| `RegisterReadingCommandHandler` | Command Handler | Invoca `ReadingValidationService`, persiste la lectura y publica `ConsumptionReadingRegisteredEvent`. |
+| `DefineActivityScheduleCommand` | Command | Solicita declarar el horario de actividad de un local. |
+| `DefineActivityScheduleCommandHandler` | Command Handler | Registra el horario y lo hace disponible para la segmentación del consumo. |
+| `GetDashboardQuery` | Query | Solicita el estado consolidado de los dispositivos de una cuenta. |
+| `GetDashboardQueryHandler` | Query Handler | Recupera dispositivos, últimas lecturas y estados, filtrando por local cuando se indica. |
+| `GetReadingsByPeriodQuery` | Query | Solicita las lecturas de un periodo, consumida por Consumption Analytics. |
+| `GetReadingsByPeriodQueryHandler` | Query Handler | Recupera las lecturas agregadas por Water Point para el periodo solicitado. |
+| `DeviceHealthCheckEventHandler` | Event Handler | Evalúa periódicamente el estado de conexión de los dispositivos y publica `DeviceDisconnectedEvent` cuando corresponde. |
+| `TankLevelEvaluationEventHandler` | Event Handler | Evalúa el nivel reportado por los tanques y publica `TankLevelLowEvent` al alcanzarse el valor crítico. |
+
+#### 2.6.3.4. Infrastructure Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `JpaIoTDeviceRepositoryImpl` | Repository Impl | Implementa `IoTDeviceRepository` mediante Spring Data JPA. |
+| `JpaWaterPointRepositoryImpl` | Repository Impl | Implementa `WaterPointRepository` mediante Spring Data JPA. |
+| `JpaConsumptionReadingRepositoryImpl` | Repository Impl | Implementa `ConsumptionReadingRepository` mediante Spring Data JPA, con particionamiento por periodo. |
+| `JpaLocationRepositoryImpl` | Repository Impl | Implementa `LocationRepository` mediante Spring Data JPA. |
+| `PlanEntitlementAdapter` | Adapter | Implementa `PlanEntitlementProvider` consultando al contexto Subscriptions. |
+| `DeviceIngestionRateLimiter` | Infrastructure Service | Controla la frecuencia admisible de ingesta por dispositivo para proteger el servicio. |
+| `IoTDeviceEntity` | Persistence Entity | Representación de persistencia del agregado `IoTDevice`. |
+| `ConsumptionReadingEntity` | Persistence Entity | Representación de persistencia de una lectura de consumo. |
+
+#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+> *[Insertar el diagrama: images/c4/components/device_monitoring_components.png]*
+
+El diagrama distingue dos rutas de entrada al container: la de las aplicaciones móviles, que administran dispositivos y consultan el panel, y la de los dispositivos IoT, que únicamente alimentan el endpoint de ingesta. Esta última cuenta con el componente de control de frecuencia, dado que su volumen de solicitudes es sustancialmente mayor.
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="../images/uml/device_monitoring_domain_class_diagram.png" alt="Domain Layer Class Diagram del bounded context Device Monitoring" width="950">
+
+```plantuml
+@startuml Device Monitoring Domain Layer
+
+enum DeviceStatus { ACTIVE \n DISCONNECTED \n UNASSIGNED }
+
+class IoTDevice <<Aggregate Root>> {
+  - id : DeviceId
+  - serial : DeviceSerial
+  - accountId : AccountId
+  - waterPointId : WaterPointId
+  - status : DeviceStatus
+  - lastReadingAt : DateTime
+  + assignTo(waterPoint : WaterPointId) : void
+  + release() : void
+  + markDisconnected() : void
+  + isAssigned() : boolean
+}
+
+class Location <<Aggregate Root>> {
+  - id : LocationId
+  - accountId : AccountId
+  - name : String
+  - schedule : ActivitySchedule
+  + defineSchedule(s : ActivitySchedule) : void
+}
+
+class WaterPoint <<Entity>> {
+  - id : WaterPointId
+  - locationId : LocationId
+  - name : String
+  - description : String
+}
+
+class WaterTank <<Entity>> {
+  - id : WaterTankId
+  - locationId : LocationId
+  - capacity : Volume
+  - criticalLevel : TankLevel
+  - currentLevel : TankLevel
+  + isBelowCritical() : boolean
+}
+
+class ConsumptionReading <<Entity>> {
+  - id : ReadingId
+  - deviceId : DeviceId
+  - waterPointId : WaterPointId
+  - volume : Volume
+  - registeredAt : ReadingTimestamp
+}
+
+class DeviceSerial <<Value Object>> {
+  - value : String
+  + isValid() : boolean
+}
+
+class Volume <<Value Object>> {
+  - amount : Decimal
+  - unit : String
+}
+
+class TankLevel <<Value Object>> {
+  - percentage : Decimal
+}
+
+class ReadingTimestamp <<Value Object>> {
+  - value : DateTime
+  + isAfter(other : ReadingTimestamp) : boolean
+}
+
+class DeviceRegistrationService <<Domain Service>> {
+  + register(serial : DeviceSerial, account : AccountId) : IoTDevice
+}
+
+class DeviceHealthService <<Domain Service>> {
+  + evaluate(device : IoTDevice) : DeviceStatus
+}
+
+class ReadingValidationService <<Domain Service>> {
+  + validate(reading : ConsumptionReading) : boolean
+}
+
+interface IoTDeviceRepository <<Repository>> {
+  + save(device : IoTDevice) : void
+  + findBySerial(s : DeviceSerial) : IoTDevice
+  + findByAccount(a : AccountId) : List<IoTDevice>
+}
+
+interface WaterPointRepository <<Repository>> {
+  + save(wp : WaterPoint) : void
+  + findByLocation(l : LocationId) : List<WaterPoint>
+}
+
+interface ConsumptionReadingRepository <<Repository>> {
+  + save(reading : ConsumptionReading) : void
+  + findByPeriod(wp : WaterPointId, p : Period) : List<ConsumptionReading>
+}
+
+interface LocationRepository <<Repository>> {
+  + save(location : Location) : void
+  + findByAccount(a : AccountId) : List<Location>
+}
+
+interface PlanEntitlementProvider {
+  + maxDevicesFor(a : AccountId) : Integer
+}
+
+Location "1" o-- "0..*" WaterPoint : agrupa >
+Location "1" o-- "0..*" WaterTank : contiene >
+IoTDevice "1" --> "0..1" WaterPoint : monitorea >
+IoTDevice "1" --> "1" DeviceStatus : tiene >
+IoTDevice "1" *-- "1" DeviceSerial : identificado por >
+IoTDevice "1" --> "0..*" ConsumptionReading : origina >
+ConsumptionReading "1" *-- "1" Volume : mide >
+ConsumptionReading "1" *-- "1" ReadingTimestamp : ocurre en >
+WaterTank "1" *-- "1" TankLevel : reporta >
+WaterTank "1" *-- "1" Volume : capacidad >
+DeviceRegistrationService ..> PlanEntitlementProvider : consulta >
+DeviceRegistrationService ..> IoTDeviceRepository : consulta >
+DeviceHealthService ..> IoTDevice : evalúa >
+ReadingValidationService ..> ConsumptionReading : valida >
+IoTDeviceRepository ..> IoTDevice : administra >
+WaterPointRepository ..> WaterPoint : administra >
+ConsumptionReadingRepository ..> ConsumptionReading : administra >
+LocationRepository ..> Location : administra >
+
+@enduml
+```
+
+##### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+> *[Insertar el diagrama: images/database/device_monitoring_database_diagram.png]*
+
+| Tabla | Columnas principales | Constraints |
+|---|---|---|
+| `locations` | `id` (PK), `account_id`, `name`, `address`, `opening_time`, `closing_time` | PK sobre `id` · índice sobre `account_id` |
+| `water_points` | `id` (PK), `location_id` (FK), `name`, `description`, `created_at` | FK `location_id` referencia `locations(id)` |
+| `water_tanks` | `id` (PK), `location_id` (FK), `capacity`, `capacity_unit`, `critical_level`, `current_level`, `updated_at` | FK `location_id` referencia `locations(id)` |
+| `iot_devices` | `id` (PK), `serial`, `account_id`, `water_point_id` (FK), `status`, `registered_at`, `last_reading_at` | PK sobre `id` · restricción de unicidad sobre `serial` · FK `water_point_id` referencia `water_points(id)` |
+| `consumption_readings` | `id` (PK), `device_id` (FK), `water_point_id` (FK), `volume`, `unit`, `registered_at` | FK `device_id` referencia `iot_devices(id)` · índice compuesto sobre (`water_point_id`, `registered_at`) para las consultas por periodo |
+
+### 2.6.4. Bounded Context: Subscriptions
+
+Subscriptions administra los planes, la contratación y el ciclo de vida de la suscripción, y determina las funcionalidades y límites habilitados para cada suscriptor. Actúa como upstream de los cuatro contextos restantes mediante el contrato de entitlements, y como gateway hacia la pasarela de pagos.
+
+#### 2.6.4.1. Domain Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `Subscription` | Aggregate Root | Contratación vigente de un suscriptor, con su plan, su periodo de vigencia y su estado. |
+| `SubscriptionPlan` | Aggregate Root | Plan comercial ofrecido, con sus funcionalidades, límites y precio. |
+| `SubscriptionState` | Value Object (enum) | Estado de la suscripción: `TRIAL`, `ACTIVE`, `PENDING_PAYMENT`, `CANCELLED`, `EXPIRED`. |
+| `PlanEntitlement` | Value Object | Conjunto de límites y funcionalidades que otorga un plan: dispositivos permitidos, usuarios adicionales, cobertura de visita técnica y acceso a reportes avanzados. |
+| `BillingPeriod` | Value Object | Periodo de facturación con su fecha de inicio y de término. |
+| `Payment` | Entity | Transacción asociada a la contratación o renovación de una suscripción. |
+| `PaymentState` | Value Object (enum) | Estado del pago: `PENDING`, `CONFIRMED`, `REJECTED`. |
+| `Money` | Value Object | Importe con su moneda. Concepto compartido en su definición con Consumption Analytics. |
+| `TrialPeriod` | Value Object | Periodo de prueba con su fecha de término y la marca de utilización. |
+| `PlanChangeRequest` | Entity | Solicitud de cambio de plan pendiente de aplicarse en el siguiente periodo de facturación. |
+| `SubscriptionLifecycleService` | Domain Service | Aplica las transiciones de estado válidas de una suscripción según los eventos de pago, cancelación y término de periodo. |
+| `TrialEligibilityService` | Domain Service | Determina si un suscriptor puede acceder al periodo de prueba. |
+| `EntitlementResolutionService` | Domain Service | Resuelve los entitlements vigentes de una cuenta a partir de su suscripción y su estado. |
+| `SubscriptionRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de suscripciones. |
+| `SubscriptionPlanRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de planes. |
+| `PaymentRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de pagos. |
+| `PaymentGateway` | Interface | Abstracción del procesamiento de pagos, implementada en la capa de infraestructura. |
+| `SubscriptionActivatedEvent` | Domain Event | Se publica al activarse una suscripción tras la confirmación del pago. |
+| `SubscriptionCancelledEvent` | Domain Event | Se publica al registrarse la cancelación de una suscripción. |
+| `TrialExpiredEvent` | Domain Event | Se publica al concluir un periodo de prueba sin contratación. |
+
+**Reglas de negocio implementadas en el dominio**
+
+- Los planes disponibles son Plan Básico y Plan Gestión Pro, definidos como instancias de `SubscriptionPlan`.
+- `TrialEligibilityService` otorga el periodo de prueba una única vez por suscriptor.
+- Un `PlanChangeRequest` se materializa únicamente al inicio del siguiente `BillingPeriod`.
+- Una cancelación transiciona la suscripción a `CANCELLED` manteniendo el acceso hasta el término del periodo pagado, sin generar nuevos cobros.
+- Concluido el periodo de prueba sin contratación, `EntitlementResolutionService` restringe los entitlements a los de consulta básica.
+
+#### 2.6.4.2. Interface Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `SubscriptionPlanController` | Controller | Expone la consulta de los planes vigentes. |
+| `SubscriptionController` | Controller | Expone los endpoints de contratación, cambio y cancelación de la suscripción. |
+| `PaymentController` | Controller | Expone la consulta del historial de pagos. |
+| `TrialController` | Controller | Expone el endpoint de activación del periodo de prueba. |
+| `EntitlementController` | Controller | Expone la consulta de entitlements, consumida por los contextos downstream. |
+| `PaymentWebhookConsumer` | Consumer | Recibe las confirmaciones de la pasarela de pagos y dispara la actualización del estado del pago. |
+| `SubscriptionResource` | Resource | Representación de entrada y salida de una suscripción. |
+| `PlanResource` | Resource | Representación de salida de un plan. |
+| `EntitlementResource` | Resource | Representación de salida de los entitlements de una cuenta. |
+
+#### 2.6.4.3. Application Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `SubscribePlanCommand` | Command | Solicita contratar un plan para una cuenta. |
+| `SubscribePlanCommandHandler` | Command Handler | Valida el plan, inicia el pago a través de `PaymentGateway` y crea la suscripción en estado `PENDING_PAYMENT`. |
+| `ActivateTrialCommand` | Command | Solicita activar el periodo de prueba. |
+| `ActivateTrialCommandHandler` | Command Handler | Invoca `TrialEligibilityService` y activa la suscripción en estado `TRIAL`. |
+| `ChangePlanCommand` | Command | Solicita cambiar el plan contratado. |
+| `ChangePlanCommandHandler` | Command Handler | Registra un `PlanChangeRequest` con efecto en el siguiente periodo de facturación. |
+| `CancelSubscriptionCommand` | Command | Solicita cancelar la suscripción. |
+| `CancelSubscriptionCommandHandler` | Command Handler | Invoca `SubscriptionLifecycleService`, transiciona a `CANCELLED` y publica `SubscriptionCancelledEvent`. |
+| `GetPlansQuery` | Query | Solicita los planes vigentes. |
+| `GetPlansQueryHandler` | Query Handler | Recupera los planes disponibles para su presentación en el Landing Page y en la aplicación. |
+| `GetEntitlementsQuery` | Query | Solicita los entitlements vigentes de una cuenta. |
+| `GetEntitlementsQueryHandler` | Query Handler | Invoca `EntitlementResolutionService` y responde con el contrato de entitlements. |
+| `GetPaymentHistoryQuery` | Query | Solicita el historial de pagos de una cuenta. |
+| `GetPaymentHistoryQueryHandler` | Query Handler | Recupera los pagos verificando los permisos del solicitante. |
+| `PaymentConfirmedEventHandler` | Event Handler | Activa la suscripción al confirmarse el pago y publica `SubscriptionActivatedEvent`. |
+| `BillingPeriodClosedEventHandler` | Event Handler | Aplica los cambios de plan pendientes y evalúa las renovaciones y expiraciones. |
+
+#### 2.6.4.4. Infrastructure Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `JpaSubscriptionRepositoryImpl` | Repository Impl | Implementa `SubscriptionRepository` mediante Spring Data JPA. |
+| `JpaSubscriptionPlanRepositoryImpl` | Repository Impl | Implementa `SubscriptionPlanRepository` mediante Spring Data JPA. |
+| `JpaPaymentRepositoryImpl` | Repository Impl | Implementa `PaymentRepository` mediante Spring Data JPA. |
+| `PaymentGatewayAdapter` | Adapter | Implementa `PaymentGateway` traduciendo el modelo de transacciones del proveedor externo a los conceptos de `Payment` y `Subscription`. Constituye la Anticorruption Layer definida en el Context Mapping. |
+| `SubscriptionEntity` | Persistence Entity | Representación de persistencia del agregado `Subscription`. |
+| `PaymentEntity` | Persistence Entity | Representación de persistencia de un pago. |
+
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+> *[Insertar el diagrama: images/c4/components/subscriptions_components.png]*
+
+El diagrama evidencia dos rutas de entrada distintas: la iniciada por el suscriptor desde la aplicación móvil y la iniciada por la pasarela de pagos mediante webhook, que confirma de forma asíncrona el resultado de la transacción. El componente de entitlements se representa separado porque es consumido por los cuatro contextos downstream.
+
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="../images/uml/subscriptions_domain_class_diagram.png" alt="Domain Layer Class Diagram del bounded context Subscriptions" width="900">
+
+```plantuml
+@startuml Subscriptions Domain Layer
+
+enum SubscriptionState { TRIAL \n ACTIVE \n PENDING_PAYMENT \n CANCELLED \n EXPIRED }
+enum PaymentState { PENDING \n CONFIRMED \n REJECTED }
+
+class Subscription <<Aggregate Root>> {
+  - id : SubscriptionId
+  - accountId : AccountId
+  - planId : PlanId
+  - state : SubscriptionState
+  - billingPeriod : BillingPeriod
+  - trial : TrialPeriod
+  + activate() : void
+  + cancel() : void
+  + requestPlanChange(planId : PlanId) : void
+  + isOperative() : boolean
+}
+
+class SubscriptionPlan <<Aggregate Root>> {
+  - id : PlanId
+  - name : String
+  - price : Money
+  - entitlement : PlanEntitlement
+  + entitlementFor() : PlanEntitlement
+}
+
+class PlanEntitlement <<Value Object>> {
+  - maxDevices : Integer
+  - maxAdditionalUsers : Integer
+  - technicalVisitCovered : boolean
+  - advancedReports : boolean
+}
+
+class BillingPeriod <<Value Object>> {
+  - startDate : Date
+  - endDate : Date
+  + isExpired(at : Date) : boolean
+  + next() : BillingPeriod
+}
+
+class TrialPeriod <<Value Object>> {
+  - endDate : Date
+  - used : boolean
+  + isActive(at : Date) : boolean
+}
+
+class Payment <<Entity>> {
+  - id : PaymentId
+  - subscriptionId : SubscriptionId
+  - amount : Money
+  - state : PaymentState
+  - processedAt : DateTime
+  + confirm() : void
+  + reject() : void
+}
+
+class Money <<Value Object>> {
+  - amount : Decimal
+  - currency : String
+}
+
+class PlanChangeRequest <<Entity>> {
+  - id : RequestId
+  - subscriptionId : SubscriptionId
+  - targetPlanId : PlanId
+  - effectiveFrom : Date
+}
+
+class SubscriptionLifecycleService <<Domain Service>> {
+  + transition(s : Subscription, event : String) : void
+}
+
+class TrialEligibilityService <<Domain Service>> {
+  + isEligible(accountId : AccountId) : boolean
+}
+
+class EntitlementResolutionService <<Domain Service>> {
+  + resolve(accountId : AccountId) : PlanEntitlement
+}
+
+interface SubscriptionRepository <<Repository>> {
+  + save(s : Subscription) : void
+  + findByAccount(a : AccountId) : Subscription
+}
+
+interface SubscriptionPlanRepository <<Repository>> {
+  + findAll() : List<SubscriptionPlan>
+  + findById(id : PlanId) : SubscriptionPlan
+}
+
+interface PaymentRepository <<Repository>> {
+  + save(p : Payment) : void
+  + findBySubscription(id : SubscriptionId) : List<Payment>
+}
+
+interface PaymentGateway {
+  + process(payment : Payment) : PaymentState
+}
+
+Subscription "1" --> "1" SubscriptionPlan : contrata >
+Subscription "1" --> "1" SubscriptionState : tiene >
+Subscription "1" *-- "1" BillingPeriod : vigente en >
+Subscription "1" *-- "0..1" TrialPeriod : inicia con >
+Subscription "1" o-- "0..*" Payment : registra >
+Subscription "1" o-- "0..1" PlanChangeRequest : tiene pendiente >
+SubscriptionPlan "1" *-- "1" PlanEntitlement : otorga >
+SubscriptionPlan "1" *-- "1" Money : cuesta >
+Payment "1" *-- "1" Money : por >
+Payment "1" --> "1" PaymentState : tiene >
+SubscriptionLifecycleService ..> Subscription : transiciona >
+TrialEligibilityService ..> SubscriptionRepository : consulta >
+EntitlementResolutionService ..> PlanEntitlement : resuelve >
+PaymentGateway ..> Payment : procesa >
+SubscriptionRepository ..> Subscription : administra >
+PaymentRepository ..> Payment : administra >
+
+@enduml
+```
+
+##### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+> *[Insertar el diagrama: images/database/subscriptions_database_diagram.png]*
+
+| Tabla | Columnas principales | Constraints |
+|---|---|---|
+| `subscription_plans` | `id` (PK), `name`, `price`, `currency`, `max_devices`, `max_additional_users`, `technical_visit_covered`, `advanced_reports`, `active` | PK sobre `id` · restricción de unicidad sobre `name` |
+| `subscriptions` | `id` (PK), `account_id`, `plan_id` (FK), `state`, `billing_start`, `billing_end`, `trial_end`, `trial_used`, `created_at` | PK sobre `id` · FK `plan_id` referencia `subscription_plans(id)` · restricción de unicidad sobre `account_id` para suscripciones no canceladas |
+| `payments` | `id` (PK), `subscription_id` (FK), `amount`, `currency`, `state`, `external_reference`, `processed_at` | FK `subscription_id` referencia `subscriptions(id)` · índice sobre `external_reference` |
+| `plan_change_requests` | `id` (PK), `subscription_id` (FK), `target_plan_id` (FK), `effective_from`, `applied` | FK sobre `subscription_id` y `target_plan_id` |
+
+---
+
+### 2.6.5. Bounded Context: IAM
+
+IAM administra la identidad de los suscriptores y el acceso compartido a una misma cuenta con permisos diferenciados. Es un subdominio genérico y actúa como upstream bajo relación Conformist para los cuatro contextos que verifican identidad y permisos.
+
+#### 2.6.5.1. Domain Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `Account` | Aggregate Root | Cuenta de un suscriptor, que agrupa al titular y a los usuarios autorizados. |
+| `Subscriber` | Entity | Persona titular de una cuenta, con sus credenciales y datos de perfil. |
+| `AuthorizedUser` | Entity | Persona con acceso delegado a una cuenta, con su nivel de permiso. |
+| `PermissionLevel` | Value Object (enum) | Nivel de acceso otorgado: `VIEWER`, `OPERATOR`, `OWNER`. |
+| `EmailAddress` | Value Object | Correo electrónico con validación de formato, único en el sistema. |
+| `PasswordHash` | Value Object | Representación cifrada de la contraseña. |
+| `AccessToken` | Value Object | Token de acceso emitido tras la autenticación, con su tiempo de expiración. |
+| `PasswordResetToken` | Entity | Token de restablecimiento con vigencia limitada y de un solo uso. |
+| `Invitation` | Entity | Invitación enviada a una persona para acceder a una cuenta. |
+| `InvitationState` | Value Object (enum) | Estado de la invitación: `PENDING`, `ACCEPTED`, `EXPIRED`. |
+| `AuthenticationService` | Domain Service | Valida las credenciales presentadas y emite el token de acceso. |
+| `AuthorizationService` | Domain Service | Determina si un usuario cuenta con el permiso requerido sobre una cuenta. |
+| `InvitationService` | Domain Service | Gestiona la emisión y aceptación de invitaciones respetando el límite del plan. |
+| `AccountRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de cuentas. |
+| `SubscriberRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de suscriptores. |
+| `InvitationRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de invitaciones. |
+| `PlanEntitlementProvider` | Interface | Abstracción de la consulta del límite de usuarios adicionales, provista por Subscriptions. |
+| `AccountCreatedEvent` | Domain Event | Se publica al crearse una nueva cuenta. |
+| `UserAuthorizedEvent` | Domain Event | Se publica al aceptarse una invitación de acceso. |
+
+**Reglas de negocio implementadas en el dominio**
+
+- `EmailAddress` es única en el sistema; el registro con un correo existente es rechazado.
+- Un `AuthorizedUser` con `PermissionLevel.VIEWER` no puede ejecutar operaciones de modificación, condición evaluada por `AuthorizationService`.
+- `PasswordResetToken` tiene vigencia limitada y se invalida tras su primer uso.
+- La cantidad de `AuthorizedUser` por cuenta está limitada por el plan vigente, consultado mediante `PlanEntitlementProvider`.
+
+#### 2.6.5.2. Interface Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `AuthenticationController` | Controller | Expone los endpoints de registro, inicio de sesión y emisión de token. |
+| `PasswordResetController` | Controller | Expone los endpoints de solicitud y confirmación del restablecimiento de contraseña. |
+| `AccountController` | Controller | Expone los endpoints de consulta y actualización del perfil y de los datos de la cuenta. |
+| `InvitationController` | Controller | Expone los endpoints de invitación y administración de usuarios autorizados. |
+| `AuthorizationController` | Controller | Expone la verificación de permisos, consumida por los contextos downstream. |
+| `AuthenticationResource` | Resource | Representación de entrada de credenciales y de salida del token emitido. |
+| `AccountResource` | Resource | Representación de entrada y salida de los datos de la cuenta. |
+| `InvitationResource` | Resource | Representación de entrada y salida de una invitación. |
+
+#### 2.6.5.3. Application Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `RegisterAccountCommand` | Command | Solicita crear una cuenta de suscriptor. |
+| `RegisterAccountCommandHandler` | Command Handler | Valida la unicidad del correo, registra la aceptación de los términos y crea la cuenta. |
+| `AuthenticateCommand` | Command | Solicita autenticar a un usuario. |
+| `AuthenticateCommandHandler` | Command Handler | Invoca `AuthenticationService` y responde con el token emitido o con el rechazo. |
+| `RequestPasswordResetCommand` | Command | Solicita el restablecimiento de la contraseña. |
+| `RequestPasswordResetCommandHandler` | Command Handler | Emite el token de restablecimiento y dispara su envío. |
+| `ConfirmPasswordResetCommand` | Command | Solicita establecer una nueva contraseña a partir de un token. |
+| `ConfirmPasswordResetCommandHandler` | Command Handler | Valida la vigencia del token, actualiza la contraseña y lo invalida. |
+| `InviteUserCommand` | Command | Solicita invitar a una persona a acceder a una cuenta. |
+| `InviteUserCommandHandler` | Command Handler | Consulta el límite del plan, registra la invitación y dispara su notificación. |
+| `UpdateProfileCommand` | Command | Solicita actualizar los datos del perfil. |
+| `UpdateProfileCommandHandler` | Command Handler | Valida los datos obligatorios y persiste los cambios. |
+| `VerifyPermissionQuery` | Query | Solicita verificar si un usuario cuenta con un permiso sobre una cuenta. |
+| `VerifyPermissionQueryHandler` | Query Handler | Invoca `AuthorizationService` y responde con el resultado de la verificación. |
+| `GetAuthorizedUsersQuery` | Query | Solicita los usuarios habilitados de una cuenta, consumida por Alerting. |
+| `GetAuthorizedUsersQueryHandler` | Query Handler | Recupera los usuarios autorizados con permiso de recepción de alertas. |
+
+#### 2.6.5.4. Infrastructure Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `JpaAccountRepositoryImpl` | Repository Impl | Implementa `AccountRepository` mediante Spring Data JPA. |
+| `JpaSubscriberRepositoryImpl` | Repository Impl | Implementa `SubscriberRepository` mediante Spring Data JPA. |
+| `JpaInvitationRepositoryImpl` | Repository Impl | Implementa `InvitationRepository` mediante Spring Data JPA. |
+| `BCryptPasswordEncoderAdapter` | Adapter | Implementa el cifrado y la verificación de contraseñas. |
+| `JwtTokenProvider` | Infrastructure Service | Emite y valida los tokens de acceso utilizados por el API. |
+| `SecurityConfiguration` | Configuration | Configura la cadena de filtros de seguridad y las rutas protegidas del API. |
+| `EmailNotificationAdapter` | Adapter | Envía los correos de invitación y de restablecimiento de contraseña. |
+| `AccountEntity` | Persistence Entity | Representación de persistencia del agregado `Account`. |
+
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+> *[Insertar el diagrama: images/c4/components/iam_components.png]*
+
+El diagrama incorpora el componente de configuración de seguridad como elemento transversal del container, dado que la validación del token se aplica a todas las solicitudes dirigidas a recursos protegidos de los demás bounded contexts.
+
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="../images/uml/iam_domain_class_diagram.png" alt="Domain Layer Class Diagram del bounded context IAM" width="900">
+
+```plantuml
+@startuml IAM Domain Layer
+
+enum PermissionLevel { VIEWER \n OPERATOR \n OWNER }
+enum InvitationState { PENDING \n ACCEPTED \n EXPIRED }
+
+class Account <<Aggregate Root>> {
+  - id : AccountId
+  - ownerId : SubscriberId
+  - name : String
+  - createdAt : DateTime
+  + authorize(user : AuthorizedUser) : void
+  + revoke(userId : UserId) : void
+  + authorizedUserCount() : Integer
+}
+
+class Subscriber <<Entity>> {
+  - id : SubscriberId
+  - email : EmailAddress
+  - passwordHash : PasswordHash
+  - fullName : String
+  - phone : String
+  + changePassword(hash : PasswordHash) : void
+}
+
+class AuthorizedUser <<Entity>> {
+  - id : UserId
+  - accountId : AccountId
+  - subscriberId : SubscriberId
+  - permission : PermissionLevel
+  - receivesAlerts : boolean
+  + can(action : String) : boolean
+}
+
+class EmailAddress <<Value Object>> {
+  - value : String
+  + isValid() : boolean
+}
+
+class PasswordHash <<Value Object>> {
+  - value : String
+}
+
+class AccessToken <<Value Object>> {
+  - value : String
+  - expiresAt : DateTime
+  + isExpired() : boolean
+}
+
+class PasswordResetToken <<Entity>> {
+  - id : TokenId
+  - subscriberId : SubscriberId
+  - value : String
+  - expiresAt : DateTime
+  - used : boolean
+  + isUsable(at : DateTime) : boolean
+  + consume() : void
+}
+
+class Invitation <<Entity>> {
+  - id : InvitationId
+  - accountId : AccountId
+  - email : EmailAddress
+  - permission : PermissionLevel
+  - state : InvitationState
+  + accept() : AuthorizedUser
+}
+
+class AuthenticationService <<Domain Service>> {
+  + authenticate(email : EmailAddress, password : String) : AccessToken
+}
+
+class AuthorizationService <<Domain Service>> {
+  + hasPermission(userId : UserId, accountId : AccountId, required : PermissionLevel) : boolean
+}
+
+class InvitationService <<Domain Service>> {
+  + invite(accountId : AccountId, email : EmailAddress, p : PermissionLevel) : Invitation
+}
+
+interface AccountRepository <<Repository>> {
+  + save(a : Account) : void
+  + findById(id : AccountId) : Account
+}
+
+interface SubscriberRepository <<Repository>> {
+  + save(s : Subscriber) : void
+  + findByEmail(e : EmailAddress) : Subscriber
+}
+
+interface InvitationRepository <<Repository>> {
+  + save(i : Invitation) : void
+  + findByAccount(id : AccountId) : List<Invitation>
+}
+
+interface PlanEntitlementProvider {
+  + maxAdditionalUsersFor(id : AccountId) : Integer
+}
+
+Account "1" o-- "1..*" AuthorizedUser : autoriza >
+Account "1" --> "1" Subscriber : pertenece a >
+AuthorizedUser "1" --> "1" PermissionLevel : tiene >
+AuthorizedUser "1" --> "1" Subscriber : corresponde a >
+Subscriber "1" *-- "1" EmailAddress : identificado por >
+Subscriber "1" *-- "1" PasswordHash : protegido por >
+Subscriber "1" --> "0..*" PasswordResetToken : solicita >
+Invitation "1" --> "1" InvitationState : tiene >
+Invitation "1" *-- "1" EmailAddress : dirigida a >
+AuthenticationService ..> AccessToken : emite >
+AuthenticationService ..> SubscriberRepository : consulta >
+AuthorizationService ..> AuthorizedUser : evalúa >
+InvitationService ..> PlanEntitlementProvider : consulta >
+InvitationService ..> Invitation : produce >
+AccountRepository ..> Account : administra >
+SubscriberRepository ..> Subscriber : administra >
+InvitationRepository ..> Invitation : administra >
+
+@enduml
+```
+
+##### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+> *[Insertar el diagrama: images/database/iam_database_diagram.png]*
+
+| Tabla | Columnas principales | Constraints |
+|---|---|---|
+| `subscribers` | `id` (PK), `email`, `password_hash`, `full_name`, `phone`, `terms_accepted_at`, `created_at` | PK sobre `id` · restricción de unicidad sobre `email` |
+| `accounts` | `id` (PK), `owner_id` (FK), `name`, `created_at` | FK `owner_id` referencia `subscribers(id)` |
+| `authorized_users` | `id` (PK), `account_id` (FK), `subscriber_id` (FK), `permission`, `receives_alerts` | FK sobre `account_id` y `subscriber_id` · restricción de unicidad sobre (`account_id`, `subscriber_id`) |
+| `invitations` | `id` (PK), `account_id` (FK), `email`, `permission`, `state`, `sent_at`, `expires_at` | FK `account_id` referencia `accounts(id)` |
+| `password_reset_tokens` | `id` (PK), `subscriber_id` (FK), `value`, `expires_at`, `used` | FK `subscriber_id` referencia `subscribers(id)` · restricción de unicidad sobre `value` |
+
+---
+
+### 2.6.6. Bounded Context: Support
+
+Support gestiona el ciclo de atención de las incidencias reportadas por el suscriptor y la coordinación de las visitas técnicas. Es el contexto de menor complejidad de dominio, y su valor reside en cerrar el ciclo que inicia con una alerta y termina con la resolución del problema físico.
+
+#### 2.6.6.1. Domain Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `Incident` | Aggregate Root | Caso registrado por un suscriptor ante un problema con un dispositivo o una fuga confirmada, con su ciclo de atención. |
+| `IncidentState` | Value Object (enum) | Estado del caso: `PENDING`, `VISIT_REQUESTED`, `IN_PROGRESS`, `RESOLVED`. |
+| `IncidentOrigin` | Value Object (enum) | Origen del caso: `SELF_REPORTED`, `ALERT_DERIVED`. |
+| `TechnicalVisit` | Entity | Visita programada para atender una incidencia en el domicilio o local del suscriptor. |
+| `VisitState` | Value Object (enum) | Estado de la visita: `REQUESTED`, `ASSIGNED`, `COMPLETED`, `CANCELLED`. |
+| `Technician` | Entity | Personal de soporte asignable a una visita técnica. |
+| `AvailabilityWindow` | Value Object | Franja de disponibilidad declarada por el suscriptor para recibir la visita. |
+| `Resolution` | Value Object | Descripción de la solución aplicada y su fecha de registro. |
+| `IncidentLifecycleService` | Domain Service | Aplica las transiciones de estado válidas de una incidencia. |
+| `VisitAssignmentService` | Domain Service | Determina el técnico asignable según la zona y la disponibilidad declarada. |
+| `IncidentRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de incidencias. |
+| `TechnicalVisitRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de visitas técnicas. |
+| `TechnicianRepository` | Repository (interfaz) | Abstracción de persistencia y recuperación de técnicos. |
+| `AlertDataProvider` | Interface | Abstracción de la consulta de los datos de la alerta que origina una incidencia, provista por Alerting. |
+| `PlanEntitlementProvider` | Interface | Abstracción de la consulta de la cobertura de visita técnica, provista por Subscriptions. |
+| `IncidentRegisteredEvent` | Domain Event | Se publica al registrarse una incidencia. |
+| `TechnicianAssignedEvent` | Domain Event | Se publica al asignarse un técnico a una visita. |
+| `IncidentResolvedEvent` | Domain Event | Se publica al resolverse una incidencia. Consumido por Alerting. |
+
+**Reglas de negocio implementadas en el dominio**
+
+- Los estados de una incidencia son `PENDING`, `VISIT_REQUESTED`, `IN_PROGRESS` y `RESOLVED`, y las transiciones válidas son aplicadas por `IncidentLifecycleService`.
+- Una incidencia puede originarse de forma autónoma o a partir de una alerta activa, distinción registrada en `IncidentOrigin`.
+- La solicitud de visita técnica requiere una incidencia en estado `PENDING`.
+- La cobertura del servicio de visita técnica está determinada por el plan vigente, consultado mediante `PlanEntitlementProvider`.
+
+#### 2.6.6.2. Interface Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `IncidentController` | Controller | Expone los endpoints de registro, consulta y seguimiento de incidencias. |
+| `TechnicalVisitController` | Controller | Expone los endpoints de solicitud de visita técnica y consulta de su estado. |
+| `TechnicianController` | Controller | Expone los endpoints utilizados por el personal de soporte para registrar la atención. |
+| `IncidentResource` | Resource | Representación de entrada y salida de una incidencia. |
+| `TechnicalVisitResource` | Resource | Representación de entrada y salida de una visita técnica. |
+
+#### 2.6.6.3. Application Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `RegisterIncidentCommand` | Command | Solicita registrar una incidencia. |
+| `RegisterIncidentCommandHandler` | Command Handler | Recupera los datos de la alerta cuando corresponde, crea la incidencia en estado `PENDING` y publica `IncidentRegisteredEvent`. |
+| `RequestTechnicalVisitCommand` | Command | Solicita una visita técnica para una incidencia. |
+| `RequestTechnicalVisitCommandHandler` | Command Handler | Verifica la cobertura del plan, registra la solicitud y transiciona la incidencia a `VISIT_REQUESTED`. |
+| `AssignTechnicianCommand` | Command | Solicita asignar un técnico a una visita. |
+| `AssignTechnicianCommandHandler` | Command Handler | Invoca `VisitAssignmentService`, registra la asignación y publica `TechnicianAssignedEvent`. |
+| `ResolveIncidentCommand` | Command | Solicita registrar la resolución de una incidencia. |
+| `ResolveIncidentCommandHandler` | Command Handler | Registra la `Resolution`, transiciona a `RESOLVED` y publica `IncidentResolvedEvent`. |
+| `GetIncidentsByAccountQuery` | Query | Solicita el listado de incidencias de una cuenta. |
+| `GetIncidentsByAccountQueryHandler` | Query Handler | Recupera las incidencias verificando los permisos del solicitante. |
+| `LeakAlertGeneratedEventHandler` | Event Handler | Registra la trazabilidad de las alertas susceptibles de derivar en una incidencia. |
+
+#### 2.6.6.4. Infrastructure Layer
+
+| Clase | Categoría | Propósito |
+|---|---|---|
+| `JpaIncidentRepositoryImpl` | Repository Impl | Implementa `IncidentRepository` mediante Spring Data JPA. |
+| `JpaTechnicalVisitRepositoryImpl` | Repository Impl | Implementa `TechnicalVisitRepository` mediante Spring Data JPA. |
+| `JpaTechnicianRepositoryImpl` | Repository Impl | Implementa `TechnicianRepository` mediante Spring Data JPA. |
+| `AlertDataAdapter` | Adapter | Implementa `AlertDataProvider` consultando al contexto Alerting. |
+| `PlanEntitlementAdapter` | Adapter | Implementa `PlanEntitlementProvider` consultando al contexto Subscriptions. |
+| `IncidentEntity` | Persistence Entity | Representación de persistencia del agregado `Incident`. |
+| `TechnicalVisitEntity` | Persistence Entity | Representación de persistencia de una visita técnica. |
+
+#### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+> *[Insertar el diagrama: images/c4/components/support_components.png]*
+
+El diagrama refleja que este bounded context atiende a dos tipos de usuario distintos sobre el mismo container: el suscriptor, que registra y hace seguimiento a sus incidencias desde la aplicación móvil, y el técnico de soporte, que registra la atención realizada.
+
+#### 2.6.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.6.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="../images/uml/support_domain_class_diagram.png" alt="Domain Layer Class Diagram del bounded context Support" width="850">
+
+```plantuml
+@startuml Support Domain Layer
+
+enum IncidentState { PENDING \n VISIT_REQUESTED \n IN_PROGRESS \n RESOLVED }
+enum IncidentOrigin { SELF_REPORTED \n ALERT_DERIVED }
+enum VisitState { REQUESTED \n ASSIGNED \n COMPLETED \n CANCELLED }
+
+class Incident <<Aggregate Root>> {
+  - id : IncidentId
+  - accountId : AccountId
+  - waterPointId : WaterPointId
+  - alertId : AlertId
+  - origin : IncidentOrigin
+  - state : IncidentState
+  - description : String
+  - registeredAt : DateTime
+  - resolution : Resolution
+  + requestVisit(window : AvailabilityWindow) : TechnicalVisit
+  + resolve(r : Resolution) : void
+  + isPending() : boolean
+}
+
+class TechnicalVisit <<Entity>> {
+  - id : VisitId
+  - incidentId : IncidentId
+  - technicianId : TechnicianId
+  - state : VisitState
+  - scheduledFor : DateTime
+  - availability : AvailabilityWindow
+  + assign(t : TechnicianId, at : DateTime) : void
+  + complete() : void
+}
+
+class Technician <<Entity>> {
+  - id : TechnicianId
+  - fullName : String
+  - zone : String
+  - available : boolean
+}
+
+class AvailabilityWindow <<Value Object>> {
+  - startAt : DateTime
+  - endAt : DateTime
+  + overlaps(other : AvailabilityWindow) : boolean
+}
+
+class Resolution <<Value Object>> {
+  - description : String
+  - resolvedAt : DateTime
+}
+
+class IncidentLifecycleService <<Domain Service>> {
+  + transition(i : Incident, target : IncidentState) : void
+}
+
+class VisitAssignmentService <<Domain Service>> {
+  + assignableFor(v : TechnicalVisit) : Technician
+}
+
+interface IncidentRepository <<Repository>> {
+  + save(i : Incident) : void
+  + findByAccount(a : AccountId) : List<Incident>
+  + findById(id : IncidentId) : Incident
+}
+
+interface TechnicalVisitRepository <<Repository>> {
+  + save(v : TechnicalVisit) : void
+  + findByIncident(id : IncidentId) : TechnicalVisit
+}
+
+interface TechnicianRepository <<Repository>> {
+  + findAvailableByZone(zone : String) : List<Technician>
+}
+
+interface AlertDataProvider {
+  + alertDetails(id : AlertId) : String
+}
+
+interface PlanEntitlementProvider {
+  + technicalVisitCovered(a : AccountId) : boolean
+}
+
+Incident "1" --> "1" IncidentState : tiene >
+Incident "1" --> "1" IncidentOrigin : tiene >
+Incident "1" *-- "0..1" Resolution : se cierra con >
+Incident "1" o-- "0..*" TechnicalVisit : origina >
+TechnicalVisit "1" --> "1" VisitState : tiene >
+TechnicalVisit "1" --> "0..1" Technician : atendida por >
+TechnicalVisit "1" *-- "1" AvailabilityWindow : dentro de >
+IncidentLifecycleService ..> Incident : transiciona >
+VisitAssignmentService ..> TechnicianRepository : consulta >
+VisitAssignmentService ..> TechnicalVisit : asigna >
+Incident ..> AlertDataProvider : consulta al originarse >
+TechnicalVisit ..> PlanEntitlementProvider : valida cobertura >
+IncidentRepository ..> Incident : administra >
+TechnicalVisitRepository ..> TechnicalVisit : administra >
+TechnicianRepository ..> Technician : administra >
+
+@enduml
+```
+
+##### 2.6.6.6.2. Bounded Context Database Design Diagram
+
+> *[Insertar el diagrama: images/database/support_database_diagram.png]*
+
+| Tabla | Columnas principales | Constraints |
+|---|---|---|
+| `incidents` | `id` (PK), `account_id`, `water_point_id`, `alert_id`, `origin`, `state`, `description`, `registered_at`, `resolution_description`, `resolved_at` | PK sobre `id` · índice sobre (`account_id`, `state`) |
+| `technical_visits` | `id` (PK), `incident_id` (FK), `technician_id` (FK), `state`, `scheduled_for`, `availability_start`, `availability_end` | FK `incident_id` referencia `incidents(id)` · FK `technician_id` referencia `technicians(id)` |
+| `technicians` | `id` (PK), `full_name`, `zone`, `phone`, `available` | PK sobre `id` · índice sobre `zone` |
+
+---
+
+### Resumen de la sección 2.6
+
+| Bounded Context | Clasificación | Agregados | Clases de dominio | Endpoints expuestos | Tablas |
+|---|---|---:|---:|---:|---:|
+| Alerting | Core | 1 | 18 | 3 controladores + 2 consumidores | 4 |
+| Consumption Analytics | Core | 1 | 22 | 4 controladores + 1 consumidor | 6 |
+| Device Monitoring | Supporting | 2 | 20 | 6 controladores | 5 |
+| Subscriptions | Supporting | 2 | 20 | 5 controladores + 1 consumidor | 4 |
+| IAM | Generic | 1 | 19 | 5 controladores | 5 |
+| Support | Supporting | 1 | 17 | 3 controladores | 3 |
+
+La distribución evidencia la concentración de complejidad de dominio en los dos contextos core, conforme a lo establecido en el Candidate Context Discovery de la sección 2.5.1.1. En total, el modelo táctico comprende 8 agregados, 116 clases de dominio y 27 tablas de persistencia distribuidas en los seis bounded contexts.
