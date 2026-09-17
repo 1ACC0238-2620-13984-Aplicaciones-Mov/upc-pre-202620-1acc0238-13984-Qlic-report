@@ -398,47 +398,63 @@ En esta sección se presentan los Empathy Maps elaborados para cada User Persona
 
 #### Empathy Map #1 – Segmento Hogares y Familias
 
-**¿Con quién estamos empatizando?**
-Wendy Zuñiga, 33 años, ingeniera civil de El Agustino. Vive con su esposo y su hijo en una vivienda de dos niveles y participa en la administración de los servicios básicos.
+![Empathy map.png](../images/empathy_map/Empathy%20map.png)
 
-**¿Qué necesita hacer?**
-Revisar el recibo, identificar variaciones de consumo, prevenir filtraciones y decidir cuándo solicitar una revisión o reparación.
+**1. WHO are we empathizing with? (¿Con quién estamos empatizando?)**
+* **Persona:** Claudia Morales, 33 años, madre de familia.
+* **Situación:** Reside en una vivienda propia de dos niveles en La Victoria, donde coordina la administración doméstica y los pagos de servicios básicos en medio de jornadas laborales demandantes.
+* **Rol:** Tomadora de decisiones financieras en el hogar y responsable directa de la supervisión técnica y mantenimiento de las instalaciones sanitarias.
 
-**¿Qué está diciendo?**
-- Le preocupa recibir cobros atípicos sin conocer la causa.
-- Necesita una alerta que le permita reaccionar antes de que el problema genere daños.
-- Prefiere una solución móvil clara y accesible.
+**2. What do they need to DO? (¿Qué necesita hacer?)**
+* Monitorear el consumo de agua en tiempo real sin dedicar tiempo diario a inspeccionar físicamente el medidor o las tuberías.
+* Detectar de forma inmediata microfugas o consumos anómalos antes de que dañen la estructura de la vivienda o inflen el recibo mensual.
+* Tomar decisiones informadas basadas en datos reales para mantener el gasto de agua dentro de un rango predecible (S/ 80 – S/ 120 al mes).
+* Sentirse segura de que las instalaciones operan correctamente mientras está fuera de casa cumpliendo su jornada laboral.
 
-**¿Qué está viendo?**
-- Recibos mensuales cuyo monto puede variar sin explicación inmediata.
-- Instalaciones domésticas que no puede inspeccionar de forma continua por falta de tiempo.
-- Riesgo de humedad o daño estructural cuando una filtración permanece oculta.
+**3. What do they SEE? (¿Qué está viendo?)**
+* Variaciones inexplicables e incrementos repentinos en las facturaciones mensuales emitidas por la empresa de agua.
+* Marcas de humedad o filtraciones en viviendas de vecinos que terminan generando reparaciones costosas.
+* Publicidad en redes sociales sobre dispositivos de domótica y ahorro energético, pero casi ninguna solución accesible y especializada en control hídrico.
+* A sus familiares usando el agua en actividades diarias sin tener noción de cuántos litros consumen.
 
-**¿Qué está haciendo?**
-- Revisa los recibos y compara el gasto del hogar.
-- Supervisa las instalaciones cuando aparece una señal de anomalía.
-- Usa el smartphone para comunicación, banca y servicios.
+**4. What do they SAY? (¿Qué está diciendo?)**
+* *"A veces el recibo sube sin justificación y no tengo tiempo de estar revisando el medidor a diario."*
+* *"Una fuga en una tubería empotrada es una pesadilla: destruye acabados y te enteras recién a fin de mes."*
+* *"No quiero otra aplicación llena de notificaciones molestas; necesito que me avise solo si hay un problema real."*
+* *"Si una solución tecnológica me demuestra que me ahorra dinero y disgustos, estoy dispuesta a pagar una mensualidad razonable."*
 
-**¿Qué está escuchando?**
-- Recomendaciones de familiares y técnicos sobre mantenimiento del hogar.
-- Conversaciones sobre ahorro familiar y consumo responsable.
-- Alertas y mensajes de las aplicaciones que usa a diario.
+**5. What do they DO? (¿Qué está haciendo?)**
+* Revisa minuciosamente el detalle de los recibos de agua al llegar a fin de mes para comparar el gasto con periodos anteriores.
+* Inspecciona visualmente los inodoros y la cisterna de manera esporádica durante sus fines de semana.
+* Paga los servicios mediante aplicaciones bancarias móviles (BCP, Yape) para agilizar sus tiempos.
+* Pregunta a colegas de ingeniería o conocidos del vecindario cuando detecta cobros anómalos o sospecha de problemas en la red pública.
 
-**¿Qué piensa y siente?**
-- Quiere prevenir gastos imprevistos y daños en la vivienda.
-- Valora la información precisa, oportuna y fácil de interpretar.
-- Le preocupa recibir demasiadas notificaciones sin una acción clara.
+**6. What do they HEAR? (¿Qué está escuchando?)**
+* Quejas constantes de vecinos y amigos sobre la falta de transparencia o errores de medición de Sedapal.
+* Comentarios de técnicos y gasfiteros advirtiendo que las fugas silenciosas en inodoros pueden desperdiciar miles de litros al mes.
+* Noticias sobre escasez hídrica, estrés hídrico en Lima y posibles ajustes tarifarios en los servicios básicos.
+* Colegas de trabajo comentando sobre la conveniencia de integrar dispositivos inteligentes (Smart Home) en sus viviendas.
 
-**Pains:**
-- Cobros elevados cuya causa solo se conoce después del cierre del periodo.
-- Falta de visibilidad sobre filtraciones ocultas.
-- Tiempo limitado para realizar verificaciones manuales.
+**7. What do they THINK and FEEL? (¿Qué piensa y siente?)**
+* **Pensamientos principales:** *"Necesito una herramienta que haga la supervisión por mí", "No puedo permitir que una fuga dañe las paredes que con tanto esfuerzo construimos".*
+* **Sentimientos / Emociones:**
+  * Incertidumbre al no saber si el consumo actual está dentro de lo regular hasta que llega la factura.
+  * Agobio por la falta de tiempo libre entre su trabajo profesional y las tareas domésticas.
+  * Deseo de tranquilidad, control y optimización del presupuesto familiar sin complicaciones operativas.
 
-**Gains:**
-- Alertas móviles que indiquen la anomalía y su nivel de urgencia.
-- Historial y comparación del consumo en soles y por periodos.
-- Recomendaciones concretas para actuar y prevenir nuevos cobros.
+---
 
+**PAINS (Frustraciones, temores y ansiedades)**
+* **Temor a daños estructurales:** Miedo a que filtraciones no detectadas en muros o pisos debiliten la construcción de su casa y exijan gastos de albañilería costosos.
+* **Sobrecostos injustificados:** Frustración por pagar recibos elevados ocasionados por fallas invisibles o lecturas dudosas del medidor tradicional.
+* **Escasez de tiempo:** Imposibilidad de realizar inspecciones periódicas manuales debido a sus extensas jornadas de trabajo en obra y oficina.
+* **Aversión a la complejidad:** Rechazo a sistemas con configuraciones técnicas complejas, interfaces sobrecargadas o exceso de notificaciones falsas.
+
+**GAINS (Deseos, necesidades y factores de convicción)**
+* **Control en tiempo real:** Disponer de visibilidad clara e inmediata del flujo y consumo de agua directamente desde su smartphone.
+* **Alertas preventivas inteligentes:** Notificaciones push instantáneas y precisas que le permitan solucionar averías críticas en menos de 24 horas.
+* **Tranquilidad operativa:** Certeza de que su vivienda está monitoreada constantemente sin demandar su presencia física.
+* **¿Qué la convence de que Qlic es la opción correcta?:** Que combine una instalación rápida sin obras invasivas, soporte técnico accesible y una demostración empírica de ahorro económico en la facturación mensual desde el primer mes.
 ---
 
 #### Empathy Map #2 – Segmento PYMES
