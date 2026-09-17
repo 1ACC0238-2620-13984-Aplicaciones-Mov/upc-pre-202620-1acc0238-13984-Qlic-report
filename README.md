@@ -2,17 +2,6 @@
 
 Informe integrado del trabajo final del curso **Aplicaciones para Dispositivos Móviles** (1ACC0238, NRC 13984), Universidad Peruana de Ciencias Aplicadas.
 
-## Ramas integradas
-
-El contenido de este README reúne, en orden, las ramas de entrega:
-
-1. `feature/caratula` — carátula, registro de versiones y Student Outcome.
-2. `feature/chapter-1` — Capítulo I: Introducción.
-3. `feature/chapter-2` — Capítulo II: Requirements Development and Software Solution Design.
-4. `feature/chapter-5` — Capítulo V: Conclusiones, Bibliografía y Anexos.
-
-La versión publicada y unificada corresponde a `master`. El trabajo se organizó con GitFlow y Conventional Commits.
-
 ---
 
 <div align="center">
@@ -91,8 +80,12 @@ En cuanto al control de versiones, el proyecto se gestionó en GitHub siguiendo 
 El historial del repositorio muestra trabajo distribuido en ramas dedicadas a
 la carátula y a los capítulos 1, 2 y 5. Los cambios se integraron mediante
 commits con mensajes descriptivos y revisiones entre integrantes. Las capturas
-de GitHub Insights se conservarán como evidencia visual en la versión final
-del PDF cuando se exporten desde el repositorio.
+de GitHub Insights se incluyen como evidencia visual de la colaboración del
+equipo durante AV1.
+
+![Analítica de contribuciones del repositorio durante AV1](images/collaboration/av1_git.png)
+
+*Figura 1.* Analítica de contribuciones del repositorio del Project Report durante AV1.
 
 **Interpretación del equipo:** El trabajo se organizó de forma paralela por
 entregable. La mayor actividad se concentró en el capítulo 2, donde se
