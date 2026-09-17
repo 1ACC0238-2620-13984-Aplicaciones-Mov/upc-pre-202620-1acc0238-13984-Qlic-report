@@ -131,8 +131,8 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 | Segmento | Perfil de inclusión | Cantidad requerida | Exclusión | Modalidad sugerida |
 |---|---|---:|---|---|
-| **PYMES y comercios locales** | Propietario, administrador o responsable de operaciones/mantenimiento de una PYME que participa en decisiones sobre consumo o incidencias de agua. | 3 a 5 entrevistas | Personas que no conocen el consumo, mantenimiento ni decisiones asociadas al agua del negocio. | Presencial en el negocio o videollamada, con autorización de grabación. |
-| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre el recibo, el mantenimiento o el uso de agua del hogar. | 3 a 5 entrevistas | Personas que no tienen experiencia ni responsabilidad sobre el consumo o mantenimiento del hogar. | Presencial o videollamada, con autorización de grabación. |
+| **PYMES y comercios locales** | Propietario, administrador o responsable de operaciones/mantenimiento de una PYME que participa en decisiones sobre consumo o incidencias de agua. | **3 entrevistas** | Personas que no conocen el consumo, mantenimiento ni decisiones asociadas al agua del negocio. | Presencial en el negocio o videollamada, con autorización de grabación. |
+| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre el recibo, el mantenimiento o el uso de agua del hogar. | **3 entrevistas** | Personas que no tienen experiencia ni responsabilidad sobre el consumo o mantenimiento del hogar. | Presencial o videollamada, con autorización de grabación. |
 
 #### Segmento 1: PYMES y comercios locales
 
@@ -162,10 +162,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 ### 2.2.2. Registro de entrevistas
 
-Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir los datos del entrevistado, el inicio y fin dentro del video, el enlace, una captura y un resumen de sus respuestas. Si se realizan cuatro o cinco entrevistas, se copia la misma ficha para cada participante.
-
-**Archivo del video consolidado:** `upc-pre-202620-1acc0238-13984-Qlic-needfinding-av1.mp4`<br>
-**URL privada de OneDrive:** **[PEGAR URL DEL VIDEO]**
+Aquí registraremos tres entrevistas por cada segmento: PYMES y comercios locales, y hogares y familias. Cada ficha debe incluir los datos del entrevistado, el inicio y fin dentro del video, el enlace, una captura y un resumen descriptivo de sus respuestas.
 
 #### Primer segmento - PYMES y comercios locales
 
@@ -182,8 +179,6 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 | Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201823654_upc_edu_pe/IQA4Zz1zioHXQK1By4CB35tOASfVB3LYO5EBuZ1ratxBBhM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mJOeaq) |
 | Foto entrevista | <img src="../images/interviews/entrevista-1-edery-abanto.png" alt="Edery Abanto y Aarón Avila durante la entrevista" width="360"> |
 | Resumen | **Principales respuestas:** Actualmente revisa el recibo una vez al mes, compara el monto con el periodo anterior y registra datos de las máquinas en una libreta. Ha detectado fugas en una manguera y en el baño; una se identificó por humedad en el piso y otra por un recibo elevado. Considera útil consultar desde el celular el consumo total y sus comparaciones semanales o mensuales. Solicita alertas claras únicamente ante variaciones importantes, indicando ubicación, duración y nivel de urgencia.<br><br>**Características objetivas:** Persona entrevistada de 30 años, administrador de una lavandería ubicada en Pueblo Libre, Lima; participa en el control operativo, la revisión de recibos y la coordinación del mantenimiento del negocio.<br><br>**Características subjetivas:** Busca reducir costos y enterarse rápido de las fugas. Prefiere una solución sencilla, visual y sin conocimientos técnicos; aceptaría comenzar con un plan básico, instalación guiada y soporte cercano.<br><br>**Tecnología y canales:** Usa dispositivos Android, el celular y WhatsApp para conservar fotografías de los recibos. Le interesa que más de una persona pueda revisar la información del negocio.<br><br>**Evidencia temporal:** La revisión de recibos y registros se explica entre 00:01:46 y 00:02:16; la necesidad de reportes y alertas entre 00:02:53 y 00:03:50; y las preferencias de uso, precio y soporte entre 00:03:56 y 00:04:59. |
-
-##### ENTREVISTA 2
 
 ##### ENTREVISTA 2
 
@@ -257,6 +252,32 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 | Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
 | Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [COMPLETAR]<br><br>**Características subjetivas:** [COMPLETAR]<br><br>**Tecnología y canales:** [COMPLETAR]<br><br>**Evidencia:** [minuto o cita breve] |
 
+### 2.2.3. Análisis de entrevistas
+
+Esta sección consolidará los hallazgos de las tres entrevistas de cada segmento. El análisis presentará, mediante cuadros y porcentajes, las características objetivas y subjetivas más frecuentes: perfil demográfico, problemas relacionados con el consumo, objetivos, frustraciones, tecnología, canales de interacción y disposición frente a una solución móvil. Los porcentajes se calcularán sobre las tres entrevistas efectivamente registradas por segmento y cada hallazgo se vinculará con la ficha y el momento correspondiente del video.
+
+#### Análisis del segmento PYMES y comercios locales
+
+| Variable a consolidar | Resultado de las 3 entrevistas | Evidencia requerida |
+|---|---|---|
+| Control actual del consumo | Completar al cerrar la tercera entrevista | Registros 1, 2 y 3 |
+| Fugas, desperdicios o cobros inesperados | Completar al cerrar la tercera entrevista | Resúmenes y timing de cada ficha |
+| Necesidad de reportes y alertas móviles | Completar al cerrar la tercera entrevista | Respuestas de las preguntas 5 y 6 |
+| Dispositivos y canales de interacción | Completar al cerrar la tercera entrevista | Respuestas de la pregunta 7 |
+| Precio, instalación y soporte | Completar al cerrar la tercera entrevista | Respuestas de la pregunta 8 |
+
+#### Análisis del segmento hogares y familias
+
+| Variable a consolidar | Resultado de las 3 entrevistas | Evidencia requerida |
+|---|---|---|
+| Control actual del consumo y pago del recibo | Completar al cerrar las tres entrevistas | Registros 1, 2 y 3 |
+| Fugas, medidores o cobros inesperados | Completar al cerrar las tres entrevistas | Resúmenes y timing de cada ficha |
+| Hábitos de ahorro y respuesta ante anomalías | Completar al cerrar las tres entrevistas | Respuestas de las preguntas 3 y 4 |
+| Uso del celular, alertas y privacidad | Completar al cerrar las tres entrevistas | Respuestas de las preguntas 5 y 8 |
+| Plan, costo y soporte esperados | Completar al cerrar las tres entrevistas | Respuestas de la pregunta 6 |
+
+> El cuadro se completará con datos verificables después de registrar las tres entrevistas de cada segmento. No se asignarán porcentajes ni características representativas a partir de respuestas simuladas o de una muestra incompleta.
+
 ## 2.3. Needfinding
 
 En esta sección se presenta el proceso de análisis de la información recolectada durante las entrevistas con representantes de los segmentos objetivo de Qlic. A partir de dicha información se construyen los artefactos que permiten comprender en profundidad las necesidades, motivaciones y frustraciones de los usuarios. Los artefactos elaborados incluyen los User Personas, el User Task Matrix, los User Journey Maps y los Empathy Maps. Cada uno fue elaborado en UXPressia, tomando como base los hallazgos identificados en el análisis de entrevistas de la sección 2.2.
@@ -267,7 +288,7 @@ Dado que Qlic es una **aplicación móvil nativa y multiplataforma** (desarrolla
 
 ### 2.3.1. User Personas
 
-En esta sección se incluyen las fichas de User Persona que representan arquetipos de los segmentos objetivo de Qlic. Estos arquetipos fueron construidos a partir del análisis estadístico de las entrevistas realizadas (ver sección 2.2.3), buscando capturar las características, necesidades y comportamientos más representativos de cada segmento. Se elaboró una ficha por cada segmento objetivo: PYMES y comercios locales, y hogares y familias. Las fichas fueron elaboradas en UXPressia.
+En esta sección se incluyen las fichas de User Persona que representan arquetipos de los segmentos objetivo de Qlic. Estos arquetipos fueron construidos a partir del análisis estadístico de las entrevistas realizadas ([ver sección 2.2.3](#223-análisis-de-entrevistas)), buscando capturar las características, necesidades y comportamientos más representativos de cada segmento. Se elaboró una ficha por cada segmento objetivo: PYMES y comercios locales, y hogares y familias. Las fichas fueron elaboradas en UXPressia.
 
 #### User Persona #1 – Segmento PYMES y Comercios Locales
 
@@ -381,24 +402,7 @@ Estas necesidades justifican el enfoque móvil de Qlic: el acceso desde el smart
 
 En esta sección se presentan los User Journey Maps en su versión **As-Is**, es decir, el recorrido actual del usuario sin la existencia de Qlic. El objetivo es identificar los momentos de mayor fricción y frustración que la aplicación móvil puede transformar positivamente. Se elaboró un User Journey Map por cada User Persona, vinculado a su ficha correspondiente en UXPressia.
 
-#### User Journey Map #1 – Segmento Hogares y Familias
-
-> *Elaborado en UXPressia.*
-> *[Insertar captura: images/journey-map-hogar.png]*
-
-**Resumen del journey:** [Completar con el end-to-end journey del User Persona de hogares tras el análisis de entrevistas. Describir el recorrido desde que detecta un posible problema con el consumo de agua hasta que intenta resolverlo con los medios actuales disponibles.]
-
-| Fase | Acción | Pensamiento | Emoción | Punto de dolor |
-|---|---|---|---|---|
-| [Fase 1] | [Completar] | [Completar] | [Completar] | [Completar] |
-| [Fase 2] | [Completar] | [Completar] | [Completar] | [Completar] |
-| [Fase 3] | [Completar] | [Completar] | [Completar] | [Completar] |
-| [Fase 4] | [Completar] | [Completar] | [Completar] | [Completar] |
-| [Fase 5] | [Completar] | [Completar] | [Completar] | [Completar] |
-
----
-
-#### User Journey Map #2 – Segmento PYMES
+#### User Journey Map #1 – Segmento PYMES y Comercios Locales
 
 > *<img src="../images/journey_map/Journey_Map(Carlos Abanto).png">*
 
@@ -411,6 +415,22 @@ En esta sección se presentan los User Journey Maps en su versión **As-Is**, es
 | **Llamada al técnico** | Contacta a un técnico de confianza por WhatsApp para que revise las instalaciones | "Espero que venga rápido y no cobre demasiado" | Ansiedad | Tiempo de espera incierto y costo adicional no planificado que afecta el presupuesto del negocio |
 | **Diagnóstico y reparación** | El técnico detecta la fuga en una manguera o en el baño y realiza la reparación | "¿Por qué no me avisó nadie antes? Pude haberlo evitado" | Resignación | No existía ningún sistema que alertara sobre el consumo anómalo antes de que escale |
 | **Espera de confirmación** | Espera el siguiente recibo mensual para saber si el consumo bajó tras la reparación | "Ojalá haya bajado, pero no lo sabré hasta el mes que viene" | Incertidumbre | Sin datos en tiempo real no puede confirmar si el problema se resolvió ni cuánto ahorró |
+
+---
+
+#### User Journey Map #2 – Segmento Hogares y Familias
+
+> *Recorrido textual preliminar del segmento hogares; debe contrastarse con las tres entrevistas del segmento y con la captura final elaborada en UXPressia.*
+
+**Resumen del journey:** La persona responsable del hogar recibe el recibo mensual y compara el monto con periodos anteriores. Cuando detecta un aumento o una señal física, revisa manualmente grifos, inodoros, tuberías y tanque. Si no identifica la causa, consulta a un familiar, contacta a un técnico o presenta un reclamo. Después de aplicar una corrección, espera el siguiente recibo para comprobar si el consumo volvió a la normalidad.
+
+| Fase | Acción | Pensamiento | Emoción | Punto de dolor |
+|---|---|---|---|---|
+| **Recepción del recibo** | Recibe el recibo mensual y compara el monto con el periodo anterior | "El monto aumentó; necesito saber por qué" | Preocupación | La información llega con retraso y solo muestra el consumo acumulado |
+| **Búsqueda de señales** | Revisa grifos, inodoros, tuberías y el tanque en busca de goteos o humedad | "Tal vez la fuga está en algún punto que no puedo ver" | Incertidumbre | La inspección doméstica depende de señales visibles y no permite localizar fugas ocultas |
+| **Consulta y decisión** | Pregunta a un familiar, revisa recomendaciones o contacta a un técnico | "No sé si el problema es el medidor o una fuga interna" | Frustración | No cuenta con datos suficientes para decidir si debe reparar, reclamar o esperar |
+| **Aplicación de una medida** | Ajusta una conexión, cambia un componente, modifica hábitos o solicita una revisión | "Espero que esta medida reduzca el consumo" | Esperanza | No puede comprobar de inmediato si la acción solucionó el problema |
+| **Verificación posterior** | Espera el siguiente recibo y vuelve a comparar el monto | "Recién el próximo mes sabré si funcionó" | Incertidumbre | El ciclo mensual retrasa la confirmación y puede acumular nuevos costos |
 
 ---
 ### 2.3.4. Empathy Mapping
@@ -603,13 +623,13 @@ Los criterios de aceptación se redactan en tercera persona, en tiempo presente,
 |---|---|---|---|---|---|
 | **Title** | Conocer la propuesta de valor de Qlic | | | | |
 | **Description** | Como visitante del Landing Page, deseo conocer en qué consiste Qlic y qué problema resuelve, para evaluar si la solución se ajusta a mi situación. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Visualización de la propuesta de valor**<br>**Dado** que el visitante ingresa al Landing Page,<br>**Cuando** la página termina de cargar,<br>**Entonces** el sistema presenta el propósito de la solución, los beneficios principales y un llamado a la acción visible sin necesidad de desplazamiento adicional.<br><br>**Escenario 2: Acceso a la explicación ampliada**<br>**Dado** que el visitante se encuentra en el Landing Page,<br>**Cuando** selecciona el llamado a la acción de la sección principal,<br>**Entonces** el sistema lo dirige a la sección que detalla el funcionamiento de la solución. | | | | |
+| **Acceptance Criteria** | **Escenario 1: Visualización de la propuesta de valor**<br>**Dado** que el visitante ingresa al Landing Page,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta el propósito de la solución, sus beneficios principales y una opción para solicitar información adicional.<br><br>**Escenario 2: Acceso a la explicación ampliada**<br>**Dado** que el visitante solicita información adicional sobre Qlic,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta la explicación del funcionamiento de la solución. | | | | |
 
 | Story ID | US02 | Priority | Alta | Epic | EP01 |
 |---|---|---|---|---|---|
 | **Title** | Comparar los planes de suscripción disponibles | | | | |
 | **Description** | Como visitante del Landing Page, deseo comparar los planes de suscripción disponibles, para identificar cuál corresponde al tamaño de mi negocio u hogar. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Comparación de planes**<br>**Dado** que el visitante accede a la sección de planes,<br>**Cuando** la sección se presenta,<br>**Entonces** el sistema muestra cada plan con sus funcionalidades incluidas, la cantidad de dispositivos soportados y su precio.<br><br>**Regla de negocio**<br>Los planes disponibles son Plan Básico y Plan Gestión Pro. | | | | |
+| **Acceptance Criteria** | **Escenario 1: Comparación de planes**<br>**Dado** que el visitante solicita información sobre los planes,<br>**Cuando** el sistema procesa la solicitud,<br>**Entonces** presenta cada plan con sus funcionalidades incluidas, la cantidad de dispositivos soportados y su precio.<br><br>**Regla de negocio**<br>Los planes disponibles son Plan Básico y Plan Gestión Pro. | | | | |
 
 | Story ID | US03 | Priority | Media | Epic | EP01 |
 |---|---|---|---|---|---|
@@ -621,7 +641,7 @@ Los criterios de aceptación se redactan en tercera persona, en tiempo presente,
 |---|---|---|---|---|---|
 | **Title** | Consultar el Landing Page en el idioma de preferencia | | | | |
 | **Description** | Como visitante del Landing Page, deseo consultar el contenido en inglés o español latinoamericano, para comprender la propuesta en el idioma que domino. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Cambio de idioma**<br>**Dado** que el visitante se encuentra en el Landing Page,<br>**Cuando** selecciona un idioma disponible,<br>**Entonces** el sistema presenta el contenido en el idioma seleccionado y conserva la posición de lectura.<br><br>**Regla de negocio**<br>Los idiomas soportados son English (en_US) y Latin American Spanish (es_419), siendo el inglés el idioma por defecto. | | | | |
+| **Acceptance Criteria** | **Escenario 1: Cambio de idioma**<br>**Dado** que el visitante solicita un idioma soportado,<br>**Cuando** el sistema procesa la preferencia regional,<br>**Entonces** presenta el contenido en el idioma seleccionado.<br><br>**Regla de negocio**<br>Los idiomas soportados son English (en_US) y Latin American Spanish (es_419), siendo el inglés el idioma por defecto. | | | | |
 
 ##### EP02 – Gestión de identidad y acceso
 
@@ -679,7 +699,7 @@ Los criterios de aceptación se redactan en tercera persona, en tiempo presente,
 |---|---|---|---|---|---|
 | **Title** | Organizar los dispositivos por local | | | | |
 | **Description** | Como suscriptor con más de un local, deseo agrupar mis dispositivos por local, para comparar el comportamiento de cada uno por separado. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Consulta por local**<br>**Dado** que el suscriptor cuenta con dispositivos asignados a más de un local,<br>**Cuando** selecciona un local en el panel de monitoreo,<br>**Entonces** el sistema presenta únicamente los dispositivos y las lecturas correspondientes a ese local. | | | | |
+| **Acceptance Criteria** | **Escenario 1: Consulta por local**<br>**Dado** que el suscriptor cuenta con dispositivos asignados a más de un local,<br>**Cuando** solicita las lecturas de un local,<br>**Entonces** el sistema devuelve únicamente los dispositivos y las lecturas correspondientes a ese local. | | | | |
 
 | Story ID | US14 | Priority | Baja | Epic | EP03 |
 |---|---|---|---|---|---|
@@ -839,7 +859,7 @@ Los criterios de aceptación se redactan en tercera persona, en tiempo presente,
 |---|---|---|---|---|---|
 | **Title** | Consultar los términos y condiciones del servicio | | | | |
 | **Description** | Como suscriptor, deseo consultar los términos y condiciones y la política de tratamiento de datos, para conocer las condiciones bajo las que se maneja la información de mi consumo. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Acceso desde la aplicación**<br>**Dado** que el suscriptor accede a la sección correspondiente de la aplicación,<br>**Cuando** selecciona los términos y condiciones,<br>**Entonces** el sistema presenta el documento vigente indicando su fecha de actualización.<br><br>**Regla de negocio**<br>Los términos y condiciones se encuentran accesibles tanto desde el Landing Page como desde la aplicación móvil al momento del registro. | | | | |
+| **Acceptance Criteria** | **Escenario 1: Acceso desde la aplicación**<br>**Dado** que el suscriptor solicita los términos y condiciones,<br>**Cuando** el sistema procesa la consulta,<br>**Entonces** devuelve el documento vigente indicando su fecha de actualización.<br><br>**Regla de negocio**<br>Los términos y condiciones se encuentran accesibles tanto desde el Landing Page como desde la aplicación móvil al momento del registro. | | | | |
 
 #### Technical Stories
 
@@ -889,7 +909,7 @@ Los criterios de aceptación se redactan en tercera persona, en tiempo presente,
 |---|---|---|---|---|---|
 | **Title** | Soporte de internacionalización y accesibilidad | | | | |
 | **Description** | Como Developer, deseo implementar el soporte de i18n y a11y en el Landing Page y la aplicación móvil, para que la solución sea utilizable por usuarios con distintos idiomas y capacidades. | | | | |
-| **Acceptance Criteria** | **Escenario 1: Resolución del idioma**<br>**Dado** que el usuario accede a la solución con una configuración regional soportada,<br>**Cuando** la interfaz se carga,<br>**Entonces** los mensajes se presentan en el idioma correspondiente.<br><br>**Escenario 2: Configuración regional no soportada**<br>**Dado** que el usuario accede con una configuración regional no soportada,<br>**Cuando** la interfaz se carga,<br>**Entonces** los mensajes se presentan en el idioma por defecto.<br><br>**Regla de negocio**<br>Los idiomas soportados son en_US y es_419, siendo en_US el idioma por defecto. El Landing Page incorpora atributos ARIA en sus elementos interactivos. | | | | |
+| **Acceptance Criteria** | **Escenario 1: Resolución del idioma**<br>**Dado** que el usuario accede a la solución con una configuración regional soportada,<br>**Cuando** el sistema determina la configuración regional,<br>**Entonces** entrega los mensajes en el idioma correspondiente.<br><br>**Escenario 2: Configuración regional no soportada**<br>**Dado** que el usuario accede con una configuración regional no soportada,<br>**Cuando** el sistema determina la configuración regional,<br>**Entonces** entrega los mensajes en el idioma por defecto.<br><br>**Regla de negocio**<br>Los idiomas soportados son en_US y es_419, siendo en_US el idioma por defecto. El Landing Page incorpora atributos ARIA en sus elementos interactivos. | | | | |
 
 #### Spike Stories
 
