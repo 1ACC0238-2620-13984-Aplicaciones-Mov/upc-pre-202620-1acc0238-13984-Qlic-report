@@ -69,19 +69,21 @@ Para la elaboración del presente informe, el equipo coordinó sus actividades c
 
 En cuanto al control de versiones, el proyecto se gestionó en GitHub siguiendo el modelo de trabajo Gitflow y las pautas de Conventional Commits para mantener un historial trazable y estandarizado. El equipo organizó el desarrollo del reporte creando ramas dedicadas para cada capítulo del documento (por ejemplo, `chapter1`), lo que permitió trabajar de manera paralela e independiente sin generar conflictos. Asimismo, se mantuvo una frecuencia constante de commits a medida que se completaban los artefactos, validando y fusionando los avances en la rama principal tras revisiones colaborativas del equipo.
 
-**Capturas de analíticos de colaboración:**
+**Evidencia de colaboración:**
 
-![Insights - Contributors AV1](images/collaboration/av1-contributors.png)
+El historial del repositorio muestra trabajo distribuido en ramas dedicadas a
+la carátula y a los capítulos 1, 2 y 5. Los cambios se integraron mediante
+commits con mensajes descriptivos y revisiones entre integrantes. Las capturas
+de GitHub Insights se conservarán como evidencia visual en la versión final
+del PDF cuando se exporten desde el repositorio.
 
-*Figura 1.* Analítico de contribuciones del repositorio del Project Report al cierre de AV1.
-
-![Insights - Commits AV1](images/collaboration/av1-commits.png)
-
-*Figura 2.* Historial de commits del repositorio del Project Report al cierre de AV1.
-
-**Interpretación del equipo:** **[COMPLETAR: análisis de los analíticos —
-distribución de aportes, picos de actividad, equilibrio entre integrantes y
-acciones correctivas si aplica.]**
+**Interpretación del equipo:** El trabajo se organizó de forma paralela por
+entregable. La mayor actividad se concentró en el capítulo 2, donde se
+consolidaron entrevistas, needfinding, backlog y diseño de la solución;
+carátula, capítulo 1 y capítulo 5 reunieron los componentes complementarios
+del informe. Para mantener un aporte equilibrado, el equipo revisó los cambios
+antes de integrarlos y mantuvo una rama por capítulo, reduciendo conflictos y
+facilitando la trazabilidad.
 
 ---
 
@@ -153,7 +155,7 @@ acciones correctivas si aplica.]**
             - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
             - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
     - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-        - [2.6.1. Bounded Context: **\[COMPLETAR: nombre del BC\]**](#261-bounded-context-completar-nombre-del-bc)
+        - [2.6.1. Bounded Context: Alerting](#261-bounded-context-alerting)
             - [2.6.1.1. Domain Layer](#2611-domain-layer)
             - [2.6.1.2. Interface Layer](#2612-interface-layer)
             - [2.6.1.3. Application Layer](#2613-application-layer)
