@@ -74,8 +74,12 @@ En cuanto al control de versiones, el proyecto se gestionó en GitHub siguiendo 
 El historial del repositorio muestra trabajo distribuido en ramas dedicadas a
 la carátula y a los capítulos 1, 2 y 5. Los cambios se integraron mediante
 commits con mensajes descriptivos y revisiones entre integrantes. Las capturas
-de GitHub Insights se conservarán como evidencia visual en la versión final
-del PDF cuando se exporten desde el repositorio.
+de GitHub Insights se incluyen como evidencia visual de la colaboración del
+equipo durante AV1.
+
+![Analítica de contribuciones del repositorio durante AV1](../images/collaboration/av1_git.png)
+
+*Figura 1.* Analítica de contribuciones del repositorio del Project Report durante AV1.
 
 **Interpretación del equipo:** El trabajo se organizó de forma paralela por
 entregable. La mayor actividad se concentró en el capítulo 2, donde se
