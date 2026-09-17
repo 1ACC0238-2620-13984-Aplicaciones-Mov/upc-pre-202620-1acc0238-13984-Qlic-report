@@ -1105,6 +1105,8 @@ Para visualizar la colaboración entre los bounded contexts identificados, el eq
 
 **Flujo 1: Incorporación de un dispositivo IoT**
 
+<img src="../images/domain_message_flows/flow_1_device_registration.png" alt="Domain Storytelling del flujo de incorporación de un dispositivo IoT" width="950">
+
 *Escenario:* un suscriptor con plan activo incorpora un nuevo sensor en su local.
 
 | # | Emisor | Mensaje | Receptor |
@@ -1116,6 +1118,8 @@ Para visualizar la colaboración entre los bounded contexts identificados, el eq
 | 5 | Device Monitoring | Publica el evento *Dispositivo registrado* | Alerting / Consumption Analytics |
 
 **Flujo 2: Detección de una fuga y notificación al suscriptor**
+
+<img src="../images/domain_message_flows/flow_2_leak_detection.png" alt="Domain Storytelling del flujo de detección de fuga y notificación" width="1000">
 
 *Escenario:* un dispositivo reporta consumo sostenido por encima de lo habitual.
 
@@ -1131,6 +1135,8 @@ Para visualizar la colaboración entre los bounded contexts identificados, el eq
 
 **Flujo 3: Atención de una incidencia derivada de una alerta**
 
+<img src="../images/domain_message_flows/flow_3_incident_handling.png" alt="Domain Storytelling del flujo de atención de una incidencia" width="950">
+
 *Escenario:* el suscriptor confirma la fuga y solicita apoyo técnico.
 
 | # | Emisor | Mensaje | Receptor |
@@ -1143,6 +1149,8 @@ Para visualizar la colaboración entre los bounded contexts identificados, el eq
 | 6 | Support | Publica el evento *Incidencia resuelta* | Alerting |
 
 **Flujo 4: Consulta del reporte de consumo del periodo**
+
+<img src="../images/domain_message_flows/flow_4_consumption_report.png" alt="Domain Storytelling del flujo de consulta del reporte de consumo" width="950">
 
 *Escenario:* el suscriptor revisa cuánto ha consumido y cuánto le costará.
 
