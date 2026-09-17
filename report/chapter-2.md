@@ -292,35 +292,38 @@ Carlos administra una lavandería de tamaño pequeño en Pueblo Libre. Se encarg
 
 #### User Persona #2 – Segmento Hogares y Familias
 
-| Campo | Detalle |
-|---|---|
-| **Nombre** | Wendy Zuñiga |
-| **Edad** | 33 años |
-| **Ocupación** | Ingeniera civil |
-| **Distrito** | El Agustino, Lima |
-| **Estado civil** | No declarado; vive con su esposo y su hijo |
-| **Dispositivo principal** | Smartphone Android |
-| **Nivel tecnológico** | Intermedio; usa aplicaciones móviles para comunicación, banca y servicios |
-| **Navegador preferido** | Chrome |
+![Claudia Morales.png](../images/user-personas/Claudia%20Morales.png)
 
-**Biografía:**
-Wendy vive en una vivienda propia de dos niveles y participa en la administración del presupuesto familiar y de los servicios básicos. Revisa los recibos de agua, conoce las instalaciones sanitarias por su formación y busca prevenir filtraciones que puedan generar cobros atípicos o daños estructurales. Su jornada laboral limita el tiempo disponible para inspecciones manuales.
+| Campo | Detalle                                                                                            |
+|---|----------------------------------------------------------------------------------------------------|
+| **Nombre** | Claudia Morales                                                                                    |
+| **Edad** | 33 años                                                                                            |
+| **Ocupación** | Administradora del hogar                                                                           |
+| **Distrito** | La Victoria, Lima                                                                                  |
+| **Estado civil** | Casada (núcleo familiar de 3 integrantes: vive con su esposo y su hijo)                            |
+| **Dispositivo principal** | Smartphone iPhone (gama media/alta)                                                                |
+| **Nivel tecnológico** | Intermedio - Avanzado; usuaria habitual de herramientas digitales, banca móvil y domótica práctica |
+| **Navegador preferido** | Google Chrome                                                                                      |**Biografía:**  
+
+Claudia reside en una vivienda propia de dos niveles junto a su esposo y su hijo de 5 años en El Agustino. Conoce los riesgos estructurales que causan las filtraciones en muros y cimientos. Participa activamente en la administración del presupuesto familiar y en el pago de los servicios básicos (cuyos recibos de agua promedian entre S/ 80 y S/ 120 mensuales). Sus exigentes horarios en oficina le impiden realizar inspecciones manuales periódicas o verificar el medidor municipal a diario. Ante variaciones imprevistas en la facturación y el temor a fugas silenciosas en tuberías empotradas, busca una solución móvil conectada a sensores que automatice la supervisión de su consumo en tiempo real, garantizando tranquilidad y prevención sin añadir tareas manuales a su rutina diaria.
 
 **Objetivos:**
-- Detectar filtraciones o consumos anómalos antes de recibir un cobro elevado.
-- Consultar desde el celular información clara para decidir cuándo revisar o reparar una instalación.
-- Reducir el gasto familiar de agua sin incorporar tareas manuales diarias.
+- Supervisar el consumo de agua del hogar en tiempo real sin tener que revisar físicamente el medidor todos los días.
+- Detectar microfugas, consumos anómalos o filtraciones de manera inmediata antes de recibir una facturación inflada a fin de mes.
+- Prevenir deterioros estructurales y gastos costosos de reparación en su vivienda causados por humedad en tuberías empotradas.
+- Mantener la estabilidad y previsibilidad del gasto mensual de agua dentro del presupuesto familiar.
 
 **Frustraciones:**
-- Recibir un cobro atípico sin conocer de inmediato su causa.
-- No contar con una señal que permita ubicar una filtración oculta.
-- Tener que revisar manualmente la vivienda y esperar el siguiente recibo para comprobar una corrección.
+- Inconsistencias, cobros atípicos e incrementos repentinos en los recibos de agua sin justificación inmediata de su causa.
+- No disponer de herramientas o indicadores en tiempo real para ubicar con rapidez una fuga oculta, teniendo que esperar al siguiente recibo para comprobar si se solucionó.
+- Falta de tiempo disponible para inspeccionar manualmente la vivienda debido a sus extensas jornadas laborales.
+- Aplicaciones de monitoreo complejas, sobrecargadas o con sistemas de alertas que saturan con notificaciones irrelevantes.
 
-**Canales digitales:** WhatsApp, banca móvil, Yape, Chrome y aplicaciones de servicios.
+**Canales digitales:** WhatsApp (comunicación principal y coordinación del hogar), aplicaciones bancarias (BCP, Interbank), Yape, Google Chrome, Google Calendar y apps móviles de servicios.
 
-**Motivaciones:** Prevenir daños en la vivienda, mantener estable el presupuesto familiar y recibir información oportuna que permita actuar.
+**Motivaciones:** Proteger la seguridad y el patrimonio estructural de su vivienda familiar, mantener el control del presupuesto doméstico evitando mermas económicas y adoptar tecnología accesible que le brinde tranquilidad preventiva.
 
-**Personalidad:** Analítica, preventiva y orientada a soluciones prácticas; valora la precisión, la sencillez y las alertas que no saturen.
+**Personalidad:** Analítica, metódica, preventiva y orientada a soluciones prácticas; valora la exactitud de los datos, las alertas precisas que no saturen y la simplicidad en la experiencia de uso.
 
 ---
 
