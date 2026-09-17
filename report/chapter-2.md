@@ -957,8 +957,6 @@ El artefacto fue elaborado en UXPressia, tomando como base las fichas de User Pe
 
 <img src="../images/impact_map/Impact_Map_Qlic_BG04.png" alt="Impact Map del Business Goal BG04" width="950">
 
-=======
-
 #### Business Goals
 
 | ID | Business Goal (SMART) |
