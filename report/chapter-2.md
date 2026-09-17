@@ -1660,7 +1660,7 @@ NotificationGateway ..> AlertRecipient : envía a >
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-> *[Insertar el diagrama: images/database/alerting_database_diagram.png]*
+<img src="../images/database/alerting_database_diagram.png" alt="Database Design Diagram del bounded context Alerting" width="900">
 
 | Tabla | Columnas principales | Constraints |
 |---|---|---|
@@ -1908,7 +1908,7 @@ SustainabilityGoalRepository ..> SustainabilityGoal : administra >
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-> *[Insertar el diagrama: images/database/consumption_analytics_database_diagram.png]*
+<img src="../images/database/consumption_analytics_database_diagram.png" alt="Database Design Diagram del bounded context Consumption Analytics" width="950">
 
 | Tabla | Columnas principales | Constraints |
 |---|---|---|
@@ -2147,7 +2147,7 @@ LocationRepository ..> Location : administra >
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-> *[Insertar el diagrama: images/database/device_monitoring_database_diagram.png]*
+<img src="../images/database/device_monitoring_database_diagram.png" alt="Database Design Diagram del bounded context Device Monitoring" width="950">
 
 | Tabla | Columnas principales | Constraints |
 |---|---|---|
@@ -2374,7 +2374,7 @@ PaymentRepository ..> Payment : administra >
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-> *[Insertar el diagrama: images/database/subscriptions_database_diagram.png]*
+<img src="../images/database/subscriptions_database_diagram.png" alt="Database Design Diagram del bounded context Subscriptions" width="900">
 
 | Tabla | Columnas principales | Constraints |
 |---|---|---|
@@ -2601,7 +2601,7 @@ InvitationRepository ..> Invitation : administra >
 
 ##### 2.6.5.6.2. Bounded Context Database Design Diagram
 
-> *[Insertar el diagrama: images/database/iam_database_diagram.png]*
+<img src="../images/database/iam_database_diagram.png" alt="Database Design Diagram del bounded context IAM" width="900">
 
 | Tabla | Columnas principales | Constraints |
 |---|---|---|
@@ -2800,7 +2800,7 @@ TechnicianRepository ..> Technician : administra >
 
 ##### 2.6.6.6.2. Bounded Context Database Design Diagram
 
-> *[Insertar el diagrama: images/database/support_database_diagram.png]*
+<img src="../images/database/support_database_diagram.png" alt="Database Design Diagram del bounded context Support" width="850">
 
 | Tabla | Columnas principales | Constraints |
 |---|---|---|
