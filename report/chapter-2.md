@@ -994,56 +994,46 @@ El artefacto fue elaborado en UXPressia, tomando como base las fichas de User Pe
 El Product Backlog reúne la totalidad de los requisitos especificados en la sección 2.4.1, estimados en Story Points según la escala de Fibonacci (1, 2, 3, 5, 8) y ordenados según el valor que aportan al negocio. El orden responde a la necesidad de validar tempranamente la propuesta de valor de Qlic: la detección de fugas y la visibilidad del consumo, que constituyen el núcleo de los hallazgos del Needfinding, se ubican en las primeras posiciones, junto con el sitio web estático que presenta el modelo de negocio. Las funcionalidades de autenticación se incorporan en la medida en que habilitan el acceso a las funcionalidades core, sin encabezar el ordenamiento. Las Spike Stories se ubican en las primeras posiciones porque su resultado condiciona la estimación y la implementación de las historias de registro de dispositivos y de alertas.
 
 
-| # Orden | User Story Id | Título | Story Points | Sprint |
-|---:|---|---|---:|---:|
-| 1 | US01 | Conocer la propuesta de valor de Qlic | 3 | 1 |
-| 2 | US02 | Comparar los planes de suscripción disponibles | 2 | 1 |
-| 3 | US03 | Contactar al equipo desde el Landing Page | 2 | 1 |
-| 4 | SP01 | Investigar la lectura de códigos QR y el acceso a la cámara en Kotlin y Flutter | 3 | 1 |
-| 5 | SP02 | Investigar la integración de un servicio externo de notificaciones push | 3 | 1 |
-| 6 | US05 | Registrar una cuenta de suscriptor | 3 | 1 |
-| 7 | US06 | Iniciar sesión en la aplicación móvil | 2 | 1 |
-| 8 | TS01 | Endpoints de autenticación y emisión de token | 5 | 1 |
-| 9 | US10 | Registrar un dispositivo IoT mediante código QR | 5 | 1 |
-| 10 | TS02 | Endpoints de gestión de dispositivos y Water Points | 5 | 1 |
-| 11 | US11 | Asignar un dispositivo a un Water Point | 3 | 1 |
-| 12 | TS03 | Endpoint de ingesta de lecturas de consumo | 5 | 1 |
-| 13 | US12 | Consultar el estado de los dispositivos registrados | 5 | 1 |
-| 14 | US15 | Recibir una alerta de posible fuga | 8 | 1 |
-| 15 | TS04 | Endpoints de alertas y umbrales de consumo | 5 | 1 |
-| 16 | US16 | Comprender el contenido de una alerta | 5 | 1 |
-| 17 | US21 | Consultar el reporte de consumo del periodo | 5 | 2 |
-| 18 | TS05 | Endpoints de reportes de consumo | 5 | 2 |
-| 19 | US22 | Comparar el consumo entre periodos | 5 | 2 |
-| 20 | US23 | Conocer el costo estimado del consumo | 3 | 2 |
-| 21 | US17 | Configurar el umbral de consumo | 5 | 2 |
-| 22 | US18 | Limitar la frecuencia de las notificaciones | 3 | 2 |
-| 23 | US20 | Confirmar la atención de una alerta | 3 | 2 |
-| 24 | TS06 | Integración con el servicio externo de notificaciones push | 5 | 2 |
-| 25 | US19 | Notificar la alerta a los usuarios autorizados | 3 | 2 |
-| 26 | US08 | Compartir el acceso con otro usuario | 5 | 2 |
-| 27 | US28 | Consultar el nivel del tanque de agua | 3 | 2 |
-| 28 | US29 | Recibir aviso de nivel bajo en el tanque | 5 | 2 |
-| 29 | US13 | Organizar los dispositivos por local | 3 | 2 |
-| 30 | US35 | Registrar una incidencia | 3 | 2 |
-| 31 | US24 | Identificar consumo en horarios sin actividad | 5 | 2 |
-| 32 | US04 | Consultar el Landing Page en el idioma de preferencia | 2 | 2 |
-| 33 | US31 | Contratar un plan de suscripción | 5 | 3 |
-| 34 | TS07 | Endpoints de suscripciones y planes | 3 | 3 |
-| 35 | US32 | Acceder a un periodo de prueba | 3 | 3 |
-| 36 | US33 | Cambiar o cancelar el plan contratado | 5 | 3 |
-| 37 | US34 | Consultar el historial de pagos | 2 | 3 |
-| 38 | US30 | Conocer la predicción de reabastecimiento | 8 | 3 |
-| 39 | US25 | Recibir recomendaciones de ahorro | 5 | 3 |
-| 40 | US26 | Compartir el reporte de consumo | 3 | 3 |
-| 41 | US36 | Solicitar una visita técnica | 5 | 3 |
-| 42 | US37 | Hacer seguimiento a una incidencia | 3 | 3 |
-| 43 | US38 | Consultar los términos y condiciones del servicio | 2 | 3 |
-| 44 | TS08 | Soporte de internacionalización y accesibilidad | 5 | 3 |
-| 45 | US14 | Consultar el panel de monitoreo sin conexión | 5 | 3 |
-| 46 | US07 | Recuperar el acceso a la cuenta | 3 | 3 |
-| 47 | US27 | Establecer un objetivo de sostenibilidad | 3 | 3 |
-| 48 | US09 | Actualizar los datos del perfil | 2 | 3 |
+| # Orden | User Story Id | Título                                                | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
+|--------:|---------------|-------------------------------------------------------|---------------------------------:|-------:|
+|       1 | US01          | Conocer la propuesta de valor de Qlic                 |                                3 |      1 |
+|       2 | US02          | Comparar los planes de suscripción disponibles        |                                2 |      1 |
+|       3 | US03          | Contactar al equipo desde el Landing Page             |                                2 |      1 |
+|       4 | US04          | Consultar el Landing Page en el idioma de preferencia |                                2 |      1 |
+|       5 | US15          | Recibir una alerta de posible fuga                    |                                8 |      1 |
+|       6 | US16          | Comprender el contenido de una alerta                 |                                5 |      1 |
+|       7 | US12          | Consultar el estado de los dispositivos registrados   |                                5 |      1 |
+|       8 | US10          | Registrar un dispositivo IoT mediante código QR       |                                5 |      1 |
+|       9 | US11          | Asignar un dispositivo a un Water Point               |                                3 |      1 |
+|      10 | US05          | Registrar una cuenta de suscriptor                    |                                3 |      1 |
+|      11 | US06          | Iniciar sesión en la aplicación móvil                 |                                2 |      1 |
+|      12 | US21          | Consultar el reporte de consumo del periodo           |                                5 |      2 |
+|      13 | US22          | Comparar el consumo entre periodos                    |                                5 |      2 |
+|      14 | US23          | Conocer el costo estimado del consumo                 |                                3 |      2 |
+|      15 | US24          | Identificar consumo en horarios sin actividad         |                                5 |      2 |
+|      16 | US17          | Configurar el umbral de consumo                       |                                5 |      2 |
+|      17 | US18          | Limitar la frecuencia de las notificaciones           |                                3 |      2 |
+|      18 | US19          | Notificar la alerta a los usuarios autorizados        |                                3 |      2 |
+|      19 | US20          | Confirmar la atención de una alerta                   |                                3 |      2 |
+|      20 | US28          | Consultar el nivel del tanque de agua                 |                                3 |      2 |
+|      21 | US29          | Recibir aviso de nivel bajo en el tanque              |                                5 |      2 |
+|      22 | US13          | Organizar los dispositivos por local                  |                                3 |      2 |
+|      23 | US08          | Compartir el acceso con otro usuario                  |                                5 |      2 |
+|      24 | US35          | Registrar una incidencia                              |                                3 |      2 |
+|      25 | US31          | Contratar un plan de suscripción                      |                                5 |      3 |
+|      26 | US32          | Acceder a un periodo de prueba                        |                                3 |      3 |
+|      27 | US33          | Cambiar o cancelar el plan contratado                 |                                5 |      3 |
+|      28 | US34          | Consultar el historial de pagos                       |                                2 |      3 |
+|      29 | US30          | Conocer la predicción de reabastecimiento             |                                8 |      3 |
+|      30 | US25          | Recibir recomendaciones de ahorro                     |                                5 |      3 |
+|      31 | US26          | Compartir el reporte de consumo                       |                                3 |      3 |
+|      32 | US36          | Solicitar una visita técnica                          |                                5 |      3 |
+|      33 | US37          | Hacer seguimiento a una incidencia                    |                                3 |      3 |
+|      34 | US14          | Consultar el panel de monitoreo sin conexión          |                                5 |      3 |
+|      35 | US27          | Establecer un objetivo de sostenibilidad              |                                3 |      3 |
+|      36 | US07          | Recuperar el acceso a la cuenta                       |                                3 |      3 |
+|      37 | US09          | Actualizar los datos del perfil                       |                                2 |      3 |
+|      38 | US38          | Consultar los términos y condiciones del servicio     |                                2 |      3 |
 
 **Resumen de la distribución**
 
