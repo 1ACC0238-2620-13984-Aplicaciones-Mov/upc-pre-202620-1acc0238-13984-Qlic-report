@@ -27,7 +27,6 @@
    <p>u202311077&nbsp;&nbsp;&nbsp;&nbsp;Briceño Llanos, Ayrton Omar</p>
    <p>u20241e356&nbsp;&nbsp;&nbsp;&nbsp;Conde Huashuayo, Sebasthian Alex</p>
    <p>u20211a118&nbsp;&nbsp;&nbsp;&nbsp;Condori Lozano, Alessandro Ramiro</p>
-   <p>u202316687&nbsp;&nbsp;&nbsp;&nbsp;Paucar Zenteno, Jesús Fernando</p>
 
    <br>
    <p><strong>Período 202620</strong></p>
@@ -94,7 +93,6 @@ acciones correctivas si aplica.]**
     - [Briceño Llanos, Ayrton Omar](#briceño-llanos-ayrton-omar)
     - [Conde Huashuayo, Sebasthian Alex](#conde-huashuayo-sebasthian-alex)
     - [Condori Lozano, Alessandro Ramiro](#condori-lozano-alessandro-ramiro)
-    - [Paucar Zenteno, Jesús Fernando](#paucar-zenteno-jesús-fernando)
 - [Capítulo I: Presentación](#capítulo-i-presentación)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -193,8 +191,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Avila Palacios, Aaron Alexander**<br>*AV1:* **[COMPLETAR: acciones específicas]**<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* **[COMPLETAR]**<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* **[COMPLETAR]**<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* **[COMPLETAR]**<br><br>**Paucar Zenteno, Jesús Fernando**<br>*AV1:* **[COMPLETAR]** | *AV1:* **[COMPLETAR: conclusión grupal acumulable]** |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Avila Palacios, Aaron Alexander**<br>*AV1:* **[COMPLETAR]**<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* **[COMPLETAR]**<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* **[COMPLETAR]**<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* **[COMPLETAR]**<br><br>**Paucar Zenteno, Jesús Fernando**<br>*AV1:* **[COMPLETAR]** | *AV1:* **[COMPLETAR]** |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Avila Palacios, Aaron Alexander**<br>*AV1:* **[COMPLETAR: acciones específicas]**<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* **[COMPLETAR]**<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Apliqué técnicas de needfinding para convertir las entrevistas en User Personas, User Task Matrix, User Journey y Empathy Maps. También estudié EventStorming y Ubiquitous Language para representar el dominio de Qlic y conectar las necesidades de PYMES y hogares con una solución móvil e IoT.<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* **[COMPLETAR]** | *AV1:* Como equipo, actualizamos conocimientos de benchmarking, Lean UX, entrevistas, needfinding y modelado del dominio. La integración de estos aprendizajes permitió reducir supuestos y sustentar la propuesta móvil de Qlic en evidencia de usuarios y criterios técnicos. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Avila Palacios, Aaron Alexander**<br>*AV1:* **[COMPLETAR]**<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* **[COMPLETAR]**<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Reconocí que el desarrollo móvil requiere aprendizaje continuo en Kotlin, arquitectura, integración de APIs e IoT, UX y accesibilidad. La elaboración de los artefactos de needfinding me mostró la importancia de validar las decisiones con usuarios y de actualizarme mediante documentación y buenas prácticas.<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* **[COMPLETAR]** | *AV1:* El equipo reconoce que la mejora continua será necesaria para validar y desarrollar Qlic. Mantendremos objetivos de aprendizaje, revisión de documentación y validación con usuarios en los siguientes hitos del proyecto. |
 
 ---
 
@@ -220,17 +218,10 @@ En esta sección cada integrante del equipo formula un plan con al menos dos obj
 
 | # | Objetivo SMART | S | M | A | R | T |
 |---|---|---|---|---|---|---|
-| 1 | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** |
-| 2 | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** |
+| 1 | Completar y publicar un portafolio de dos aplicaciones móviles centradas en la experiencia de usuario durante los 12 meses posteriores a mi graduación. | Diseñar y desarrollar dos aplicaciones Android con Kotlin que integren navegación, una API REST y pruebas de usabilidad. | Publicar dos repositorios documentados y realizar al menos 10 pruebas de usabilidad por proyecto, registrando resultados y mejoras. | Dedicar seis horas semanales a Kotlin, Jetpack Compose, UX y documentación oficial. | Fortalece mis competencias de desarrollo móvil y diseño centrado en usuarios, alineadas con mi participación en Qlic. | Completar y publicar ambos proyectos en los 12 meses posteriores a la graduación. |
+| 2 | Conseguir una posición junior en desarrollo móvil o UX técnico dentro de los 12 meses posteriores a mi graduación. | Preparar CV, portafolio y demostraciones para postular a roles Android, frontend móvil o UX engineering. | Realizar al menos 20 postulaciones y cinco simulaciones de entrevista, obteniendo al menos tres entrevistas reales. | Usar los proyectos del portafolio y participar en cursos y comunidades técnicas para mejorar mis habilidades. | Permite aplicar la investigación de usuarios y el modelado de requisitos junto con el desarrollo móvil en un entorno profesional. | Conseguir una oferta dentro de los 12 meses posteriores a la graduación. |
 
 ### Condori Lozano, Alessandro Ramiro
-
-| # | Objetivo SMART | S | M | A | R | T |
-|---|---|---|---|---|---|---|
-| 1 | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** |
-| 2 | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** | **[COMPLETAR]** |
-
-### Paucar Zenteno, Jesús Fernando
 
 | # | Objetivo SMART | S | M | A | R | T |
 |---|---|---|---|---|---|---|
@@ -303,19 +294,6 @@ herramientas) y habilidades blandas que aporta al equipo.]**
 <td>
 
 **Condori Lozano, Alessandro Ramiro** — `u20211a118`
-*Ingeniería de Software*
-
-**[COMPLETAR]**
-
-</td>
-</tr>
-<tr>
-<td width="140" align="center">
-<img src="images/team/paucar.png" width="120" alt="Paucar Zenteno, Jesús Fernando"/>
-</td>
-<td>
-
-**Paucar Zenteno, Jesús Fernando** — `[CÓDIGO]`
 *Ingeniería de Software*
 
 **[COMPLETAR]**
