@@ -173,16 +173,16 @@ Aquí registraremos las entrevistas de PYMES y hogares. Cada ficha debe incluir 
 
 | Campo | Registro |
 |---|---|
-| **ENTREVISTA 1** | **[COMPLETAR]** |
-| Nombre entrevistado | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Profesión / rol | **[COMPLETAR]** |
-| Distrito / departamento | **[COMPLETAR]** |
-| Inicio del video | **[hh:mm:ss]** |
-| Fin del video | **[hh:mm:ss]** |
-| Link del video | **[PEGAR URL DEL VIDEO CONSOLIDADO]** |
-| Foto entrevista | **[INSERTAR captura en `images/interviews/`]** |
-| Resumen | **Principales respuestas:** [COMPLETAR]<br><br>**Características objetivas:** [edad, género, distrito, profesión y contexto del negocio]<br><br>**Características subjetivas:** [personalidad, habilidades, objetivos, frustraciones, marcas e influencias]<br><br>**Tecnología y canales:** [dispositivos, navegador, aplicaciones y canales de interacción]<br><br>**Evidencia:** [minuto o cita breve que sustenta el resumen] |
+| **ENTREVISTA 1** | **Completada** |
+| Nombre entrevistado | **Edery Abanto** |
+| Edad | **30 años** |
+| Profesión / rol | **Administrador de una lavandería** |
+| Distrito / departamento | **Pueblo Libre, Lima** |
+| Inicio del video | **00:00:02** |
+| Fin del video | **00:05:07** |
+| Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201823654_upc_edu_pe/IQA4Zz1zioHXQK1By4CB35tOASfVB3LYO5EBuZ1ratxBBhM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mJOeaq) |
+| Foto entrevista | <img src="../images/interviews/entrevista-1-edery-abanto.png" alt="Edery Abanto y Aarón Avila durante la entrevista" width="360"> |
+| Resumen | **Principales respuestas:** Actualmente revisa el recibo una vez al mes, compara el monto con el periodo anterior y registra datos de las máquinas en una libreta. Ha detectado fugas en una manguera y en el baño; una se identificó por humedad en el piso y otra por un recibo elevado. Considera útil consultar desde el celular el consumo total y sus comparaciones semanales o mensuales. Solicita alertas claras únicamente ante variaciones importantes, indicando ubicación, duración y nivel de urgencia.<br><br>**Características objetivas:** Persona entrevistada de 30 años, administrador de una lavandería ubicada en Pueblo Libre, Lima; participa en el control operativo, la revisión de recibos y la coordinación del mantenimiento del negocio.<br><br>**Características subjetivas:** Busca reducir costos y enterarse rápido de las fugas. Prefiere una solución sencilla, visual y sin conocimientos técnicos; aceptaría comenzar con un plan básico, instalación guiada y soporte cercano.<br><br>**Tecnología y canales:** Usa dispositivos Android, el celular y WhatsApp para conservar fotografías de los recibos. Le interesa que más de una persona pueda revisar la información del negocio.<br><br>**Evidencia temporal:** La revisión de recibos y registros se explica entre 00:01:46 y 00:02:16; la necesidad de reportes y alertas entre 00:02:53 y 00:03:50; y las preferencias de uso, precio y soporte entre 00:03:56 y 00:04:59. |
 
 ##### ENTREVISTA 2
 
