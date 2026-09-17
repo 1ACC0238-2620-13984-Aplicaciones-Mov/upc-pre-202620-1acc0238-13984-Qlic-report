@@ -1545,7 +1545,7 @@ Alerting constituye el núcleo diferenciador de la solución. Su responsabilidad
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-> *[Insertar el diagrama: images/c4/components/alerting_components.png]*
+<img src="../images/c4/components/alerting_components.png" alt="Component Diagram del bounded context Alerting" width="900">
 
 El Component Diagram descompone el container RESTful API en los componentes correspondientes a este bounded context. Los controladores y consumidores de la capa de interfaz reciben las solicitudes y los eventos; los manejadores de la capa de aplicación coordinan el flujo; los servicios de dominio aplican las reglas de detección y clasificación; y los adaptadores de infraestructura resuelven la persistencia y la comunicación con el proveedor externo de notificaciones.
 
@@ -1754,7 +1754,7 @@ Consumption Analytics convierte el histórico de lecturas en información interp
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-> *[Insertar el diagrama: images/c4/components/consumption_analytics_components.png]*
+<img src="../images/c4/components/consumption_analytics_components.png" alt="Component Diagram del bounded context Consumption Analytics" width="900">
 
 El diagrama refleja la separación entre los componentes de consulta, que atienden las solicitudes de las aplicaciones móviles, y los componentes de cálculo, que mantienen actualizada la línea base a partir de los eventos de registro de lecturas. Esta separación responde a que ambos flujos operan con frecuencias y volúmenes distintos.
 
@@ -2007,7 +2007,7 @@ Device Monitoring administra el ciclo de vida de los dispositivos IoT y garantiz
 
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-> *[Insertar el diagrama: images/c4/components/device_monitoring_components.png]*
+<img src="../images/c4/components/device_monitoring_components.png" alt="Component Diagram del bounded context Device Monitoring" width="950">
 
 El diagrama distingue dos rutas de entrada al container: la de las aplicaciones móviles, que administran dispositivos y consultan el panel, y la de los dispositivos IoT, que únicamente alimentan el endpoint de ingesta. Esta última cuenta con el componente de control de frecuencia, dado que su volumen de solicitudes es sustancialmente mayor.
 
@@ -2242,7 +2242,7 @@ Subscriptions administra los planes, la contratación y el ciclo de vida de la s
 
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-> *[Insertar el diagrama: images/c4/components/subscriptions_components.png]*
+<img src="../images/c4/components/subscriptions_components.png" alt="Component Diagram del bounded context Subscriptions" width="950">
 
 El diagrama evidencia dos rutas de entrada distintas: la iniciada por el suscriptor desde la aplicación móvil y la iniciada por la pasarela de pagos mediante webhook, que confirma de forma asíncrona el resultado de la transacción. El componente de entitlements se representa separado porque es consumido por los cuatro contextos downstream.
 
@@ -2469,7 +2469,7 @@ IAM administra la identidad de los suscriptores y el acceso compartido a una mis
 
 #### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-> *[Insertar el diagrama: images/c4/components/iam_components.png]*
+<img src="../images/c4/components/iam_components.png" alt="Component Diagram del bounded context IAM" width="900">
 
 El diagrama incorpora el componente de configuración de seguridad como elemento transversal del container, dado que la validación del token se aplica a todas las solicitudes dirigidas a recursos protegidos de los demás bounded contexts.
 
@@ -2687,7 +2687,7 @@ Support gestiona el ciclo de atención de las incidencias reportadas por el susc
 
 #### 2.6.6.5. Bounded Context Software Architecture Component Level Diagrams
 
-> *[Insertar el diagrama: images/c4/components/support_components.png]*
+<img src="../images/c4/components/support_components.png" alt="Component Diagram del bounded context Support" width="900">
 
 El diagrama refleja que este bounded context atiende a dos tipos de usuario distintos sobre el mismo container: el suscriptor, que registra y hace seguimiento a sus incidencias desde la aplicación móvil, y el técnico de soporte, que registra la atención realizada.
 
