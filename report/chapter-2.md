@@ -911,8 +911,14 @@ En esta sección el equipo presenta el Impact Mapping elaborado para el modelo d
 
 El artefacto fue elaborado en UXPressia, tomando como base las fichas de User Persona previamente construidas en la misma herramienta.
 
-> *[Insertar captura: images/impact_map/Impact_Map_Qlic.png]*
-> *Enlace público del artefacto: [PEGAR URL DE UXPRESSIA]*
+**Business Goal BG01 — Adquisición de suscriptores**
+
+<img src="../images/impact_map/Impact_Map_Qlic_BG01.png" alt="Impact Map del Business Goal BG01" width="950">
+
+**Business Goal BG04 — Atención oportuna de alertas críticas**
+
+<img src="../images/impact_map/Impact_Map_Qlic_BG04.png" alt="Impact Map del Business Goal BG04" width="950">
+
 
 #### Business Goals
 
