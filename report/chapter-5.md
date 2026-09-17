@@ -65,10 +65,3 @@ Los logos utilizados en el landscape corresponden al apartado **2.1.1. Análisis
 
 **Nota.** Logotipos reproducidos con fines académicos. Fuentes: Badger Meter (s. f.), Opti (s. f.) e Itron (s. f.); el logotipo de Qlic es elaboración propia.
 
-### Anexo B. Consentimiento y tratamiento de evidencias
-
-Antes de grabar una entrevista, el entrevistador debe explicar el propósito académico, la duración, el uso del video y la posibilidad de no responder. La captura y el enlace se incluirán únicamente cuando exista autorización del participante. Los nombres, imágenes y enlaces privados deben manejarse solo para la evaluación del curso.
-
-### Anexo C. Evidencias de colaboración y control de versiones
-
-La evidencia final debe incluir capturas del historial de GitHub, ramas por capítulo, commits con Conventional Commits y la integración de los avances mediante GitFlow (Driessen, 2010; GitHub, s. f.). Las capturas de colaboración, exposición y herramientas se agregarán cuando el equipo consolide la versión final del informe.
