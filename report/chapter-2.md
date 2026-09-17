@@ -265,48 +265,50 @@ Dado que Qlic es una **aplicación móvil nativa y multiplataforma** (desarrolla
 
 ### 2.3.1. User Personas
 
-En esta sección se incluyen las fichas de User Persona que representan arquetipos de los segmentos objetivo de Qlic. Estos arquetipos fueron construidos a partir del análisis estadístico de las entrevistas realizadas (ver sección 2.2.3), buscando capturar las características, necesidades y comportamientos más representativos de cada segmento.
+En esta sección se incluyen las fichas de User Persona que representan arquetipos de los segmentos objetivo de Qlic. Estos arquetipos fueron construidos a partir del análisis estadístico de las entrevistas realizadas (ver sección 2.2.3), buscando capturar las características, necesidades y comportamientos más representativos de cada segmento. Se elaboró una ficha por cada segmento objetivo: PYMES y comercios locales, y hogares y familias. Las fichas fueron elaboradas en UXPressia.
 
-Se elaboró una ficha por cada segmento objetivo: hogares y familias, y pequeñas y medianas empresas (PYMES).
+#### User Persona #1 – Segmento PYMES y Comercios Locales
 
-#### User Persona #1 – Segmento Hogares y Familias
-
-> *Elaborado en UXPressia.*
-> *[Insertar captura: images/user-persona-hogar.png]*
+> *<img src="../images/user-personas/Carlos_Abanto.png">*
 
 | Campo | Detalle |
 |---|---|
-| **Nombre** | [Nombre del User Persona – completar tras análisis de entrevistas] |
-| **Edad** | [Edad representativa del segmento] |
-| **Ocupación** | [Ocupación más frecuente entre los entrevistados] |
-| **Distrito** | [Distrito más frecuente entre los entrevistados] |
-| **Estado civil** | [Estado civil más frecuente] |
-| **Dispositivo principal** | [Dispositivo más usado por el segmento] |
-| **Nivel tecnológico** | [Nivel tecnológico representativo] |
-| **Navegador preferido** | [Navegador más mencionado] |
+| **Nombre** | Carlos Abanto |
+| **Edad** | 30 años |
+| **Ocupación** | Administrador de negocio local (lavandería) |
+| **Distrito** | Pueblo Libre, Lima |
+| **Estado civil** | [Completar tras más entrevistas] |
+| **Dispositivo principal** | Smartphone Android |
+| **Nivel tecnológico** | Básico-intermedio – usa el celular para gestión operativa y WhatsApp para registros fotográficos |
+| **Canales digitales** | WhatsApp, celular Android, correo básico |
 
 **Biografía:**
-[Redactar párrafo biográfico representativo del segmento tras el análisis de entrevistas.]
+Carlos administra una lavandería de tamaño pequeño en Pueblo Libre. Se encarga del control operativo diario, la revisión de recibos y la coordinación del mantenimiento del negocio. Su método actual de control del agua es manual: revisa el recibo una vez al mes, lo compara con el periodo anterior y registra datos de las máquinas en una libreta. Ha enfrentado fugas en una manguera y en el baño; una la detectó por humedad en el piso y otra al notar un recibo elevado. No cuenta con ningún sistema de monitoreo en tiempo real y depende de señales físicas o del recibo mensual para identificar problemas.
 
 **Objetivos:**
-- [Objetivo 1 – extraído del análisis de entrevistas]
-- [Objetivo 2 – extraído del análisis de entrevistas]
-- [Objetivo 3 – extraído del análisis de entrevistas]
+- Enterarse rápidamente de cualquier fuga o consumo inusual sin tener que esperar el recibo mensual.
+- Consultar desde el celular el consumo total y comparaciones semanales o mensuales de forma sencilla.
+- Reducir los costos operativos del negocio relacionados con el agua.
+- Permitir que más de una persona del negocio pueda revisar la información de consumo.
 
 **Frustraciones:**
-- [Frustración 1 – extraída del análisis de entrevistas]
-- [Frustración 2 – extraída del análisis de entrevistas]
-- [Frustración 3 – extraída del análisis de entrevistas]
+- Detectar fugas tarde, solo cuando ya generaron un recibo elevado o daño visible como humedad en el piso.
+- El registro manual en libreta es poco confiable y difícil de comparar entre periodos.
+- No tener visibilidad del consumo en tiempo real durante la jornada operativa.
+- Soluciones tecnológicas que requieren conocimientos técnicos que él no tiene.
+  
+**Necesidades clave:**
+- Alertas claras únicamente ante variaciones importantes, indicando ubicación, duración y nivel de urgencia.
+- Interfaz visual y sencilla, sin tecnicismos.
+- Instalación guiada y soporte cercano desde el inicio.
+- Plan básico accesible para comenzar sin gran inversión.
+  **Personalidad:** Práctico, orientado a reducir costos, cauteloso con la tecnología pero abierto si es simple y útil. Prefiere soluciones que no interrumpan la operación del negocio.
 
-**Canales digitales:** [Completar con los canales más mencionados en entrevistas]
-
-**Motivaciones:** [Completar con las motivaciones identificadas en entrevistas]
-
-**Personalidad:** [Completar con rasgos de personalidad representativos del segmento]
-
+**Motivaciones:** Ahorro económico, control operativo sin complicaciones, tranquilidad ante imprevistos.
+ 
 ---
 
-#### User Persona #2 – Segmento PYMES
+#### User Persona #2 – Segmento Hogares y Familias
 
 > *Elaborado en UXPressia.*
 > *[Insertar captura: images/user-persona-pyme.png]*
@@ -396,21 +398,19 @@ En esta sección se presentan los User Journey Maps en su versión **As-Is**, es
 
 #### User Journey Map #2 – Segmento PYMES
 
-> *Elaborado en UXPressia.*
-> *[Insertar captura: images/journey-map-pyme.png]*
+> *<img src="../images/journey_map/Journey_Map(Carlos Abanto).png">*
 
-**Resumen del journey:** [Completar con el end-to-end journey del User Persona de PYMES tras el análisis de entrevistas. Describir el recorrido desde que detecta un problema de consumo o fuga en su local hasta que intenta resolverlo con los medios actuales disponibles.]
+**Resumen del journey:** Carlos administra una lavandería en Pueblo Libre. Su recorrido actual comienza cuando recibe el recibo mensual de agua y nota que el monto subió respecto al mes anterior. Sin herramientas de monitoreo, inicia una inspección manual del local buscando señales visibles de fuga. Al no encontrar nada obvio, llama a un técnico que confirma una fuga en una manguera o en el baño. Tras la reparación, Carlos queda a la espera del siguiente recibo para saber si el problema se resolvió, sin ninguna forma de confirmarlo antes.
 
 | Fase | Acción | Pensamiento | Emoción | Punto de dolor |
 |---|---|---|---|---|
-| [Fase 1] | [Completar] | [Completar] | [Completar] | [Completar] |
-| [Fase 2] | [Completar] | [Completar] | [Completar] | [Completar] |
-| [Fase 3] | [Completar] | [Completar] | [Completar] | [Completar] |
-| [Fase 4] | [Completar] | [Completar] | [Completar] | [Completar] |
-| [Fase 5] | [Completar] | [Completar] | [Completar] | [Completar] |
+| **Recepción del recibo** | Recibe el recibo mensual de agua y lo compara con el del mes anterior anotado en su libreta | "Este mes subió bastante, algo debe estar pasando" | Preocupación | Solo se entera del problema a mes vencido, cuando el daño ya ocurrió |
+| **Inspección manual** | Recorre el local revisando mangueras, baños y conexiones buscando humedad o goteos visibles | "No veo nada obvio, pero el recibo no miente" | Frustración | La inspección es visual e imprecisa; depende de señales físicas como humedad en el piso |
+| **Llamada al técnico** | Contacta a un técnico de confianza por WhatsApp para que revise las instalaciones | "Espero que venga rápido y no cobre demasiado" | Ansiedad | Tiempo de espera incierto y costo adicional no planificado que afecta el presupuesto del negocio |
+| **Diagnóstico y reparación** | El técnico detecta la fuga en una manguera o en el baño y realiza la reparación | "¿Por qué no me avisó nadie antes? Pude haberlo evitado" | Resignación | No existía ningún sistema que alertara sobre el consumo anómalo antes de que escale |
+| **Espera de confirmación** | Espera el siguiente recibo mensual para saber si el consumo bajó tras la reparación | "Ojalá haya bajado, pero no lo sabré hasta el mes que viene" | Incertidumbre | Sin datos en tiempo real no puede confirmar si el problema se resolvió ni cuánto ahorró |
 
 ---
-
 ### 2.3.4. Empathy Mapping
 
 En esta sección se presentan los Empathy Maps elaborados para cada User Persona. El proceso de elaboración incluyó una sesión colaborativa del equipo en la que cada miembro aportó observaciones en torno a las preguntas guía del artefacto: ¿Qué dice?, ¿Qué piensa y siente?, ¿Qué ve?, ¿Qué hace?, ¿Qué escucha?, y la identificación de Pains y Gains. Los mapas fueron elaborados en UXPressia a partir de los hallazgos del análisis de entrevistas.
@@ -465,49 +465,55 @@ En esta sección se presentan los Empathy Maps elaborados para cada User Persona
 
 #### Empathy Map #2 – Segmento PYMES
 
-> *Elaborado en UXPressia.*
-> *[Insertar captura: images/empathy-map-pyme.png]*
+> *<img src="../images/empathy_map/Carlos_Abanto–Empathy.png">*
 
 **¿Con quién estamos empatizando?**
-[Completar con la descripción del User Persona de PYMES: nombre, edad, ocupación, tipo de negocio, contexto general.]
+Carlos Abanto, 30 años, administrador de una lavandería en Pueblo Libre, Lima. Gestiona la operación diaria del negocio, revisa recibos y coordina el mantenimiento. Usa Android y WhatsApp para el trabajo.
 
 **¿Qué necesita hacer?**
-[Completar con las principales tareas y responsabilidades del User Persona relacionadas con la gestión del agua en su negocio.]
+Controlar el consumo de agua de su negocio, detectar fugas a tiempo sin depender del recibo mensual, y tomar decisiones de mantenimiento rápidas sin interrumpir la operación de la lavandería.
 
 **¿Qué está diciendo?**
-- [Frase representativa 1 – extraída de entrevistas]
-- [Frase representativa 2 – extraída de entrevistas]
-- [Frase representativa 3 – extraída de entrevistas]
+- "Necesito enterarme de las fugas rápido, no cuando ya llegó el recibo alto"
+- "Quiero ver el consumo desde el celular, algo simple que cualquiera pueda usar"
+- "Si la alerta me dice dónde está el problema y qué tan grave es, puedo actuar"
+- "Estaría bien que más de una persona del negocio pueda ver la información"
 
 **¿Qué está viendo?**
-- [Completar con elementos del entorno que observa el User Persona]
-- [Completar]
-- [Completar]
+- Recibos de agua que varían mes a mes sin una explicación clara
+- Señales físicas de fugas como humedad en el piso o paredes
+- Técnicos que cobran cada vez que los llama para una revisión
+- Otros negocios similares con los mismos problemas de costos operativos
 
 **¿Qué está haciendo?**
-- [Completar con comportamientos y acciones actuales del User Persona]
-- [Completar]
-- [Completar]
+- Revisando el recibo mensual y comparándolo con anotaciones en una libreta
+- Inspeccionando visualmente el local en busca de goteos o humedad
+- Fotografiando los recibos con WhatsApp para tener un registro
+- Coordinando con técnicos de confianza cuando sospecha de una fuga
 
 **¿Qué está escuchando?**
-- [Completar con influencias externas: empleados, proveedores, medios, colegas del rubro]
-- [Completar]
-- [Completar]
+- Colegas del rubro que también se quejan de recibos de agua elevados
+- Técnicos que le dicen que las fugas internas son difíciles de detectar a tiempo
+- Proveedores que le ofrecen soluciones costosas o complicadas de instalar
+- Noticias sobre el alza de tarifas de agua en Lima
 
 **¿Qué piensa y siente?**
-- [Completar con motivaciones profundas, preocupaciones y aspiraciones]
-- [Completar]
-- [Completar]
+- Siente que pierde dinero innecesariamente cada mes por problemas que podría evitar
+- Le preocupa no poder controlar un costo operativo tan básico como el agua
+- Desea tener más control sin añadir complejidad a su día a día
+- Confía en la tecnología solo si es práctica, visual y no requiere conocimientos técnicos
 
 **Pains:**
-- [Pain 1 – extraído del análisis de entrevistas]
-- [Pain 2 – extraído del análisis de entrevistas]
-- [Pain 3 – extraído del análisis de entrevistas]
+- Enterarse de las fugas solo cuando el recibo ya refleja el daño económico
+- Depender de inspecciones manuales imprecisas y de técnicos externos costosos
+- No poder confirmar si una reparación fue efectiva hasta el siguiente ciclo de facturación
+- Soluciones del mercado demasiado complejas o caras para el tamaño de su negocio
 
 **Gains:**
-- [Gain 1 – qué valora y qué le ayudaría en la app móvil]
-- [Gain 2 – completar]
-- [Gain 3 – completar]
+- Recibir alertas push en el celular que indiquen ubicación, duración y nivel de urgencia del problema
+- Consultar el consumo semanal o mensual desde el smartphone en menos de un minuto
+- Compartir el acceso a la información con otro miembro del negocio
+- Comenzar con un plan básico accesible con instalación guiada sin necesidad de técnico especializado
 
 ---
 
