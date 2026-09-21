@@ -251,21 +251,21 @@ En esta sección se incluyen las fichas de User Persona que representan arquetip
 
 #### User Persona #1 – Segmento PYMES y Comercios Locales
 
-> *<img src="../images/user-personas/Carlos_Abanto.png">*
+> *<img src="../images/user-personas/Marco Villanueva.png">*
 
-| Campo | Detalle |
-|---|---|
-| **Nombre** | Carlos Abanto |
-| **Edad** | 30 años |
-| **Ocupación** | Administrador de negocio local (lavandería) |
-| **Distrito** | Pueblo Libre, Lima |
-| **Estado civil** | No declarado en la entrevista |
-| **Dispositivo principal** | Smartphone Android |
+| Campo | Detalle                                                                                          |
+|---|--------------------------------------------------------------------------------------------------|
+| **Nombre** | Marco Villanueva                                                                                 |
+| **Edad** | 30 años                                                                                          |
+| **Ocupación** | Administrador de negocio local (lavandería)                                                      |
+| **Distrito** | Pueblo Libre, Lima                                                                               |
+| **Estado civil** | Soltero                                                                                          |
+| **Dispositivo principal** | Smartphone Android                                                                               |
 | **Nivel tecnológico** | Básico-intermedio – usa el celular para gestión operativa y WhatsApp para registros fotográficos |
-| **Canales digitales** | WhatsApp, celular Android, correo básico |
+| **Canales digitales** | WhatsApp, celular Android, correo básico                                                         |
 
 **Biografía:**
-Carlos administra una lavandería de tamaño pequeño en Pueblo Libre. Se encarga del control operativo diario, la revisión de recibos y la coordinación del mantenimiento del negocio. Su método actual de control del agua es manual: revisa el recibo una vez al mes, lo compara con el periodo anterior y registra datos de las máquinas en una libreta. Ha enfrentado fugas en una manguera y en el baño; una la detectó por humedad en el piso y otra al notar un recibo elevado. No cuenta con ningún sistema de monitoreo en tiempo real y depende de señales físicas o del recibo mensual para identificar problemas.
+Marco administra una lavandería de tamaño pequeño en Pueblo Libre. Se encarga del control operativo diario, la revisión de recibos y la coordinación del mantenimiento del negocio. Su método actual de control del agua es manual: revisa el recibo una vez al mes, lo compara con el periodo anterior y registra datos de las máquinas en una libreta. Ha enfrentado fugas en una manguera y en el baño; una la detectó por humedad en el piso y otra al notar un recibo elevado. No cuenta con ningún sistema de monitoreo en tiempo real y depende de señales físicas o del recibo mensual para identificar problemas.
 
 **Objetivos:**
 - Enterarse rápidamente de cualquier fuga o consumo inusual sin tener que esperar el recibo mensual.
