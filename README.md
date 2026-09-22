@@ -54,6 +54,7 @@
 | 1.9     | 2026-09-16                  | Briceño Llanos, Ayrton Omar         | Redacción de la organización colaborativa del equipo (Trello, WhatsApp, Gitflow) y redacción del aporte individual para la matriz de evaluación ABET Student Outcome 7. |
 | 2.0     | 2026-09-17                  | Briceño Llanos, Ayrton Omar         | Elaboración del resumen de entrevista, ficha de User Persona (Claudia Morales) y Empathy Map para el segmento Hogares y Familias.                                        |
 | 2.1     | 2026-09-17                  | Briceño Llanos, Ayrton Omar         | Depuración y priorización por valor de negocio del Product Backlog (US01 a US38), asignación de Story Points y estructuración del User Journey Map As-Is del segmento Hogares. |---
+| 2.2     | 2026-09-22                  | Equipo WASD                         | Incorporación de dos entrevistas adicionales del segmento Hogares y actualización del registro, análisis y conclusiones del Capítulo II.                                  |
 
 # Project Report Collaboration Insights
 
@@ -233,8 +234,6 @@ En esta sección cada integrante del equipo formula un plan con al menos dos obj
 | 2 | Conseguir una posición como desarrollador de software junior o desarrollador de aplicaciones móviles dentro de los 12 meses posteriores a mi graduación. | Preparar un CV técnico, portafolio y postular a oportunidades relacionadas con desarrollo web, backend o aplicaciones móviles. | Realizar al menos 20 postulaciones, completar cinco simulaciones de entrevistas técnicas y participar en procesos de selección. | Mantener una rutina semanal de preparación, mejorar mis conocimientos de JavaScript, Java, bases de datos, frameworks y control de versiones. | Permitirá consolidar mi desarrollo profesional y aprovechar mi experiencia previa en el área de sistemas de una organización de salud. | Conseguir una oferta laboral dentro de los 12 meses posteriores a la graduación. |
 ---
 
-
----
 
 # Capítulo I: Introducción
 
@@ -433,8 +432,6 @@ Evitar sobrecostos inesperados en la facturación mensual de agua, mitigar el de
 De acuerdo con la U.S. Environmental Protection Agency [EPA] (2024), aproximadamente el 12 % del volumen promedio de agua consumido en los hogares corresponde a fugas internas no detectadas a tiempo. Asimismo, en el contexto peruano, la Superintendencia Nacional de Servicios de Saneamiento [SUNASS] (2023) señala que hasta el 45 % del agua potable producida se pierde en redes y conexiones domiciliarias deficientes.
 
 
----
-
 # Capítulo II: Requirements Development and Software Solution Design
 
 ## 2.1. Competidores
@@ -569,7 +566,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 | Segmento | Perfil de inclusión | Cantidad requerida | Exclusión | Modalidad sugerida |
 |---|---|---:|---|---|
 | **PYMES y comercios locales** | Propietario, administrador o responsable de operaciones/mantenimiento de una PYME que participa en decisiones sobre consumo o incidencias de agua. | **2 entrevistas registradas** | Personas que no conocen el consumo, mantenimiento ni decisiones asociadas al agua del negocio. | Presencial en el negocio o videollamada, con autorización de grabación. |
-| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre el recibo, el mantenimiento o el uso de agua del hogar. | **1 entrevista registrada** | Personas que no tienen experiencia ni responsabilidad sobre el consumo o mantenimiento del hogar. | Presencial o videollamada, con autorización de grabación. |
+| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre el recibo, el mantenimiento o el uso de agua del hogar. | **3 entrevistas registradas** | Personas que no tienen experiencia ni responsabilidad sobre el consumo o mantenimiento del hogar. | Presencial o videollamada, con autorización de grabación. |
 
 #### Segmento 1: PYMES y comercios locales
 
@@ -599,7 +596,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 ### 2.2.2. Registro de entrevistas
 
-Se registran tres entrevistas: dos de PYMES y comercios locales, y una de hogares y familias. Cada ficha contiene los datos disponibles del entrevistado, el tramo de video, el enlace, la captura y el resumen de sus respuestas.
+Se registran cinco entrevistas: dos de PYMES y comercios locales, y tres de hogares y familias. Cada ficha contiene los datos disponibles del entrevistado, el tramo de video, el enlace, la captura y el resumen de sus respuestas.
 
 #### Primer segmento - PYMES y comercios locales
 
@@ -649,9 +646,37 @@ Se registran tres entrevistas: dos de PYMES y comercios locales, y una de hogare
 | Foto entrevista | **![entrevistasegmento2.png](images/interviews/entrevistasegmento2.png)**                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Resumen | **Principales respuestas:** Expresa preocupación por cobros atípicos en el recibo de agua y el riesgo de filtraciones no detectadas en su vivienda de dos pisos; manifiesta interés en una herramienta móvil conectada a sensores que alerte sobre anomalías en tiempo real sin requerir revisiones manuales constantes, y señala disposición a pagar una suscripción mensual accesible siempre que el sistema demuestre ahorro preventivo confiable.<br><br>**Características objetivas:** Mujer de 33 años, ingeniera civil que reside en el distrito de El Agustino junto a su esposo y su hijo en vivienda propia de dos niveles. Administra el presupuesto familiar y supervisa los servicios básicos del hogar (recibos de S/ 80 a S/ 120 mensuales); conoce sobre instalaciones sanitarias pero carece de tiempo para revisiones manuales continuas por su jornada laboral.<br><br>**Características subjetivas:** Analítica, metódica y preventiva; orientada a la estabilidad económica y la sostenibilidad familiar. Su principal frustración son las incongruencias de facturación y el riesgo de daños estructurales por fugas ocultas. Busca automatización del control hídrico con datos precisos y sin saturación de notificaciones. Influenciada por marcas de tecnología doméstica (Xiaomi Smart Home, Sodimac) y foros de ingeniería sostenible.<br><br>**Tecnología y canales:** Utiliza smartphone Android de gama media/alta y laptop de trabajo; usa Chrome como navegador principal; interactúa cotidianamente con WhatsApp, banca móvil (BCP, Yape) y apps de servicios. Requiere notificaciones push directas y paneles visuales simples.<br><br>**Evidencia temporal:** La ficha registra el video completo de 00:00:00 a 00:06:46; las respuestas se resumen sin atribuir citas textuales no verificadas. |
 
+##### ENTREVISTA 2
+
+| Campo | Registro |
+|---|---|
+| Nombre entrevistado | **Daniel Quiroz** |
+| Edad | **23 años** |
+| Profesión / rol | **Trabajador de Uber; integrante de un hogar familiar de cuatro personas** |
+| Distrito / departamento | **San Juan de Lurigancho, Lima** |
+| Inicio del video | **00:00:00** |
+| Fin del video | **00:03:20** |
+| Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a118_upc_edu_pe/IQDHN8MMH9lTQ7QphntNefTHAY3FNZDSJpS2LmSugYu8024?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=bxZizE) |
+| Foto entrevista | <img src="images/user-personas/Entrevista_Daniel.png" alt="Daniel Quiroz durante la entrevista" width="360"> |
+| Resumen | **Principales respuestas:** El hogar no cuenta con un control del consumo de agua; la madre paga el recibo y el entrevistado lo descarga desde la web del prestador, limitándose ambos a revisar el monto. Experimentaron un cobro por consumo estimado, al no poder leerse el medidor, cuya exactitud no pudieron verificar, y sospechan pérdidas en la cisterna sin forma de confirmarlas. Solo identifican fugas visibles o audibles, que el padre repara por su cuenta. Aplican medidas de ahorro como lavar con carga completa y almacenar agua ante cortes anunciados, sin medir su efecto. Considera útiles las alertas móviles, siempre que indiquen ubicación, pérdida estimada y acción a tomar, y que le lleguen directamente por ser quien maneja la tecnología en casa. Prefiere un plan básico con alertas y consumo mensual, y pagaría un adicional por el monitoreo del nivel de la cisterna ante los cortes frecuentes en su zona.<br><br>**Características objetivas:** Hombre de 23 años, trabajador de Uber, que vive en San Juan de Lurigancho, Lima, con sus padres y su hermana menor, en un hogar de cuatro integrantes. La madre asume el pago del servicio y la vivienda cuenta con cisterna para el almacenamiento de agua.<br><br>**Características subjetivas:** Actúa como referente tecnológico de la familia y concentra los trámites digitales del hogar. Su frustración principal es no poder verificar los cobros estimados ni las pérdidas que no son visibles. Valora la información de consumo como herramienta para reclamar ante el prestador. Busca una solución simple y rápida, y aceptaría un costo de hasta S/ 15 mensuales con instalación incluida.<br><br>**Tecnología y canales:** Utiliza la web del prestador para descargar los recibos en PDF. Prefiere WhatsApp como canal de soporte y manifiesta preocupación por aplicaciones que soliciten más datos personales de los necesarios.<br><br>**Evidencia temporal:** El control actual, los cobros inesperados y la identificación de fugas se abordan entre 00:00:05 y 00:01:10; las medidas de ahorro entre 00:01:10 y 00:01:30; la utilidad de las alertas y la preferencia de planes entre 00:01:30 y 00:02:25; y la importancia económica, las condiciones de privacidad, soporte y costo entre 00:02:25 y 00:03:15. |
+
+##### ENTREVISTA 3
+
+| Campo | Registro |
+|---|---|
+| Nombre entrevistado | **Dick Isuiza** |
+| Edad | **26 años** |
+| Profesión / rol | **Licenciado; jefe de hogar de una familia de tres personas** |
+| Distrito / departamento | **San Juan de Lurigancho, Lima** |
+| Inicio del video | **00:00:00** |
+| Fin del video | **No consignado en el registro recibido** |
+| Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u20211a118_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211a118_upc_edu_pe%2FDocuments%2Fvideo3643346073.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&ga=1&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.a8cd1506-4000-45e4-b289-58235f985bae) |
+| Foto entrevista | <img src="images/user-personas/Entrevista_Dick.png" alt="Dick Isuiza durante la entrevista" width="360"> |
+| Resumen | **Principales respuestas:** El entrevistado paga y revisa el recibo, pues administra las cuentas del hogar; registra los gastos fijos en una hoja de su celular, aunque del agua solo anota el monto y no el consumo. Experimentó un incremento de casi el doble en el recibo durante dos meses consecutivos, causado por una fuga silenciosa en el tanque del inodoro, que identificó a partir del recibo y reparó él mismo tras un fin de semana de búsqueda. Señala que el consumo aumentó con el nacimiento de su hija, por el baño diario y el lavado frecuente de ropa, y que intentan ahorrar agrupando las lavadas, sin poder evaluar claramente el resultado. Considera útiles las alertas móviles, siempre que indiquen la ubicación del problema y el costo de no atenderlo, y que también las reciba su esposa. Prefiere un plan básico con alertas y consumo mensual, y consideraría el avanzado si le mostrara el gasto diario para ajustar el presupuesto familiar.<br><br>**Características objetivas:** Hombre de 26 años, licenciado, casado y padre de una hija pequeña. Vive con su esposa y su hija en San Juan de Lurigancho, Lima, en un hogar de tres integrantes, donde asume tanto el pago como la revisión del servicio.<br><br>**Características subjetivas:** Organizado y responsable de la administración económica del hogar. Su principal motivación es el presupuesto familiar, que percibe más ajustado desde la llegada de su hija. Su frustración es detectar las fugas recién a partir del recibo y dedicar tiempo a encontrarlas. Valora la rapidez y la claridad de la información; su disposición de pago es de S/ 12 a S/ 15 mensuales, con instalación y explicación incluidas.<br><br>**Tecnología y canales:** Utiliza una hoja de cálculo en su celular para registrar los gastos del hogar. Prefiere WhatsApp como canal de soporte y requiere que las alertas lleguen también a su esposa.<br><br>**Evidencia temporal:** El registro recibido no incluye marcas temporales desglosadas por respuesta; por ello el resumen se limita a la información disponible en la entrevista y no atribuye intervalos no verificados. |
+
 ### 2.2.3. Análisis de entrevistas
 
-Este avance consolida tres entrevistas: dos del segmento PYMES y comercios locales y una del segmento hogares y familias. Los porcentajes se calculan dentro de cada segmento; el resultado de hogares es descriptivo porque corresponde a una sola entrevista y no representa estadísticamente a todas las familias.
+Este avance consolida cinco entrevistas: dos del segmento PYMES y comercios locales y tres del segmento hogares y familias. Los porcentajes se calculan dentro de cada segmento; los resultados describen únicamente a las personas entrevistadas y no representan estadísticamente a todos los negocios u hogares.
 
 #### Análisis del segmento PYMES y comercios locales
 
@@ -667,10 +692,10 @@ Este avance consolida tres entrevistas: dos del segmento PYMES y comercios local
 
 | Hallazgo | Frecuencia | Porcentaje | Evidencia |
 |---|---|---|---|
-| Revisión del recibo y preocupación por cobros atípicos o filtraciones | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
-| Interés en alertas móviles ante anomalías | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
-| Uso de smartphone y aplicaciones digitales | 1 de 1 | 100 % | Wendy: Android, Chrome, WhatsApp, banca móvil y apps de servicios |
-| Preferencia por una solución sencilla, preventiva y de costo accesible | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
+| Revisión del recibo y preocupación por cobros atípicos o filtraciones | 3 de 3 | 100 % | Wendy 00:00:00–00:06:46; Daniel 00:00:05–00:01:10; Dick: tramo no consignado en el registro recibido |
+| Interés en alertas móviles ante anomalías | 3 de 3 | 100 % | Wendy 00:00:00–00:06:46; Daniel 00:01:30–00:02:25; Dick: tramo no consignado en el registro recibido |
+| Uso de smartphone y aplicaciones digitales | 3 de 3 | 100 % | Wendy: Android, Chrome, WhatsApp, banca móvil y apps de servicios; Daniel: web del prestador y WhatsApp; Dick: hoja de cálculo en el celular y WhatsApp |
+| Preferencia por una solución sencilla, preventiva y de costo accesible | 3 de 3 | 100 % | Wendy 00:00:00–00:06:46; Daniel 00:01:30–00:03:15; Dick: tramo no consignado en el registro recibido |
 
 La entrevista de hogares se interpreta como evidencia exploratoria del caso de Wendy Zuñiga; sus hallazgos se utilizan para orientar las decisiones iniciales de diseño del segmento.
 
@@ -3296,8 +3321,6 @@ TechnicianRepository ..> Technician : administra >
 La distribución evidencia la concentración de complejidad de dominio en los dos contextos core, conforme a lo establecido en el Candidate Context Discovery de la sección 2.5.1.1. En total, el modelo táctico comprende 8 agregados, 116 clases de dominio y 27 tablas de persistencia distribuidas en los seis bounded contexts.
 
 
----
-
 # Capítulo V: Conclusiones, Bibliografía y Anexos
 
 ## 5.1. Conclusiones
@@ -3306,7 +3329,7 @@ La distribución evidencia la concentración de complejidad de dominio en los do
 2. El análisis competitivo permitió reconocer capacidades relevantes del mercado: medición conectada, analítica, alertas, interoperabilidad y soporte para la toma de decisiones. La oportunidad preliminar de Qlic está en traducir esos datos a una experiencia móvil clara, accesible y cercana para usuarios locales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
 3. Badger Meter e Itron representan soluciones directas de smart water, mientras que OptiRTC aporta un referente adyacente de monitoreo y control de aguas pluviales. Wint se conserva como referencia secundaria para la respuesta ante fugas comerciales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
 4. Las estrategias propuestas —diferenciación móvil y local, escala progresiva, interoperabilidad, respuesta ante fugas, soporte cercano y sostenibilidad con evidencia— son hipótesis de diseño. Deben validarse con entrevistas antes de convertirse en requisitos del producto.
-5. Las tres entrevistas registradas —dos del segmento PYMES y comercios locales y una del segmento hogares y familias— aportan información objetiva y subjetiva para orientar los artefactos de needfinding. Cada ficha conserva los datos verificables, la captura, el tramo del video consolidado y el resumen descriptivo correspondiente.
+5. Las cinco entrevistas registradas —dos del segmento PYMES y comercios locales y tres del segmento hogares y familias— aportan información objetiva y subjetiva para orientar los artefactos de needfinding. Cada ficha conserva los datos disponibles, la captura, el enlace al video y el resumen descriptivo correspondiente; en la entrevista de Dick Isuiza aún falta consignar el tramo final del video porque no figura en el registro recibido.
 6. En este avance no se afirma que la aplicación móvil, los sensores IoT ni los servicios hayan sido implementados. Las decisiones de desarrollo deberán basarse en los resultados de needfinding y en los siguientes hitos del proyecto.
 
 ## 5.2. Bibliografía
@@ -3364,5 +3387,4 @@ Los logos utilizados en el landscape corresponden al apartado **2.1.1. Análisis
 ![Logo de Qlic](images/competitors/qlic.jpg)
 
 **Nota.** Logotipos reproducidos con fines académicos. Fuentes: Badger Meter (s. f.), Opti (s. f.) e Itron (s. f.); el logotipo de Qlic es elaboración propia.
-
 

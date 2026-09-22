@@ -54,6 +54,7 @@
 | 1.9     | 2026-09-16                  | Briceño Llanos, Ayrton Omar         | Redacción de la organización colaborativa del equipo (Trello, WhatsApp, Gitflow) y redacción del aporte individual para la matriz de evaluación ABET Student Outcome 7. |
 | 2.0     | 2026-09-17                  | Briceño Llanos, Ayrton Omar         | Elaboración del resumen de entrevista, ficha de User Persona (Claudia Morales) y Empathy Map para el segmento Hogares y Familias.                                        |
 | 2.1     | 2026-09-17                  | Briceño Llanos, Ayrton Omar         | Depuración y priorización por valor de negocio del Product Backlog (US01 a US38), asignación de Story Points y estructuración del User Journey Map As-Is del segmento Hogares. |---
+| 2.2     | 2026-09-22                  | Equipo WASD                         | Incorporación de dos entrevistas adicionales del segmento Hogares y actualización del registro, análisis y conclusiones del Capítulo II.                                  |
 
 # Project Report Collaboration Insights
 
