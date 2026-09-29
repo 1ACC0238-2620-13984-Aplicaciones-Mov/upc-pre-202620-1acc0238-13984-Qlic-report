@@ -63,15 +63,12 @@ La sección concluye con la elaboración del Lean UX Canvas, herramienta central
 
 #### 1.2.2.1. Lean UX Problem Statements.
 
-Actualmente, negocios y hogares enfrentan dificultades para gestionar eficientemente el uso del agua, lo que provoca desperdicios, costos elevados y desabastecimientos inesperados.
-Los métodos tradicionales de control son manuales y poco precisos, dificultando la toma de decisiones rápidas para optimizar recursos.
+1.2.2.1. Lean UX Problem Statement
 
-Qlic busca resolver ese problema mediante una plataforma digital conectada a dispositivos IoT, que permita monitorear en tiempo real, detectar fugas, prevenir desperdicios y garantizar un suministro constante y eficiente.
+El estado actual de la gestión del agua en microempresas (PYMES) y hogares se ha enfocado tradicionalmente en un control reactivo basado en la recepción del recibo mensual emitido por la empresa prestadora y en revisiones manuales aisladas. Esta dependencia de datos a mes vencido no resuelve la falta de visibilidad del consumo en tiempo real ni permite identificar filtraciones ocultas en tuberías e instalaciones sanitarias de forma oportuna. Como consecuencia, los usuarios enfrentan sobrecostos significativos en su facturación, desperdicio innecesario del recurso y un riesgo latente de deterioro estructural en sus inmuebles.
 
-Frente a esta problemática, planteamos la siguiente pregunta:
-
-¿Cómo podríamos ayudar a negocios y hogares a optimizar el uso de agua, reduciendo desperdicios y costos, mientras aseguramos un reabastecimiento oportuno mediante tecnología IoT?
-
+Frente a esta situación, se plantea la siguiente interrogante de diseño:
+¿Cómo podríamos brindar a los responsables de comercios y hogares visibilidad inmediata y advertencias tempranas sobre su consumo de agua para que puedan tomar decisiones de control oportunas y prevenir desperdicios antes de la llegada de la factura?
 #### 1.2.2.2. Lean UX Assumptions.
 
 | Tipo de Assumption                       | Enunciados de Creencias (Assumptions)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

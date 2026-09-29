@@ -1019,28 +1019,27 @@ El artefacto fue elaborado en UXPressia, tomando como base las fichas de User Pe
 
 El Product Backlog reúne la totalidad de los requisitos especificados en la sección 2.4.1, estimados en Story Points según la escala de Fibonacci (1, 2, 3, 5, 8) y ordenados según el valor que aportan al negocio. El orden responde a la necesidad de validar tempranamente la propuesta de valor de Qlic: la detección de fugas y la visibilidad del consumo, que constituyen el núcleo de los hallazgos del Needfinding, se ubican en las primeras posiciones, junto con el sitio web estático que presenta el modelo de negocio. Las funcionalidades de autenticación se incorporan en la medida en que habilitan el acceso a las funcionalidades core, sin encabezar el ordenamiento. Las Spike Stories se ubican en las primeras posiciones porque su resultado condiciona la estimación y la implementación de las historias de registro de dispositivos y de alertas.
 
-
 | # Orden | User Story Id | Título                                                | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
 |--------:|---------------|-------------------------------------------------------|---------------------------------:|-------:|
 |       1 | US01          | Conocer la propuesta de valor de Qlic                 |                                3 |      1 |
 |       2 | US02          | Comparar los planes de suscripción disponibles        |                                2 |      1 |
 |       3 | US03          | Contactar al equipo desde el Landing Page             |                                2 |      1 |
 |       4 | US04          | Consultar el Landing Page en el idioma de preferencia |                                2 |      1 |
-|       5 | US15          | Recibir una alerta de posible fuga                    |                                8 |      1 |
-|       6 | US16          | Comprender el contenido de una alerta                 |                                5 |      1 |
-|       7 | US12          | Consultar el estado de los dispositivos registrados   |                                5 |      1 |
-|       8 | US10          | Registrar un dispositivo IoT mediante código QR       |                                5 |      1 |
-|       9 | US11          | Asignar un dispositivo a un Water Point               |                                3 |      1 |
-|      10 | US05          | Registrar una cuenta de suscriptor                    |                                3 |      1 |
-|      11 | US06          | Iniciar sesión en la aplicación móvil                 |                                2 |      1 |
-|      12 | US21          | Consultar el reporte de consumo del periodo           |                                5 |      2 |
-|      13 | US22          | Comparar el consumo entre periodos                    |                                5 |      2 |
-|      14 | US23          | Conocer el costo estimado del consumo                 |                                3 |      2 |
-|      15 | US24          | Identificar consumo en horarios sin actividad         |                                5 |      2 |
-|      16 | US17          | Configurar el umbral de consumo                       |                                5 |      2 |
-|      17 | US18          | Limitar la frecuencia de las notificaciones           |                                3 |      2 |
-|      18 | US19          | Notificar la alerta a los usuarios autorizados        |                                3 |      2 |
-|      19 | US20          | Confirmar la atención de una alerta                   |                                3 |      2 |
+|       5 | US05          | Registrar una cuenta de suscriptor                    |                                3 |      1 |
+|       6 | US06          | Iniciar sesión en la aplicación móvil                 |                                2 |      1 |
+|       7 | US10          | Registrar un dispositivo IoT mediante código QR       |                                5 |      1 |
+|       8 | US11          | Asignar un dispositivo a un Water Point               |                                3 |      1 |
+|       9 | US12          | Consultar el estado de los dispositivos registrados   |                                5 |      1 |
+|      10 | US15          | Recibir una alerta de posible fuga                    |                                8 |      1 |
+|      11 | US16          | Comprender el contenido de una alerta                 |                                5 |      1 |
+|      12 | US17          | Configurar el umbral de consumo                       |                                5 |      2 |
+|      13 | US18          | Limitar la frecuencia de las notificaciones           |                                3 |      2 |
+|      14 | US19          | Notificar la alerta a los usuarios autorizados        |                                3 |      2 |
+|      15 | US20          | Confirmar la atención de una alerta                   |                                3 |      2 |
+|      16 | US21          | Consultar el reporte de consumo del periodo           |                                5 |      2 |
+|      17 | US22          | Comparar el consumo entre periodos                    |                                5 |      2 |
+|      18 | US23          | Conocer el costo estimado del consumo                 |                                3 |      2 |
+|      19 | US24          | Identificar consumo en horarios sin actividad         |                                5 |      2 |
 |      20 | US28          | Consultar el nivel del tanque de agua                 |                                3 |      2 |
 |      21 | US29          | Recibir aviso de nivel bajo en el tanque              |                                5 |      2 |
 |      22 | US13          | Organizar los dispositivos por local                  |                                3 |      2 |
@@ -1061,14 +1060,7 @@ El Product Backlog reúne la totalidad de los requisitos especificados en la sec
 |      37 | US09          | Actualizar los datos del perfil                       |                                2 |      3 |
 |      38 | US38          | Consultar los términos y condiciones del servicio     |                                2 |      3 |
 
-**Resumen de la distribución**
-
-| Sprint | Cantidad de ítems | Story Points |
-|---|---:|---:|
-| Sprint 1 | 16 | 64 |
-| Sprint 2 | 16 | 63 |
-| Sprint 3 | 16 | 62 |
-| **Total** | **48** | **189** |
+Tablero de Trello con el Product Backlog: https://trello.com/invite/b/6aa1e6966e4df21cb3a4eef9/ATTIe6a46d0c84f618e9bccb9c4de3ce13f711448192/product-backlog-qlic
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
