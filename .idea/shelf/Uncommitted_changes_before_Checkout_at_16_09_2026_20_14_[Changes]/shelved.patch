@@ -1,0 +1,158 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"PropertiesComponent\">{}</component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 51ebcc381d0b8c6bf1d0e77bb4380f4f8d9485ed)
++++ b/.idea/workspace.xml	(date 1789562985799)
+@@ -1,4 +1,147 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="PropertiesComponent">{}</component>
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="688d6dfe-cc4d-490b-870e-c6329d729b39" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="chapter-2" />
++      </map>
++    </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="McpProjectServerCommands">
++    <commands />
++    <urls />
++  </component>
++  <component name="NextEditCompletionFeaturesState">
++    <decayedCancelled>
++      <entry key="MS100" value="1.0000333951935199" />
++      <entry key="MS500" value="1.1272731500468471" />
++      <entry key="S2" value="1.60248585477932" />
++      <entry key="S5" value="2.093956737845703" />
++      <entry key="S10" value="3.4795182984147734" />
++      <entry key="S30" value="12.410830338199412" />
++      <entry key="S60" value="23.60184743914233" />
++      <entry key="M2" value="36.83558584011441" />
++      <entry key="M5" value="53.80259213408125" />
++      <entry key="M10" value="65.53897162635226" />
++      <entry key="M15" value="71.51526320883025" />
++      <entry key="M30" value="79.3613461358635" />
++      <entry key="H1" value="84.2569452168061" />
++      <entry key="H2" value="87.0113327393458" />
++      <entry key="H4" value="88.47484279262231" />
++      <entry key="D1" value="89.74138852095062" />
++      <entry key="W1" value="89.9629454494104" />
++    </decayedCancelled>
++    <decayedSelected>
++      <entry key="MS100" value="0.0" />
++      <entry key="MS500" value="0.0" />
++      <entry key="S2" value="0.0" />
++      <entry key="S5" value="0.0" />
++      <entry key="S10" value="0.0" />
++      <entry key="S30" value="0.0" />
++      <entry key="S60" value="0.0" />
++      <entry key="M2" value="0.0" />
++      <entry key="M5" value="0.0" />
++      <entry key="M10" value="0.0" />
++      <entry key="M15" value="0.0" />
++      <entry key="M30" value="0.0" />
++      <entry key="H1" value="0.0" />
++      <entry key="H2" value="0.0" />
++      <entry key="H4" value="0.0" />
++      <entry key="D1" value="0.0" />
++      <entry key="W1" value="0.0" />
++    </decayedSelected>
++    <decayedShown>
++      <entry key="MS100" value="0.9012797370285341" />
++      <entry key="MS500" value="1.1033848890040963" />
++      <entry key="S2" value="1.593355546476559" />
++      <entry key="S5" value="2.089210069592454" />
++      <entry key="S10" value="3.4758285008168563" />
++      <entry key="S30" value="12.406799154835499" />
++      <entry key="S60" value="23.5980315828546" />
++      <entry key="M2" value="36.832541134712265" />
++      <entry key="M5" value="53.80058538082237" />
++      <entry key="M10" value="65.5375155066538" />
++      <entry key="M15" value="71.51410042552665" />
++      <entry key="M30" value="79.36062441830012" />
++      <entry key="H1" value="84.25653744370678" />
++      <entry key="H2" value="87.0111152305829" />
++      <entry key="H4" value="88.47473036428768" />
++      <entry key="D1" value="89.74136924820277" />
++      <entry key="W1" value="89.962942682736" />
++    </decayedShown>
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 3,
++  &quot;fromUser&quot;: false
++}</component>
++  <component name="ProjectId" id="3JOPeev2Dv0X8OjBO9ZOJ9csrgZ" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
++    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
++    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;chapter1&quot;,
++    &quot;git.auto.fetch.suggestion.counter&quot;: &quot;1&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
++    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
++    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
++  }
++}</component>
++  <component name="RecentsManager">
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\PC\WebstormProjects\upc-pre-202620-1acc0238-13984-Qlic-report\images\team" />
++    </key>
++  </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
++      </set>
++    </attachedChunks>
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="688d6dfe-cc4d-490b-870e-c6329d729b39" name="Changes" comment="" />
++      <created>1789529238097</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1789529238097</updated>
++      <workItem from="1789529239259" duration="2591000" />
++      <workItem from="1789562818392" duration="167000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
+ </project>
+\ No newline at end of file
