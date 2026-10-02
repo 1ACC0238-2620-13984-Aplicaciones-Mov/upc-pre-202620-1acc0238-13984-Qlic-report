@@ -16,9 +16,21 @@
 
 #### 4.2.1.1. Sprint Planning 1
 
-**Objetivo del Sprint.** Construir y revisar la primera versión del Landing Page para que una persona visitante pueda comprender la propuesta de Qlic, comparar los planes, comunicarse con el equipo y cambiar el idioma de la interfaz.
+La planificación del Sprint 1 se organiza alrededor de las historias US01–US04 del Product Backlog. El objetivo es construir y revisar la primera versión del Landing Page para que una persona visitante pueda comprender la propuesta de Qlic, comparar los planes, comunicarse con el equipo y cambiar el idioma de la interfaz.
 
-**Criterio de validación.** El Sprint se considera encaminado cuando una persona puede recorrer la página, identificar el beneficio principal, consultar las diferencias entre planes, enviar una consulta y seleccionar español latinoamericano o inglés sin depender de una explicación del equipo.
+| Campo de planificación | Registro del Sprint 1 |
+|---|---|
+| Sprint | Sprint 1 |
+| Date | No consignada en el repositorio revisado |
+| Time | No consignada en el repositorio revisado |
+| Location / modalidad | No consignada en el repositorio revisado |
+| Prepared by | No consignado en el repositorio revisado |
+| Attendees | Avila Palacios, Aaron Alexander; Briceño Llanos, Ayrton Omar; Conde Huashuayo, Sebasthian Alex; Condori Lozano, Alessandro Ramiro |
+| Sprint 0 Review Summary | No aplica: no se registró un Sprint anterior en esta rama |
+| Sprint 0 Retrospective Summary | No registrada en el repositorio revisado |
+| Sprint Goal | Entregar una primera versión navegable del Landing Page que cubra US01, US02, US03 y US04 |
+| Sprint Velocity | No registrada; debe calcularse con las historias terminadas y aceptadas |
+| Sum of Story Points | **9** |
 
 | User Story | Resultado esperado | Story Points |
 |---|---|---:|
@@ -28,29 +40,36 @@
 | US04 | Permitir consultar la página en inglés o español latinoamericano | 2 |
 | **Total** |  | **9** |
 
+La validación del Sprint requiere comprobar que una persona puede recorrer la página, identificar el beneficio principal, consultar las diferencias entre planes, enviar una consulta y seleccionar el idioma sin depender de una explicación del equipo.
+
 #### 4.2.1.2. Aspect Leaders and Collaborators
 
-La asignación confirmada para este bloque identifica a Avila Palacios, Aaron Alexander como líder de los aspectos de planificación del Sprint 1, descomposición del backlog, SEO y metadatos, despliegue y registro de colaboración. La matriz no asigna líderes adicionales sin una confirmación explícita del equipo.
+La matriz siguiente distribuye el liderazgo y la colaboración entre los cuatro integrantes. `L` significa líder del aspecto y `C` significa colaborador. La asignación se relaciona con las tareas del Sprint Backlog 1 y evita concentrar toda la responsabilidad en una sola persona.
 
-| Team Member (Last Name, First Name) | GitHub Username | Aspect | Role |
-|---|---|---|---|
-| Avila Palacios, Aaron Alexander | No registrado en el reporte | Sprint Planning 1; Sprint Backlog 1; Software Deployment Evidence; Team Collaboration Insights | Leader (L) |
+| Team Member (Last Name, First Name) | GitHub Username | Sprint Planning 1 | Landing Page implementation | Sprint Backlog 1 | Software Deployment Evidence | Team Collaboration Insights |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Avila Palacios, Aaron Alexander | No consignado en el reporte | **L** | C | C | **L** | C |
+| Briceño Llanos, Ayrton Omar | No consignado en el reporte | C | **L** | C | C | C |
+| Conde Huashuayo, Sebasthian Alex | No consignado en el reporte | C | C | **L** | C | C |
+| Condori Lozano, Alessandro Ramiro | No consignado en el reporte | C | C | C | C | **L** |
 
-La asignación de los demás aspectos del Sprint requiere la matriz de líderes y colaboradores acordada por el equipo, de modo que la responsabilidad de cada tarea coincida con la tabla del Sprint Backlog.
+Los nombres de usuario de GitHub deben consignarse con el identificador público real de cada integrante antes de la entrega. No se inventan identificadores a partir del nombre mostrado en los commits. La evidencia de cada liderazgo debe vincularse con la tarea correspondiente, su estado y el commit o captura de la revisión.
 
 #### 4.2.1.3. Sprint Backlog 1
 
-El siguiente backlog descompone US01–US04 en tareas estimadas entre cuatro y ocho horas. Las estimaciones representan la planificación inicial del Sprint y no constituyen evidencia de ejecución hasta que se acompañen con el estado, el commit y la revisión correspondiente.
+El Sprint Backlog 1 descompone US01–US04 en tareas estimadas entre cuatro y ocho horas. El Product Backlog registrado para Qlic está disponible en el [tablero de Trello](https://trello.com/invite/b/6aa1e6966e4df21cb3a4eef9/ATTIe6a46d0c84f618e9bccb9c4de3ce13f711448192/product-backlog-qlic). Las estimaciones son de planificación; el estado debe actualizarse con la evidencia de ejecución del Sprint.
 
-| Sprint | User Story | Work-item / Task | Description | Estimation (Hours) | Assigned to | Status |
-|---|---|---|---|---:|---|---|
-| Sprint 1 | US01 | T01 | Construir la sección Hero con el problema, la propuesta de valor y el llamado a la acción | 6 | Aaron | To-do |
-| Sprint 1 | US02 | T02 | Implementar la tabla comparativa de Plan Básico y Plan Gestión Pro | 6 | Aaron | To-do |
-| Sprint 1 | US03 | T03 | Implementar el formulario y los canales de contacto del equipo | 4 | Aaron | To-do |
-| Sprint 1 | US04 | T04 | Incorporar el selector de idioma para español latinoamericano e inglés | 6 | Aaron | To-do |
-| Sprint 1 | US01–US04 | T05 | Aplicar diseño responsive, jerarquía visual, etiquetas accesibles y revisión en móvil | 6 | Aaron | To-do |
-| Sprint 1 | US01–US04 | T06 | Añadir título, descripción, viewport, URL canónica y metadatos sociales | 4 | Aaron | To-do |
-| Sprint 1 | US01–US04 | T07 | Preparar la configuración de hosting estático y verificar la URL de producción | 4 | Aaron | To-do |
+| Sprint # | User Story Id | User Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---:|---|---|---|---|---|---:|---|---|
+| 1 | US01 | Conocer la propuesta de valor de Qlic | T01 | Hero de propuesta de valor | Construir la sección Hero con el problema, la propuesta de valor y el llamado a la acción | 6 | Condori Lozano, Alessandro Ramiro | To-do |
+| 1 | US02 | Comparar los planes de suscripción disponibles | T02 | Comparador de planes | Implementar la comparación de Plan Básico y Plan Gestión Pro con información legible | 6 | Briceño Llanos, Ayrton Omar | To-do |
+| 1 | US03 | Contactar al equipo desde el Landing Page | T03 | Formulario de contacto | Implementar el formulario y los canales de contacto del equipo | 4 | Conde Huashuayo, Sebasthian Alex | To-do |
+| 1 | US04 | Consultar el Landing Page en el idioma de preferencia | T04 | Selector de idioma | Incorporar el selector para español latinoamericano e inglés | 6 | Avila Palacios, Aaron Alexander | To-do |
+| 1 | US01–US04 | Historias del Landing Page | T05 | Responsive y accesibilidad | Aplicar diseño responsive, jerarquía visual, etiquetas accesibles y revisión en móvil | 6 | Condori Lozano, Alessandro Ramiro | To-do |
+| 1 | US01–US04 | Historias del Landing Page | T06 | SEO y metadatos | Añadir título, descripción, viewport, URL canónica y metadatos sociales; el detalle SEO se documenta en el capítulo correspondiente | 4 | Avila Palacios, Aaron Alexander | To-do |
+| 1 | US01–US04 | Historias del Landing Page | T07 | Verificación del despliegue | Preparar la configuración de hosting estático y verificar la URL de producción | 4 | Briceño Llanos, Ayrton Omar | To-do |
+
+La captura del tablero y el enlace público deben incorporarse como evidencia visual de la revisión. En esta rama solo se dispone del enlace registrado; no se declara una captura que no está almacenada en el repositorio.
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
@@ -62,26 +81,30 @@ El siguiente backlog descompone US01–US04 en tareas estimadas entre cuatro y o
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
-El Capítulo II define el Landing Page como un container estático que debe servirse mediante HTTPS. En el repositorio revisado no se encuentra todavía una URL pública de producción ni una captura de la configuración del proveedor. Por ello, no se declara un despliegue realizado.
+El Capítulo II define el Landing Page como un container estático que debe servirse mediante HTTPS. En el repositorio revisado no se encuentra una URL pública de producción ni una captura de la configuración del proveedor; por eso no se declara un despliegue realizado.
 
-| Producto | Configuración esperada | Evidencia que debe acompañar la revisión | Estado verificable |
-|---|---|---|---|
-| Landing Page | Hosting estático con acceso HTTPS | URL pública, captura de la página desplegada, proveedor y commit publicado | No registrada en el repositorio revisado |
+| Elemento de despliegue | Registro verificable |
+|---|---|
+| Producto | Landing Page estático |
+| Proveedor o cuenta cloud | No registrado en el repositorio revisado |
+| URL pública | No registrada en el repositorio revisado |
+| Commit publicado | No registrado en el repositorio revisado |
+| Evidencia requerida | URL pública, captura de la página desplegada, proveedor, recursos y configuración |
 
-La evidencia debe corresponder al mismo commit revisado en el Sprint Backlog y debe permitir comprobar que US01, US02, US03 y US04 son accesibles desde la versión desplegada.
+La evidencia final debe corresponder al mismo commit revisado en el Sprint Backlog y permitir comprobar que US01, US02, US03 y US04 son accesibles desde la versión desplegada.
 
 #### 4.2.1.9. Team Collaboration Insights during Sprint
 
-El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el trabajo. La captura `images/collaboration/av1_git.png` documenta la actividad general del repositorio durante AV1, pero no permite aislar por sí sola la actividad del Sprint 1. Para que la evidencia sea específica del Sprint se necesita una captura de GitHub Insights con el intervalo correspondiente y una interpretación de los commits de cada integrante.
+El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el trabajo. La distribución del Sprint 1 asigna un liderazgo diferente a cada integrante: Aaron en planificación y despliegue, Ayrton en implementación, Sebasthian en backlog y Alessandro en colaboración. La interpretación definitiva debe basarse en capturas de GitHub Insights y del tablero correspondientes al intervalo real del Sprint.
 
-| Evidencia | Qué permite comprobar | Estado |
+| Integrante | Responsabilidad de colaboración en el Sprint 1 | Evidencia que debe vincularse |
 |---|---|---|
-| Historial de GitHub | Ramas, commits y mensajes asociados al trabajo | Disponible a nivel general del repositorio |
-| Captura de GitHub Insights | Distribución de commits durante el Sprint 1 | Debe generarse con el periodo del Sprint |
-| Tablero de Trello | Estado de las historias y tareas del Sprint Backlog | Enlace registrado; falta la captura específica del Sprint |
-| Registro de comunicación | Coordinación, acuerdos y bloqueos | Debe adjuntarse una evidencia de la sesión o canal utilizado |
+| Avila Palacios, Aaron Alexander | Coordinar la planificación, revisar el despliegue y consolidar la evidencia | Acta de planificación, URL/captura de despliegue y commits |
+| Briceño Llanos, Ayrton Omar | Coordinar la implementación de la comparación de planes y apoyar la revisión | Commit de T02/T07 y captura de revisión |
+| Conde Huashuayo, Sebasthian Alex | Mantener el backlog, las estimaciones y el estado de las tareas | Captura del tablero y actualización de T03 |
+| Condori Lozano, Alessandro Ramiro | Consolidar la colaboración del equipo y apoyar la interfaz | Capturas de coordinación y commits de T01/T05 |
 
-La interpretación final debe explicar qué se completó, qué bloqueos aparecieron, cómo se distribuyó el trabajo y qué ajustes se realizarán en el siguiente Sprint. No se atribuyen actividades individuales que no estén respaldadas por el historial o por un registro del equipo.
+Para la entrega se requiere una captura de GitHub Insights con el periodo del Sprint, una captura del tablero de Trello y un registro de los acuerdos o bloqueos. La imagen general de actividad de AV1 no está disponible en esta rama; no se sustituye por una captura de otro periodo.
 
 ## 4.3. Validation Interviews
 
