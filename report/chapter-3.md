@@ -101,6 +101,59 @@ Las etiquetas usan el mínimo de palabras y el mismo término en toda la experie
 
 Se evita el uso de términos técnicos como "sensor IoT" o "umbral" en las pantallas principales; en su lugar se usan "device" y "limit". Los términos del dominio coinciden con el Ubiquitous Language de la sección 2.3.6 (por ejemplo, Water Point).
 
+#### 3.1.2.3. SEO Tags and Meta Tags
+
+Los valores de esta sección mantienen una propuesta de valor coherente con los segmentos PYMES y Hogares y Familias: detectar fugas y consumos anómalos, consultar el consumo desde el celular y recibir alertas accionables. El idioma principal de publicación es inglés y se incluye la localización `es-419` para español latinoamericano. El campo **Author** identifica al equipo responsable del producto, no a una persona individual.
+
+**Landing Page (sitio web estático).** La página pública utiliza una sola experiencia con navegación por anclas; por eso cada fila identifica la página o sección que debe conservar sus metadatos al generarse o compartirse.
+
+| Página o sección | Title | Meta description | Meta keywords | Author |
+|---|---|---|---|---|
+| Home / propuesta de valor | `Qlic \| Smart Water Monitoring` | `Detect leaks and unusual water consumption before they become costly. Monitor your home or business with Qlic.` | `Qlic, smart water monitoring, leak detection, water consumption, home, business` | `Qlic Team` |
+| Soluciones para PYMES | `Qlic for Businesses \| Prevent Water Loss` | `Give your business clear water-consumption data, timely leak alerts and practical actions to reduce operating costs.` | `water monitoring for business, leak alerts, commercial water use, Qlic` | `Qlic Team` |
+| Soluciones para hogares | `Qlic for Homes \| Prevent Leaks` | `Protect your home from hidden leaks and unusual consumption with simple mobile alerts and clear water data.` | `home water monitoring, household leak detection, water alerts, Qlic` | `Qlic Team` |
+| Planes | `Qlic Plans \| Choose Your Water Monitoring Plan` | `Compare Qlic plans and choose the level of water monitoring, alerts and reports that fits your needs.` | `Qlic plans, water monitoring subscription, leak detection plan, water reports` | `Qlic Team` |
+| Contacto | `Contact Qlic \| Water Monitoring Support` | `Talk to the Qlic team about water monitoring, installation guidance, support and subscription plans.` | `contact Qlic, water monitoring support, sensor installation, Qlic` | `Qlic Team` |
+| Términos y condiciones | `Qlic Terms and Conditions` | `Review the terms that govern access to Qlic services, accounts, alerts and water-monitoring features.` | `Qlic terms, service conditions, water monitoring privacy` | `Qlic Team` |
+
+**Web Application.** Estas etiquetas corresponden a las vistas principales descritas en la arquitectura de información. Las rutas son nombres funcionales de pantalla; no se presentan como URL públicas hasta que se implemente el frontend.
+
+| Vista | Title | Meta description | Meta keywords | Author |
+|---|---|---|---|---|
+| Sign in | `Sign in \| Qlic` | `Sign in to Qlic to review water consumption, devices and active alerts.` | `Qlic sign in, water monitoring account, water alerts` | `Qlic Team` |
+| Home dashboard | `Dashboard \| Qlic` | `See today's water consumption, active alerts and device status in one place.` | `Qlic dashboard, water consumption, leak alerts, device status` | `Qlic Team` |
+| Devices | `Devices \| Qlic` | `Review connected devices and Water Points, their status and latest readings.` | `Qlic devices, Water Point, connected water sensors` | `Qlic Team` |
+| Alerts | `Alerts \| Qlic` | `Review, filter and acknowledge water leaks, unusual consumption and low-battery alerts.` | `Qlic alerts, leak alert, unusual water consumption` | `Qlic Team` |
+| Reports | `Reports \| Qlic` | `Compare water consumption and estimated cost by period and location.` | `Qlic water reports, consumption comparison, estimated water cost` | `Qlic Team` |
+| Account | `Account \| Qlic` | `Manage your Qlic profile, plan, authorized users and service preferences.` | `Qlic account, subscription plan, authorized users` | `Qlic Team` |
+
+Además de los metadatos mínimos solicitados, el Landing Page debe declarar `lang="en"`, `hreflang="en"` y `hreflang="es-419"`, una URL canónica y etiquetas Open Graph (`og:title`, `og:description`, `og:type`, `og:url` y `og:image`) para que el enlace compartido conserve el contexto de la página. En las pantallas autenticadas se prioriza el título de la vista y la accesibilidad; el contenido no debe depender de `meta keywords` para funcionar.
+
+Ejemplo de implementación para la página principal:
+
+```html
+<title>Qlic | Smart Water Monitoring</title>
+<meta name="description" content="Detect leaks and unusual water consumption before they become costly. Monitor your home or business with Qlic.">
+<meta name="keywords" content="Qlic, smart water monitoring, leak detection, water consumption, home, business">
+<meta name="author" content="Qlic Team">
+<link rel="canonical" href="/">
+<meta property="og:title" content="Qlic | Smart Water Monitoring">
+<meta property="og:description" content="Detect leaks and unusual water consumption before they become costly.">
+```
+
+La ruta `/` representa la página principal; el hosting debe resolverla al dominio público real del proyecto. La imagen Open Graph debe apuntar al recurso gráfico versionado que el equipo publique. La longitud de los títulos y descripciones se mantiene deliberadamente breve para evitar truncamiento en resultados y enlaces compartidos.
+
+**ASO para las aplicaciones móviles.** Los siguientes valores se aplican a la ficha de Qlic en una tienda de aplicaciones y se localizan para inglés y español latinoamericano.
+
+| Elemento ASO | English (en-US) | Español latinoamericano (es-419) |
+|---|---|---|
+| App Title | `Qlic Water Monitor` | `Qlic Monitor de Agua` |
+| App subtitle | `Detect leaks. Control water use.` | `Detecta fugas. Controla tu consumo.` |
+| App keywords | `water monitoring, leak detection, water alerts, consumption, smart home, business` | `monitoreo de agua, detección de fugas, alertas, consumo, hogar inteligente, negocio` |
+| App description | `Qlic helps homes and businesses monitor water consumption, detect unusual use and act on clear mobile alerts. Review devices, compare periods and keep water costs under control.` | `Qlic ayuda a hogares y negocios a monitorear el consumo de agua, detectar usos inusuales y actuar con alertas móviles claras. Revisa dispositivos, compara periodos y mantén bajo control el gasto de agua.` |
+
+La descripción ASO no promete corte automático ni ahorro garantizado; comunica únicamente capacidades contempladas en el alcance de Qlic. Las palabras clave se relacionan con las necesidades observadas en las entrevistas y no incluyen marcas de terceros.
+
 #### 3.1.2.4. Searching Systems
 
 La aplicación ofrece búsqueda donde el volumen de información lo justifica:
