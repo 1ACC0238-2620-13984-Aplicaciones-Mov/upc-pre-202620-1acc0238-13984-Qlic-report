@@ -1,38 +1,16 @@
 # Capítulo IV: Product Implementation & Validation
 
-Este capítulo organiza la implementación y la validación del alcance inicial de Qlic. Para el Sprint 1 se toma como referencia el Product Backlog documentado en el Capítulo II: US01, US02, US03 y US04, correspondientes al Landing Page informativo. Las afirmaciones de implementación se separan de las decisiones planificadas y de la evidencia que todavía debe adjuntarse.
-
 ## 4.1. Software Configuration Management
-
-El trabajo se gestiona con Git y GitHub siguiendo un flujo de ramas por entregable y mensajes de commit basados en Conventional Commits. La rama `feature/chapter-4` concentra este capítulo y permanece separada de `master` mientras el equipo revisa su contenido.
 
 ### 4.1.1. Software Development Environment Configuration
 
-El alcance del Sprint 1 se limita al Landing Page estático asociado al epic EP01. La solución descrita en el Capítulo II identifica HTML5, CSS3 y JavaScript como tecnologías del sitio web. La configuración del entorno debe permitir editar Markdown y los archivos estáticos, revisar el resultado en un navegador y registrar los cambios en Git.
-
-| Elemento | Uso en el Sprint 1 | Evidencia disponible |
-|---|---|---|
-| Git y GitHub | Control de versiones, ramas y revisión de cambios | Repositorio del Project Report |
-| Markdown | Documentación del sprint y trazabilidad de requisitos | Este capítulo y el README del proyecto |
-| HTML5, CSS3 y JavaScript | Implementación del Landing Page | Tecnología definida para el container Landing Page en el Capítulo II |
-| Navegador web | Revisión visual y funcional del sitio | Revisión local o URL pública que debe adjuntarse |
-| Trello | Organización del Product Backlog y tareas | Enlace al tablero registrado en el Capítulo II |
-
 ### 4.1.2. Source Code Management
-
-El repositorio remoto del proyecto es `1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report`. Se utiliza una rama específica para este capítulo, `feature/chapter-4`, y la integración a `master` se realizará después de la revisión del equipo. La documentación conserva los identificadores de las historias y evita duplicar requisitos ya definidos en el Capítulo II.
 
 ### 4.1.3. Source Code Style Guide & Conventions
 
-La documentación utiliza títulos numerados, tablas para requisitos y evidencias, nombres de historias con el formato `USnn` y mensajes de commit con Conventional Commits. Las tareas del sprint se expresan con un verbo de acción, una estimación en horas y un responsable. Las afirmaciones sobre despliegue, ejecución o pruebas solo se incorporan cuando existe una captura, URL, commit o registro verificable.
-
 ### 4.1.4. Software Deployment Configuration
 
-El modelo de arquitectura del Capítulo II describe el Landing Page como un sitio estático servido mediante HTTPS desde un proveedor de hosting. Esta sección documenta la configuración esperada; la URL pública, el proveedor utilizado y la captura de producción deben registrarse en la evidencia de despliegue del Sprint 1.
-
 ## 4.2. Landing Page & Mobile Application Implementation
-
-El Sprint 1 prioriza la validación de la propuesta de valor antes de construir funcionalidades autenticadas de las aplicaciones móviles. El alcance funcional se deriva de US01 a US04: conocer Qlic, comparar planes, contactar al equipo y consultar el contenido en el idioma preferido.
 
 ### 4.2.1. Sprint 1
 
@@ -56,7 +34,7 @@ La asignación confirmada para este bloque identifica a Avila Palacios, Aaron Al
 
 | Team Member (Last Name, First Name) | GitHub Username | Aspect | Role |
 |---|---|---|---|
-| Avila Palacios, Aaron Alexander | No registrado en el reporte | Sprint Planning 1; Sprint Backlog 1; SEO Tags and Meta Tags; Software Deployment Evidence; Team Collaboration Insights | Leader (L) |
+| Avila Palacios, Aaron Alexander | No registrado en el reporte | Sprint Planning 1; Sprint Backlog 1; Software Deployment Evidence; Team Collaboration Insights | Leader (L) |
 
 La asignación de los demás aspectos del Sprint requiere la matriz de líderes y colaboradores acordada por el equipo, de modo que la responsabilidad de cada tarea coincida con la tabla del Sprint Backlog.
 
@@ -74,6 +52,14 @@ El siguiente backlog descompone US01–US04 en tareas estimadas entre cuatro y o
 | Sprint 1 | US01–US04 | T06 | Añadir título, descripción, viewport, URL canónica y metadatos sociales | 4 | Aaron | To-do |
 | Sprint 1 | US01–US04 | T07 | Preparar la configuración de hosting estático y verificar la URL de producción | 4 | Aaron | To-do |
 
+#### 4.2.1.4. Development Evidence for Sprint Review
+
+#### 4.2.1.5. Testing Suite Evidence for Sprint Review
+
+#### 4.2.1.6. Execution Evidence for Sprint Review
+
+#### 4.2.1.7. Services Documentation Evidence for Sprint Review
+
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
 El Capítulo II define el Landing Page como un container estático que debe servirse mediante HTTPS. En el repositorio revisado no se encuentra todavía una URL pública de producción ni una captura de la configuración del proveedor. Por ello, no se declara un despliegue realizado.
@@ -82,7 +68,7 @@ El Capítulo II define el Landing Page como un container estático que debe serv
 |---|---|---|---|
 | Landing Page | Hosting estático con acceso HTTPS | URL pública, captura de la página desplegada, proveedor y commit publicado | No registrada en el repositorio revisado |
 
-La evidencia de esta sección debe corresponder al mismo commit revisado en el Sprint Backlog y debe permitir comprobar que US01, US02, US03 y US04 son accesibles desde la versión desplegada.
+La evidencia debe corresponder al mismo commit revisado en el Sprint Backlog y debe permitir comprobar que US01, US02, US03 y US04 son accesibles desde la versión desplegada.
 
 #### 4.2.1.9. Team Collaboration Insights during Sprint
 
@@ -96,3 +82,11 @@ El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el
 | Registro de comunicación | Coordinación, acuerdos y bloqueos | Debe adjuntarse una evidencia de la sesión o canal utilizado |
 
 La interpretación final debe explicar qué se completó, qué bloqueos aparecieron, cómo se distribuyó el trabajo y qué ajustes se realizarán en el siguiente Sprint. No se atribuyen actividades individuales que no estén respaldadas por el historial o por un registro del equipo.
+
+## 4.3. Validation Interviews
+
+### 4.3.1. Diseño de Entrevistas
+
+### 4.3.2. Registro de Entrevistas
+
+### 4.3.3. Evaluaciones según heurísticas
