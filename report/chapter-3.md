@@ -183,25 +183,137 @@ El Landing Page traduce las decisiones de las secciones 3.1.1 y 3.1.2 en una pá
 
 #### 3.1.3.1. Landing Page Wireframe
 
-Se presentan los wireframes para Desktop Web Browser y Mobile Web Browser. La estructura sigue el orden definido en 3.1.2.1: encabezado con logo y navegación, Hero con propuesta de valor y dos llamados a la acción, funcionalidades, soluciones por segmento, planes, testimonios, preguntas frecuentes, formulario de contacto y footer con enlaces legales.
+Se presentan los wireframes para Desktop Web Browser y Mobile Web Browser. La estructura sigue el orden definido en 3.1.2.1: encabezado con logo y navegación, Hero con propuesta de valor y dos llamados a la acción, funcionalidades, soluciones por segmento, planes, testimonios, preguntas frecuentes, formulario de contacto y footer con enlaces legales. El diseño se presenta dividido en seis partes para mostrar la página completa.
 
--
+![Wireframe Landing Page, parte 1: encabezado y Hero](../images/wireframes/Wireframe-Landing-Page-part1.png)
 
-Explicación: en la versión de escritorio las funcionalidades y los planes se presentan en columnas; en móvil pasan a una sola columna y la navegación se colapsa en menú hamburguesa, manteniendo el orden de lectura. La jerarquía visual coloca la propuesta de valor y el botón principal en la primera pantalla. Se aplica diseño inclusivo con orden lógico de lectura, etiquetas claras y atributos ARIA en navegación, formulario y preguntas frecuentes. [COMPLETAR: ajustar si los wireframes cambian tras corregir el contenido].
+*Figura 3.1. Parte 1: encabezado con logo y navegación, y sección Hero.*
 
+![Wireframe Landing Page, parte 2: visibilidad del agua y About Us](../images/wireframes/Wireframe-Landing-Page-part2.png)
+
+*Figura 3.2. Parte 2: secciones "Full visibility of your water" y "About Us".*
+
+![Wireframe Landing Page, parte 3: equipo y soluciones por segmento](../images/wireframes/Wireframe-Landing-Page-part3.png)
+
+*Figura 3.3. Parte 3: secciones "Our Team" y "Solutions by segment".*
+
+![Wireframe Landing Page, parte 4: funcionalidades y video](../images/wireframes/Wireframe-Landing-Page-part4.png)
+
+*Figura 3.4. Parte 4: secciones "What our customers say".*
+
+![Wireframe Landing Page, parte 5: testimonios](../images/wireframes/Wireframe-Landing-Page-part6.png)
+
+*Figura 3.5. Parte 5: sección  "Contact Sales" y footer".*
+
+![Wireframe Landing Page, parte 6: planes, contacto y footer](../images/wireframes/Wireframe-Landing-Page-part5.png)
+
+*Figura 3.6. Parte 6: secciones "Subscription plans".*
+
+Explicación: en la versión de escritorio las funcionalidades y los planes se presentan en columnas; en móvil pasan a una sola columna y la navegación se colapsa en menú hamburguesa, manteniendo el orden de lectura. La jerarquía visual coloca la propuesta de valor y el botón principal en la primera pantalla. Se aplica diseño inclusivo con orden lógico de lectura, etiquetas claras y atributos ARIA en navegación, formulario y preguntas frecuentes.
 #### 3.1.3.2. Landing Page Mock-up
 
-Los mock-ups aplican el Design System definido en 3.1.1: Poppins y Roboto, azul `#0C4AFD` para acciones principales, cards con esquinas redondeadas y verde reservado a estados de éxito.
+Los mock-ups aplican el Design System definido en 3.1.1: Poppins y Roboto, azul `#0C4AFD` para acciones principales, cards con esquinas redondeadas y verde reservado a estados de éxito. El diseño se presenta en versión móvil, dividido en cinco partes para mostrar la página completa.
 
--
+![Mock-up Landing Page, parte 1: encabezado y Hero](../images/mockups/Mockup-Landing-Page-part1.png)
+
+*Figura . Parte 1: encabezado con selector de idioma y menú, y sección Hero.*
+
+![Mock-up Landing Page, parte 2: visibilidad del agua y About Us](../images/mockups/Mockup-Landing-Page-part2.png)
+
+*Figura . Parte 2: secciones "Full visibility of your water" y "About Us".*
+
+![Mock-up Landing Page, parte 3: equipo y soluciones por segmento](../images/mockups/Mockup-Landing-Page-part3.png)
+
+*Figura . Parte 3: sección "Our Team" y "Solutions by segment".*
+
+![Mock-up Landing Page, parte 4: funcionalidades y video](../images/mockups/Mockup-Landing-Page-part4.png)
+
+*Figura . Parte 4: "Subscription plans".*
+
+![Mock-up Landing Page, parte 5: testimonios](../images/mockups/Mockup-Landing-Page-part6.png)
+
+*Figura . Parte 5: sección "What our customers say".*
+
+![Mock-up Landing Page, parte 6: planes, contacto y footer](../images/mockups/Mockup-Landing-Page-part5.png)
+
+*Figura . Parte 6: "Contact Sales" y footer.*
+
 
 Explicación: el Hero comunica el beneficio central de Qlic (visibilidad del consumo de agua y alertas oportunas) para hogares y PYMES. La sección de planes presenta Plan Básico y Plan Gestión Pro en formato de comparación (US02). Los testimonios provienen de las entrevistas de validación del proyecto. El formulario de contacto informa el dato faltante en caso de error (US03) y el selector de idioma permite cambiar entre inglés y español latinoamericano (US04). El footer incluye el enlace a los términos y condiciones del servicio y el video About-the-Product. [COMPLETAR: confirmar nombres de planes y precios con el equipo].
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
+#### 3.1.4.1. Mobile Applications Wireframes
+
+Se presentan los wireframes de las pantallas principales de la aplicación móvil: Sign in, Main Dashboard, Alerts, Inventory + features y Support & Help. Todas comparten la barra superior con el logo, el contador de alertas y el perfil, y la barra de navegación inferior con cinco destinos.
+
+![Wireframe móvil: Sign in](../images/wireframes/Wireframe-Login.png)
+
+*Figura . Wireframe de la pantalla Sign in.*
+
+Explicación: el acceso se concentra en una sola columna, con los campos de correo y contraseña en el centro y el botón "Sign in" como acción principal. Los enlaces "Forgot password?" y "Create account" llevan a las demás pantallas del flujo de autenticación, y se ofrece el ingreso con Google y X como alternativa.
+
+![Wireframe móvil: Main Dashboard](../images/wireframes/Wireframe-Dashboard.png)
+
+*Figura . Wireframe de la pantalla Main Dashboard y del menú "More".*
+
+Explicación: la información se ordena de lo más importante a lo más detallado: primero los indicadores del día y las alertas activas en una cuadrícula de 2 × 2, y debajo el gráfico de consumo. El menú lateral de la versión web pasa a la barra de navegación inferior, y los destinos secundarios (Support, Billing, perfil y ajustes) quedan dentro de "More", que se abre como una hoja inferior.
+
+![Wireframe móvil: Alerts](../images/wireframes/Wireframe-Alert.png)
+
+*Figura . Wireframe de la pantalla Alerts, con su estado vacío y los ajustes de notificación.*
+
+Explicación: la pantalla prioriza la tarea más crítica, atender una alerta. Ofrece tarjetas de resumen, búsqueda, filtros por estado y urgencia, y una acción directa "Acknowledge" en cada alerta. Cuando ningún resultado coincide, se muestra un estado vacío con la acción "Clear filters", y los ajustes de notificación quedan al final porque se usan con menos frecuencia.
+
+![Wireframe móvil: Inventory + features](../images/wireframes/Wireframe-Inventory.png)
+
+*Figura . Wireframe de la pantalla Inventory + features.*
+
+Explicación: responde a la necesidad de verificar el nivel de los tanques. Presenta tarjetas de resumen, el inventario con el botón "Add tank" y una barra de nivel por tanque, y la sección "Cost savings" con selector de periodo (semana, mes y año) para comparar el ahorro.
+
+![Wireframe móvil: Support & Help](../images/wireframes/Wireframe-Support.png)
+
+*Figura . Wireframe de la pantalla Support & Help.*
+
+Explicación: permite pedir ayuda sin salir de la aplicación. Reúne el formulario para crear un ticket, la lista de tickets recientes con su estado y los datos de contacto, con acciones directas para llamar o escribir. Se accede desde "More" y la barra superior incluye una flecha para volver.
+
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
 Se presenta un wireflow por cada User goal de las funcionalidades de autenticación y de la pantalla Home. Cada wireflow encadena wireframes y agrega un paso cuando la interacción modifica la pantalla. Se elaboran en Lucidchart u Overflow a partir de los wireframes de Figma.
+
+#### 3.1.4.3. Mobile Applications Mock-ups
+
+Los mock-ups aplican el Design System definido en 3.1.1 sobre las mismas pantallas: Poppins en títulos y Roboto en datos y etiquetas, azul `#0C4AFD` para las acciones principales y el destino activo de la navegación, cards con esquinas redondeadas y áreas táctiles de 48 dp.
+
+![Mock-up móvil: Sign in](../images/mockups/Mockup-Login.png)
+
+*Figura . Mock-up de la pantalla Sign in.*
+
+Explicación: los campos tienen etiqueta flotante e íconos, y el botón "Sign in" usa el azul principal con texto blanco. Los enlaces "Forgot password?" y "Create account" se resaltan en azul, y el campo de contraseña incluye un control para mostrar u ocultar el texto.
+
+![Mock-up móvil: Main Dashboard](../images/mockups/Mockup-Dashboard.png)
+
+*Figura . Mock-up de la pantalla Main Dashboard y del menú "More".*
+
+Explicación: las cifras del día se muestran en grande para que el usuario detecte consumos anómalos de un vistazo. El rojo se reserva a las alertas activas, que llevan ícono y la etiqueta "Needs attention". La hoja inferior de "More" muestra el perfil, Support y Billing, con una breve descripción de cada uno.
+
+![Mock-up móvil: Alerts](../images/mockups/Mockup-Alert.png)
+
+*Figura . Mock-up de la pantalla Alerts, con su estado vacío y los ajustes de notificación.*
+
+Explicación: la severidad se comunica con ícono y etiqueta ("High"), y no solo con color. El filtro seleccionado usa el azul principal. El estado vacío incluye un mensaje claro y la acción "Clear filters", y cada ajuste de notificación muestra su estado en texto ("Enabled" o "Disabled") además del interruptor.
+
+![Mock-up móvil: Inventory + features](../images/mockups/Mockup-Inventory.png)
+
+*Figura . Mock-up de la pantalla Inventory + features.*
+
+Explicación: el estado de cada tanque se indica con ícono y etiqueta ("Normal"), y la barra de nivel muestra el porcentaje de un vistazo. El ahorro del mes se presenta con una cifra grande y su variación, y el gráfico permite compararlo por semana, mes o año.
+
+![Mock-up móvil: Support & Help](../images/mockups/Mockup-Support.png)
+
+*Figura . Mock-up de la pantalla Support & Help.*
+
+Explicación: el formulario usa campos con etiqueta flotante y un botón "Submit ticket" de ancho completo. El estado de cada ticket se comunica con ícono y texto ("Open", "In progress" y "Resolved"), y los datos de contacto ofrecen acciones directas ("Call" y "Write").
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 

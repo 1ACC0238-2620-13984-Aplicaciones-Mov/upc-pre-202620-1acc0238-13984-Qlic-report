@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4080670f-9838-4b71-a08d-1fe4ede9a08c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/report/chapter-3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Inventory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Landing-Page-part1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Landing-Page-part2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Landing-Page-part3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Landing-Page-part4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Landing-Page-part5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Landing-Page-part6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mockups/Mockup-Support.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/wireframes/Wireframe-Landing-Page-part1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/wireframes/Wireframe-Landing-Page-part2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/wireframes/Wireframe-Landing-Page-part3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/wireframes/Wireframe-Landing-Page-part4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/wireframes/Wireframe-Landing-Page-part5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/wireframes/Wireframe-Landing-Page-part6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/chapter-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/report/chapter-3.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,34 +33,71 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/chapter-2" />
+        <entry key="$PROJECT_DIR$" value="feature/chapter-3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SebasthianCH&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/chapter-3" />
+                    <option name="lastUsedInstant" value="1791222194" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1791222193" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report.git&quot;,
+    &quot;accountId&quot;: &quot;3c97c608-1366-46ec-8c09-31403f513bdb&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000701872" />
-      <entry key="MS500" value="1.009316475565083" />
-      <entry key="S2" value="1.3106797251776707" />
-      <entry key="S5" value="1.6265058995529098" />
-      <entry key="S10" value="1.7915212813322299" />
-      <entry key="S30" value="1.9294544252645218" />
-      <entry key="S60" value="2.1730217091240873" />
-      <entry key="M2" value="3.93031008075355" />
-      <entry key="M5" value="10.234547066377722" />
-      <entry key="M10" value="15.67993610323969" />
-      <entry key="M15" value="18.396688006914395" />
-      <entry key="M30" value="22.693011770689118" />
-      <entry key="H1" value="26.981474175807232" />
-      <entry key="H2" value="30.574485161926948" />
-      <entry key="H4" value="32.99703854174673" />
-      <entry key="D1" value="35.452624976487044" />
-      <entry key="W1" value="35.92055836506943" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000000000517" />
+      <entry key="S5" value="1.0000142576600612" />
+      <entry key="S10" value="1.010264116692292" />
+      <entry key="S30" value="1.8606905995290068" />
+      <entry key="S60" value="3.6209055849475846" />
+      <entry key="M2" value="5.609946611033612" />
+      <entry key="M5" value="8.193438585340047" />
+      <entry key="M10" value="12.922931811414944" />
+      <entry key="M15" value="18.62972876013941" />
+      <entry key="M30" value="32.412618335190615" />
+      <entry key="H1" value="46.89015136415205" />
+      <entry key="H2" value="58.356455945969216" />
+      <entry key="H4" value="65.85266415860451" />
+      <entry key="D1" value="73.34051063910543" />
+      <entry key="W1" value="74.7593164256017" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -65,23 +119,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.895025070989927" />
-      <entry key="MS500" value="0.9871503487719319" />
-      <entry key="S2" value="1.303217805633431" />
-      <entry key="S5" value="1.6227288967061224" />
-      <entry key="S10" value="1.789425923063638" />
-      <entry key="S30" value="1.928690384022726" />
-      <entry key="S60" value="2.172217941825868" />
-      <entry key="M2" value="3.928039023638082" />
-      <entry key="M5" value="10.231114240620874" />
-      <entry key="M10" value="15.677213692321201" />
-      <entry key="M15" value="18.39456460703133" />
-      <entry key="M30" value="22.691754829738134" />
-      <entry key="H1" value="26.980778037053394" />
-      <entry key="H2" value="30.57411462209516" />
-      <entry key="H4" value="32.99684650273138" />
-      <entry key="D1" value="35.45259189812829" />
-      <entry key="W1" value="35.92055361133079" />
+      <entry key="MS100" value="3.320886853394029E-6" />
+      <entry key="MS500" value="0.0802141185976815" />
+      <entry key="S2" value="0.5321850912267313" />
+      <entry key="S5" value="0.7770214874011258" />
+      <entry key="S10" value="0.8917266787483444" />
+      <entry key="S30" value="1.8189283945200048" />
+      <entry key="S60" value="3.5991721394591787" />
+      <entry key="M2" value="5.598655647669736" />
+      <entry key="M5" value="8.188706895861813" />
+      <entry key="M10" value="12.920265284681072" />
+      <entry key="M15" value="18.627650013654993" />
+      <entry key="M30" value="32.4111823836921" />
+      <entry key="H1" value="46.88922421593733" />
+      <entry key="H2" value="58.35591279853447" />
+      <entry key="H4" value="65.85236752767057" />
+      <entry key="D1" value="73.34045715183068" />
+      <entry key="W1" value="74.75930867685379" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -93,30 +147,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/chapter-3",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/chapter-3&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programacion\Webstorm\upc-pre-202620-1acc0238-13984-Qlic-report\images\wireframes" />
+      <recent name="D:\Programacion\Webstorm\upc-pre-202620-1acc0238-13984-Qlic-report\images\mockups" />
       <recent name="C:\Users\PC\WebstormProjects\upc-pre-202620-1acc0238-13984-Qlic-report\images\user-personas" />
       <recent name="C:\Users\PC\WebstormProjects\upc-pre-202620-1acc0238-13984-Qlic-report\images\empathy_map" />
       <recent name="C:\Users\PC\WebstormProjects\upc-pre-202620-1acc0238-13984-Qlic-report\images\journey_map" />
@@ -141,6 +198,10 @@
       <workItem from="1790024533276" duration="1557000" />
       <workItem from="1790198032709" duration="15000" />
       <workItem from="1790801292172" duration="1751000" />
+      <workItem from="1791222278579" duration="165000" />
+      <workItem from="1791222454331" duration="188000" />
+      <workItem from="1791222655153" duration="3531000" />
+      <workItem from="1791235914220" duration="301000" />
     </task>
     <servers />
   </component>
