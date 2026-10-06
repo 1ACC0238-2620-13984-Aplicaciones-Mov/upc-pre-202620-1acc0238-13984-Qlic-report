@@ -473,8 +473,4 @@ El prototipo de la aplicación móvil se construyó en Figma enlazando los mock-
 | F4. Revisar el nivel de los tanques | Evitar quedarse sin agua | US28 | Business › Tanks → detalle del tanque | Tanque con nivel bajo → indicador de advertencia en "Tanks to refill" |
 | F5. Solicitar ayuda | Resolver un problema sin salir de la aplicación | US35 | More → Support → formulario → "Submit ticket" → ticket en estado "Open" | Campo obligatorio vacío → mensaje bajo el campo |
 
-**Acceso al prototipo y video de demostración.** El prototipo navegable está disponible en [COMPLETAR: enlace público de "Present" del prototipo en Figma]. El video `upc-pre-202620-1acc0238-13984-wasd-prototypenavigation-tb1.mp4` demuestra y explica los flujos F1 a F5, priorizando los relacionados con el core business (F2 y F3), y está publicado en Microsoft Stream: [COMPLETAR: enlace del video en Microsoft Stream].
-
-![Captura del video de demostración del prototipo de la aplicación móvil](../images/prototyping/prototype-video-screenshot.png)
-
-*Figura 3.39. Captura del video de demostración del prototipo de la aplicación móvil.*
+**Acceso al prototipo.** El prototipo navegable debe enlazarse desde la versión pública de "Present" en Figma cuando el equipo disponga de ese enlace. En esta entrega no se declara un video de demostración ni una captura de video porque todavía no se han realizado.
