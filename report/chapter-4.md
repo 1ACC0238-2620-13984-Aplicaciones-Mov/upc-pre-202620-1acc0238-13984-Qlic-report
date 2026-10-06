@@ -69,8 +69,6 @@ El código fuente de cada producto se gestiona en un repositorio independiente d
 | Project Report | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report | `master` |
 | RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api | `main` |
 | Landing Page | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page | `main` |
-| Mobile App (nativa) | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-mobile-android | `main` |
-| Mobile App (multiplataforma) | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-mobile-flutter | `main` |
 
 **Modelo de ramas: GitFlow**
 
@@ -250,7 +248,7 @@ La rúbrica solicita un artefacto **Leadership-and-Collaboration Matrix (LACX)**
 | Conde Huashuayo, Sebasthian Alex | `SebasthianCH` | C | C | C | C | C |
 | Condori Lozano, Alessandro Ramiro | `AlessandroRCL` | C | **L** | **L** | **L** | **L** |
 
-#### Distribución detallada de tareas informada por el equipo
+**Distribución detallada de tareas informada por el equipo**
 
 - **Avila Palacios, Aaron Alexander:** 3.1.2.3 SEO Tags and Meta Tags; 4.2.1.1 Sprint Planning 1; 4.2.1.2 Aspect Leaders and Collaborators; 4.2.1.3 Sprint Backlog 1 con Engineering Tasks de 4 a 8 horas; 4.2.1.8 Software Deployment Evidence; 4.2.1.9 Team Collaboration Insights during Sprint; Landing Page desplegado (US01, US02, US03 y US04).
 - **Briceño Llanos, Ayrton Omar:** 4.2.1.4 Development Evidence; 4.2.1.5 Testing Suite Evidence; Backend Device Monitoring (US10, US11 y US12); Backend Alerting (US15 y US16); corrección y mejora de los Capítulos I y II; 5.1 Conclusiones; 5.2 Bibliografía.
@@ -281,30 +279,15 @@ La captura del tablero debe incorporarse como evidencia visual de la revisión j
 
 #### 4.2.1.6. Execution Evidence for Sprint Review
 
-Durante el Sprint 1 el equipo implementó y ejecutó la primera versión de los tres productos de la solución. El Landing Page presenta la propuesta de valor, los planes, el formulario de contacto y el selector de idioma (US01 a US04). El RESTful API expone los endpoints de registro e inicio de sesión (US05, US06), de registro y consulta de dispositivos (US10 a US12) y de alertas de posible fuga (US15, US16), documentados en la sección 4.2.1.7. La aplicación móvil nativa en Kotlin implementa las vistas core del Sprint, diseñadas en las secciones 3.1.4.1 y 3.1.4.3, y consume el RESTful API desplegado. Las vistas se ejecutaron en un dispositivo Android físico, conforme a la Tabla 4.1.
+Durante el Sprint 1 el equipo implementó y desplegó dos de los productos de la solución. El Landing Page presenta la propuesta de valor, los planes, el formulario de contacto y el selector de idioma (US01 a US04), y se publica en GitHub Pages. El RESTful API expone los endpoints de registro e inicio de sesión (US05, US06), de registro y consulta de dispositivos (US10 a US12) y de alertas de posible fuga (US15, US16); su ejecución se evidencia mediante la documentación interactiva de la sección 4.2.1.7. Las pantallas core de la aplicación móvil para este Sprint (Sign in, Create account, Dashboard, Alerts, Alert detail, Devices, Add device y Assign Water Point) se presentan mediante los mock-ups de la sección 3.1.4.3 y el prototipo navegable de la sección 3.1.4.5.
 
-*Tabla 4.1. Dispositivo físico utilizado para la ejecución de la aplicación móvil.*
-
-| Atributo | Valor |
-|---|---|
-| Modelo del dispositivo | [COMPLETAR: marca y modelo del celular] |
-| Versión de Android | [COMPLETAR: por ejemplo, Android 14] |
-| Forma de instalación | Ejecución desde Android Studio por depuración USB |
-| Versión de la aplicación | `1.0.0` (Sprint 1) |
-| URL base del RESTful API | `https://qlic-backend-api.onrender.com/api/v1` |
-
-La Tabla 4.2 relaciona las vistas implementadas con las User Stories que atienden y con la figura que las evidencia.
-
-*Tabla 4.2. Vistas implementadas en el Sprint 1.*
+*Tabla 4.1. Vistas implementadas en el Sprint 1.*
 
 | Producto | Vista implementada | User Stories | Evidencia |
 |---|---|---|---|
 | Landing Page | Hero, propuesta de valor y planes (escritorio) | US01, US02 | Figura 4.2 |
 | Landing Page | Contacto y selector de idioma (navegador móvil) | US03, US04 | Figura 4.3 |
-| Mobile App (nativa) | Sign in y Create account | US05, US06 | Figura 4.4 |
-| Mobile App (nativa) | Main Dashboard y Alerts | US12, US15 | Figura 4.5 |
-| Mobile App (nativa) | Alert detail | US16 | Figura 4.6 |
-| Mobile App (nativa) | Devices, Add device y Assign Water Point | US10, US11, US12 | Figura 4.7 |
+| RESTful API | Endpoints de Authentication, device-controller y leak-alert-controller | US05, US06, US10 a US12, US15, US16 | Figuras 4.5 a 4.8 (sección 4.2.1.7) |
 
 ![Landing Page desplegado en navegador de escritorio](../images/execution/landing-desktop.png)
 
@@ -314,27 +297,11 @@ La Tabla 4.2 relaciona las vistas implementadas con las User Stories que atiende
 
 *Figura 4.3.* Landing Page de Qlic en navegador móvil: formulario de contacto y selector de idioma.
 
-![Pantallas Sign in y Create account ejecutadas en dispositivo físico](../images/execution/app-sign-in-sign-up.png)
-
-*Figura 4.4.* Pantallas Sign in y Create account ejecutadas en el dispositivo físico. El registro crea la cuenta mediante `POST /api/v1/authentication/sign-up` y el inicio de sesión obtiene el token con `POST /api/v1/authentication/sign-in`.
-
-![Pantallas Main Dashboard y Alerts ejecutadas en dispositivo físico](../images/execution/app-dashboard-alerts.png)
-
-*Figura 4.5.* Pantallas Main Dashboard y Alerts ejecutadas en el dispositivo físico, con la barra de navegación inferior de cinco destinos.
-
-![Pantalla Alert detail ejecutada en dispositivo físico](../images/execution/app-alert-detail.png)
-
-*Figura 4.6.* Pantalla Alert detail con la urgencia, el volumen y el costo estimados y la acción recomendada, obtenidos de `GET /api/v1/alerts`.
-
-![Pantallas Devices, Add device y Assign Water Point ejecutadas en dispositivo físico](../images/execution/app-devices.png)
-
-*Figura 4.7.* Flujo de registro de un dispositivo: lista de dispositivos, lectura del código QR y asignación del Water Point.
-
-**Video de ejecución del Sprint.** El video `upc-pre-202620-1acc0238-13984-wasd-productnavigation-tb1.mp4` muestra la ejecución en el dispositivo físico y explica la navegación lograda en el Sprint 1: registro e inicio de sesión, consulta del Dashboard, atención de una alerta y registro de un dispositivo con código QR, además del recorrido del Landing Page. Está publicado en [COMPLETAR: enlace del video en Microsoft Stream u OneDrive].
+**Video de ejecución del Sprint.** El video `upc-pre-202620-1acc0238-13984-wasd-productnavigation-tb1.mp4` muestra y explica la navegación lograda en el Sprint 1: el recorrido del Landing Page en escritorio y en móvil, el cambio de idioma y el envío del formulario de contacto, y la ejecución de los endpoints del RESTful API desde Swagger UI con un token de acceso. Está publicado en [COMPLETAR: enlace del video en Microsoft Stream u OneDrive].
 
 ![Captura del video de ejecución del Sprint 1](../images/execution/product-navigation-video.png)
 
-*Figura 4.8.* Captura del video de ejecución del Sprint 1 en el dispositivo físico.
+*Figura 4.4.* Captura del video de ejecución del Sprint 1.
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
 
@@ -601,29 +568,29 @@ WWW-Authenticate: Bearer
 
 **Evidencia de interacción con la documentación**
 
-La Figura 4.9 muestra la vista general de Swagger UI con las secciones Authentication, device-controller y leak-alert-controller, y el esquema de seguridad `bearerAuth`.
+La Figura 4.5 muestra la vista general de Swagger UI con las secciones Authentication, device-controller y leak-alert-controller, y el esquema de seguridad `bearerAuth`.
 
 <img src="../images/services/swagger_overview.png" alt="Vista general de Swagger UI del RESTful API de Qlic" width="800">
 
-*Figura 4.9.* Documentación OpenAPI del RESTful API de Qlic publicada con Swagger UI.
+*Figura 4.5.* Documentación OpenAPI del RESTful API de Qlic publicada con Swagger UI.
 
-La Figura 4.10 muestra la ejecución del endpoint de registro con los datos de muestra y su respuesta `201 Created`.
+La Figura 4.6 muestra la ejecución del endpoint de registro con los datos de muestra y su respuesta `201 Created`.
 
 <img src="../images/services/swagger_sign_up.png" alt="Ejecución de POST sign-up en Swagger UI" width="800">
 
-*Figura 4.10.* Ejecución de `POST /api/v1/authentication/sign-up` (US05).
+*Figura 4.6.* Ejecución de `POST /api/v1/authentication/sign-up` (US05).
 
-La Figura 4.11 muestra la ejecución del inicio de sesión y el token de acceso emitido.
+La Figura 4.7 muestra la ejecución del inicio de sesión y el token de acceso emitido.
 
 <img src="../images/services/swagger_sign_in.png" alt="Ejecución de POST sign-in en Swagger UI" width="800">
 
-*Figura 4.11.* Ejecución de `POST /api/v1/authentication/sign-in` (US06).
+*Figura 4.7.* Ejecución de `POST /api/v1/authentication/sign-in` (US06).
 
-La Figura 4.12 muestra la consulta de un recurso protegido luego de registrar el token en el diálogo *Authorize*.
+La Figura 4.8 muestra la consulta de un recurso protegido luego de registrar el token en el diálogo *Authorize*.
 
 <img src="../images/services/swagger_authorized_request.png" alt="Consulta de recurso protegido con token en Swagger UI" width="800">
 
-*Figura 4.12.* Ejecución de `GET /api/v1/devices` con el token de acceso (US12).
+*Figura 4.8.* Ejecución de `GET /api/v1/devices` con el token de acceso (US12).
 
 **Commits relacionados con la documentación de servicios**
 
@@ -657,7 +624,7 @@ El Landing Page de Qlic se publica como sitio estático mediante GitHub Pages. L
 
 ![Configuración de GitHub Pages del Landing Page de Qlic](../images/deployment/github-pages-qlic.png)
 
-*Figura 4.13.* Configuración de GitHub Pages: URL pública, fuente GitHub Actions, último despliegue y HTTPS forzado.
+*Figura 4.9.* Configuración de GitHub Pages: URL pública, fuente GitHub Actions, último despliegue y HTTPS forzado.
 
 La evidencia corresponde al repositorio `qlic-landing-page` y permite comprobar que US01, US02, US03 y US04 están disponibles en la versión desplegada.
 
