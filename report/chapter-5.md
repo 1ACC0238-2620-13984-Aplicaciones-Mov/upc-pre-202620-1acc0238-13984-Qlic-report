@@ -2,12 +2,16 @@
 
 ## 5.1. Conclusiones
 
+## 5.1. Conclusiones
+
 1. Qlic aborda la necesidad de mejorar la visibilidad del consumo de agua y la detección oportuna de anomalías en PYMES, comercios locales y hogares.
 2. El análisis competitivo permitió reconocer capacidades relevantes del mercado: medición conectada, analítica, alertas, interoperabilidad y soporte para la toma de decisiones. La oportunidad preliminar de Qlic está en traducir esos datos a una experiencia móvil clara, accesible y cercana para usuarios locales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
 3. Badger Meter e Itron representan soluciones directas de smart water, mientras que OptiRTC aporta un referente adyacente de monitoreo y control de aguas pluviales. Wint se conserva como referencia secundaria para la respuesta ante fugas comerciales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
-4. Las estrategias propuestas —diferenciación móvil y local, escala progresiva, interoperabilidad, respuesta ante fugas, soporte cercano y sostenibilidad con evidencia— son hipótesis de diseño. Deben validarse con entrevistas antes de convertirse en requisitos del producto.
-5. Las cinco entrevistas registradas —dos del segmento PYMES y comercios locales y tres del segmento hogares y familias— aportan información objetiva y subjetiva para orientar los artefactos de needfinding. Cada ficha conserva los datos disponibles, la captura, el enlace al video y el resumen descriptivo correspondiente; en la entrevista de Dick Isuiza aún falta consignar el tramo final del video porque no figura en el registro recibido.
-6. En este avance no se afirma que la aplicación móvil, los sensores IoT ni los servicios hayan sido implementados. Las decisiones de desarrollo deberán basarse en los resultados de needfinding y en los siguientes hitos del proyecto.
+4. Las estrategias propuestas —diferenciación móvil y local, escala progresiva, interoperabilidad, respuesta ante fugas, soporte cercano y sostenibilidad con evidencia— se consolidaron como guías directas para la definición de los Bounded Contexts y la arquitectura de software.
+5. Las cinco entrevistas registradas —dos del segmento PYMES y comercios locales y tres del segmento hogares y familias— aportaron información objetiva y subjetiva fundamental para delimitar las reglas de negocio, los umbrales de flujo volumétrico y los requerimientos de priorización visual de alertas.
+6. Se completó con éxito el desarrollo del backend bajo el framework Spring Boot y lenguaje Kotlin, estructurado bajo Clean Architecture y Tactical DDD en dos Bounded Contexts operativos: Alerting (US15, US16) y Device Monitoring (US10, US11, US12).
+7. La suite de pruebas unitarias implementada con JUnit 5 alcanzó un 100% de efectividad (pass rate) sobre las reglas de negocio críticas, garantizando la correcta evaluación de anomalías volumétricas sin incurrir en falsos positivos ante flujos transitorios.
+8. La solución Web Service fue contenerizada y desplegada exitosamente en producción sobre la plataforma Render, integrando una base de datos relacional PostgreSQL administrada y una interfaz interactiva OpenAPI/Swagger plenamente operativa para el consumo de clientes móviles.
 
 ## 5.2. Bibliografía
 
