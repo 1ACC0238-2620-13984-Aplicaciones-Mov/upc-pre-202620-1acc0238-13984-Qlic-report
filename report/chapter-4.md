@@ -261,7 +261,7 @@ Los nombres de usuario de GitHub se registran según la captura proporcionada po
 
 #### 4.2.1.3. Sprint Backlog 1
 
-El Sprint Backlog 1 descompone US01–US04 en tareas estimadas entre cuatro y ocho horas. El Product Backlog registrado para Qlic está disponible en el [tablero de Trello](https://trello.com/invite/b/6aa1e6966e4df21cb3a4eef9/ATTIe6a46d0c84f618e9bccb9c4de3ce13f711448192/product-backlog-qlic). Las estimaciones son de planificación; el estado debe actualizarse con la evidencia de ejecución del Sprint.
+El Sprint Backlog 1 descompone US01–US04 en tareas estimadas entre cuatro y ocho horas. El tablero de Trello de Qlic contiene las listas `To Do`, `In Progress`, `Review` y `Done`, y registra las siete tareas del Sprint (T01–T07) con su responsable, descripción, criterios de aceptación y estado. El tablero está disponible en [Qlic — Sprint Backlog 1](https://trello.com/b/5qkBYnOQ/qlic-sprint-backlog-1). Las estimaciones son de planificación; el estado debe actualizarse con la evidencia de ejecución del Sprint.
 
 | Sprint # | User Story Id | User Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---:|---|---|---|---|---|---:|---|---|
@@ -273,7 +273,7 @@ El Sprint Backlog 1 descompone US01–US04 en tareas estimadas entre cuatro y oc
 | 1 | US01–US04 | Historias del Landing Page | T06 | SEO y metadatos | Añadir título, descripción, viewport, URL canónica y metadatos sociales; el detalle SEO se documenta en el capítulo correspondiente | 4 | Avila Palacios, Aaron Alexander | To-do |
 | 1 | US01–US04 | Historias del Landing Page | T07 | Verificación del despliegue | Preparar la configuración de hosting estático y verificar la URL de producción | 4 | Briceño Llanos, Ayrton Omar | To-do |
 
-La captura del tablero y el enlace público deben incorporarse como evidencia visual de la revisión. En esta rama solo se dispone del enlace registrado; no se declara una captura que no está almacenada en el repositorio.
+La captura del tablero debe incorporarse como evidencia visual de la revisión junto con el enlace registrado. La vista actual muestra las siete tareas en `To Do`; conforme avance el Sprint, cada tarjeta debe moverse a `In Progress`, `Review` o `Done` según la evidencia correspondiente.
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
