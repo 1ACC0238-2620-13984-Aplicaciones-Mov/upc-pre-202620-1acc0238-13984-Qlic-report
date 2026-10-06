@@ -277,20 +277,6 @@ La captura del tablero debe incorporarse como evidencia visual de la revisión j
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
-Durante el Sprint 1 se implementaron las funcionalidades principales del Landing Page y de los servicios de monitoreo y alertas del RESTful API. La evidencia se obtuvo del historial Git de cada repositorio y se relaciona con US01–US04 para el Landing Page y con US10–US12 y US15–US16 para el backend.
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|---|---|---|---|---|---|
-| [qlic-landing-page](https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page) | `main` | `29e4694` | `feat(landing): migrate to html css javascript and add seo metadata` | Sin cuerpo adicional. Incluye la implementación estática y los metadatos SEO del Landing Page. | 2026-10-06 |
-| [qlic-landing-page](https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page) | `main` | `421870e` | `ci: deploy qlic landing to github pages` | Sin cuerpo adicional. Configura la publicación automática del Landing Page en GitHub Pages. | 2026-10-03 |
-| [qlic-landing-page](https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page) | `main` | `d77a74a` | `feat: build responsive bilingual qlic landing` | Sin cuerpo adicional. Implementa la interfaz responsive y el cambio entre español e inglés. | 2026-10-03 |
-| [qlic-landing-page](https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page) | `main` | `1740f4b` | `feat: add qlic content and translations` | Sin cuerpo adicional. Añade el contenido de Qlic y las traducciones de la Landing Page. | 2026-10-03 |
-| [qlic-backend-api](https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api) | `main` | `326934d` | `feat(core): implement domain entities, aggregates, and JPA persistence adapters for Alerting and Monitoring` | Sin cuerpo adicional. Implementa el núcleo de dominio y persistencia para monitoreo y alertas. | 2026-10-01 |
-| [qlic-backend-api](https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api) | `main` | `e7d8b17` | `feat(monitoring): implement US10, US11, and US12 for QR device onboarding, water point linking, and telemetry status` | Sin cuerpo adicional. Implementa el registro de dispositivos, vinculación de puntos de agua y estado de telemetría. | 2026-10-01 |
-| [qlic-backend-api](https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api) | `main` | `7e2eca3` | `feat(alerting): implement US15 and US16 for leak detection evaluation and account alert retrieval` | Sin cuerpo adicional. Implementa la evaluación de fugas y la consulta de alertas de la cuenta. | 2026-10-01 |
-
-Los repositorios `qlic-mobile-android` y `qlic-mobile-flutter` aparecen como productos planificados en la sección 4.1, pero no están disponibles en el espacio de trabajo y sus URLs actuales no permiten consultar el historial Git. Para completar esta evidencia con los productos móviles se requiere registrar sus URLs correctas o conceder acceso a los repositorios.
-
 #### 4.2.1.5. Testing Suite Evidence for Sprint Review
 
 #### 4.2.1.6. Execution Evidence for Sprint Review
@@ -656,17 +642,24 @@ La Figura 4.12 muestra la consulta de un recurso protegido luego de registrar el
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
-El Capítulo II define el Landing Page como un container estático que debe servirse mediante HTTPS. En el repositorio revisado no se encuentra una URL pública de producción ni una captura de la configuración del proveedor; por eso no se declara un despliegue realizado.
+El Landing Page de Qlic se publica como sitio estático mediante GitHub Pages. La configuración de Pages utiliza GitHub Actions como fuente de despliegue, publica la rama `main` y mantiene activada la opción **Enforce HTTPS**. La evidencia confirma que el sitio está disponible públicamente y que el último despliegue fue realizado por `AaronAvilap`.
 
 | Elemento de despliegue | Registro verificable |
 |---|---|
 | Producto | Landing Page estático |
-| Proveedor o cuenta cloud | No registrado en el repositorio revisado |
-| URL pública | No registrada en el repositorio revisado |
-| Commit publicado | No registrado en el repositorio revisado |
-| Evidencia requerida | URL pública, captura de la página desplegada, proveedor, recursos y configuración |
+| Proveedor | GitHub Pages, organización `1ACC0238-2620-13984-Aplicaciones-Mov` |
+| Fuente de publicación | GitHub Actions, workflow `Deploy Qlic to GitHub Pages` |
+| Rama publicada | `main` |
+| URL pública | https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/ |
+| Commit publicado | `29e4694` — `feat(landing): migrate to html css javascript and add seo metadata` |
+| Seguridad de transporte | HTTPS forzado por el dominio predeterminado de GitHub Pages |
+| Responsable del último despliegue | `AaronAvilap` |
 
-La evidencia final debe corresponder al mismo commit revisado en el Sprint Backlog y permitir comprobar que US01, US02, US03 y US04 son accesibles desde la versión desplegada.
+![Configuración de GitHub Pages del Landing Page de Qlic](../images/deployment/github-pages-qlic.png)
+
+*Figura 4.13.* Configuración de GitHub Pages: URL pública, fuente GitHub Actions, último despliegue y HTTPS forzado.
+
+La evidencia corresponde al repositorio `qlic-landing-page` y permite comprobar que US01, US02, US03 y US04 están disponibles en la versión desplegada.
 
 #### 4.2.1.9. Team Collaboration Insights during Sprint
 
