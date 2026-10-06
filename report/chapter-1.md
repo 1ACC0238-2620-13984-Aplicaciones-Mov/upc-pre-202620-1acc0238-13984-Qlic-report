@@ -1,4 +1,4 @@
-# Capítulo I: Introducción
+# Capítulo I: Presentación
 
 ## 1.1. Startup Profile
 
@@ -29,7 +29,7 @@ WASD es una startup enfocada en la gestión inteligente del agua. Utilizamos tec
 **Product Description:** Qlic, es una Aplicación móvil que tiene como objetivo optimizar la gestión del agua. Para ello, este permite al usuario monitorear los IoT que tiene, mostrando información útil, ayudando a optimizar el uso de agua, reducir desperdicios, disminuir costos y garantizar el reabastecimiento oportuno. Qlic puede usarse en negocios y hogares con el fin de optimizar varios procesos. <br>
 **Monetización:** Qlic funciona mediante un modelo de suscripción mensual o anual, en el cual se alquila el servicio de la aplicación y los diferentes dispositivos IoT.
 
-### 1.2.1 Antecedentes y problemática
+### 1.2.1. Antecedentes y problemática
 
 **Antecedentes:**
 
@@ -55,24 +55,21 @@ Ante esta situación, surge la imperiosa necesidad de soluciones tecnológicas q
 | **How (Cómo)**        | ¿Cómo afecta este problema?      | Afecta generando sobrecostos económicos significativos (hasta un 30 % de sobreprecio en recibos), riesgos de desabastecimiento operativo repentino y un grave impacto ambiental por pérdida de recurso potable.                                                            |
 | **How much (Cuánto)** | ¿Cuánto impacto genera?          | Se desperdicia entre un 12 % y 30 % del agua suministrada por fugas internas no atendidas (EPA, 2024; Zipdo, 2025), lo que en locales comerciales representa sobrecostos de cientos de soles mensuales y agrava el 43 % de pérdida hídrica global del país (SUNASS, 2025). |
 
-### 1.2.2 Lean UX Process.
+### 1.2.2. Lean UX Process
 
 En esta sección se aplica el enfoque Lean UX para alinear el desarrollo del producto con las necesidades reales del negocio y los usuarios.
 Se define la visión del modelo de negocio que respaldará el software, abarcando elementos clave como los Problem Statements (con información sobre el dominio, segmentos de clientes, puntos de dolor, brechas, visión y estrategia), así como las suposiciones (Assumptions) y las hipótesis (Hypothesis Statements) iniciales.
 La sección concluye con la elaboración del Lean UX Canvas, herramienta central para guiar el proceso iterativo de diseño enfocado en generar valor desde las primeras etapas (Gothelf & Seiden, 2021).
 
-#### 1.2.2.1. Lean UX Problem Statements.
+#### 1.2.2.1. Lean UX Problem Statements
 
-Actualmente, negocios y hogares enfrentan dificultades para gestionar eficientemente el uso del agua, lo que provoca desperdicios, costos elevados y desabastecimientos inesperados.
-Los métodos tradicionales de control son manuales y poco precisos, dificultando la toma de decisiones rápidas para optimizar recursos.
+1.2.2.1. Lean UX Problem Statement
 
-Qlic busca resolver ese problema mediante una plataforma digital conectada a dispositivos IoT, que permita monitorear en tiempo real, detectar fugas, prevenir desperdicios y garantizar un suministro constante y eficiente.
+El estado actual de la gestión del agua en microempresas (PYMES) y hogares se ha enfocado tradicionalmente en un control reactivo basado en la recepción del recibo mensual emitido por la empresa prestadora y en revisiones manuales aisladas. Esta dependencia de datos a mes vencido no resuelve la falta de visibilidad del consumo en tiempo real ni permite identificar filtraciones ocultas en tuberías e instalaciones sanitarias de forma oportuna. Como consecuencia, los usuarios enfrentan sobrecostos significativos en su facturación, desperdicio innecesario del recurso y un riesgo latente de deterioro estructural en sus inmuebles.
 
-Frente a esta problemática, planteamos la siguiente pregunta:
-
-¿Cómo podríamos ayudar a negocios y hogares a optimizar el uso de agua, reduciendo desperdicios y costos, mientras aseguramos un reabastecimiento oportuno mediante tecnología IoT?
-
-#### 1.2.2.2. Lean UX Assumptions.
+Frente a esta situación, se plantea la siguiente interrogante de diseño:
+¿Cómo podríamos brindar a los responsables de comercios y hogares visibilidad inmediata y advertencias tempranas sobre su consumo de agua para que puedan tomar decisiones de control oportunas y prevenir desperdicios antes de la llegada de la factura?
+#### 1.2.2.2. Lean UX Assumptions
 
 | Tipo de Assumption                       | Enunciados de Creencias (Assumptions)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |:-----------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -84,7 +81,7 @@ Frente a esta problemática, planteamos la siguiente pregunta:
 
 ---
 
-#### 1.2.2.3. Lean UX Hypothesis Statements.
+#### 1.2.2.3. Lean UX Hypothesis Statements
 
 * **Hypothesis Statement 1 (derivado de FA1 - Monitoreo en Tiempo Real):**
   * **Hipótesis:** Creemos que lograremos **una tasa de retención de clientes superior al 85% anual** si **los Administradores de PYMES y Jefes de Hogar** obtienen **visibilidad y control total de su consumo de agua en tiempo real** con **un panel móvil de monitoreo en tiempo real mediante IoT**.
@@ -106,7 +103,7 @@ Frente a esta problemática, planteamos la siguiente pregunta:
   * **Hipótesis:** Creemos que lograremos **una reducción significativa en los costos de adquisición y soporte de integración (onboarding)** si **los usuarios no técnicos y el personal operativo** obtienen **una instalación y configuración autónoma de dispositivos sin fricciones** con **un flujo guiado paso a paso de sincronización y autodiagnóstico de dispositivos IoT**.
   * **Criterio de validación:** Sabremos que es cierta si más del 85% de los nuevos usuarios logran enlazar y calibrar sus dispositivos IoT en menos de 10 minutos sin requerir soporte técnico asistido.
 
-#### 1.2.2.4. Lean UX Canvas.
+#### 1.2.2.4. Lean UX Canvas
 
 La imagen representa un Lean UX Canvas del proyecto Qlic, una herramienta estratégica que organiza de forma visual los elementos clave para diseñar una solución centrada en el usuario. El canvas parte del problema central —las pérdidas económicas y riesgos por fugas, evaporación o almacenamiento inadecuado de líquidos en fábricas— y propone una solución basada en sensores IoT, monitoreo en tiempo real, alarmas automáticas y un dashboard personalizable, con beneficios como reducción de pérdidas, mayor seguridad y optimización de la producción.
 
@@ -114,7 +111,7 @@ Se identifican claramente los usuarios directos (operadores y supervisores) e in
 
 ![canva.png](../images/canva.png)
 
-## 1.3. Segmentos objetivos.
+## 1.3. Segmentos objetivo
 
 Qlic es una plataforma enfocada en dos segmentos clave: hogares/familias y pequeñas y medianas empresas (PYMES). Estos grupos son los principales responsables de gestionar y optimizar el uso del agua en sus entornos, ya sea para garantizar el consumo seguro y eficiente en el hogar o para mantener la operación sostenible y rentable de sus negocios.
 
