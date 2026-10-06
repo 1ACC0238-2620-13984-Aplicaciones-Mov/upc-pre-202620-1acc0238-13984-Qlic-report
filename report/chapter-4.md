@@ -273,9 +273,104 @@ El Sprint Backlog 1 descompone US01–US04 en tareas estimadas entre cuatro y oc
 
 La captura del tablero debe incorporarse como evidencia visual de la revisión junto con el enlace registrado. La vista actual muestra las siete tareas en `To Do`; conforme avance el Sprint, cada tarjeta debe moverse a `In Progress`, `Review` o `Done` según la evidencia correspondiente.
 
-#### 4.2.1.4. Development Evidence for Sprint Review
+### 4.2.1.4 Development Evidence
 
-#### 4.2.1.5. Testing Suite Evidence for Sprint Review
+En esta sección se documenta la implementación del Web Service backend para la plataforma **Qlic**, desarrollado bajo el estilo arquitectural **RESTful API** utilizando el framework oficial **Spring Boot** sobre el ecosistema Java (JVM / OpenJDK 24) con Kotlin, aplicando principios de **Clean Architecture** y **Domain-Driven Design (Tactical DDD)**.
+
+La solución desacopla la lógica de negocio en dos Bounded Contexts principales: **Device Monitoring** y **Alerting**, integrados con persistencia relacional en **PostgreSQL** y documentados interactivamente mediante **OpenAPI / Swagger**.
+
+---
+
+#### Bounded Context: Device Monitoring
+
+* **US10: Device registration via QR scan**
+    * **Descripción:** Permite el enrolamiento de un dispositivo IoT de medición hídrica en el sistema mediante la lectura de su carga útil (payload QR), número de serie, modelo y cuenta de usuario asociada.
+    * **Endpoint:** `POST /api/v1/devices`
+    * **Código de respuesta:** `201 Created`
+    * **Evidencia de ejecución (Postman / Swagger):**
+
+![devices_POST.png](../images/postman_evidence/devices_POST.png)
+
+---
+
+* **US11: Water point assignment**
+    * **Descripción:** Vincula lógicamente un dispositivo sensor previamente registrado con un punto de infraestructura hidráulica específico dentro del predio monitoreado.
+    * **Endpoint:** `PATCH /api/v1/devices/{id}/water-point`
+    * **Código de respuesta:** `200 OK`
+    * **Evidencia de ejecución (Postman):**
+
+![devices_PATCH.png](../images/postman_evidence/devices_PATCH.png)
+
+---
+
+* **US12: Device status monitoring**
+    * **Descripción:** Consulta el inventario, estado operativo (`ONLINE`, `OFFLINE`, `LOW_BATTERY`), nivel de batería remanente y última marca de sincronización de los dispositivos vinculados a una cuenta.
+    * **Endpoint:** `GET /api/v1/devices?accountId={accountId}`
+    * **Código de respuesta:** `200 OK`
+    * **Evidencia de ejecución (Postman):**
+
+![devices_GET.png](../images/postman_evidence/devices_GET.png)
+
+---
+
+#### Bounded Context: Alerting
+
+* **US15: Anomaly evaluation**
+    * **Descripción:** Ingesta y analiza lecturas de telemetría de flujo hídrico para evaluar anomalías frente a umbrales configurados. Determina la severidad (`CRITICAL`, `MODERATE`, `INFORMATIONAL`), calculando el volumen derramado acumulado y su costo económico estimado en moneda local (PEN).
+    * **Endpoint:** `POST /api/v1/alerts/evaluations`
+    * **Escenario de Alerta Positiva (Flujo Sostenido):** Retorno de código `201 Created` con la alerta de fuga persistida y la acción de mitigación recomendada.
+    * **Escenario de Contorno (Lectura Aislada / Falso Positivo):** Retorno de código `204 No Content`, validando que consumos transitorios no disparen falsas alarmas.
+    * **Evidencias de ejecución (Postman):**
+
+![alertings_POST_201.png](../images/postman_evidence/alertings_POST_201.png)
+
+![alertings_POST_204.png](../images/postman_evidence/alertings_POST_204.png)
+
+---
+
+* **US16: Alert retrieval**
+    * **Descripción:** Obtiene la relación de alertas preventivas y críticas activas asociadas a una cuenta para su visualización y priorización en el cliente móvil.
+    * **Endpoint:** `GET /api/v1/alerts?accountId={accountId}`
+    * **Código de respuesta:** `200 OK`
+    * **Evidencia de ejecución (Postman):**
+
+![alerts_GET.png](../images/postman_evidence/alerts_GET.png)
+
+---
+
+#### Evidencia de Despliegue en la Nube (Cloud Deployment & API Docs)
+
+El servicio backend fue contenerizado mediante un Dockerfile multi-stage con OpenJDK 24 y desplegado en la nube a través de **Render**, enlazado a una base de datos relacional administrada **PostgreSQL**.
+
+* **Base de Datos:** PostgreSQL en Render (Gestión de esquemas automática con Hibernate JPA).
+* **URL Base de Producción:** `https://qlic-backend-api.onrender.com`
+* **Swagger UI:** `https://qlic-backend-api.onrender.com/swagger-ui/index.html`
+
+![render_dashboard_evidence.png](../images/postman_evidence/render_dashboard_evidence.png)
+
+![swagger_evidence.png](../images/postman_evidence/swagger_evidence.png)
+
+---
+
+### 4.2.1.5 Testing Suite Evidence
+
+Para garantizar la estabilidad del software y el cumplimiento estricto de las reglas de negocio bajo un enfoque BDD (Given-When-Then), se construyó una suite automatizada de pruebas unitarias implementada con **JUnit 5**, desacoplada de la base de datos física mediante repositorios en memoria (In-Memory Test Doubles).
+
+#### Matriz de Casos de Prueba Automatizados
+
+| Bounded Context | Clase de Prueba | Caso de Prueba / Escenario | Resultado |
+| :--- | :--- | :--- | :--- |
+| **Alerting** | `AnomalyDetectionServiceTest` | Flujo sostenido sobre el umbral genera alerta `CRITICAL` con cálculo de volumen y costo. | **Passed** |
+| **Alerting** | `AnomalyDetectionServiceTest` | Lectura transitoria aislada superior al umbral no genera alerta (`null`). | **Passed** |
+| **Alerting** | `AnomalyDetectionServiceTest` | Consumo dentro de límites estándar retorna evaluación limpia sin alertas. | **Passed** |
+| **Monitoring** | `DeviceCommandHandlerTest` | Registro de nuevo dispositivo IoT mediante payload QR persiste con estado `ONLINE` y batería en 100%. | **Passed** |
+| **Monitoring** | `DeviceCommandHandlerTest` | Asignación de Water Point actualiza la referencia de infraestructura hidráulica en el dispositivo. | **Passed** |
+
+#### Evidencia de Ejecución de Pruebas
+
+Se ejecutó la suite completa de pruebas unitarias desde el entorno de desarrollo, logrando un **100% de éxito (pass rate)** sin fallos ni omisiones en la lógica de dominio.
+
+![6_6.png](../images/postman_evidence/6_6.png)
 
 #### 4.2.1.6. Execution Evidence for Sprint Review
 
