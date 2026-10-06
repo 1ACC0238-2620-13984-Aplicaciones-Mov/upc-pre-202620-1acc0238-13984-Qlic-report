@@ -133,15 +133,24 @@ Ejemplo de implementación para la página principal:
 
 ```html
 <title>Qlic | Smart Water Monitoring</title>
-<meta name="description" content="Detect leaks and unusual water consumption before they become costly. Monitor your home or business with Qlic.">
+<meta name="description" content="Monitor water use, detect unusual patterns and act on clear alerts for your home or business.">
 <meta name="keywords" content="Qlic, smart water monitoring, leak detection, water consumption, home, business">
 <meta name="author" content="Qlic Team">
-<link rel="canonical" href="/">
+<link rel="canonical" href="https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/">
+<link rel="alternate" hreflang="en" href="https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/">
+<link rel="alternate" hreflang="es-419" href="https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/">
 <meta property="og:title" content="Qlic | Smart Water Monitoring">
-<meta property="og:description" content="Detect leaks and unusual water consumption before they become costly.">
+<meta property="og:description" content="Monitor water use, detect unusual patterns and act on clear alerts for your home or business.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/">
+<meta property="og:image" content="https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/og-image.svg">
 ```
 
 La ruta `/` representa la página principal; el hosting debe resolverla al dominio público real del proyecto. La imagen Open Graph debe apuntar al recurso gráfico versionado que el equipo publique. La longitud de los títulos y descripciones se mantiene deliberadamente breve para evitar truncamiento en resultados y enlaces compartidos.
+
+**Implementación verificada.** Los metadatos mínimos del Landing Page se implementaron en `index.html` del repositorio [qlic-landing-page](https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page/blob/main/index.html): `title`, `description`, `keywords`, `author`, `canonical`, `hreflang` para `en` y `es-419`, y las etiquetas Open Graph `og:title`, `og:description`, `og:type`, `og:url` y `og:image`. La lógica JavaScript de `src/seo.js` mantiene estos valores cuando el visitante cambia el idioma mediante i18next; la descripción y las palabras clave se actualizan a la variante seleccionada, mientras que la URL canónica corresponde al único despliegue público del sitio. La imagen social se versiona como `public/og-image.svg`.
+
+La URL pública registrada es [Qlic Landing Page](https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/), que responde por HTTPS. La implementación y el build de los metadatos se verificaron localmente; después de publicar estos cambios en `main`, se debe comprobar nuevamente el HTML servido y actualizar la captura de evidencia si el docente la solicita. La tabla de valores de esta sección representa la especificación para el Landing Page; las vistas de la aplicación web mantienen sus títulos y descripciones propuestos hasta que se implemente ese producto.
 
 **ASO para las aplicaciones móviles.** Los siguientes valores se aplican a la ficha de Qlic en una tienda de aplicaciones y se localizan para inglés y español latinoamericano.
 
