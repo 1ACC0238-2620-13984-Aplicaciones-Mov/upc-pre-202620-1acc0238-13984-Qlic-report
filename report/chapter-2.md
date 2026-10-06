@@ -132,7 +132,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 | Segmento | Perfil de inclusión | Cantidad requerida | Exclusión | Modalidad sugerida |
 |---|---|---:|---|---|
 | **PYMES y comercios locales** | Propietario, administrador o responsable de operaciones/mantenimiento de una PYME que participa en decisiones sobre consumo o incidencias de agua. | **2 entrevistas registradas** | Personas que no conocen el consumo, mantenimiento ni decisiones asociadas al agua del negocio. | Presencial en el negocio o videollamada, con autorización de grabación. |
-| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre el recibo, el mantenimiento o el uso de agua del hogar. | **3 entrevistas registradas** | Personas que no tienen experiencia ni responsabilidad sobre el consumo o mantenimiento del hogar. | Presencial o videollamada, con autorización de grabación. |
+| **Hogares y familias** | Persona adulta que paga, revisa o participa en decisiones sobre el recibo, el mantenimiento o el uso de agua del hogar. | **1 entrevista registrada** | Personas que no tienen experiencia ni responsabilidad sobre el consumo o mantenimiento del hogar. | Presencial o videollamada, con autorización de grabación. |
 
 #### Segmento 1: PYMES y comercios locales
 
@@ -162,7 +162,7 @@ La investigación utilizará entrevistas semiestructuradas para conocer cómo lo
 
 ### 2.2.2. Registro de entrevistas
 
-Se registran cinco entrevistas: dos de PYMES y comercios locales, y tres de hogares y familias. Cada ficha contiene los datos disponibles del entrevistado, el tramo de video, el enlace, la captura y el resumen de sus respuestas.
+Se registran tres entrevistas: dos de PYMES y comercios locales, y una de hogares y familias. Cada ficha contiene los datos disponibles del entrevistado, el tramo de video, el enlace, la captura y el resumen de sus respuestas.
 
 #### Primer segmento - PYMES y comercios locales
 
@@ -222,9 +222,9 @@ Se registran cinco entrevistas: dos de PYMES y comercios locales, y tres de hoga
 | Distrito / departamento | **San Juan de Lurigancho, Lima** |
 | Inicio del video | **00:00:00** |
 | Fin del video | **00:03:20** |
-| Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a118_upc_edu_pe/IQDHN8MMH9lTQ7QphntNefTHAY3FNZDSJpS2LmSugYu8024?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=bxZizE) |
+| Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211a118_upc_edu_pe/IQDHN8MMH9lTQ7QphntNefTHAY3FNZDSJpS2LmSugYu8024?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=bxZizE) |
 | Foto entrevista | <img src="../images/user-personas/Entrevista_Daniel.png" alt="Daniel Quiroz durante la entrevista" width="360"> |
-| Resumen | **Principales respuestas:** El hogar no cuenta con un control del consumo de agua; la madre paga el recibo y el entrevistado lo descarga desde la web del prestador, limitándose ambos a revisar el monto. Experimentaron un cobro por consumo estimado, al no poder leerse el medidor, cuya exactitud no pudieron verificar, y sospechan pérdidas en la cisterna sin forma de confirmarlas. Solo identifican fugas visibles o audibles, que el padre repara por su cuenta. Aplican medidas de ahorro como lavar con carga completa y almacenar agua ante cortes anunciados, sin medir su efecto. Considera útiles las alertas móviles, siempre que indiquen ubicación, pérdida estimada y acción a tomar, y que le lleguen directamente por ser quien maneja la tecnología en casa. Prefiere un plan básico con alertas y consumo mensual, y pagaría un adicional por el monitoreo del nivel de la cisterna ante los cortes frecuentes en su zona.<br><br>**Características objetivas:** Hombre de 23 años, trabajador de Uber, que vive en San Juan de Lurigancho, Lima, con sus padres y su hermana menor, en un hogar de cuatro integrantes. La madre asume el pago del servicio y la vivienda cuenta con cisterna para el almacenamiento de agua.<br><br>**Características subjetivas:** Actúa como referente tecnológico de la familia y concentra los trámites digitales del hogar. Su frustración principal es no poder verificar los cobros estimados ni las pérdidas que no son visibles. Valora la información de consumo como herramienta para reclamar ante el prestador. Busca una solución simple y rápida, y aceptaría un costo de hasta S/ 15 mensuales con instalación incluida.<br><br>**Tecnología y canales:** Utiliza la web del prestador para descargar los recibos en PDF. Prefiere WhatsApp como canal de soporte y manifiesta preocupación por aplicaciones que soliciten más datos personales de los necesarios.<br><br>**Evidencia temporal:** El control actual, los cobros inesperados y la identificación de fugas se abordan entre 00:00:05 y 00:01:10; las medidas de ahorro entre 00:01:10 y 00:01:30; la utilidad de las alertas y la preferencia de planes entre 00:01:30 y 00:02:25; y la importancia económica, las condiciones de privacidad, soporte y costo entre 00:02:25 y 00:03:15. |
+| Resumen | **Principales respuestas:** El hogar no cuenta con un control del consumo de agua; la madre paga el recibo y el entrevistado lo descarga desde la web del prestador, limitándose ambos a revisar el monto. Experimentaron un cobro por consumo estimado, al no poder leerse el medidor, cuya exactitud no pudieron verificar, y sospechan pérdidas en la cisterna sin forma de confirmarlas. Solo identifican fugas visibles o audibles, que el padre repara por su cuenta. Aplican medidas de ahorro como lavar con carga completa y almacenar agua ante cortes anunciados, sin medir su efecto. Considera útiles las alertas móviles, siempre que indiquen ubicación, pérdida estimada y acción a tomar, y que le lleguen directamente por ser quien maneja la tecnología en casa. Prefiere un plan básico con alertas y consumo mensual, y pagaría un adicional por el monitoreo del nivel de la cisterna ante los cortes frecuentes en su zona.<br><br>**Características objetivas:** Hombre de 23 años, trabajador de Uber, que vive en San Juan de Lurigancho, Lima, con sus padres y su hermana menor, en un hogar de cuatro integrantes. La madre asume el pago del servicio y la vivienda cuenta con cisterna para el almacenamiento de agua.<br><br>**Características subjetivas:** Actúa como referente tecnológico de la familia y concentra los trámites digitales del hogar. Su frustración principal es no poder verificar los cobros estimados ni las pérdidas que no son visibles. Valora la información de consumo como herramienta para reclamar ante el prestador del servicio. Busca una solución simple y rápida, y aceptaría un costo de hasta S/ 15 mensuales con instalación incluida.<br><br>**Tecnología y canales:** Utiliza la web del prestador para descargar los recibos en PDF. Prefiere WhatsApp como canal de soporte y manifiesta preocupación por aplicaciones que soliciten más datos personales de los necesarios.<br><br>**Evidencia temporal:** El control actual, los cobros inesperados y la identificación de fugas se abordan entre 00:00:05 y 00:01:10; las medidas de ahorro entre 00:01:10 y 00:01:30; la utilidad de las alertas y la preferencia de planes entre 00:01:30 y 00:02:25; y la importancia económica, las condiciones de privacidad, soporte y costo entre 00:02:25 y 00:03:15. |
 
 ##### ENTREVISTA 3
 
@@ -235,14 +235,14 @@ Se registran cinco entrevistas: dos de PYMES y comercios locales, y tres de hoga
 | Profesión / rol | **Licenciado; jefe de hogar de una familia de tres personas** |
 | Distrito / departamento | **San Juan de Lurigancho, Lima** |
 | Inicio del video | **00:00:00** |
-| Fin del video | **No consignado en el registro recibido** |
-| Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u20211a118_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211a118_upc_edu_pe%2FDocuments%2Fvideo3643346073.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&ga=1&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.a8cd1506-4000-45e4-b289-58235f985bae) |
+| Fin del video | **[hh:mm:ss]** |
+| Link del video | [Ver entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u20211a118_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20211a118_upc_edu_pe%2FDocuments%2Fvideo3643346073.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.a8cd1506-4000-45e4-b289-58235f985bae) |
 | Foto entrevista | <img src="../images/user-personas/Entrevista_Dick.png" alt="Dick Isuiza durante la entrevista" width="360"> |
-| Resumen | **Principales respuestas:** El entrevistado paga y revisa el recibo, pues administra las cuentas del hogar; registra los gastos fijos en una hoja de su celular, aunque del agua solo anota el monto y no el consumo. Experimentó un incremento de casi el doble en el recibo durante dos meses consecutivos, causado por una fuga silenciosa en el tanque del inodoro, que identificó a partir del recibo y reparó él mismo tras un fin de semana de búsqueda. Señala que el consumo aumentó con el nacimiento de su hija, por el baño diario y el lavado frecuente de ropa, y que intentan ahorrar agrupando las lavadas, sin poder evaluar claramente el resultado. Considera útiles las alertas móviles, siempre que indiquen la ubicación del problema y el costo de no atenderlo, y que también las reciba su esposa. Prefiere un plan básico con alertas y consumo mensual, y consideraría el avanzado si le mostrara el gasto diario para ajustar el presupuesto familiar.<br><br>**Características objetivas:** Hombre de 26 años, licenciado, casado y padre de una hija pequeña. Vive con su esposa y su hija en San Juan de Lurigancho, Lima, en un hogar de tres integrantes, donde asume tanto el pago como la revisión del servicio.<br><br>**Características subjetivas:** Organizado y responsable de la administración económica del hogar. Su principal motivación es el presupuesto familiar, que percibe más ajustado desde la llegada de su hija. Su frustración es detectar las fugas recién a partir del recibo y dedicar tiempo a encontrarlas. Valora la rapidez y la claridad de la información; su disposición de pago es de S/ 12 a S/ 15 mensuales, con instalación y explicación incluidas.<br><br>**Tecnología y canales:** Utiliza una hoja de cálculo en su celular para registrar los gastos del hogar. Prefiere WhatsApp como canal de soporte y requiere que las alertas lleguen también a su esposa.<br><br>**Evidencia temporal:** El registro recibido no incluye marcas temporales desglosadas por respuesta; por ello el resumen se limita a la información disponible en la entrevista y no atribuye intervalos no verificados. |
+| Resumen | **Principales respuestas:** El entrevistado paga y revisa el recibo, pues administra las cuentas del hogar; registra los gastos fijos en una hoja de su celular, aunque del agua solo anota el monto y no el consumo. Experimentó un incremento de casi el doble en el recibo durante dos meses consecutivos, causado por una fuga silenciosa en el tanque del inodoro, que identificó a partir del recibo y reparó él mismo tras un fin de semana de búsqueda. Señala que el consumo aumentó con el nacimiento de su hija, por el baño diario y el lavado frecuente de ropa, y que intentan ahorrar agrupando las lavadas, sin poder evaluar claramente el resultado. Considera útiles las alertas móviles, siempre que indiquen la ubicación del problema y el costo de no atenderlo, y que también las reciba su esposa. Prefiere un plan básico con alertas y consumo mensual, y consideraría el avanzado si le mostrara el gasto diario para ajustar el presupuesto familiar.<br><br>**Características objetivas:** Hombre de 26 años, licenciado, casado y padre de una hija pequeña. Vive con su esposa y su hija en San Juan de Lurigancho, Lima, en un hogar de tres integrantes, donde asume tanto el pago como la revisión del servicio.<br><br>**Características subjetivas:** Organizado y responsable de la administración económica del hogar. Su principal motivación es el presupuesto familiar, que percibe más ajustado desde la llegada de su hija. Su frustración es detectar las fugas recién a partir del recibo y dedicar tiempo a encontrarlas. Valora la rapidez y la claridad de la información; su disposición de pago es de S/ 12 a S/ 15 mensuales, con instalación y explicación incluidas.<br><br>**Tecnología y canales:** Utiliza una hoja de cálculo en su celular para registrar los gastos del hogar. Prefiere WhatsApp como canal de soporte y requiere que las alertas lleguen también a su esposa.<br><br>**Evidencia temporal:** El control actual, los cobros inesperados y la identificación de fugas se abordan entre [hh:mm:ss] y [hh:mm:ss]; las medidas de ahorro entre [hh:mm:ss] y [hh:mm:ss]; la utilidad de las alertas y la preferencia de planes entre [hh:mm:ss] y [hh:mm:ss]; y la importancia económica y las condiciones de soporte y costo entre [hh:mm:ss] y [hh:mm:ss]. |
 
 ### 2.2.3. Análisis de entrevistas
 
-Este avance consolida cinco entrevistas: dos del segmento PYMES y comercios locales y tres del segmento hogares y familias. Los porcentajes se calculan dentro de cada segmento; los resultados describen únicamente a las personas entrevistadas y no representan estadísticamente a todos los negocios u hogares.
+Este avance consolida tres entrevistas: dos del segmento PYMES y comercios locales y una del segmento hogares y familias. Los porcentajes se calculan dentro de cada segmento; el resultado de hogares es descriptivo porque corresponde a una sola entrevista y no representa estadísticamente a todas las familias.
 
 #### Análisis del segmento PYMES y comercios locales
 
@@ -258,10 +258,10 @@ Este avance consolida cinco entrevistas: dos del segmento PYMES y comercios loca
 
 | Hallazgo | Frecuencia | Porcentaje | Evidencia |
 |---|---|---|---|
-| Revisión del recibo y preocupación por cobros atípicos o filtraciones | 3 de 3 | 100 % | Wendy 00:00:00–00:06:46; Daniel 00:00:05–00:01:10; Dick: tramo no consignado en el registro recibido |
-| Interés en alertas móviles ante anomalías | 3 de 3 | 100 % | Wendy 00:00:00–00:06:46; Daniel 00:01:30–00:02:25; Dick: tramo no consignado en el registro recibido |
-| Uso de smartphone y aplicaciones digitales | 3 de 3 | 100 % | Wendy: Android, Chrome, WhatsApp, banca móvil y apps de servicios; Daniel: web del prestador y WhatsApp; Dick: hoja de cálculo en el celular y WhatsApp |
-| Preferencia por una solución sencilla, preventiva y de costo accesible | 3 de 3 | 100 % | Wendy 00:00:00–00:06:46; Daniel 00:01:30–00:03:15; Dick: tramo no consignado en el registro recibido |
+| Revisión del recibo y preocupación por cobros atípicos o filtraciones | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
+| Interés en alertas móviles ante anomalías | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
+| Uso de smartphone y aplicaciones digitales | 1 de 1 | 100 % | Wendy: Android, Chrome, WhatsApp, banca móvil y apps de servicios |
+| Preferencia por una solución sencilla, preventiva y de costo accesible | 1 de 1 | 100 % | Wendy, 00:00:00–00:06:46 |
 
 La entrevista de hogares se interpreta como evidencia exploratoria del caso de Wendy Zuñiga; sus hallazgos se utilizan para orientar las decisiones iniciales de diseño del segmento.
 
@@ -279,21 +279,21 @@ En esta sección se incluyen las fichas de User Persona que representan arquetip
 
 #### User Persona #1 – Segmento PYMES y Comercios Locales
 
-> *<img src="../images/user-personas/Carlos_Abanto.png">*
+> *<img src="../images/user-personas/Marco Villanueva.png">*
 
-| Campo | Detalle |
-|---|---|
-| **Nombre** | Carlos Abanto |
-| **Edad** | 30 años |
-| **Ocupación** | Administrador de negocio local (lavandería) |
-| **Distrito** | Pueblo Libre, Lima |
-| **Estado civil** | No declarado en la entrevista |
-| **Dispositivo principal** | Smartphone Android |
+| Campo | Detalle                                                                                          |
+|---|--------------------------------------------------------------------------------------------------|
+| **Nombre** | Marco Villanueva                                                                                 |
+| **Edad** | 30 años                                                                                          |
+| **Ocupación** | Administrador de negocio local (lavandería)                                                      |
+| **Distrito** | Pueblo Libre, Lima                                                                               |
+| **Estado civil** | Soltero                                                                                          |
+| **Dispositivo principal** | Smartphone Android                                                                               |
 | **Nivel tecnológico** | Básico-intermedio – usa el celular para gestión operativa y WhatsApp para registros fotográficos |
-| **Canales digitales** | WhatsApp, celular Android, correo básico |
+| **Canales digitales** | WhatsApp, celular Android, correo básico                                                         |
 
 **Biografía:**
-Carlos administra una lavandería de tamaño pequeño en Pueblo Libre. Se encarga del control operativo diario, la revisión de recibos y la coordinación del mantenimiento del negocio. Su método actual de control del agua es manual: revisa el recibo una vez al mes, lo compara con el periodo anterior y registra datos de las máquinas en una libreta. Ha enfrentado fugas en una manguera y en el baño; una la detectó por humedad en el piso y otra al notar un recibo elevado. No cuenta con ningún sistema de monitoreo en tiempo real y depende de señales físicas o del recibo mensual para identificar problemas.
+Marco administra una lavandería de tamaño pequeño en Pueblo Libre. Se encarga del control operativo diario, la revisión de recibos y la coordinación del mantenimiento del negocio. Su método actual de control del agua es manual: revisa el recibo una vez al mes, lo compara con el periodo anterior y registra datos de las máquinas en una libreta. Ha enfrentado fugas en una manguera y en el baño; una la detectó por humedad en el piso y otra al notar un recibo elevado. No cuenta con ningún sistema de monitoreo en tiempo real y depende de señales físicas o del recibo mensual para identificar problemas.
 
 **Objetivos:**
 - Enterarse rápidamente de cualquier fuga o consumo inusual sin tener que esperar el recibo mensual.
@@ -1019,27 +1019,28 @@ El artefacto fue elaborado en UXPressia, tomando como base las fichas de User Pe
 
 El Product Backlog reúne la totalidad de los requisitos especificados en la sección 2.4.1, estimados en Story Points según la escala de Fibonacci (1, 2, 3, 5, 8) y ordenados según el valor que aportan al negocio. El orden responde a la necesidad de validar tempranamente la propuesta de valor de Qlic: la detección de fugas y la visibilidad del consumo, que constituyen el núcleo de los hallazgos del Needfinding, se ubican en las primeras posiciones, junto con el sitio web estático que presenta el modelo de negocio. Las funcionalidades de autenticación se incorporan en la medida en que habilitan el acceso a las funcionalidades core, sin encabezar el ordenamiento. Las Spike Stories se ubican en las primeras posiciones porque su resultado condiciona la estimación y la implementación de las historias de registro de dispositivos y de alertas.
 
+
 | # Orden | User Story Id | Título                                                | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
 |--------:|---------------|-------------------------------------------------------|---------------------------------:|-------:|
 |       1 | US01          | Conocer la propuesta de valor de Qlic                 |                                3 |      1 |
 |       2 | US02          | Comparar los planes de suscripción disponibles        |                                2 |      1 |
 |       3 | US03          | Contactar al equipo desde el Landing Page             |                                2 |      1 |
 |       4 | US04          | Consultar el Landing Page en el idioma de preferencia |                                2 |      1 |
-|       5 | US05          | Registrar una cuenta de suscriptor                    |                                3 |      1 |
-|       6 | US06          | Iniciar sesión en la aplicación móvil                 |                                2 |      1 |
-|       7 | US10          | Registrar un dispositivo IoT mediante código QR       |                                5 |      1 |
-|       8 | US11          | Asignar un dispositivo a un Water Point               |                                3 |      1 |
-|       9 | US12          | Consultar el estado de los dispositivos registrados   |                                5 |      1 |
-|      10 | US15          | Recibir una alerta de posible fuga                    |                                8 |      1 |
-|      11 | US16          | Comprender el contenido de una alerta                 |                                5 |      1 |
-|      12 | US17          | Configurar el umbral de consumo                       |                                5 |      2 |
-|      13 | US18          | Limitar la frecuencia de las notificaciones           |                                3 |      2 |
-|      14 | US19          | Notificar la alerta a los usuarios autorizados        |                                3 |      2 |
-|      15 | US20          | Confirmar la atención de una alerta                   |                                3 |      2 |
-|      16 | US21          | Consultar el reporte de consumo del periodo           |                                5 |      2 |
-|      17 | US22          | Comparar el consumo entre periodos                    |                                5 |      2 |
-|      18 | US23          | Conocer el costo estimado del consumo                 |                                3 |      2 |
-|      19 | US24          | Identificar consumo en horarios sin actividad         |                                5 |      2 |
+|       5 | US15          | Recibir una alerta de posible fuga                    |                                8 |      1 |
+|       6 | US16          | Comprender el contenido de una alerta                 |                                5 |      1 |
+|       7 | US12          | Consultar el estado de los dispositivos registrados   |                                5 |      1 |
+|       8 | US10          | Registrar un dispositivo IoT mediante código QR       |                                5 |      1 |
+|       9 | US11          | Asignar un dispositivo a un Water Point               |                                3 |      1 |
+|      10 | US05          | Registrar una cuenta de suscriptor                    |                                3 |      1 |
+|      11 | US06          | Iniciar sesión en la aplicación móvil                 |                                2 |      1 |
+|      12 | US21          | Consultar el reporte de consumo del periodo           |                                5 |      2 |
+|      13 | US22          | Comparar el consumo entre periodos                    |                                5 |      2 |
+|      14 | US23          | Conocer el costo estimado del consumo                 |                                3 |      2 |
+|      15 | US24          | Identificar consumo en horarios sin actividad         |                                5 |      2 |
+|      16 | US17          | Configurar el umbral de consumo                       |                                5 |      2 |
+|      17 | US18          | Limitar la frecuencia de las notificaciones           |                                3 |      2 |
+|      18 | US19          | Notificar la alerta a los usuarios autorizados        |                                3 |      2 |
+|      19 | US20          | Confirmar la atención de una alerta                   |                                3 |      2 |
 |      20 | US28          | Consultar el nivel del tanque de agua                 |                                3 |      2 |
 |      21 | US29          | Recibir aviso de nivel bajo en el tanque              |                                5 |      2 |
 |      22 | US13          | Organizar los dispositivos por local                  |                                3 |      2 |
@@ -1060,7 +1061,14 @@ El Product Backlog reúne la totalidad de los requisitos especificados en la sec
 |      37 | US09          | Actualizar los datos del perfil                       |                                2 |      3 |
 |      38 | US38          | Consultar los términos y condiciones del servicio     |                                2 |      3 |
 
-Tablero de Trello con el Product Backlog: https://trello.com/invite/b/6aa1e6966e4df21cb3a4eef9/ATTIe6a46d0c84f618e9bccb9c4de3ce13f711448192/product-backlog-qlic
+**Resumen de la distribución**
+
+| Sprint | Cantidad de ítems | Story Points |
+|---|---:|---:|
+| Sprint 1 | 16 | 64 |
+| Sprint 2 | 16 | 63 |
+| Sprint 3 | 16 | 62 |
+| **Total** | **48** | **189** |
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
