@@ -238,17 +238,17 @@ La rúbrica solicita un artefacto **Leadership-and-Collaboration Matrix (LACX)**
 
 | Team Member (Last Name, First Name) | GitHub Username | Planning & Backlog | SEO & Meta Tags | Landing Page US01–US04 | UX/UI & Design Artifacts | Development Evidence | Testing Evidence | Execution Evidence | Landing Deployment Evidence |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Avila Palacios, Aaron Alexander | Pendiente de confirmar | **L** | **L** | **L** | C | C | C | C | **L** |
-| Briceño Llanos, Ayrton Omar | Pendiente de confirmar | C | C | C | C | **L** | **L** | C | C |
-| Conde Huashuayo, Sebasthian Alex | Pendiente de confirmar | C | C | C | **L** | C | C | **L** | C |
-| Condori Lozano, Alessandro Ramiro | Pendiente de confirmar | C | C | C | C | C | C | C | C |
+| Avila Palacios, Aaron Alexander | `AaronAvilap` | **L** | **L** | **L** | C | C | C | C | **L** |
+| Briceño Llanos, Ayrton Omar | `AyrtonBriceno` | C | C | C | C | **L** | **L** | C | C |
+| Conde Huashuayo, Sebasthian Alex | `SebasthianCH` | C | C | C | **L** | C | C | **L** | C |
+| Condori Lozano, Alessandro Ramiro | `AlessandroRCL` | C | C | C | C | C | C | C | C |
 
-| Team Member (Last Name, First Name) | Backend Device Monitoring & Alerting | Services Documentation / IAM / REST API & Swagger | Environment & API Deployment Configuration | Team Collaboration Insights | Versioning, PDF & Release |
-|---|:---:|:---:|:---:|:---:|:---:|
-| Avila Palacios, Aaron Alexander | C | C | C | C | C |
-| Briceño Llanos, Ayrton Omar | **L** | C | C | C | C |
-| Conde Huashuayo, Sebasthian Alex | C | C | C | C | C |
-| Condori Lozano, Alessandro Ramiro | C | **L** | **L** | **L** | **L** |
+| Team Member (Last Name, First Name) | GitHub Username | Backend Device Monitoring & Alerting | Services Documentation / IAM / REST API & Swagger | Environment & API Deployment Configuration | Team Collaboration Insights | Versioning, PDF & Release |
+|---|---|:---:|:---:|:---:|:---:|:---:|
+| Avila Palacios, Aaron Alexander | `AaronAvilap` | C | C | C | C | C |
+| Briceño Llanos, Ayrton Omar | `AyrtonBriceno` | **L** | C | C | C | C |
+| Conde Huashuayo, Sebasthian Alex | `SebasthianCH` | C | C | C | C | C |
+| Condori Lozano, Alessandro Ramiro | `AlessandroRCL` | C | **L** | **L** | **L** | **L** |
 
 #### Distribución detallada de tareas informada por el equipo
 
@@ -257,7 +257,7 @@ La rúbrica solicita un artefacto **Leadership-and-Collaboration Matrix (LACX)**
 - **Conde Huashuayo, Sebasthian Alex:** 3.1.1 Style Guidelines; 3.1.2.1 Organization Systems; 3.1.2.2 Labelling Systems; 3.1.2.4 Searching Systems; 3.1.2.5 Navigation Systems; 3.1.3.1 Landing Page Wireframe; 3.1.3.2 Landing Page Mock-up; 3.1.4.1 Mobile Applications Wireframes; 3.1.4.2 Mobile Applications Wireflow Diagrams; 3.1.4.3 Mobile Applications Mock-ups; 3.1.4.4 Mobile Applications User Flow Diagrams; 3.1.4.5 Mobile Applications Prototyping; aplicación nativa Kotlin (pantallas de autenticación y home); 4.2.1.6 Execution Evidence.
 - **Condori Lozano, Alessandro Ramiro:** 4.1.1 Software Development Environment Configuration; 4.1.2 Source Code Management; 4.1.3 Source Code Style Guide & Conventions; 4.1.4 Software Deployment Configuration; 4.2.1.7 Services Documentation Evidence; Backend IAM (US05 y US06) y despliegue del RESTful API con Swagger; registro de versiones; Project Report Collaboration Insights; consolidación del informe, PDF y release.
 
-Los nombres de usuario de GitHub se mantienen como pendientes hasta que cada integrante confirme su identificador público. La evidencia de cada liderazgo debe vincularse posteriormente con la tarea, su estado y el commit, captura o artefacto correspondiente.
+Los nombres de usuario de GitHub se registran según la captura proporcionada por el equipo. La evidencia de cada liderazgo debe vincularse posteriormente con la tarea, su estado y el commit, captura o artefacto correspondiente.
 
 #### 4.2.1.3. Sprint Backlog 1
 
