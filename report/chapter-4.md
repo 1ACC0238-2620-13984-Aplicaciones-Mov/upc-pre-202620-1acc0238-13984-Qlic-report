@@ -204,22 +204,22 @@ Dado que el plan gratuito de Render suspende el servicio tras un periodo de inac
 
 #### 4.2.1.1. Sprint Planning 1
 
-La planificación del Sprint 1 se organiza alrededor de las historias US01–US04 del Product Backlog. De acuerdo con la rúbrica, el registro incluye el contexto de la reunión, la fecha, los participantes, la revisión y retrospectiva del sprint anterior, el objetivo orientado al resultado, la velocidad y la suma de puntos. La fecha se actualiza a **2026-09-29** (29 del mes anterior); los datos que requieren evidencia de la reunión se mantienen identificados como pendientes para no inventar información.
+La planificación del Sprint 1 se organiza alrededor de las historias US01–US04 del Product Backlog. De acuerdo con la rúbrica, el registro incluye el contexto de la reunión, la fecha, los participantes, la revisión y retrospectiva del sprint anterior, el objetivo orientado al resultado, la velocidad y la suma de puntos. La reunión se realizó el **2026-09-29 a las 5:00 PM**, de forma virtual mediante Discord. Al tratarse de la primera presentación del proyecto, no hubo un Sprint 0 previo para revisar o retroalimentar.
 
 | Campo de planificación | Registro del Sprint 1 |
 |---|---|
 | Sprint | Sprint 1 |
 | Sprint Planning Background | Reunión de planificación para acordar el alcance inicial del Landing Page de Qlic y organizar las historias US01–US04. |
 | Date | **2026-09-29** |
-| Time | Pendiente de confirmar con la evidencia de la reunión (formato requerido: `HH:MM AM/PM`). |
-| Location / modalidad | Pendiente de confirmar (indicar si fue presencial o virtual y la plataforma utilizada). |
-| Prepared by | Avila Palacios, Aaron Alexander (líder asignado para Sprint Planning 1; confirmar en la evidencia). |
+| Time | **5:00 PM** |
+| Location / modalidad | **Virtual, mediante Discord** |
+| Prepared by | **Avila Palacios, Aaron Alexander** |
 | Attendees | Avila Palacios, Aaron Alexander; Briceño Llanos, Ayrton Omar; Conde Huashuayo, Sebasthian Alex; Condori Lozano, Alessandro Ramiro |
-| Sprint 0 Review Summary | No se documentó un Sprint 0 en el repositorio revisado. Confirmar si existió una revisión previa y registrar sus productos, opiniones y comentarios del Product Owner. |
-| Sprint 0 Retrospective Summary | No se documentó un Sprint 0 en el repositorio revisado. Confirmar si existió una retrospectiva previa y registrar los aciertos y oportunidades de mejora del equipo. |
+| Sprint 0 Review Summary | **No aplica:** esta es la primera presentación del proyecto y no hubo un Sprint 0 previo para revisar. |
+| Sprint 0 Retrospective Summary | **No aplica:** esta es la primera presentación del proyecto y no hubo un Sprint 0 previo para realizar una retrospectiva. |
 | Sprint Goal & User Stories | Ofrecer a visitantes de hogares y negocios una primera experiencia navegable de Qlic mediante US01 (propuesta de valor), US02 (planes), US03 (contacto) y US04 (idioma). |
 | Sprint 1 Goal | Una persona visitante podrá comprender el beneficio principal de Qlic, comparar sus planes, solicitar contacto y cambiar el idioma sin depender de una explicación del equipo. El cumplimiento se verifica cuando las cuatro historias US01–US04 recorren sus flujos de aceptación en la Landing Page desplegada. |
-| Sprint 1 Velocity | **9 puntos planificados**, equivalente a la capacidad comprometida en este registro; confirmar la velocidad real con la evidencia de historias terminadas y aceptadas. |
+| Sprint 1 Velocity | **9 puntos**, correspondientes a la capacidad comprometida para US01–US04 en este primer Sprint. Al no existir un Sprint 0, no se reporta una velocidad histórica anterior. |
 | Sum of Story Points | **9** |
 
 | User Story | Resultado esperado | Story Points |
