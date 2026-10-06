@@ -339,7 +339,25 @@ En conjunto, los wireframes aplican jerarquía visual (dato clave antes que deta
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
-Se presenta un wireflow por cada User goal de las funcionalidades de autenticación y de la pantalla Home. Cada wireflow encadena wireframes y agrega un paso cuando la interacción modifica la pantalla. Se elaboran en Lucidchart u Overflow a partir de los wireframes de Figma.
+Un wireflow combina los wireframes de las pantallas con un diagrama de flujo: muestra en qué elemento interactúa el usuario y cómo cambia la vista como resultado, incluidos los cambios de estado dentro de una misma pantalla, lo que lo hace adecuado para aplicaciones móviles (Laubheimer, 2016). Se presenta un wireflow por cada User Goal del Sprint 1, que corresponden a los flujos F1, F2 y F3 del prototipo (Tabla 3.2): crear una cuenta e iniciar sesión, atender una alerta de posible fuga y registrar un dispositivo. Cada wireflow se compone con los wireframes de 3.1.4.1 y usa la misma convención: el rectángulo naranja marca el elemento con el que interactúa el usuario, la flecha verde continua indica la ruta esperada, la flecha roja discontinua indica una ruta alternativa o de error y la flecha azul indica una entrada externa o una recuperación.
+
+![Wireflow WF1: crear una cuenta e iniciar sesión](../images/wireflows/wireflow-wf1-sign-up-sign-in.png)
+
+*Figura 3.23. Wireflow WF1: crear una cuenta e iniciar sesión (US05, US06).*
+
+Explicación: desde Sign in, el usuario sin cuenta toca "Sign up" y llega a Create account, cuyo botón permanece deshabilitado hasta que acepta los términos. Al completar el formulario, la cuenta se crea y se abre el Main Dashboard. Si el correo ya está registrado, la misma pantalla cambia al estado de error con el mensaje bajo el campo y el enlace "Sign in instead", que devuelve a Sign in. El usuario que ya tiene cuenta ingresa sus credenciales y toca "Sign in" para llegar directamente al Main Dashboard.
+
+![Wireflow WF2: atender una alerta de posible fuga](../images/wireflows/wireflow-wf2-attend-alert.png)
+
+*Figura 3.24. Wireflow WF2: atender una alerta de posible fuga (US15, US16, US20).*
+
+Explicación: el usuario llega a la lista de alertas desde el destino "Alerts" de la barra inferior del Main Dashboard y abre la alerta tocando su tarjeta. La notificación push es una segunda entrada: abre directamente Alert detail mediante un deep link, lo que reduce los pasos para la tarea más crítica. En Alert detail, "Acknowledge" registra la atención; la alerta pasa al estado "Acknowledged" y el usuario vuelve a Alerts.
+
+![Wireflow WF3: registrar un dispositivo con código QR](../images/wireflows/wireflow-wf3-register-device.png)
+
+*Figura 3.25. Wireflow WF3: registrar un dispositivo con código QR (US10, US11, US12).*
+
+Explicación: desde Business › Devices, "+ Add device" inicia el registro secuencial de dos pasos. En el paso 1 se lee el código QR y, tras verificar el modelo detectado, "Confirm" lleva al paso 2. Si el usuario niega el permiso de cámara o toca "Enter code manually", la pantalla cambia al ingreso manual del número de serie y "Continue" lleva al mismo paso 2. En Assign Water Point, el usuario elige el punto de agua y "Save" lo devuelve a Devices con un snackbar de confirmación y el dispositivo ya registrado.
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
@@ -347,68 +365,85 @@ Los mock-ups se elaboraron en Figma a partir de los wireframes de 3.1.4.1 y apli
 
 ![Mock-up móvil: Sign in](../images/mockups/Mockup-Login.png)
 
-*Figura 3.23. Mock-up de la pantalla Sign in.*
+*Figura 3.26. Mock-up de la pantalla Sign in.*
 
 Explicación: los campos tienen etiqueta flotante e íconos, y el botón "Sign in" usa el azul principal con texto blanco. Los enlaces "Forgot password?" y "Create account" se resaltan en azul, y el campo de contraseña incluye un control para mostrar u ocultar el texto.
 
 ![Mock-up móvil: Create account](../images/mockups/Mockup-Sign-Up.png)
 
-*Figura 3.24. Mock-up de la pantalla Create account, con el estado de error de correo ya registrado.*
+*Figura 3.27. Mock-up de la pantalla Create account, con el estado de error de correo ya registrado.*
 
 Explicación: los campos usan etiqueta flotante e ícono a la izquierda, como en Sign in, para que ambas pantallas se perciban como un mismo flujo. El botón "Create account" usa Primary `#0C4AFD` con texto On Primary y se muestra en gris mientras no se aceptan los términos. El error de correo duplicado usa el color Error `#DC2626` junto con un ícono y un texto explícito, por lo que no depende solo del color. El enlace "Terms and Conditions" se subraya y cumple el área táctil mínima de 48 dp.
 
 ![Mock-up móvil: Main Dashboard](../images/mockups/Mockup-Dashboard.png)
 
-*Figura 3.25. Mock-up de la pantalla Main Dashboard y del menú "More".*
+*Figura 3.28. Mock-up de la pantalla Main Dashboard y del menú "More".*
 
 Explicación: las cifras del día se muestran en grande para que el usuario detecte consumos anómalos de un vistazo. El rojo se reserva a las alertas activas, que llevan ícono y la etiqueta "Needs attention". La hoja inferior de "More" muestra el perfil, Support y Billing, con una breve descripción de cada uno.
 
 ![Mock-up móvil: Alerts](../images/mockups/Mockup-Alert.png)
 
-*Figura 3.26. Mock-up de la pantalla Alerts, con su estado vacío y los ajustes de notificación.*
+*Figura 3.29. Mock-up de la pantalla Alerts, con su estado vacío y los ajustes de notificación.*
 
 Explicación: la severidad se comunica con ícono y etiqueta ("High"), y no solo con color. El filtro seleccionado usa el azul principal. El estado vacío incluye un mensaje claro y la acción "Clear filters", y cada ajuste de notificación muestra su estado en texto ("Enabled" o "Disabled") además del interruptor.
 
 ![Mock-up móvil: Alert detail](../images/mockups/Mockup-Alert-Detail.png)
 
-*Figura 3.27. Mock-up de la pantalla Alert detail, antes y después de confirmar la atención.*
+*Figura 3.30. Mock-up de la pantalla Alert detail, antes y después de confirmar la atención.*
 
 Explicación: la cabecera usa el color Error con el ícono de advertencia y la etiqueta "High" para comunicar la severidad por tres medios. El volumen y el costo estimados se presentan en Poppins de 24 sp como datos clave, y la acción recomendada en Roboto de 14 sp dentro de una card con fondo suave. El botón "Acknowledge" usa Primary y, una vez confirmado, la etiqueta cambia a "Acknowledged" con el color Success y un ícono de verificación, lo que da retroalimentación inmediata.
 
 ![Mock-up móvil: Devices](../images/mockups/Mockup-Devices.png)
 
-*Figura 3.28. Mock-up de la pantalla Devices dentro de Business.*
+*Figura 3.31. Mock-up de la pantalla Devices dentro de Business.*
 
 Explicación: la pestaña activa (Devices) se resalta con Primary y un indicador inferior, y el destino Business de la barra inferior conserva el estado activo. Las tarjetas de dispositivo aplican el componente "Card de dispositivo" de 3.1.1: esquinas de 12 dp, sombra de elevación baja, estado con ícono y texto ("Online", "Offline", "Low battery") en Success, Text Secondary y Warning respectivamente. El botón "Add device" es el único elemento en Primary de la sección, lo que concentra la atención en la acción principal.
 
 ![Mock-up móvil: Add device](../images/mockups/Mockup-Add-Device.png)
 
-*Figura 3.29. Mock-up de la pantalla Add device, con la lectura del código QR y el ingreso manual del código.*
+*Figura 3.32. Mock-up de la pantalla Add device, con la lectura del código QR y el ingreso manual del código.*
 
 Explicación: el visor de la cámara ocupa la mayor parte de la pantalla y el marco guía usa Primary con esquinas redondeadas. El indicador "Step 1 of 2" orienta al usuario dentro del flujo secuencial. En el estado sin permiso de cámara, un mensaje explica por qué se necesita el permiso y ofrece dos acciones: "Allow camera" como botón principal y "Enter code manually" como botón secundario con contorno, conforme a los componentes base definidos en 3.1.1.
 
 ![Mock-up móvil: Assign Water Point](../images/mockups/Mockup-Assign-Water-Point.png)
 
-*Figura 3.30. Mock-up de la pantalla Assign Water Point.*
+*Figura 3.33. Mock-up de la pantalla Assign Water Point.*
 
 Explicación: las opciones de Water Point se presentan como filas de 56 dp con ícono, nombre y control de selección única; la opción elegida se marca con Primary y un ícono de verificación. El botón "Save" ocupa todo el ancho al pie de la pantalla y, al confirmar, una snackbar con el texto "Device assigned to Kitchen" confirma la operación sin bloquear la navegación.
 
 ![Mock-up móvil: Inventory + features](../images/mockups/Mockup-Inventory.png)
 
-*Figura 3.31. Mock-up de la pantalla Inventory + features.*
+*Figura 3.34. Mock-up de la pantalla Inventory + features.*
 
 Explicación: el estado de cada tanque se indica con ícono y etiqueta ("Normal"), y la barra de nivel muestra el porcentaje de un vistazo. El ahorro del mes se presenta con una cifra grande y su variación, y el gráfico permite compararlo por semana, mes o año.
 
 ![Mock-up móvil: Support & Help](../images/mockups/Mockup-Support.png)
 
-*Figura 3.32. Mock-up de la pantalla Support & Help.*
+*Figura 3.35. Mock-up de la pantalla Support & Help.*
 
 Explicación: el formulario usa campos con etiqueta flotante y un botón "Submit ticket" de ancho completo. El estado de cada ticket se comunica con ícono y texto ("Open", "In progress" y "Resolved"), y los datos de contacto ofrecen acciones directas ("Call" y "Write").
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
-Los User Flows incluyen los mock-ups de cada pantalla y las rutas esperada (happy path) y alternativas (unhappy paths). Son consistentes con los wireflows anteriores.
+Los User Flows representan, con los mock-ups de 3.1.4.3, el camino que sigue el usuario para cumplir cada User Goal, junto con las decisiones del sistema o del usuario que lo bifurcan. Para cada flujo se distingue la ruta esperada (happy path) de las rutas alternativas (unhappy paths), que cubren los errores previsibles y la forma de recuperarse de ellos. Los tres diagramas corresponden a los mismos User Goals de los wireflows de 3.1.4.2 y usan la misma convención de colores; los rombos representan las decisiones, las cápsulas azul y verde marcan el inicio y el resultado del flujo, y los recuadros rojos, los mensajes de error que no cambian de pantalla.
 
+![User Flow UF1: crear una cuenta e iniciar sesión](../images/user-flows/user-flow-uf1-sign-up-sign-in.png)
+
+*Figura 3.36. User Flow UF1: crear una cuenta e iniciar sesión (US05, US06).*
+
+Explicación: la ruta esperada lleva de Sign in al Main Dashboard cuando las credenciales son válidas, o pasa por Create account cuando el usuario aún no tiene cuenta. Las rutas alternativas cubren los escenarios de error de las User Stories: las credenciales inválidas muestran el mensaje bajo el campo y el usuario reintenta en la misma pantalla (US06), y un correo ya registrado muestra el estado de error de Create account con el enlace "Sign in instead" (US05).
+
+![User Flow UF2: atender una alerta de posible fuga](../images/user-flows/user-flow-uf2-attend-alert.png)
+
+*Figura 3.37. User Flow UF2: atender una alerta de posible fuga (US15, US16, US20).*
+
+Explicación: la ruta esperada parte de la notificación push y llega, en dos toques, a la alerta atendida: Alert detail y "Acknowledge", que deja la alerta en estado "Acknowledged" con la hora de atención. Si el usuario no abre la notificación, ingresa luego desde el Main Dashboard y busca la alerta en Alerts. Cuando la búsqueda o los filtros no devuelven resultados, se muestra el estado vacío y "Clear filters" restablece la lista.
+
+![User Flow UF3: registrar un dispositivo con código QR](../images/user-flows/user-flow-uf3-register-device.png)
+
+*Figura 3.38. User Flow UF3: registrar un dispositivo con código QR (US10, US11, US12).*
+
+Explicación: la ruta esperada recorre Devices, la lectura del código QR y Assign Water Point, y termina con el dispositivo visible en Devices junto con el snackbar de confirmación. Las rutas alternativas cubren el permiso de cámara denegado y el código QR no reconocido, que llevan al ingreso manual del número de serie; si el número tampoco es válido, el error se muestra bajo el campo "Serial number" y el usuario lo corrige sin perder el avance.
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
@@ -442,4 +477,4 @@ El prototipo de la aplicación móvil se construyó en Figma enlazando los mock-
 
 ![Captura del video de demostración del prototipo de la aplicación móvil](../images/prototyping/prototype-video-screenshot.png)
 
-*Figura 3.33. Captura del video de demostración del prototipo de la aplicación móvil.*
+*Figura 3.39. Captura del video de demostración del prototipo de la aplicación móvil.*
