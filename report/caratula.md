@@ -39,22 +39,25 @@
 
 ---
 # Registro de Versiones del Informe
-
-| Versión | Fecha                       | Autor                               | Descripción de modificación                                                                                                                                              |
-|---------|-----------------------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0     | 2026-09-01                  | Condori Lozano, Alessandro Ramiro   | Creación del repositorio del Project Report y estructura inicial del informe.                                                                                            |
-| 1.1     | 2026-09-10                  | Briceño Llanos, Ayrton Omar         | Redacción de la sección 1.2.1 Antecedentes y Problemática aplicando la técnica 5W-2H y referencias bibliográficas en formato APA 7.                                      |
-| 1.2     | 2026-09-12                  | Briceño Llanos, Ayrton Omar         | Reestructuración de la sección 1.2.2 Lean UX: formulación de assumptions en 5 categorías y redacción de hypothesis statements 1:1 con criterios de validación.           |
-| 1.3     | 2026-09-13                  | Briceño Llanos, Ayrton Omar         | Definición y desarrollo de la sección 1.3 Segmentos Objetivos (PYMES y Hogares) con perfiles demográficos, canales digitales, dispositivos y sustento estadístico APA 7. |
-| 1.4     | 2026-09-14                  | Conde Huashuayo, Sebasthian Alex    | Incorporación de objetivos SMART profesionales y redacción del aporte individual para la matriz ABET Student Outcome 7 (AV1).                                            |
-| 1.5     | 2026-09-14                  | Briceño Llanos, Ayrton Omar         | Elaboración de la sección Objetivos SMART profesionales individuales post-graduación estructurados por dimensiones S-M-A-R-T.                                            |
-| 1.6     | 2026-09-15                  | Briceño Llanos, Ayrton Omar         | Ajustes de estilo, centrado de portada y actualización del control de versiones del informe.                                                                             |
-| 1.7     | 2026-09-15                  | Avila Palacios, Aaron Alexander     | Incorporación del análisis competitivo de Badger Meter, Itron y OptiRTC; definición de estrategias y diseño de entrevistas para PYMES y hogares en el Capítulo II.       |
-| 1.8     | 2026-09-16                  | Condori Lozano, Alessandro Ramiro   | Adaptación de la sección 1.1 Startup Profile al enfoque de Aplicaciones para Dispositivos Móviles; incorporación del perfil y fotografía del integrante Alessandro Ramiro Condori Lozano. |
-| 1.9     | 2026-09-16                  | Briceño Llanos, Ayrton Omar         | Redacción de la organización colaborativa del equipo (Trello, WhatsApp, Gitflow) y redacción del aporte individual para la matriz de evaluación ABET Student Outcome 7. |
-| 2.0     | 2026-09-17                  | Briceño Llanos, Ayrton Omar         | Elaboración del resumen de entrevista, ficha de User Persona (Claudia Morales) y Empathy Map para el segmento Hogares y Familias.                                        |
-| 2.1     | 2026-09-17                  | Briceño Llanos, Ayrton Omar         | Depuración y priorización por valor de negocio del Product Backlog (US01 a US38), asignación de Story Points y estructuración del User Journey Map As-Is del segmento Hogares. |---
-
+| Versión | Fecha       | Autor                             | Descripción de modificación                                                                                                                                                                                                                                                                                                            |
+|---------|-------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0     | 2026-09-01  | Condori Lozano, Alessandro Ramiro | Creación del repositorio del Project Report y estructura inicial del informe.                                                                                                                                                                                                                                                 |
+| 1.1     | 2026-09-10  | Briceño Llanos, Ayrton Omar       | Redacción de la sección 1.2.1 Antecedentes y Problemática aplicando la técnica 5W-2H y referencias bibliográficas en formato APA 7.                                                                                                                                                                                           |
+| 1.2     | 2026-09-12  | Briceño Llanos, Ayrton Omar       | Reestructuración de la sección 1.2.2 Lean UX: formulación de assumptions en 5 categorías y redacción de hypothesis statements 1:1 con criterios de validación.                                                                                                                                                                |
+| 1.3     | 2026-09-13  | Briceño Llanos, Ayrton Omar       | Definición y desarrollo de la sección 1.3 Segmentos Objetivos (PYMES y Hogares) con perfiles demográficos, canales digitales, dispositivos y sustento estadístico APA 7.                                                                                                                                                      |
+| 1.4     | 2026-09-14  | Conde Huashuayo, Sebasthian Alex  | Incorporación de objetivos SMART profesionales y redacción del aporte individual para la matriz ABET Student Outcome 7 (AV1).                                                                                                                                                                                                 |
+| 1.5     | 2026-09-14  | Briceño Llanos, Ayrton Omar       | Elaboración de la sección Objetivos SMART profesionales individuales post-graduación estructurados por dimensiones S-M-A-R-T.                                                                                                                                                                                                 |
+| 1.6     | 2026-09-15  | Briceño Llanos, Ayrton Omar       | Ajustes de estilo, centrado de portada y actualización del control de versiones del informe.                                                                                                                                                                                                                                  |
+| 1.7     | 2026-09-15  | Avila Palacios, Aaron Alexander   | Incorporación del análisis competitivo de Badger Meter, Itron y OptiRTC; definición de estrategias y diseño de entrevistas para PYMES y hogares en el Capítulo II.                                                                                                                                                            |
+| 1.8     | 2026-09-16  | Condori Lozano, Alessandro Ramiro | Adaptación de la sección 1.1 Startup Profile al enfoque de Aplicaciones para Dispositivos Móviles; incorporación del perfil y fotografía del integrante Alessandro Ramiro Condori Lozano.                                                                                                                                     |
+| 1.9     | 2026-09-16  | Briceño Llanos, Ayrton Omar       | Redacción de la organización colaborativa del equipo (Trello, WhatsApp, Gitflow) y redacción del aporte individual para la matriz de evaluación ABET Student Outcome 7.                                                                                                                                                       |
+| 2.0     | 2026-09-17  | Briceño Llanos, Ayrton Omar       | Elaboración del resumen de entrevista, ficha de User Persona (Claudia Morales) y Empathy Map para el segmento Hogares y Familias.                                                                                                                                                                                             |
+| 2.1     | 2026-09-17  | Briceño Llanos, Ayrton Omar       | Depuración y priorización por valor de negocio del Product Backlog (US01 a US38), asignación de Story Points y estructuración del User Journey Map As-Is del segmento Hogares.                                                                                                                                                |
+| 2.2     | 2026-09-22  | Equipo WASD                       | Incorporación de dos entrevistas adicionales del segmento Hogares y actualización del registro, análisis y conclusiones del Capítulo II.                                                                                                                                                                                      |
+| 2.3     | 2026-09-28  | Briceño Llanos, Ayrton Omar       | Corrección del Lean UX Problem Statement (eliminación de solución técnica), alineación de hipótesis con métricas cuantitativas, estandarización de criterios de aceptación BDD (Dado-Cuando-Entonces) para US15, reordenamiento por precedencia funcional del Product Backlog e incorporación del enlace público al tablero de Trello. |
+| 2.4     | 2026-10-02  | Condori Lozano, Alessandro Ramiro | Redacción de las secciones 4.1.1 a 4.1.4 (Software Configuration Management) y 4.2.1.7 (Services Documentation Evidence for Sprint Review); actualización del Registro de Versiones, del Project Report Collaboration Insights (TB1) y de la bibliografía. |
+| 2.5     | 2026-10-05  | Condori Lozano, Alessandro Ramiro | Alineación del Capítulo IV con el enunciado y la rúbrica TB1: Deployment Diagram de C4 Model en 4.1.4, herramientas según las restricciones tecnológicas, guías de estilo para Kotlin, HTML y Gherkin, documentación de los siete endpoints del Sprint 1 con ejemplos de llamada y respuesta, e internacionalización de los mensajes de IAM (en_US y es_419); actualización de la tabla de contenidos. |
+| 2.6     | 2026-10-05  | Condori Lozano, Alessandro Ramiro | Ampliación de las secciones 3.1.4.1 y 3.1.4.3 con las pantallas del Sprint 1 (Create account, Alert detail, Devices, Add device y Assign Water Point) y su trazabilidad con el Product Backlog; redacción de 3.1.4.5 (Mobile Applications Prototyping), 4.2.1.6 (Execution Evidence for Sprint Review) y de los Anexos B, C y D. |
 # Project Report Collaboration Insights
 
 **Organización de GitHub:** **https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov**
@@ -89,6 +92,23 @@ del informe. Para mantener un aporte equilibrado, el equipo revisó los cambios
 antes de integrarlos y mantuvo una rama por capítulo, reduciendo conflictos y
 facilitando la trazabilidad.
 
+
+## Entrega TB1
+
+Para la entrega TB1, el equipo mantuvo la organización por capítulos en el repositorio del Project Report e incorporó el repositorio del RESTful API dentro de la misma organización de GitHub. En el Project Report, cada capítulo nuevo se desarrolló en su propia rama de funcionalidad (`feature/chapter-3` para Solution UI/UX Design y `feature/chapter-4` para Product Implementation, Validation & Deployment), integrada a `develop` y luego a `master` mediante un release. En el repositorio `qlic-backend-api`, cada bounded context del Sprint 1 se integró con commits que referencian las historias atendidas: US10 a US12 para Device Monitoring, US15 y US16 para Alerting, y US05 y US06 para IAM, este último desarrollado en la rama `feature/iam-authentication`.
+
+**Evidencia de colaboración:**
+
+![Analítica de contribuciones del repositorio del Project Report durante TB1](../images/collaboration/tb1_report_git.png)
+
+*Figura 2.* Analítica de contribuciones del repositorio del Project Report durante TB1.
+
+![Analítica de contribuciones del repositorio del RESTful API durante TB1](../images/collaboration/tb1_backend_git.png)
+
+*Figura 3.* Analítica de contribuciones del repositorio `qlic-backend-api` durante TB1.
+
+**Interpretación del equipo:** Durante TB1 la actividad se distribuyó entre la documentación del diseño de la solución (Capítulo III), la configuración y documentación de la implementación (Capítulo IV) y la construcción de los servicios RESTful del Sprint 1. La separación por repositorio y por rama permitió que el desarrollo del backend avanzara en paralelo con la redacción del informe, y que cada integración a la rama principal quedara registrada con un commit de merge trazable.
+
 ---
 
 # Contenido
@@ -96,6 +116,7 @@ facilitando la trazabilidad.
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
     - [Entrega AV1](#entrega-av1)
+    - [Entrega TB1](#entrega-tb1)
 - [Contenido](#contenido)
 - [Student Outcome](#student-outcome)
 - [Objetivos SMART](#objetivos-smart)
@@ -173,6 +194,46 @@ facilitando la trazabilidad.
         - [2.6.4. Bounded Context: Subscriptions](#264-bounded-context-subscriptions)
         - [2.6.5. Bounded Context: IAM](#265-bounded-context-iam)
         - [2.6.6. Bounded Context: Support](#266-bounded-context-support)
+- [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
+    - [3.1. Product design](#31-product-design)
+        - [3.1.1. Style Guidelines](#311-style-guidelines)
+            - [3.1.1.1. General Style Guidelines](#3111-general-style-guidelines)
+        - [3.1.2. Information Architecture](#312-information-architecture)
+            - [3.1.2.1. Organization Systems](#3121-organization-systems)
+            - [3.1.2.2. Labelling Systems](#3122-labelling-systems)
+            - [3.1.2.3. SEO Tags and Meta Tags](#3123-seo-tags-and-meta-tags)
+            - [3.1.2.4. Searching Systems](#3124-searching-systems)
+            - [3.1.2.5. Navigation Systems](#3125-navigation-systems)
+        - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
+            - [3.1.3.1. Landing Page Wireframe](#3131-landing-page-wireframe)
+            - [3.1.3.2. Landing Page Mock-up](#3132-landing-page-mock-up)
+        - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-uxui-design)
+            - [3.1.4.1. Mobile Applications Wireframes](#3141-mobile-applications-wireframes)
+            - [3.1.4.2. Mobile Applications Wireflow Diagrams](#3142-mobile-applications-wireflow-diagrams)
+            - [3.1.4.3. Mobile Applications Mock-ups](#3143-mobile-applications-mock-ups)
+            - [3.1.4.4. Mobile Applications User Flow Diagrams](#3144-mobile-applications-user-flow-diagrams)
+            - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-applications-prototyping)
+- [Capítulo IV: Product Implementation & Validation](#capítulo-iv-product-implementation--validation)
+    - [4.1. Software Configuration Management](#41-software-configuration-management)
+        - [4.1.1. Software Development Environment Configuration](#411-software-development-environment-configuration)
+        - [4.1.2. Source Code Management](#412-source-code-management)
+        - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide--conventions)
+        - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
+    - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
+        - [4.2.1. Sprint 1](#421-sprint-1)
+            - [4.2.1.1. Sprint Planning 1](#4211-sprint-planning-1)
+            - [4.2.1.2. Aspect Leaders and Collaborators](#4212-aspect-leaders-and-collaborators)
+            - [4.2.1.3. Sprint Backlog 1](#4213-sprint-backlog-1)
+            - [4.2.1.4. Development Evidence for Sprint Review](#4214-development-evidence-for-sprint-review)
+            - [4.2.1.5. Testing Suite Evidence for Sprint Review](#4215-testing-suite-evidence-for-sprint-review)
+            - [4.2.1.6. Execution Evidence for Sprint Review](#4216-execution-evidence-for-sprint-review)
+            - [4.2.1.7. Services Documentation Evidence for Sprint Review](#4217-services-documentation-evidence-for-sprint-review)
+            - [4.2.1.8. Software Deployment Evidence for Sprint Review](#4218-software-deployment-evidence-for-sprint-review)
+            - [4.2.1.9. Team Collaboration Insights during Sprint](#4219-team-collaboration-insights-during-sprint)
+    - [4.3. Validation Interviews](#43-validation-interviews)
+        - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+        - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+        - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Capítulo V: Conclusiones, Bibliografía y Anexos](#capítulo-v-conclusiones-bibliografía-y-anexos)
     - [5.1. Conclusiones](#51-conclusiones)
     - [5.2. Bibliografía](#52-bibliografía)
@@ -181,6 +242,9 @@ facilitando la trazabilidad.
         - [5.2.3. Herramientas y documentación técnica](#523-herramientas-y-documentación-técnica)
     - [5.3. Anexos](#53-anexos)
         - [Anexo A. Recursos gráficos del análisis competitivo](#anexo-a-recursos-gráficos-del-análisis-competitivo)
+        - [Anexo B. Videos de Exposiciones](#anexo-b-videos-de-exposiciones)
+        - [Anexo C. Artefactos, repositorios y productos desplegados](#anexo-c-artefactos-repositorios-y-productos-desplegados)
+        - [Anexo D. Términos y condiciones del servicio](#anexo-d-términos-y-condiciones-del-servicio)
 ---
 
 # Student Outcome
