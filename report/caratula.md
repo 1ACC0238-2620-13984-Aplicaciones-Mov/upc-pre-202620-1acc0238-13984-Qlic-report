@@ -64,6 +64,7 @@
 | 3.0     | 2026-10-06  | Briceño Llanos, Ayrton Omar | Incorporación de evidencia TB1 del RESTful API: implementación de Device Monitoring y Alerting, pruebas unitarias, configuración de contenedor y capturas de ejecución del backend. |
 | 3.1     | 2026-10-06  | Conde Huashuayo, Sebasthian Alex | Desarrollo de Style Guidelines, Information Architecture y artefactos UI/UX del Landing Page y de la aplicación móvil para sustentar la propuesta visual del Sprint 1. |
 | 3.2     | 2026-10-06  | Condori Lozano, Alessandro Ramiro | Consolidación de wireflows y user flows móviles, configuración y documentación de servicios, y coordinación de la integración del informe para la entrega TB1. |
+| 3.3     | 2026-10-06  | Avila Palacios, Aaron Alexander | Incorporación de la captura de Contributors de GitHub como evidencia visual de la colaboración del equipo durante TB1. |
 # Project Report Collaboration Insights
 
 **Organización de GitHub:** **https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov**
