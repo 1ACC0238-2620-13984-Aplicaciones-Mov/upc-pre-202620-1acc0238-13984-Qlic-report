@@ -10,7 +10,11 @@ En esta sección se establece el repositorio central de decisiones visuales y de
 
 #### 3.1.1.1. General Style Guidelines
 
-**Branding.** Qlic transmite tranquilidad y control sobre un recurso cotidiano. La identidad se apoya en el azul como color de confianza y en el logo de Qlic en versión horizontal para cabeceras y en versión de ícono para la aplicación móvil. [COMPLETAR: imagen del logo y reglas de uso: zona de respeto y tamaño mínimo].
+**Branding.** Qlic transmite tranquilidad y control sobre un recurso cotidiano. La identidad se apoya en el azul como color de confianza y en el logotipo proporcionado por el equipo. La versión horizontal se utiliza en cabeceras y la marca de ícono se reserva para la aplicación móvil; ambas versiones mantienen el espacio libre alrededor de sus elementos para conservar la legibilidad.
+
+![Logotipo oficial de Qlic](../images/branding/qlic-logo.png)
+
+*Logotipo oficial de Qlic para la identidad visual del producto.*
 
 **Tono de comunicación.** Se ubica en las cuatro dimensiones de tono de voz de Nielsen Norman Group de la siguiente manera:
 
@@ -48,7 +52,7 @@ Se usan unidades `sp` en Android para respetar la configuración de tamaño de t
 | Success | `#22C55E` | Dispositivo conectado, operación exitosa | Existente (se redefine su uso) |
 | Warning | `#F59E0B` | Consumo por encima del umbral, dispositivo con batería baja | Propuesto |
 | Error / Leak | `#DC2626` | Alerta de posible fuga, credenciales inválidas | Propuesto |
-| Secondary (azul oscuro) | [COMPLETAR: hex del Figma] | Contraste y encabezados | Pendiente |
+| Secondary (azul oscuro) | `#003257` | Contraste y encabezados | Existente |
 
 Decisiones de contraste: `#0C4AFD` sobre blanco tiene una relación aproximada de 6,1:1 y `#6B7280` sobre blanco de 4,8:1, ambas por encima del mínimo de 4,5:1 de WCAG 2.1 nivel AA para texto normal. `#22C55E` sobre blanco no alcanza ese mínimo, por lo que el verde nunca se usa como color de texto sobre fondo claro: acompaña a un ícono y a una etiqueta. Además, ningún estado se comunica solo con color; siempre lleva ícono y texto (por ejemplo, "Leak alert" con ícono de advertencia).
 
