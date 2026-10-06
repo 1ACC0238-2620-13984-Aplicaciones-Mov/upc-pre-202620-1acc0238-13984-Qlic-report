@@ -382,7 +382,7 @@ Durante el Sprint 1 el equipo implementó y desplegó dos de los productos de la
 |---|---|---|---|
 | Landing Page | Hero, propuesta de valor y planes (escritorio) | US01, US02 | Figura 4.2 |
 | Landing Page | Contacto y selector de idioma (navegador móvil) | US03, US04 | Figura 4.3 |
-| RESTful API | Endpoints de Authentication, device-controller y leak-alert-controller | US05, US06, US10 a US12, US15, US16 | Figuras 4.5 a 4.8 (sección 4.2.1.7) |
+| RESTful API | Endpoints de Authentication, device-controller y leak-alert-controller | US05, US06, US10 a US12, US15, US16 | Documentación de endpoints en la sección 4.2.1.7 |
 
 ![Landing Page desplegado en navegador de escritorio](../images/execution/landing-desktop.png)
 
@@ -391,12 +391,6 @@ Durante el Sprint 1 el equipo implementó y desplegó dos de los productos de la
 ![Landing Page desplegado en navegador móvil](../images/execution/landing-mobile.png)
 
 *Figura 4.3.* Landing Page de Qlic en navegador móvil: formulario de contacto y selector de idioma.
-
-**Video de ejecución del Sprint.** El video `upc-pre-202620-1acc0238-13984-wasd-productnavigation-tb1.mp4` muestra y explica la navegación lograda en el Sprint 1: el recorrido del Landing Page en escritorio y en móvil, el cambio de idioma y el envío del formulario de contacto, y la ejecución de los endpoints del RESTful API desde Swagger UI con un token de acceso. Está publicado en [COMPLETAR: enlace del video en Microsoft Stream u OneDrive].
-
-![Captura del video de ejecución del Sprint 1](../images/execution/product-navigation-video.png)
-
-*Figura 4.4.* Captura del video de ejecución del Sprint 1.
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
 
@@ -660,32 +654,6 @@ GET /api/v1/alerts?accountId=c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61
 HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Bearer
 ```
-
-**Evidencia de interacción con la documentación**
-
-La Figura 4.5 muestra la vista general de Swagger UI con las secciones Authentication, device-controller y leak-alert-controller, y el esquema de seguridad `bearerAuth`.
-
-<img src="../images/services/swagger_overview.png" alt="Vista general de Swagger UI del RESTful API de Qlic" width="800">
-
-*Figura 4.5.* Documentación OpenAPI del RESTful API de Qlic publicada con Swagger UI.
-
-La Figura 4.6 muestra la ejecución del endpoint de registro con los datos de muestra y su respuesta `201 Created`.
-
-<img src="../images/services/swagger_sign_up.png" alt="Ejecución de POST sign-up en Swagger UI" width="800">
-
-*Figura 4.6.* Ejecución de `POST /api/v1/authentication/sign-up` (US05).
-
-La Figura 4.7 muestra la ejecución del inicio de sesión y el token de acceso emitido.
-
-<img src="../images/services/swagger_sign_in.png" alt="Ejecución de POST sign-in en Swagger UI" width="800">
-
-*Figura 4.7.* Ejecución de `POST /api/v1/authentication/sign-in` (US06).
-
-La Figura 4.8 muestra la consulta de un recurso protegido luego de registrar el token en el diálogo *Authorize*.
-
-<img src="../images/services/swagger_authorized_request.png" alt="Consulta de recurso protegido con token en Swagger UI" width="800">
-
-*Figura 4.8.* Ejecución de `GET /api/v1/devices` con el token de acceso (US12).
 
 **Commits relacionados con la documentación de servicios**
 
