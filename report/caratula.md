@@ -109,10 +109,6 @@ Para la entrega TB1, el equipo mantuvo la organización por capítulos en el rep
 
 *Figura 2.* Analítica de contribuciones del repositorio del Project Report durante TB1.
 
-![Analítica de contribuciones del repositorio del RESTful API durante TB1](../images/collaboration/tb1_backend_git.png)
-
-*Figura 3.* Analítica de contribuciones del repositorio `qlic-backend-api` durante TB1.
-
 **Interpretación del equipo:** Durante TB1 la actividad se distribuyó entre la documentación del diseño de la solución (Capítulo III), la configuración y documentación de la implementación (Capítulo IV) y la construcción de los servicios RESTful del Sprint 1. La separación por repositorio y por rama permitió que el desarrollo del backend avanzara en paralelo con la redacción del informe, y que cada integración a la rama principal quedara registrada con un commit de merge trazable.
 
 ---
