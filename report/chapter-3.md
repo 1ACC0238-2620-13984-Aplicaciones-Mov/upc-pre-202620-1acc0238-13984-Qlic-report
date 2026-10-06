@@ -184,7 +184,8 @@ Si no hay coincidencias, se muestra un estado vacío con un mensaje claro ("No d
 - Las acciones de mayor frecuencia se ubican en Home: ver alertas activas y acceder al detalle de consumo.
 - Las notificaciones push llevan directamente al detalle de la alerta correspondiente (deep link), lo que reduce pasos para la tarea crítica.
 - El registro de un dispositivo nuevo se inicia desde Devices y usa un flujo secuencial con lectura de código QR.
-  **Landing Page.** Barra de navegación superior fija con anclas a cada sección; en móvil se convierte en menú hamburguesa. El botón de llamada a la acción "Contact Sales" permanece visible, y el enlace a Terms and Conditions se ubica en el footer. [COMPLETAR: confirmar etiquetas finales de la barra].
+
+**Landing Page.** La navegación superior utiliza anclas hacia las secciones `Product`, `About Us`, `Team`, `Solutions`, `Features`, `Testimonies`, `Pricing` y `FAQ`. El botón `Contact Sales` funciona como llamada a la acción principal y el selector de idioma `EN` permite cambiar la experiencia a español latinoamericano. En pantallas pequeñas, los enlaces se agrupan en un menú hamburguesa; el enlace `Terms and Conditions` permanece disponible en el footer.
 
 ### 3.1.3. Landing Page UI Design
 
@@ -248,7 +249,7 @@ Los mock-ups aplican el Design System definido en 3.1.1: Poppins y Roboto, azul 
 *Figura 3.12. Parte 6: "Contact Sales" y footer.*
 
 
-Explicación: el Hero comunica el beneficio central de Qlic (visibilidad del consumo de agua y alertas oportunas) para hogares y PYMES. La sección de planes presenta Plan Básico y Plan Gestión Pro en formato de comparación (US02). Los testimonios provienen de las entrevistas de validación del proyecto. El formulario de contacto informa el dato faltante en caso de error (US03) y el selector de idioma permite cambiar entre inglés y español latinoamericano (US04). El footer incluye el enlace a los términos y condiciones del servicio y el video About-the-Product. [COMPLETAR: confirmar nombres de planes y precios con el equipo].
+Explicación: el Hero comunica el beneficio central de Qlic (visibilidad del consumo de agua y alertas oportunas) para hogares y PYMES. La sección de planes presenta Plan Básico y Plan Gestión Pro en formato de comparación (US02). Los testimonios provienen de las entrevistas de validación del proyecto. El formulario de contacto informa el dato faltante en caso de error (US03) y el selector de idioma permite cambiar entre inglés y español latinoamericano (US04). El footer incluye el enlace a los términos y condiciones del servicio y el video About-the-Product.
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
@@ -472,5 +473,3 @@ El prototipo de la aplicación móvil se construyó en Figma enlazando los mock-
 | F3. Registrar un dispositivo con código QR | Empezar a monitorear un nuevo punto de agua | US10, US11, US12 | Business › Devices → "Add device" → lectura del QR → confirmar → Assign Water Point → "Save" → Devices con snackbar | Permiso de cámara denegado → "Enter code manually" → confirmar |
 | F4. Revisar el nivel de los tanques | Evitar quedarse sin agua | US28 | Business › Tanks → detalle del tanque | Tanque con nivel bajo → indicador de advertencia en "Tanks to refill" |
 | F5. Solicitar ayuda | Resolver un problema sin salir de la aplicación | US35 | More → Support → formulario → "Submit ticket" → ticket en estado "Open" | Campo obligatorio vacío → mensaje bajo el campo |
-
-**Acceso al prototipo.** El prototipo navegable debe enlazarse desde la versión pública de "Present" en Figma cuando el equipo disponga de ese enlace. En esta entrega no se declara un video de demostración ni una captura de video porque todavía no se han realizado.
