@@ -175,8 +175,6 @@ Este anexo centraliza los enlaces a los artefactos elaborados en las herramienta
 | Project Report | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report | No aplica |
 | Landing Page | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page | https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/ |
 | RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api | https://qlic-backend-api.onrender.com/swagger-ui.html |
-| Mobile App (nativa) | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-mobile-android | Firebase App Distribution (grupo de testers del equipo) |
-| Mobile App (multiplataforma) | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-mobile-flutter | Firebase App Distribution (grupo de testers del equipo) |
 
 <div style="page-break-before: always;"></div>
 
