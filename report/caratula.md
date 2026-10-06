@@ -11,7 +11,7 @@
    <p><strong>Aplicaciones para Dispositivos Móviles</strong></p>
    <p>NRC</p>
    <p><strong>13984</strong></p>
-   <h3>Informe del Trabajo Final</h3>
+   <h3>Informe de Trabajo Final</h3>
    <p>Docente</p>
    <p><strong>Quevedo Velasco, David Gerardo</strong></p>
    <p>Equipo</p>
@@ -32,7 +32,7 @@
    <br>
    <p><strong>Período 202620</strong></p>
    <br>
-   <p><strong>Setiembre 2026</strong></p>
+   <p><strong>Octubre 2026</strong></p>
 </div>
 
 <div style="page-break-before: always;"></div>
@@ -58,6 +58,7 @@
 | 2.4     | 2026-10-02  | Condori Lozano, Alessandro Ramiro | Redacción de las secciones 4.1.1 a 4.1.4 (Software Configuration Management) y 4.2.1.7 (Services Documentation Evidence for Sprint Review); actualización del Registro de Versiones, del Project Report Collaboration Insights (TB1) y de la bibliografía. |
 | 2.5     | 2026-10-05  | Condori Lozano, Alessandro Ramiro | Alineación del Capítulo IV con el enunciado y la rúbrica TB1: Deployment Diagram de C4 Model en 4.1.4, herramientas según las restricciones tecnológicas, guías de estilo para Kotlin, HTML y Gherkin, documentación de los siete endpoints del Sprint 1 con ejemplos de llamada y respuesta, e internacionalización de los mensajes de IAM (en_US y es_419); actualización de la tabla de contenidos. |
 | 2.6     | 2026-10-05  | Condori Lozano, Alessandro Ramiro | Ampliación de las secciones 3.1.4.1 y 3.1.4.3 con las pantallas del Sprint 1 (Create account, Alert detail, Devices, Add device y Assign Water Point) y su trazabilidad con el Product Backlog; redacción de 3.1.4.5 (Mobile Applications Prototyping), 4.2.1.6 (Execution Evidence for Sprint Review) y de los Anexos B, C y D. |
+| 2.7     | 2026-10-06  | Condori Lozano, Alessandro Ramiro | Ajuste del informe al alcance de la entrega TB1: retiro de la sección 4.3 Validation Interviews, que corresponde a entregas posteriores, y de las referencias a repositorios de aplicaciones móviles aún no creados; Execution Evidence limitado a los productos desplegados; corrección de la carátula y de los títulos del Capítulo I según la plantilla del curso. |
 # Project Report Collaboration Insights
 
 **Organización de GitHub:** **https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov**
@@ -95,7 +96,7 @@ facilitando la trazabilidad.
 
 ## Entrega TB1
 
-Para la entrega TB1, el equipo mantuvo la organización por capítulos en el repositorio del Project Report e incorporó el repositorio del RESTful API dentro de la misma organización de GitHub. En el Project Report, cada capítulo nuevo se desarrolló en su propia rama de funcionalidad (`feature/chapter-3` para Solution UI/UX Design y `feature/chapter-4` para Product Implementation, Validation & Deployment), integrada a `develop` y luego a `master` mediante un release. En el repositorio `qlic-backend-api`, cada bounded context del Sprint 1 se integró con commits que referencian las historias atendidas: US10 a US12 para Device Monitoring, US15 y US16 para Alerting, y US05 y US06 para IAM, este último desarrollado en la rama `feature/iam-authentication`.
+Para la entrega TB1, el equipo mantuvo la organización por capítulos en el repositorio del Project Report e incorporó el repositorio del RESTful API dentro de la misma organización de GitHub. En el Project Report, cada capítulo nuevo se desarrolló en su propia rama de funcionalidad (`feature/chapter-3` para Solution UI/UX Design y `feature/chapter-4` para Product Implementation & Validation), integrada a `develop` y luego a `master` mediante un release. En el repositorio `qlic-backend-api`, cada bounded context del Sprint 1 se integró con commits que referencian las historias atendidas: US10 a US12 para Device Monitoring, US15 y US16 para Alerting, y US05 y US06 para IAM, este último desarrollado en la rama `feature/iam-authentication`.
 
 **Evidencia de colaboración:**
 
@@ -124,7 +125,7 @@ Para la entrega TB1, el equipo mantuvo la organización por capítulos en el rep
     - [Briceño Llanos, Ayrton Omar](#briceño-llanos-ayrton-omar)
     - [Conde Huashuayo, Sebasthian Alex](#conde-huashuayo-sebasthian-alex)
     - [Condori Lozano, Alessandro Ramiro](#condori-lozano-alessandro-ramiro)
-- [Capítulo I: Introducción](#capítulo-i-introducción)
+- [Capítulo I: Presentación](#capítulo-i-presentación)
     - [1.1. Startup Profile](#11-startup-profile)
         - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
         - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -230,10 +231,6 @@ Para la entrega TB1, el equipo mantuvo la organización por capítulos en el rep
             - [4.2.1.7. Services Documentation Evidence for Sprint Review](#4217-services-documentation-evidence-for-sprint-review)
             - [4.2.1.8. Software Deployment Evidence for Sprint Review](#4218-software-deployment-evidence-for-sprint-review)
             - [4.2.1.9. Team Collaboration Insights during Sprint](#4219-team-collaboration-insights-during-sprint)
-    - [4.3. Validation Interviews](#43-validation-interviews)
-        - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
-        - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
-        - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Capítulo V: Conclusiones, Bibliografía y Anexos](#capítulo-v-conclusiones-bibliografía-y-anexos)
     - [5.1. Conclusiones](#51-conclusiones)
     - [5.2. Bibliografía](#52-bibliografía)
