@@ -234,16 +234,30 @@ La validación del Sprint requiere comprobar que una persona puede recorrer la p
 
 #### 4.2.1.2. Aspect Leaders and Collaborators
 
-La matriz siguiente distribuye el liderazgo y la colaboración entre los cuatro integrantes. `L` significa líder del aspecto y `C` significa colaborador. La asignación se relaciona con las tareas del Sprint Backlog 1 y evita concentrar toda la responsabilidad en una sola persona.
+La rúbrica solicita un artefacto **Leadership-and-Collaboration Matrix (LACX)** que indique el líder y los colaboradores de cada aspecto del Sprint. La matriz se construyó a partir de la distribución de tareas proporcionada por el equipo en las capturas adjuntas. `L` significa líder responsable del aspecto y `C` significa colaborador; `C` representa coordinación o apoyo esperado, no evidencia de que la tarea ya esté terminada.
 
-| Team Member (Last Name, First Name) | GitHub Username | Sprint Planning 1 | Landing Page implementation | Sprint Backlog 1 | Software Deployment Evidence | Team Collaboration Insights |
-|---|---|:---:|:---:|:---:|:---:|:---:|
-| Avila Palacios, Aaron Alexander | No consignado en el reporte | **L** | C | C | **L** | C |
-| Briceño Llanos, Ayrton Omar | No consignado en el reporte | C | **L** | C | C | C |
-| Conde Huashuayo, Sebasthian Alex | No consignado en el reporte | C | C | **L** | C | C |
-| Condori Lozano, Alessandro Ramiro | No consignado en el reporte | C | C | C | C | **L** |
+| Team Member (Last Name, First Name) | GitHub Username | Planning & Backlog | SEO & Meta Tags | Landing Page US01–US04 | UX/UI & Design Artifacts | Development Evidence | Testing Evidence | Execution Evidence | Landing Deployment Evidence |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Avila Palacios, Aaron Alexander | Pendiente de confirmar | **L** | **L** | **L** | C | C | C | C | **L** |
+| Briceño Llanos, Ayrton Omar | Pendiente de confirmar | C | C | C | C | **L** | **L** | C | C |
+| Conde Huashuayo, Sebasthian Alex | Pendiente de confirmar | C | C | C | **L** | C | C | **L** | C |
+| Condori Lozano, Alessandro Ramiro | Pendiente de confirmar | C | C | C | C | C | C | C | C |
 
-Los nombres de usuario de GitHub deben consignarse con el identificador público real de cada integrante antes de la entrega. No se inventan identificadores a partir del nombre mostrado en los commits. La evidencia de cada liderazgo debe vincularse con la tarea correspondiente, su estado y el commit o captura de la revisión.
+| Team Member (Last Name, First Name) | Backend Device Monitoring & Alerting | Services Documentation / IAM / REST API & Swagger | Environment & API Deployment Configuration | Team Collaboration Insights | Versioning, PDF & Release |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Avila Palacios, Aaron Alexander | C | C | C | C | C |
+| Briceño Llanos, Ayrton Omar | **L** | C | C | C | C |
+| Conde Huashuayo, Sebasthian Alex | C | C | C | C | C |
+| Condori Lozano, Alessandro Ramiro | C | **L** | **L** | **L** | **L** |
+
+#### Distribución detallada de tareas informada por el equipo
+
+- **Avila Palacios, Aaron Alexander:** 3.1.2.3 SEO Tags and Meta Tags; 4.2.1.1 Sprint Planning 1; 4.2.1.2 Aspect Leaders and Collaborators; 4.2.1.3 Sprint Backlog 1 con Engineering Tasks de 4 a 8 horas; 4.2.1.8 Software Deployment Evidence; 4.2.1.9 Team Collaboration Insights during Sprint; Landing Page desplegado (US01, US02, US03 y US04).
+- **Briceño Llanos, Ayrton Omar:** 4.2.1.4 Development Evidence; 4.2.1.5 Testing Suite Evidence; Backend Device Monitoring (US10, US11 y US12); Backend Alerting (US15 y US16); corrección y mejora de los Capítulos I y II; 5.1 Conclusiones; 5.2 Bibliografía.
+- **Conde Huashuayo, Sebasthian Alex:** 3.1.1 Style Guidelines; 3.1.2.1 Organization Systems; 3.1.2.2 Labelling Systems; 3.1.2.4 Searching Systems; 3.1.2.5 Navigation Systems; 3.1.3.1 Landing Page Wireframe; 3.1.3.2 Landing Page Mock-up; 3.1.4.1 Mobile Applications Wireframes; 3.1.4.2 Mobile Applications Wireflow Diagrams; 3.1.4.3 Mobile Applications Mock-ups; 3.1.4.4 Mobile Applications User Flow Diagrams; 3.1.4.5 Mobile Applications Prototyping; aplicación nativa Kotlin (pantallas de autenticación y home); 4.2.1.6 Execution Evidence.
+- **Condori Lozano, Alessandro Ramiro:** 4.1.1 Software Development Environment Configuration; 4.1.2 Source Code Management; 4.1.3 Source Code Style Guide & Conventions; 4.1.4 Software Deployment Configuration; 4.2.1.7 Services Documentation Evidence; Backend IAM (US05 y US06) y despliegue del RESTful API con Swagger; registro de versiones; Project Report Collaboration Insights; consolidación del informe, PDF y release.
+
+Los nombres de usuario de GitHub se mantienen como pendientes hasta que cada integrante confirme su identificador público. La evidencia de cada liderazgo debe vincularse posteriormente con la tarea, su estado y el commit, captura o artefacto correspondiente.
 
 #### 4.2.1.3. Sprint Backlog 1
 
@@ -642,14 +656,14 @@ La evidencia final debe corresponder al mismo commit revisado en el Sprint Backl
 
 #### 4.2.1.9. Team Collaboration Insights during Sprint
 
-El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el trabajo. La distribución del Sprint 1 asigna un liderazgo diferente a cada integrante: Aaron en planificación y despliegue, Ayrton en implementación, Sebasthian en backlog y Alessandro en colaboración. La interpretación definitiva debe basarse en capturas de GitHub Insights y del tablero correspondientes al intervalo real del Sprint.
+El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el trabajo. La matriz LACX de la sección 4.2.1.2 establece la distribución informada por el equipo: Aaron coordina planificación, backlog, SEO y despliegue del Landing Page; Ayrton coordina desarrollo, pruebas, monitoreo y alertas; Sebasthian coordina los artefactos UX/UI y la evidencia de ejecución; Alessandro coordina servicios, configuración, versionado, colaboración y release. La interpretación definitiva debe basarse en capturas de GitHub Insights y del tablero correspondientes al intervalo real del Sprint.
 
 | Integrante | Responsabilidad de colaboración en el Sprint 1 | Evidencia que debe vincularse |
 |---|---|---|
-| Avila Palacios, Aaron Alexander | Coordinar la planificación, revisar el despliegue y consolidar la evidencia | Acta de planificación, URL/captura de despliegue y commits |
-| Briceño Llanos, Ayrton Omar | Coordinar la implementación de la comparación de planes y apoyar la revisión | Commit de T02/T07 y captura de revisión |
-| Conde Huashuayo, Sebasthian Alex | Mantener el backlog, las estimaciones y el estado de las tareas | Captura del tablero y actualización de T03 |
-| Condori Lozano, Alessandro Ramiro | Consolidar la colaboración del equipo y apoyar la interfaz | Capturas de coordinación y commits de T01/T05 |
+| Avila Palacios, Aaron Alexander | Planificación, backlog, SEO, despliegue del Landing Page y consolidación de su evidencia | Acta de planificación, captura/URL de despliegue, commits de SEO y backlog |
+| Briceño Llanos, Ayrton Omar | Desarrollo, pruebas, monitoreo de dispositivos y alertas del backend | Commits o capturas de desarrollo, suite de pruebas, monitoreo y alertas |
+| Conde Huashuayo, Sebasthian Alex | Artefactos UX/UI, aplicación nativa y evidencia de ejecución | Wireframes, mock-ups, flujos y captura de ejecución |
+| Condori Lozano, Alessandro Ramiro | Servicios/API, configuración, versionado, colaboración, PDF y release | Configuración, Swagger, registro de versiones, acuerdos y release |
 
 Para la entrega se requiere una captura de GitHub Insights con el periodo del Sprint, una captura del tablero de Trello y un registro de los acuerdos o bloqueos. La imagen general de actividad de AV1 no está disponible en esta rama; no se sustituye por una captura de otro periodo.
 
