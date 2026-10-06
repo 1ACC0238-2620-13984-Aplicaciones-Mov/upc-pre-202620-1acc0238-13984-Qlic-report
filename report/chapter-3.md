@@ -216,66 +216,117 @@ Los mock-ups aplican el Design System definido en 3.1.1: Poppins y Roboto, azul 
 
 ![Mock-up Landing Page, parte 1: encabezado y Hero](../images/mockups/Mockup-Landing-Page-part1.png)
 
-*Figura . Parte 1: encabezado con selector de idioma y menú, y sección Hero.*
+*Figura 3.7. Parte 1: encabezado con selector de idioma y menú, y sección Hero.*
 
 ![Mock-up Landing Page, parte 2: visibilidad del agua y About Us](../images/mockups/Mockup-Landing-Page-part2.png)
 
-*Figura . Parte 2: secciones "Full visibility of your water" y "About Us".*
+*Figura 3.8. Parte 2: secciones "Full visibility of your water" y "About Us".*
 
 ![Mock-up Landing Page, parte 3: equipo y soluciones por segmento](../images/mockups/Mockup-Landing-Page-part3.png)
 
-*Figura . Parte 3: sección "Our Team" y "Solutions by segment".*
+*Figura 3.9. Parte 3: sección "Our Team" y "Solutions by segment".*
 
 ![Mock-up Landing Page, parte 4: funcionalidades y video](../images/mockups/Mockup-Landing-Page-part4.png)
 
-*Figura . Parte 4: "Subscription plans".*
+*Figura 3.10. Parte 4: "Subscription plans".*
 
 ![Mock-up Landing Page, parte 5: testimonios](../images/mockups/Mockup-Landing-Page-part6.png)
 
-*Figura . Parte 5: sección "What our customers say".*
+*Figura 3.11. Parte 5: sección "What our customers say".*
 
 ![Mock-up Landing Page, parte 6: planes, contacto y footer](../images/mockups/Mockup-Landing-Page-part5.png)
 
-*Figura . Parte 6: "Contact Sales" y footer.*
+*Figura 3.12. Parte 6: "Contact Sales" y footer.*
 
 
 Explicación: el Hero comunica el beneficio central de Qlic (visibilidad del consumo de agua y alertas oportunas) para hogares y PYMES. La sección de planes presenta Plan Básico y Plan Gestión Pro en formato de comparación (US02). Los testimonios provienen de las entrevistas de validación del proyecto. El formulario de contacto informa el dato faltante en caso de error (US03) y el selector de idioma permite cambiar entre inglés y español latinoamericano (US04). El footer incluye el enlace a los términos y condiciones del servicio y el video About-the-Product. [COMPLETAR: confirmar nombres de planes y precios con el equipo].
 
 ### 3.1.4. Mobile Applications UX/UI Design
 
+En esta sección se presenta la propuesta visual y de interacción de la aplicación móvil de Qlic, que se implementa como aplicación nativa en Kotlin para Android y como aplicación multiplataforma en Flutter con la misma estructura de pantallas. Las secciones internas avanzan del nivel de estructura al de interacción: los wireframes definen la organización de cada vista, los wireflows y user flows encadenan esas vistas por User Goal, los mock-ups aplican el Design System de la sección 3.1.1 y los prototipos simulan la navegación completa. Todas las vistas respetan el sistema de navegación definido en 3.1.2.5 y las etiquetas de 3.1.2.2.
+
 #### 3.1.4.1. Mobile Applications Wireframes
 
-Se presentan los wireframes de las pantallas principales de la aplicación móvil: Sign in, Main Dashboard, Alerts, Inventory + features y Support & Help. Todas comparten la barra superior con el logo, el contador de alertas y el perfil, y la barra de navegación inferior con cinco destinos.
+Los wireframes se elaboraron en Figma sobre un marco de 360 × 800 dp, con áreas seguras superior e inferior, cuadrícula base de 8 dp y márgenes laterales de 16 dp. Representan la estructura y la jerarquía de cada vista en escala de grises, sin decisiones de color ni tipografía final, para validar primero la arquitectura de información. La Tabla 3.1 relaciona cada pantalla con las User Stories que atiende y con el Sprint en que se implementa, de modo que el alcance del Sprint 1 quede cubierto por al menos una vista.
+
+*Tabla 3.1. Pantallas de la aplicación móvil y su relación con el Product Backlog.*
+
+| # | Pantalla | User Stories | Sprint | Acceso en la navegación |
+|---|---|---|---|---|
+| 1 | Sign in | US06 | 1 | Flujo de autenticación |
+| 2 | Create account | US05, US38 | 1 | Sign in › "Create account" |
+| 3 | Main Dashboard y menú "More" | US12, US15 | 1 | Barra inferior › Dashboard |
+| 4 | Alerts | US15, US16, US18, US20 | 1 y 2 | Barra inferior › Alerts |
+| 5 | Alert detail | US16, US20 | 1 | Alerts › tarjeta de alerta, o notificación push |
+| 6 | Devices | US12, US13 | 1 | Barra inferior › Business › pestaña Devices |
+| 7 | Add device (lectura de código QR) | US10 | 1 | Devices › "Add device" |
+| 8 | Assign Water Point | US11 | 1 | Add device › paso 2, o detalle del dispositivo |
+| 9 | Inventory + features | US28, US29, US30 | 2 y 3 | Barra inferior › Business › pestaña Tanks |
+| 10 | Support & Help | US35, US36, US37 | 2 y 3 | More › Support |
+
+Todas las pantallas autenticadas comparten la barra superior con el logo, el contador de alertas y el avatar del perfil, y la barra de navegación inferior con cinco destinos: Dashboard, Alerts, Reports, Business y More. Los dispositivos y los tanques se agrupan en Business porque ambos describen la infraestructura de agua del local o del hogar; así se conserva el límite de cinco destinos que recomienda Material Design para la barra inferior (Google, s. f.-d).
 
 ![Wireframe móvil: Sign in](../images/wireframes/Wireframe-Login.png)
 
-*Figura . Wireframe de la pantalla Sign in.*
+*Figura 3.13. Wireframe de la pantalla Sign in.*
 
-Explicación: el acceso se concentra en una sola columna, con los campos de correo y contraseña en el centro y el botón "Sign in" como acción principal. Los enlaces "Forgot password?" y "Create account" llevan a las demás pantallas del flujo de autenticación, y se ofrece el ingreso con Google y X como alternativa.
+Explicación: el acceso se concentra en una sola columna, con los campos de correo y contraseña en el centro y el botón "Sign in" como acción principal. Los enlaces "Forgot password?" y "Create account" llevan a las demás pantallas del flujo de autenticación, y se muestran los accesos con Google y X como alternativa; estos accesos no forman parte de las User Stories del Product Backlog, por lo que no se implementan en el Sprint 1 y quedan como mejora posterior sujeta a validación.
+
+![Wireframe móvil: Create account](../images/wireframes/Wireframe-Sign-Up.png)
+
+*Figura 3.14. Wireframe de la pantalla Create account, con el estado de error de correo ya registrado.*
+
+Explicación: atiende US05 con un formulario de una sola columna y el mínimo de campos necesario: nombre completo, correo, contraseña y teléfono opcional. La casilla "I agree to the Terms and Conditions" enlaza al texto completo (US38) y el botón "Create account" permanece deshabilitado hasta que se acepta, lo que evita un error previsible. El segundo estado muestra el escenario 2 de US05: el mensaje "This email is already registered" aparece debajo del campo, con ícono, y ofrece el enlace "Sign in instead" para que el usuario no quede bloqueado. Los requisitos de la contraseña se muestran antes de escribir y no solo después del error.
 
 ![Wireframe móvil: Main Dashboard](../images/wireframes/Wireframe-Dashboard.png)
 
-*Figura . Wireframe de la pantalla Main Dashboard y del menú "More".*
+*Figura 3.15. Wireframe de la pantalla Main Dashboard y del menú "More".*
 
 Explicación: la información se ordena de lo más importante a lo más detallado: primero los indicadores del día y las alertas activas en una cuadrícula de 2 × 2, y debajo el gráfico de consumo. El menú lateral de la versión web pasa a la barra de navegación inferior, y los destinos secundarios (Support, Billing, perfil y ajustes) quedan dentro de "More", que se abre como una hoja inferior.
 
 ![Wireframe móvil: Alerts](../images/wireframes/Wireframe-Alert.png)
 
-*Figura . Wireframe de la pantalla Alerts, con su estado vacío y los ajustes de notificación.*
+*Figura 3.16. Wireframe de la pantalla Alerts, con su estado vacío y los ajustes de notificación.*
 
 Explicación: la pantalla prioriza la tarea más crítica, atender una alerta. Ofrece tarjetas de resumen, búsqueda, filtros por estado y urgencia, y una acción directa "Acknowledge" en cada alerta. Cuando ningún resultado coincide, se muestra un estado vacío con la acción "Clear filters", y los ajustes de notificación quedan al final porque se usan con menos frecuencia.
 
+![Wireframe móvil: Alert detail](../images/wireframes/Wireframe-Alert-Detail.png)
+
+*Figura 3.17. Wireframe de la pantalla Alert detail.*
+
+Explicación: atiende US16, cuyo objetivo es que el suscriptor comprenda la alerta sin conocimientos técnicos. La jerarquía va de la severidad y el título ("Possible leak") a la ubicación (Water Point y local), la hora de detección y el impacto estimado en litros y en soles; debajo se presenta la acción recomendada en lenguaje simple. La acción principal "Acknowledge" ocupa todo el ancho al pie de la pantalla, al alcance del pulgar, y una acción secundaria permite ver el dispositivo asociado. Se abre desde la lista de alertas o directamente desde la notificación push mediante un deep link, según 3.1.2.5.
+
+![Wireframe móvil: Devices](../images/wireframes/Wireframe-Devices.png)
+
+*Figura 3.18. Wireframe de la pantalla Devices dentro de Business.*
+
+Explicación: atiende US12 y anticipa US13. Business presenta dos pestañas, Devices y Tanks; en Devices se muestran tarjetas de resumen (conectados, sin conexión y con batería baja), un buscador con filtros por estado y la lista de dispositivos agrupada por local, según el sistema de organización por tópicos de 3.1.2.1. Cada tarjeta muestra el nombre, el Water Point, el estado con ícono y texto, el nivel de batería y la última sincronización. El botón "Add device" inicia el registro y el estado vacío explica cómo registrar el primer dispositivo.
+
+![Wireframe móvil: Add device](../images/wireframes/Wireframe-Add-Device.png)
+
+*Figura 3.19. Wireframe de la pantalla Add device, con la lectura del código QR y el ingreso manual del código.*
+
+Explicación: atiende US10 con un flujo secuencial de dos pasos, indicado con "Step 1 of 2". El primer estado muestra el visor de la cámara con un marco guía y una instrucción breve ("Point the camera at the QR code on your device"). Si el usuario niega el permiso de cámara, el segundo estado ofrece ingresar el número de serie de forma manual, de modo que el registro no depende de un único medio de entrada; este comportamiento proviene del Spike SP01. Al reconocer el código se muestran el modelo y el número de serie para que el usuario confirme antes de continuar.
+
+![Wireframe móvil: Assign Water Point](../images/wireframes/Wireframe-Assign-Water-Point.png)
+
+*Figura 3.20. Wireframe de la pantalla Assign Water Point.*
+
+Explicación: atiende US11 como segundo paso del registro ("Step 2 of 2") y también desde el detalle de un dispositivo existente. Presenta la lista de Water Points del local como opciones de selección única, con ícono y nombre (por ejemplo, "Kitchen" o "Main tank"), y la opción "Create new Water Point". El botón "Save" confirma la asignación y la pantalla vuelve a Devices con un mensaje de confirmación breve, lo que da retroalimentación inmediata sin interrumpir la tarea.
+
 ![Wireframe móvil: Inventory + features](../images/wireframes/Wireframe-Inventory.png)
 
-*Figura . Wireframe de la pantalla Inventory + features.*
+*Figura 3.21. Wireframe de la pantalla Inventory + features.*
 
 Explicación: responde a la necesidad de verificar el nivel de los tanques. Presenta tarjetas de resumen, el inventario con el botón "Add tank" y una barra de nivel por tanque, y la sección "Cost savings" con selector de periodo (semana, mes y año) para comparar el ahorro.
 
 ![Wireframe móvil: Support & Help](../images/wireframes/Wireframe-Support.png)
 
-*Figura . Wireframe de la pantalla Support & Help.*
+*Figura 3.22. Wireframe de la pantalla Support & Help.*
 
 Explicación: permite pedir ayuda sin salir de la aplicación. Reúne el formulario para crear un ticket, la lista de tickets recientes con su estado y los datos de contacto, con acciones directas para llamar o escribir. Se accede desde "More" y la barra superior incluye una flecha para volver.
+
+En conjunto, los wireframes aplican jerarquía visual (dato clave antes que detalle), consistencia de componentes entre vistas, áreas táctiles de al menos 48 × 48 dp y un orden de lectura lineal compatible con lectores de pantalla. Ninguna información depende solo de la posición o del color: los estados se acompañan siempre de una etiqueta de texto.
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
@@ -283,35 +334,65 @@ Se presenta un wireflow por cada User goal de las funcionalidades de autenticaci
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
-Los mock-ups aplican el Design System definido en 3.1.1 sobre las mismas pantallas: Poppins en títulos y Roboto en datos y etiquetas, azul `#0C4AFD` para las acciones principales y el destino activo de la navegación, cards con esquinas redondeadas y áreas táctiles de 48 dp.
+Los mock-ups se elaboraron en Figma a partir de los wireframes de 3.1.4.1 y aplican el Design System definido en 3.1.1 sobre las mismas diez pantallas: Poppins en títulos y Roboto en datos y etiquetas, con tamaños en `sp`; Primary `#0C4AFD` para las acciones principales y el destino activo de la navegación; Success, Warning y Error solo para estados, siempre acompañados de ícono y texto; cards con esquinas de 12 dp y áreas táctiles de al menos 48 dp. Los textos de la interfaz se muestran en inglés, idioma por defecto del producto, y cuentan con su equivalente en español latinoamericano según 3.1.2.2.
 
 ![Mock-up móvil: Sign in](../images/mockups/Mockup-Login.png)
 
-*Figura . Mock-up de la pantalla Sign in.*
+*Figura 3.23. Mock-up de la pantalla Sign in.*
 
 Explicación: los campos tienen etiqueta flotante e íconos, y el botón "Sign in" usa el azul principal con texto blanco. Los enlaces "Forgot password?" y "Create account" se resaltan en azul, y el campo de contraseña incluye un control para mostrar u ocultar el texto.
 
+![Mock-up móvil: Create account](../images/mockups/Mockup-Sign-Up.png)
+
+*Figura 3.24. Mock-up de la pantalla Create account, con el estado de error de correo ya registrado.*
+
+Explicación: los campos usan etiqueta flotante e ícono a la izquierda, como en Sign in, para que ambas pantallas se perciban como un mismo flujo. El botón "Create account" usa Primary `#0C4AFD` con texto On Primary y se muestra en gris mientras no se aceptan los términos. El error de correo duplicado usa el color Error `#DC2626` junto con un ícono y un texto explícito, por lo que no depende solo del color. El enlace "Terms and Conditions" se subraya y cumple el área táctil mínima de 48 dp.
+
 ![Mock-up móvil: Main Dashboard](../images/mockups/Mockup-Dashboard.png)
 
-*Figura . Mock-up de la pantalla Main Dashboard y del menú "More".*
+*Figura 3.25. Mock-up de la pantalla Main Dashboard y del menú "More".*
 
 Explicación: las cifras del día se muestran en grande para que el usuario detecte consumos anómalos de un vistazo. El rojo se reserva a las alertas activas, que llevan ícono y la etiqueta "Needs attention". La hoja inferior de "More" muestra el perfil, Support y Billing, con una breve descripción de cada uno.
 
 ![Mock-up móvil: Alerts](../images/mockups/Mockup-Alert.png)
 
-*Figura . Mock-up de la pantalla Alerts, con su estado vacío y los ajustes de notificación.*
+*Figura 3.26. Mock-up de la pantalla Alerts, con su estado vacío y los ajustes de notificación.*
 
 Explicación: la severidad se comunica con ícono y etiqueta ("High"), y no solo con color. El filtro seleccionado usa el azul principal. El estado vacío incluye un mensaje claro y la acción "Clear filters", y cada ajuste de notificación muestra su estado en texto ("Enabled" o "Disabled") además del interruptor.
 
+![Mock-up móvil: Alert detail](../images/mockups/Mockup-Alert-Detail.png)
+
+*Figura 3.27. Mock-up de la pantalla Alert detail, antes y después de confirmar la atención.*
+
+Explicación: la cabecera usa el color Error con el ícono de advertencia y la etiqueta "High" para comunicar la severidad por tres medios. El volumen y el costo estimados se presentan en Poppins de 24 sp como datos clave, y la acción recomendada en Roboto de 14 sp dentro de una card con fondo suave. El botón "Acknowledge" usa Primary y, una vez confirmado, la etiqueta cambia a "Acknowledged" con el color Success y un ícono de verificación, lo que da retroalimentación inmediata.
+
+![Mock-up móvil: Devices](../images/mockups/Mockup-Devices.png)
+
+*Figura 3.28. Mock-up de la pantalla Devices dentro de Business.*
+
+Explicación: la pestaña activa (Devices) se resalta con Primary y un indicador inferior, y el destino Business de la barra inferior conserva el estado activo. Las tarjetas de dispositivo aplican el componente "Card de dispositivo" de 3.1.1: esquinas de 12 dp, sombra de elevación baja, estado con ícono y texto ("Online", "Offline", "Low battery") en Success, Text Secondary y Warning respectivamente. El botón "Add device" es el único elemento en Primary de la sección, lo que concentra la atención en la acción principal.
+
+![Mock-up móvil: Add device](../images/mockups/Mockup-Add-Device.png)
+
+*Figura 3.29. Mock-up de la pantalla Add device, con la lectura del código QR y el ingreso manual del código.*
+
+Explicación: el visor de la cámara ocupa la mayor parte de la pantalla y el marco guía usa Primary con esquinas redondeadas. El indicador "Step 1 of 2" orienta al usuario dentro del flujo secuencial. En el estado sin permiso de cámara, un mensaje explica por qué se necesita el permiso y ofrece dos acciones: "Allow camera" como botón principal y "Enter code manually" como botón secundario con contorno, conforme a los componentes base definidos en 3.1.1.
+
+![Mock-up móvil: Assign Water Point](../images/mockups/Mockup-Assign-Water-Point.png)
+
+*Figura 3.30. Mock-up de la pantalla Assign Water Point.*
+
+Explicación: las opciones de Water Point se presentan como filas de 56 dp con ícono, nombre y control de selección única; la opción elegida se marca con Primary y un ícono de verificación. El botón "Save" ocupa todo el ancho al pie de la pantalla y, al confirmar, una snackbar con el texto "Device assigned to Kitchen" confirma la operación sin bloquear la navegación.
+
 ![Mock-up móvil: Inventory + features](../images/mockups/Mockup-Inventory.png)
 
-*Figura . Mock-up de la pantalla Inventory + features.*
+*Figura 3.31. Mock-up de la pantalla Inventory + features.*
 
 Explicación: el estado de cada tanque se indica con ícono y etiqueta ("Normal"), y la barra de nivel muestra el porcentaje de un vistazo. El ahorro del mes se presenta con una cifra grande y su variación, y el gráfico permite compararlo por semana, mes o año.
 
 ![Mock-up móvil: Support & Help](../images/mockups/Mockup-Support.png)
 
-*Figura . Mock-up de la pantalla Support & Help.*
+*Figura 3.32. Mock-up de la pantalla Support & Help.*
 
 Explicación: el formulario usa campos con etiqueta flotante y un botón "Submit ticket" de ancho completo. El estado de cada ticket se comunica con ícono y texto ("Open", "In progress" y "Resolved"), y los datos de contacto ofrecen acciones directas ("Call" y "Write").
 
@@ -319,3 +400,37 @@ Explicación: el formulario usa campos con etiqueta flotante y un botón "Submit
 
 Los User Flows incluyen los mock-ups de cada pantalla y las rutas esperada (happy path) y alternativas (unhappy paths). Son consistentes con los wireflows anteriores.
 
+
+#### 3.1.4.5. Mobile Applications Prototyping
+
+El prototipo de la aplicación móvil se construyó en Figma enlazando los mock-ups de 3.1.4.3 mediante las funciones de prototipado de la herramienta (Figma, s. f.), sobre un marco Android de 360 × 800 dp. Como la aplicación nativa en Kotlin y la aplicación multiplataforma en Flutter comparten la misma propuesta de UI, un mismo prototipo representa la interacción de ambas. El prototipo simula los recorridos de los User Flows de 3.1.4.4, incluidas sus rutas alternativas, de modo que la navegación pueda evaluarse con usuarios antes de implementarse.
+
+**Criterios de interacción.** Las decisiones de interacción se derivan del sistema de navegación definido en 3.1.2.5 y de los componentes de Material Design 3 (Google, s. f.-d):
+
+| Decisión de interacción | Relación con la arquitectura de información | Implementación en el prototipo |
+|---|---|---|
+| Barra de navegación inferior con cinco destinos (Dashboard, Alerts, Reports, Business, More) | Navegación global de primer nivel, al alcance del pulgar | Cambio de destino con transición instantánea y estado activo resaltado |
+| Navegación jerárquica hacia los detalles | Pantallas de detalle (Alert detail, detalle de dispositivo) dependen de una lista | Transición "Move in" desde la derecha y botón "Back" en la barra superior |
+| Hoja inferior para "More" | Destinos secundarios (perfil, Support, Billing) | Overlay anclado al borde inferior que se cierra al tocar fuera |
+| Flujo secuencial para registrar un dispositivo | Organización secuencial definida en 3.1.2.1 | Indicador "Step 1 of 2" y "Step 2 of 2", y botón "Back" que conserva los datos ingresados |
+| Deep link desde la notificación push | Reduce pasos para la tarea crítica de atender una fuga | La notificación simulada abre directamente Alert detail |
+| Búsqueda y filtros | Sistema de búsqueda de 3.1.2.4 para Devices y Alerts | Chips de filtro con variante seleccionada y estado vacío con "Clear filters" |
+| Retroalimentación inmediata | Confirmación del resultado de cada acción | Snackbar tras guardar, cambio de etiqueta a "Acknowledged" y mensajes de error bajo el campo |
+
+**Flujos prototipados.** La Tabla 3.2 resume los flujos incluidos en el prototipo y su relación con los User Goals y las User Stories.
+
+*Tabla 3.2. Flujos de interacción cubiertos por el prototipo de la aplicación móvil.*
+
+| Flujo | User Goal | User Stories | Ruta esperada (happy path) | Rutas alternativas (unhappy paths) |
+|---|---|---|---|---|
+| F1. Crear una cuenta e iniciar sesión | Acceder a la aplicación para monitorear el consumo | US05, US06 | Sign in → Create account → aceptar términos → Dashboard | Correo ya registrado → mensaje bajo el campo → "Sign in instead"; credenciales inválidas → mensaje en Sign in |
+| F2. Atender una alerta de posible fuga | Actuar a tiempo ante una fuga | US15, US16, US20 | Notificación push → Alert detail → "Acknowledge" → Alerts con la alerta atendida | Búsqueda sin resultados → estado vacío → "Clear filters" |
+| F3. Registrar un dispositivo con código QR | Empezar a monitorear un nuevo punto de agua | US10, US11, US12 | Business › Devices → "Add device" → lectura del QR → confirmar → Assign Water Point → "Save" → Devices con snackbar | Permiso de cámara denegado → "Enter code manually" → confirmar |
+| F4. Revisar el nivel de los tanques | Evitar quedarse sin agua | US28 | Business › Tanks → detalle del tanque | Tanque con nivel bajo → indicador de advertencia en "Tanks to refill" |
+| F5. Solicitar ayuda | Resolver un problema sin salir de la aplicación | US35 | More → Support → formulario → "Submit ticket" → ticket en estado "Open" | Campo obligatorio vacío → mensaje bajo el campo |
+
+**Acceso al prototipo y video de demostración.** El prototipo navegable está disponible en [COMPLETAR: enlace público de "Present" del prototipo en Figma]. El video `upc-pre-202620-1acc0238-13984-wasd-prototypenavigation-tb1.mp4` demuestra y explica los flujos F1 a F5, priorizando los relacionados con el core business (F2 y F3), y está publicado en Microsoft Stream: [COMPLETAR: enlace del video en Microsoft Stream].
+
+![Captura del video de demostración del prototipo de la aplicación móvil](../images/prototyping/prototype-video-screenshot.png)
+
+*Figura 3.33. Captura del video de demostración del prototipo de la aplicación móvil.*
