@@ -673,11 +673,3 @@ El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el
 | Condori Lozano, Alessandro Ramiro | Servicios/API, configuración, versionado, colaboración, PDF y release | Configuración, Swagger, registro de versiones, acuerdos y release |
 
 Para la entrega se requiere una captura de GitHub Insights con el periodo del Sprint, una captura del tablero de Trello y un registro de los acuerdos o bloqueos. La imagen general de actividad de AV1 no está disponible en esta rama; no se sustituye por una captura de otro periodo.
-
-## 4.3. Validation Interviews
-
-### 4.3.1. Diseño de Entrevistas
-
-### 4.3.2. Registro de Entrevistas
-
-### 4.3.3. Evaluaciones según heurísticas
