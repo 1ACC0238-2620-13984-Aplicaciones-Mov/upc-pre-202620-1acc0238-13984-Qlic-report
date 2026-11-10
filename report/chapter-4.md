@@ -69,6 +69,7 @@ El código fuente de cada producto se gestiona en un repositorio independiente d
 | Project Report | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report | `master` |
 | RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api | `main` |
 | Landing Page | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page | `main` |
+| Frontend Web | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-frontend-web | `main` |
 
 **Modelo de ramas: GitFlow**
 
@@ -78,7 +79,7 @@ El equipo adopta el modelo GitFlow propuesto por Driessen (2010), que separa el 
 |---|---|---|---|
 | `master` / `main` | — | — | Contiene únicamente versiones publicadas; cada merge corresponde a un release etiquetado. El Project Report utiliza `master` y los repositorios de código, `main`. |
 | `develop` | `master` / `main` | `release/*` | Integra las funcionalidades terminadas del Sprint en curso. |
-| `feature/*` | `develop` | `develop` | Una rama por historia o grupo de historias, con nombre en *kebab-case* (por ejemplo, `feature/iam-authentication` o `feature/chapter-4`). |
+| `feature/*` | `develop` | `develop` | Una rama por historia o grupo de historias, con nombre en *kebab-case* (por ejemplo, `feature/iam-authentication`, `feature/support-incidents` o `feature/chapter-4`). |
 | `release/*` | `develop` | `master` / `main` y `develop` | Prepara una entrega: se ajustan versión, documentación y correcciones menores (por ejemplo, `release/v1.1.0`). |
 | `hotfix/*` | `master` / `main` | `master` / `main` y `develop` | Corrige un error detectado en una versión publicada (por ejemplo, `hotfix/v1.1.1`). |
 
@@ -99,7 +100,7 @@ Los mensajes de commit siguen la especificación Conventional Commits 1.0.0, con
 | `docs` | Cambios en documentación o en el Project Report | `docs(chapter-4): add software configuration management` |
 | `test` | Pruebas nuevas o corregidas | `test(iam): add unit tests for registration and authentication` |
 | `refactor` | Cambio interno sin alterar el comportamiento | `refactor(monitoring): extract device resource assembler` |
-| `chore` | Configuración, dependencias o tareas de mantenimiento | `chore(deploy): add Dockerfile and prod profile` |
+| `chore` | Configuración, dependencias o tareas de mantenimiento | `chore(deploy): add Render Blueprint with managed PostgreSQL` |
 
 La descripción se redacta en inglés, en modo imperativo y sin punto final, de modo que el historial pueda leerse como una secuencia de acciones sobre el producto.
 
@@ -124,9 +125,11 @@ Se aplican las Kotlin Coding Conventions (JetBrains, s. f.), la Android Kotlin S
 El código se organiza por bounded context y, dentro de cada uno, por las cuatro capas definidas en la sección 2.6 (`domain`, `application`, `interfaces`, `infrastructure`), respetando los sufijos `Command`, `CommandHandler`, `Query`, `Controller`, `Resource`, `RepositoryImpl` y `Adapter`. Adicionalmente:
 
 - Los endpoints se versionan y nombran con sustantivos en plural y en *kebab-case* bajo el prefijo `/api/v1` (por ejemplo, `/api/v1/devices/{id}/water-point`).
-- Los verbos HTTP y los códigos de estado se utilizan según su semántica estándar (Fielding et al., 2022): `201 Created` al crear un recurso, `400 Bad Request` ante datos inválidos, `401 Unauthorized` ante credenciales ausentes o inválidas y `409 Conflict` ante un recurso duplicado.
+- Los verbos HTTP y los códigos de estado se utilizan según su semántica estándar (Fielding et al., 2022): `201 Created` al crear un recurso, `400 Bad Request` ante datos inválidos, `401 Unauthorized` ante credenciales ausentes o inválidas, `403 Forbidden` cuando el usuario autenticado no cuenta con el permiso requerido, `404 Not Found` cuando el recurso no existe o no pertenece a la cuenta, y `409 Conflict` ante un recurso duplicado o un cambio de estado no permitido.
 - Los errores se devuelven con el formato *Problem Details for HTTP APIs* (`application/problem+json`), definido en el RFC 9457 (Nottingham et al., 2023).
 - Las tablas y columnas de la base de datos se nombran en *snake_case* y en plural (`subscribers`, `password_hash`).
+- La cuenta y el permiso del solicitante se obtienen del token de acceso y no de un parámetro enviado por el cliente; los endpoints de IAM, Consumption Analytics y Support incorporados en el Sprint 2 siguen esta regla, de modo que un usuario solo opera sobre la cuenta de su sesión.
+- La integración entre bounded contexts se realiza mediante interfaces del dominio (por ejemplo, `PlanEntitlementProvider` o `AlertDataProvider`) implementadas por adaptadores de la capa de infraestructura (*anti-corruption layer*), sin que un contexto acceda a las clases de dominio de otro desde sus capas de dominio o aplicación.
 - Los mensajes del API se escriben en inglés por defecto y se traducen al español latinoamericano en archivos de recursos (`messages.properties` y `messages_es_419.properties`), seleccionados según el encabezado `Accept-Language`.
 
 **Dart (Mobile App multiplataforma)**
@@ -168,26 +171,28 @@ La aplicación define dos perfiles de Spring Boot (Spring, s. f.-b):
 | `dev` (por defecto) | `application-dev.properties` | H2 en memoria, con consola en `/h2-console` | Desarrollo y pruebas locales |
 | `prod` | `application-prod.properties` | PostgreSQL administrado por el proveedor de nube | Entorno desplegado |
 
-Pasos de despliegue en Render (Render, s. f.):
+Desde el Sprint 2, la infraestructura del RESTful API en Render se declara como código en el archivo `render.yaml` (*Blueprint*) de la raíz del repositorio, que define el *Web Service* Docker y la base de datos PostgreSQL administrada y los enlaza mediante variables de entorno, sin versionar credenciales (Render, s. f.-a). Pasos de despliegue:
 
-1. Crear una base de datos PostgreSQL en Render y anotar su *host*, nombre de base, usuario y contraseña.
-2. Crear un *Web Service* conectado al repositorio `qlic-backend-api`, rama `main`, con entorno de ejecución Docker; Render detecta el `Dockerfile` de la raíz.
-3. Registrar en el servicio las variables de entorno indicadas en la tabla *Configuración del entorno `prod`*, presentada a continuación.
-4. Render construye la imagen, la ejecuta y expone el servicio en `https://qlic-backend-api.onrender.com`; cada merge a `main` dispara un nuevo despliegue automático. El `Dockerfile` inicia la aplicación con el puerto de la variable `PORT` asignada por la plataforma (`-Dserver.port=${PORT:-8080}`).
-5. Verificar el despliegue accediendo a `https://qlic-backend-api.onrender.com/swagger-ui.html`.
+1. En Render, seleccionar *New › Blueprint* y elegir el repositorio `qlic-backend-api`; Render lee el `render.yaml` y muestra los recursos que creará: la base de datos `qlic-postgres` y el servicio `qlic-backend-api`.
+2. Confirmar la creación. Render aprovisiona PostgreSQL e inyecta en el servicio su *host*, puerto, nombre de base, usuario y contraseña (`fromDatabase`), y genera un valor aleatorio para `JWT_SECRET` (`generateValue`).
+3. Render construye la imagen a partir del `Dockerfile`, la ejecuta con el perfil `prod` y expone el servicio en `https://qlic-backend-api.onrender.com`; cada merge a `main` dispara un nuevo despliegue automático. El `Dockerfile` inicia la aplicación con el puerto de la variable `PORT` asignada por la plataforma (`-Dserver.port=${PORT:-8080}`).
+4. Al iniciar contra una base vacía, Hibernate crea las tablas (`ddl-auto=update`) y el *seeder* de Support registra los técnicos y la versión vigente de los términos y condiciones.
+5. Verificar el despliegue en `https://qlic-backend-api.onrender.com/swagger-ui.html`; Render utiliza `/v3/api-docs` como *health check* del servicio.
 
 **Configuración del entorno `prod`**
 
-| Variable | Valor |
-|---|---|
-| `SPRING_PROFILES_ACTIVE` | `prod` |
-| `SPRING_DATASOURCE_URL` | `jdbc:postgresql://<host>:5432/<base>` |
-| `SPRING_DATASOURCE_USERNAME` | Usuario de la base de datos |
-| `SPRING_DATASOURCE_PASSWORD` | Contraseña de la base de datos |
-| `JWT_SECRET` | Clave de firma HS256 de al menos 32 caracteres |
-| `JWT_EXPIRATION_MINUTES` | Vigencia del token de acceso; por defecto, 1440 |
+| Variable | Origen | Valor |
+|---|---|---|
+| `SPRING_PROFILES_ACTIVE` | `render.yaml` | `prod` |
+| `DB_HOST`, `DB_PORT`, `DB_NAME` | Base de datos de Render (`fromDatabase`) | Datos de conexión de PostgreSQL; el perfil `prod` construye con ellos la URL `jdbc:postgresql://<host>:<puerto>/<base>` |
+| `SPRING_DATASOURCE_USERNAME` | Base de datos de Render | Usuario de la base de datos |
+| `SPRING_DATASOURCE_PASSWORD` | Base de datos de Render | Contraseña de la base de datos |
+| `SPRING_DATASOURCE_URL` | Opcional | Reemplaza la URL construida, por ejemplo, para usar una base externa |
+| `JWT_SECRET` | Generado por Render | Clave de firma HS256 de al menos 32 caracteres |
+| `JWT_EXPIRATION_MINUTES` | Opcional | Vigencia del token de acceso; por defecto, 1440 |
+| `PASSWORD_RESET_EXPOSE_TOKEN` | `render.yaml` | `true` mientras no se integre un proveedor de correo: el token de restablecimiento (US07) se devuelve en la respuesta para la validación |
 
-Dado que el plan gratuito de Render suspende el servicio tras un periodo de inactividad y limita la vigencia de la base de datos gratuita (Render, s. f.), la primera solicitud después de un periodo sin uso puede demorar algunos segundos; esta restricción es aceptable para la etapa de validación académica del producto.
+Dado que el plan gratuito de Render suspende el servicio tras un periodo de inactividad y limita la vigencia de la base de datos gratuita (Render, s. f.-b), la primera solicitud después de un periodo sin uso puede demorar algunos segundos; esta restricción es aceptable para la etapa de validación académica del producto.
 
 **Mobile Apps — Firebase App Distribution**
 
@@ -672,13 +677,13 @@ WWW-Authenticate: Bearer
 | qlic-backend-api | `main` | `7e2eca3` | feat(alerting): implement US15 and US16 for leak detection evaluation and account alert retrieval | 2026-10-01 |
 | qlic-backend-api | `main` | `e7d8b17` | feat(monitoring): implement US10, US11, and US12 for QR device onboarding, water point linking, and telemetry status | 2026-10-01 |
 | qlic-backend-api | `main` | `c224c3f` | feat(docker): add multi-stage Dockerfile for cloud deployment | 2026-10-02 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | feat(iam): add domain layer for subscriber accounts (US05, US06) | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | feat(iam): implement sign-up and sign-in command handlers | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | feat(iam): expose authentication endpoints with JWT security (TS01) | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | feat(i18n): add en_US and es_419 message bundles for IAM responses | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | docs(api): configure OpenAPI 3 and Swagger UI with bearer authentication | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | test(iam): add unit and integration tests for registration and authentication | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | chore(config): add dev and prod profiles and project README | 2026-10-05 |
+| qlic-backend-api | `feature/iam-authentication` | `dc5424d` | feat(iam): add domain layer for subscriber accounts (US05, US06) | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `21a5cc4` | feat(iam): implement sign-up and sign-in command handlers | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `64be58e` | feat(iam): expose authentication endpoints with JWT security (TS01) | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `efc8893` | feat(i18n): add en_US and es_419 message bundles for IAM responses | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `a77aefc` | docs(api): configure OpenAPI 3 and Swagger UI with bearer authentication | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `12a8cee` | test(iam): add unit and integration tests for registration and authentication | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `24c3ea1` | chore(config): add dev and prod profiles and project README | 2026-10-06 |
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
@@ -713,6 +718,391 @@ El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el
 | Condori Lozano, Alessandro Ramiro | Servicios/API, configuración, versionado, colaboración, PDF y release | Configuración, Swagger, registro de versiones, acuerdos y release |
 
 Para la entrega se requiere una captura de GitHub Insights con el periodo del Sprint, una captura del tablero de Trello y un registro de los acuerdos o bloqueos. La imagen general de actividad de AV1 no está disponible en esta rama; no se sustituye por una captura de otro periodo.
+
+### 4.2.2. Sprint 2
+
+#### 4.2.2.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación de los servicios RESTful implementados durante el Sprint 2. Al igual que en el Sprint 1, la especificación OpenAPI 3 se genera a partir del código fuente en Kotlin con springdoc-openapi y se publica mediante Swagger UI, por lo que se mantiene sincronizada con la implementación (OpenAPI Initiative, 2021; springdoc, s. f.). En este Sprint, el RESTful API pasa de tres a seis bounded contexts: se completan IAM (US07, US08 y US09), Alerting (US16 a US20) y Subscriptions (US31 a US34), y se incorporan Consumption Analytics (US24), la ingesta de lecturas de consumo en Device Monitoring y Support (US35 a US38). Los nuevos controllers de IAM, Consumption Analytics y Support documentan en Swagger UI el resumen, la descripción, los códigos de respuesta y valores de ejemplo de cada operación.
+
+Dos decisiones de diseño del Sprint 2 se reflejan en la documentación. Primero, los endpoints nuevos de IAM, Consumption Analytics y Support obtienen la cuenta y el permiso del solicitante a partir del token de acceso, por lo que no reciben un `accountId` en la solicitud: el token emitido al iniciar sesión incluye las *claims* `accountId`, `permission` (`OWNER`, `OPERATOR` o `VIEWER`) y `scope` (Jones et al., 2015). Segundo, el acceso compartido de US08 se aplica en la cadena de filtros de Spring Security (Spring, s. f.-a): las solicitudes `POST`, `PUT`, `PATCH` y `DELETE` sobre dispositivos, alertas, consumo, incidencias y suscripciones exigen el *scope* `account:write`, que no se otorga a los usuarios con permiso `VIEWER`; en ese caso el API responde `403 Forbidden` con el formato *Problem Details for HTTP APIs* (Nottingham et al., 2023).
+
+**Acceso a la documentación**
+
+| Recurso | URL |
+|---|---|
+| Swagger UI (entorno desplegado) | https://qlic-backend-api.onrender.com/swagger-ui.html |
+| Especificación OpenAPI en JSON | https://qlic-backend-api.onrender.com/v3/api-docs |
+| Swagger UI (entorno local) | http://localhost:8080/swagger-ui.html |
+| Repositorio del RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api |
+
+**Endpoints documentados en el Sprint 2**
+
+| Sección | Acción implementada | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuestas | Historia |
+|---|---|---|---|---|---|---|
+| Authentication | Iniciar sesión en la cuenta propia o en una cuenta compartida | POST | `/api/v1/authentication/sign-in` | Body: `email`, `password`, `accountId` (opcional) | `200` token con `permission` · `401` credenciales inválidas · `403` cuenta no compartida con el suscriptor | US06, US08 |
+| Password Reset | Solicitar un enlace de restablecimiento de contraseña | POST | `/api/v1/authentication/password-reset/request` | Body: `email` | `202` solicitud aceptada (misma respuesta si el correo no existe) · `400` solicitud incompleta | US07 |
+| Password Reset | Definir una nueva contraseña con el token del enlace | POST | `/api/v1/authentication/password-reset/confirm` | Body: `token`, `newPassword` (8 a 72 caracteres) | `204` contraseña actualizada · `400` token vencido, usado o inexistente | US07 |
+| Shared Access | Invitar a un usuario a la cuenta | POST | `/api/v1/invitations` | Body: `email`, `permission` (`VIEWER` u `OPERATOR`) | `201` invitación registrada y notificada · `403` el solicitante no es el titular · `409` límite del plan alcanzado o persona ya invitada | US08 |
+| Shared Access | Consultar las invitaciones emitidas por la cuenta | GET | `/api/v1/invitations` | — | `200` relación de invitaciones con su estado | US08 |
+| Shared Access | Consultar las invitaciones recibidas pendientes | GET | `/api/v1/invitations/received` | — | `200` relación de invitaciones dirigidas al correo de la sesión | US08 |
+| Shared Access | Aceptar una invitación | POST | `/api/v1/invitations/{invitationId}/acceptance` | Path: `invitationId` | `201` acceso otorgado · `403` invitación dirigida a otro correo · `409` invitación vencida o ya utilizada | US08 |
+| Shared Access | Consultar los usuarios autorizados de la cuenta | GET | `/api/v1/authorized-users` | — | `200` relación de usuarios con su nivel de permiso | US08 |
+| Shared Access | Revocar el acceso de un usuario autorizado | DELETE | `/api/v1/authorized-users/{authorizedUserId}` | Path: `authorizedUserId` | `204` acceso revocado · `403` el solicitante no es el titular · `404` usuario inexistente en la cuenta | US08 |
+| Accounts | Consultar las cuentas compartidas con el suscriptor | GET | `/api/v1/accounts/shared-with-me` | — | `200` relación de cuentas con el permiso otorgado | US08 |
+| Accounts | Consultar el perfil y la cuenta de la sesión | GET | `/api/v1/accounts/me` | — | `200` perfil, nombre del local y permiso | US09 |
+| Accounts | Actualizar los datos del perfil | PUT | `/api/v1/accounts/me` | Body: `fullName`, `phone` (opcional), `accountName` (opcional, solo titular) | `200` perfil actualizado · `400` dato obligatorio vacío, indicado en `errors` · `403` renombrar el local sin ser titular | US09 |
+| leak-alert-controller | Consultar el detalle de una alerta | GET | `/api/v1/alerts/{alertId}?accountId={accountId}` | Path: `alertId` · Query: `accountId` | `200` alerta · `404` alerta inexistente | US16 |
+| leak-alert-controller | Configurar el umbral de consumo de un Water Point | PUT | `/api/v1/alerts/thresholds` | Body: `accountId`, `waterPointId`, `period`, `customLimitLitersPerHour` (opcional), `baselineLitersPerHour` | `200` umbral `USER_DEFINED` o `SYSTEM_CALCULATED` | US17 |
+| leak-alert-controller | Consultar los umbrales de la cuenta | GET | `/api/v1/alerts/thresholds?accountId={accountId}` | Query: `accountId` | `200` relación de umbrales | US17 |
+| leak-alert-controller | Configurar las preferencias de notificación | PUT | `/api/v1/alerts/preferences` | Body: `accountId`, `groupingWindowMinutes`, `minimumUrgency` | `200` preferencias registradas | US18 |
+| leak-alert-controller | Consultar las preferencias de notificación | GET | `/api/v1/alerts/preferences?accountId={accountId}` | Query: `accountId` | `200` preferencias | US18 |
+| leak-alert-controller | Registrar un destinatario de alertas | POST | `/api/v1/alerts/recipients` | Body: `accountId`, `fullName`, `email`, `devicePushToken`, `enabled` | `201` destinatario registrado | US19 |
+| leak-alert-controller | Consultar los destinatarios de alertas | GET | `/api/v1/alerts/recipients?accountId={accountId}` | Query: `accountId` | `200` relación de destinatarios | US19 |
+| leak-alert-controller | Habilitar o deshabilitar un destinatario | PATCH | `/api/v1/alerts/recipients/{recipientId}/toggle` | Path: `recipientId` · Body: `enabled` | `200` destinatario actualizado | US19 |
+| leak-alert-controller | Confirmar la atención de una alerta | PATCH | `/api/v1/alerts/{alertId}/acknowledge` | Path: `alertId` · Body: `accountId`, `actionTaken` | `200` alerta en estado `ACKNOWLEDGED` | US20 |
+| subscription-controller | Contratar un plan de suscripción | POST | `/api/v1/subscriptions` | Body: `accountId`, `plan`, `paymentMethod`, `simulatePaymentRejected` | `201` suscripción activa · `402` pago rechazado | US31 |
+| subscription-controller | Activar el periodo de prueba | POST | `/api/v1/subscriptions/trial` | Body: `accountId` | `201` prueba activa · `409` prueba ya utilizada | US32 |
+| subscription-controller | Consultar la suscripción vigente | GET | `/api/v1/subscriptions/current?accountId={accountId}` | Query: `accountId` | `200` suscripción · `404` sin suscripción | US32 |
+| subscription-controller | Cambiar el plan para el siguiente periodo | PATCH | `/api/v1/subscriptions/{subscriptionId}/plan` | Path: `subscriptionId` · Body: `newPlan` | `200` cambio programado | US33 |
+| subscription-controller | Cancelar la suscripción | POST | `/api/v1/subscriptions/{subscriptionId}/cancel` | Path: `subscriptionId` | `200` acceso vigente hasta el fin del periodo | US33 |
+| subscription-controller | Consultar el historial de pagos | GET | `/api/v1/subscriptions/payments?accountId={accountId}` | Query: `accountId` | `200` pagos con fecha, monto, plan y estado | US34 |
+| Consumption Readings | Registrar una lectura de consumo de un dispositivo | POST | `/api/v1/consumption-readings` | Body: `deviceId`, `volumeLiters`, `recordedAt` (opcional) | `201` lectura registrada · `404` dispositivo inexistente en la cuenta · `409` dispositivo sin Water Point | US24 |
+| Consumption Reports | Declarar el horario de actividad del local | PUT | `/api/v1/consumption/activity-schedule` | Body: `openingTime`, `closingTime`, `activeDays` | `200` horario registrado · `400` horario inválido | US24 |
+| Consumption Reports | Consultar el horario de actividad del local | GET | `/api/v1/consumption/activity-schedule` | — | `200` horario · `404` horario no declarado | US24 |
+| Consumption Reports | Consultar el consumo dentro y fuera del horario de actividad | GET | `/api/v1/consumption/reports/activity-hours?from={fecha}&to={fecha}` | Query: `from`, `to` (ISO 8601) | `200` reporte del periodo · `400` periodo inválido | US24 |
+| Incidents | Registrar una incidencia | POST | `/api/v1/incidents` | Body: `description`, `deviceId`, `waterPointId` o `alertId` | `201` incidencia en estado `PENDING` · `400` sin descripción o sin activo afectado · `404` dispositivo o alerta de otra cuenta · `409` alerta no activa | US35 |
+| Incidents | Consultar las incidencias de la cuenta | GET | `/api/v1/incidents` | — | `200` incidencias con fecha de registro, dispositivo y estado | US37 |
+| Incidents | Consultar el detalle de una incidencia | GET | `/api/v1/incidents/{incidentId}` | Path: `incidentId` | `200` incidencia · `404` incidencia inexistente en la cuenta | US37 |
+| Incidents | Solicitar una visita técnica | POST | `/api/v1/incidents/{incidentId}/technical-visit` | Path: `incidentId` · Body: `preferredDate`, `fromTime`, `toTime`, `notes` (opcional) | `201` incidencia en `VISIT_REQUESTED` · `403` plan sin cobertura · `409` incidencia no pendiente | US36 |
+| Support Staff | Asignar un técnico a la visita | POST | `/api/v1/incidents/{incidentId}/technical-visit/assignment` | Path: `incidentId` · Body: `technicianId` (opcional), `scheduledAt` | `200` incidencia en `IN_PROGRESS` y suscriptor notificado · `409` sin visita solicitada | US36 |
+| Support Staff | Registrar la resolución de una incidencia | POST | `/api/v1/incidents/{incidentId}/resolution` | Path: `incidentId` · Body: `description` | `200` incidencia en `RESOLVED` · `409` incidencia ya resuelta | US37 |
+| Support Staff | Consultar los técnicos activos | GET | `/api/v1/technicians` | — | `200` relación de técnicos | US36 |
+| Terms of Service | Consultar los términos y condiciones vigentes | GET | `/api/v1/terms-of-service/current` | Header: `Accept-Language` (opcional) | `200` documento con versión y fecha de actualización | US38 |
+
+Todos los endpoints de la tabla, salvo los de Password Reset y Terms of Service, exigen el encabezado `Authorization: Bearer <token>` y responden `401 Unauthorized` sin él (TS01).
+
+**Ejemplos de llamada y respuesta — IAM**
+
+*Solicitud de restablecimiento (US07 - Escenario 1).* El API emite un token de un solo uso con 30 minutos de vigencia y envía el enlace al correo. La respuesta es la misma cuando el correo no está registrado, de modo que no revela qué cuentas existen. Mientras no se integre un proveedor de correo, el token se incluye en la respuesta para la validación del flujo.
+
+```http
+POST /api/v1/authentication/password-reset/request
+Content-Type: application/json
+
+{ "email": "claudia.morales@example.com" }
+```
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "message": "If the email belongs to a Qlic account, a reset link valid for a limited time was sent to it.",
+  "resetToken": "Jx2f9QmKc7bV1sT0aLwE4nR8yP6uZ3dH5gN-oY1iK2A",
+  "expiresAt": "2026-11-10T21:45:00Z"
+}
+```
+
+*Enlace vencido (US07 - Escenario 2).* El API rechaza la operación e indica que se debe solicitar un nuevo enlace.
+
+```http
+POST /api/v1/authentication/password-reset/confirm
+Accept-Language: es-419
+Content-Type: application/json
+
+{ "token": "Jx2f9QmKc7bV1sT0aLwE4nR8yP6uZ3dH5gN-oY1iK2A", "newPassword": "NuevaClave2026!" }
+```
+
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/problem+json
+
+{
+  "type": "about:blank",
+  "title": "Bad Request",
+  "status": 400,
+  "detail": "El enlace de restablecimiento venció. Solicite un nuevo enlace para definir su contraseña.",
+  "instance": "/api/v1/authentication/password-reset/confirm",
+  "code": "iam.reset-token.expired"
+}
+```
+
+*Invitación de un usuario adicional (US08 - Escenario 1).* Solo el titular puede invitar; la cantidad de usuarios adicionales depende del plan vigente (uno en el periodo de prueba y en Home Basic, tres en Home Pro, cinco en PYME Business y diez en PYME Enterprise).
+
+```http
+POST /api/v1/invitations
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{ "email": "jorge.quispe@example.com", "permission": "VIEWER" }
+```
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "0b6f3d2a-8e1c-4a7b-9f2d-6c5e4a3b2d10",
+  "accountId": "c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61",
+  "accountName": null,
+  "invitedEmail": "jorge.quispe@example.com",
+  "permission": "VIEWER",
+  "state": "PENDING",
+  "createdAt": "2026-11-10T20:30:00Z",
+  "expiresAt": "2026-11-17T20:30:00Z"
+}
+```
+
+*Acceso de solo consulta (US08 - Escenario 2).* El invitado acepta la invitación e inicia sesión en la cuenta compartida enviando su `accountId`; el token emitido lleva `permission: VIEWER`. Con ese token puede consultar los dispositivos, pero al intentar modificar su configuración el API rechaza la operación.
+
+```http
+POST /api/v1/authentication/sign-in
+Content-Type: application/json
+
+{ "email": "jorge.quispe@example.com", "password": "Qlic2026!", "accountId": "c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61" }
+```
+
+```http
+PATCH /api/v1/devices/5a9e2c7b-1d4f-4e8a-b3c6-7f2d9a1e5b80/water-point
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...(token VIEWER)
+Content-Type: application/json
+
+{ "waterPointId": "7d3f1b2a-9c4e-4f6a-8b1d-2e5c7a9f0b13" }
+```
+
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/problem+json
+
+{
+  "type": "about:blank",
+  "title": "Forbidden",
+  "status": 403,
+  "detail": "You do not have the permission required for this operation.",
+  "instance": "/api/v1/devices/5a9e2c7b-1d4f-4e8a-b3c6-7f2d9a1e5b80/water-point",
+  "code": "iam.permission.denied"
+}
+```
+
+*Actualización del perfil (US09 - Escenarios 1 y 2).* Los cambios se reflejan en las siguientes consultas de `GET /api/v1/accounts/me`. Si el nombre completo se envía vacío, el API no registra los cambios e indica el dato pendiente en `errors`.
+
+```http
+PUT /api/v1/accounts/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{ "fullName": "Claudia Morales Ríos", "phone": "+51912345678", "accountName": "Bodega Morales - Surco" }
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "subscriberId": "8f2c6a1e-4b7d-4c1a-9e3f-2d5b7a9c1e40",
+  "accountId": "c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61",
+  "email": "claudia.morales@example.com",
+  "fullName": "Claudia Morales Ríos",
+  "phone": "+51912345678",
+  "accountName": "Bodega Morales - Surco",
+  "permission": "OWNER",
+  "memberSince": "2026-10-05T15:04:12.381Z"
+}
+```
+
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/problem+json
+
+{
+  "type": "about:blank",
+  "title": "Bad Request",
+  "status": 400,
+  "detail": "One or more fields are not valid.",
+  "instance": "/api/v1/accounts/me",
+  "code": "error.validation",
+  "errors": { "fullName": "Full name is required." }
+}
+```
+
+**Ejemplos de llamada y respuesta — Consumption Analytics**
+
+*Consumo fuera del horario de actividad (US24 - Escenario 1).* El suscriptor declara el horario del local (de 08:00 a 20:00, de lunes a sábado). El reporte agrega las lecturas del periodo por Water Point y diferencia el volumen registrado dentro y fuera de ese horario; los Water Points se ordenan por el consumo fuera de horario, de modo que el desperdicio más relevante aparece primero. Si el local no declaró su horario, el reporte devuelve solo los totales (`scheduleDefined: false`).
+
+```http
+PUT /api/v1/consumption/activity-schedule
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{
+  "openingTime": "08:00",
+  "closingTime": "20:00",
+  "activeDays": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"]
+}
+```
+
+```http
+GET /api/v1/consumption/reports/activity-hours?from=2026-11-02&to=2026-11-08
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "from": "2026-11-02",
+  "to": "2026-11-08",
+  "scheduleDefined": true,
+  "schedule": {
+    "openingTime": "08:00",
+    "closingTime": "20:00",
+    "activeDays": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"],
+    "updatedAt": null
+  },
+  "totalLiters": 1250.00,
+  "withinActivityLiters": 1010.00,
+  "outsideActivityLiters": 240.00,
+  "outsideActivityPercentage": 19.20,
+  "byWaterPoint": [
+    {
+      "waterPointId": "7d3f1b2a-9c4e-4f6a-8b1d-2e5c7a9f0b13",
+      "totalLiters": 820.00,
+      "withinActivityLiters": 640.00,
+      "outsideActivityLiters": 180.00
+    },
+    {
+      "waterPointId": "2c8e5f1a-3b7d-4e9c-a6f2-1d4b8c7e9a05",
+      "totalLiters": 430.00,
+      "withinActivityLiters": 370.00,
+      "outsideActivityLiters": 60.00
+    }
+  ]
+}
+```
+
+**Ejemplos de llamada y respuesta — Support**
+
+*Registro de una incidencia desde una alerta (US35 - Escenario 2).* Al enviar el `alertId` de una alerta activa, la incidencia se crea en estado `PENDING`, con origen `ALERT_DERIVED` y asociada al Water Point de la alerta. Sin dispositivo, Water Point ni alerta, el API responde `400` con el código `support.incident.asset-required`.
+
+```http
+POST /api/v1/incidents
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{
+  "description": "Confirmed leak under the kitchen sink.",
+  "alertId": "e18b4c2d-6a7f-4b3e-9d1c-0f5a2b8c7d64"
+}
+```
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "9c1d7e4b-2a6f-4c8d-b5e3-7f0a1b2c3d48",
+  "accountId": "c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61",
+  "description": "Confirmed leak under the kitchen sink.",
+  "deviceId": null,
+  "waterPointId": "7d3f1b2a-9c4e-4f6a-8b1d-2e5c7a9f0b13",
+  "alertId": "e18b4c2d-6a7f-4b3e-9d1c-0f5a2b8c7d64",
+  "origin": "ALERT_DERIVED",
+  "state": "PENDING",
+  "registeredAt": "2026-11-10T20:41:05Z",
+  "updatedAt": "2026-11-10T20:41:05Z",
+  "technicalVisit": null,
+  "resolution": null,
+  "resolvedAt": null
+}
+```
+
+*Solicitud de visita técnica (US36 - Escenario 1).* La incidencia debe estar en estado `PENDING` y el plan vigente debe cubrir la visita; la incidencia pasa a `VISIT_REQUESTED`.
+
+```http
+POST /api/v1/incidents/9c1d7e4b-2a6f-4c8d-b5e3-7f0a1b2c3d48/technical-visit
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{ "preferredDate": "2026-11-13", "fromTime": "09:00", "toTime": "13:00", "notes": "Ask for Claudia at the store." }
+```
+
+*Asignación del técnico (US36 - Escenario 2).* El personal de soporte registra la fecha programada; si no indica el técnico, se asigna el de menor carga de visitas en atención. El API notifica al suscriptor y la incidencia pasa a `IN_PROGRESS`; la respuesta se muestra en extracto.
+
+```http
+POST /api/v1/incidents/9c1d7e4b-2a6f-4c8d-b5e3-7f0a1b2c3d48/technical-visit/assignment
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{ "scheduledAt": "2026-11-13T10:00:00" }
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "9c1d7e4b-2a6f-4c8d-b5e3-7f0a1b2c3d48",
+  "state": "IN_PROGRESS",
+  "technicalVisit": {
+    "id": "4e2a9b7c-1f3d-4a6e-8c5b-0d9f2e1a7b36",
+    "preferredDate": "2026-11-13",
+    "fromTime": "09:00",
+    "toTime": "13:00",
+    "notes": "Ask for Claudia at the store.",
+    "state": "ASSIGNED",
+    "technicianId": "a3f1c8e2-5b7d-4d9a-b2e6-8c1f0a4d7e93",
+    "technicianName": "Miguel Torres",
+    "scheduledAt": "2026-11-13T10:00",
+    "requestedAt": "2026-11-10T20:45:12Z"
+  }
+}
+```
+
+*Seguimiento de incidencias (US37 - Escenario 1).* `GET /api/v1/incidents` devuelve las incidencias de la cuenta, de la más reciente a la más antigua, con su fecha de registro (`registeredAt`), dispositivo asociado (`deviceId`) y estado actual (`PENDING`, `VISIT_REQUESTED`, `IN_PROGRESS` o `RESOLVED`), con la misma estructura del ejemplo anterior.
+
+*Términos y condiciones (US38 - Escenario 1).* El endpoint es público, porque el documento se muestra en el Landing Page y en la pantalla Create account antes de que exista una sesión; devuelve la versión vigente y su fecha de actualización en el idioma solicitado.
+
+```http
+GET /api/v1/terms-of-service/current
+Accept-Language: es-419
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "version": "1.0",
+  "language": "es",
+  "title": "Términos y condiciones de Qlic",
+  "content": "1. Aceptación de los términos. Al crear una cuenta de Qlic usted acepta estos Términos y Condiciones...",
+  "updatedOn": "2026-10-06"
+}
+```
+
+**Commits relacionados con la documentación de servicios**
+
+| Repositorio | Branch | Commit ID | Mensaje del commit | Fecha |
+|---|---|---|---|---|
+| qlic-backend-api | `feature/alerting-management` | `32ed811` | feat(alerting): implement US17, US18, US19, and US20 with JUnit 5 unit tests | 2026-11-03 |
+| qlic-backend-api | `feature/subscriptions-context` | `0aede0a` | feat(subscriptions): implement US31, US32, US33, and US34 with JUnit 5 test suite | 2026-11-03 |
+| qlic-backend-api | `feature/iam-account-management` | `a1a5bdb` | feat(shared): add HTTP-mapped domain exception categories and JWT claim helpers | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `831aa72` | feat(iam): add domain model for password reset, invitations and authorized users (US07, US08, US09) | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `1a25142` | feat(iam): implement password reset, invitation, shared sign-in and profile handlers | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `ac0365e` | feat(iam): persist access management, plan entitlement ACL and VIEWER write restriction | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `02ff499` | feat(iam): expose password reset, shared access and profile endpoints with i18n messages | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `ab4d5ff` | test(iam): add unit and integration tests for US07, US08 and US09 | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `dd280a7` | feat(support): add incident, technical visit and terms of service domain model (US35-US38) | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `045cf4f` | feat(support): implement incident registration, visit request, technician assignment and queries | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `39d2409` | feat(support): persist incidents, add ACL adapters to alerting, monitoring and subscriptions and seed reference data | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `1784567` | feat(support): expose incidents, support staff and terms of service endpoints with i18n messages | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `491fe8a` | test(support): add unit and integration tests for US35, US36, US37 and US38 | 2026-11-10 |
+| qlic-backend-api | `feature/consumption-off-hours` | `8cca8da` | feat(monitoring): add consumption reading ingestion per Water Point | 2026-11-10 |
+| qlic-backend-api | `feature/consumption-off-hours` | `901d92e` | feat(consumption): implement activity schedule and off-hours consumption report (US24) | 2026-11-10 |
+| qlic-backend-api | `feature/consumption-off-hours` | `b8d142f` | test(consumption): add aggregation and integration tests for US24 | 2026-11-10 |
+| qlic-backend-api | `feature/render-postgresql` | `ea93052` | chore(deploy): add Render Blueprint with managed PostgreSQL and document Sprint 2 endpoints | 2026-11-10 |
 
 
 ### 4.3. Validation Interviews
