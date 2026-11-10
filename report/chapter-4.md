@@ -358,13 +358,23 @@ Para garantizar la estabilidad del software y el cumplimiento estricto de las re
 
 #### Matriz de Casos de Prueba Automatizados
 
-| Bounded Context | Clase de Prueba | Caso de Prueba / Escenario | Resultado |
-| :--- | :--- | :--- | :--- |
-| **Alerting** | `AnomalyDetectionServiceTest` | Flujo sostenido sobre el umbral genera alerta `CRITICAL` con cálculo de volumen y costo. | **Passed** |
-| **Alerting** | `AnomalyDetectionServiceTest` | Lectura transitoria aislada superior al umbral no genera alerta (`null`). | **Passed** |
-| **Alerting** | `AnomalyDetectionServiceTest` | Consumo dentro de límites estándar retorna evaluación limpia sin alertas. | **Passed** |
-| **Monitoring** | `DeviceCommandHandlerTest` | Registro de nuevo dispositivo IoT mediante payload QR persiste con estado `ONLINE` y batería en 100%. | **Passed** |
-| **Monitoring** | `DeviceCommandHandlerTest` | Asignación de Water Point actualiza la referencia de infraestructura hidráulica en el dispositivo. | **Passed** |
+| Bounded Context   | Clase de Prueba                     | User Story | Escenario BDD Validado                                                                         | Resultado  |
+|:------------------|:------------------------------------|:-----------|:-----------------------------------------------------------------------------------------------|:-----------|
+| **Alerting**      | `AnomalyDetectionServiceTest`       | US15       | Flujo sostenido superior al umbral genera alerta `CRITICAL` con volumen y costo estimado.      | **Passed** |
+| **Alerting**      | `AnomalyDetectionServiceTest`       | US15       | Lectura aislada no sostenida es descartada (`null`) previniendo falsos positivos.              | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US17       | Definición de umbral propio aplica valor personalizado (`USER_DEFINED`).                       | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US17       | Ausencia de umbral propio calcula automáticamente +25% sobre línea base (`SYSTEM_CALCULATED`). | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US18       | Supresión de notificación push cuando la urgencia es inferior al mínimo configurado.           | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US19       | Despacho de notificaciones únicamente a los usuarios autorizados habilitados en la cuenta.     | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US20       | Confirmación de atención cambia estado a `ACKNOWLEDGED` y registra la acción realizada.        | **Passed** |
+| **Monitoring**    | `DeviceCommandHandlerTest`          | US10       | Registro de sensor mediante QR persiste dispositivo con estado `ONLINE` y batería al 100%.     | **Passed** |
+| **Monitoring**    | `DeviceCommandHandlerTest`          | US11       | Asignación de Water Point vincula correctamente el identificador de punto hidráulico.          | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US31       | Pago confirmado activa la suscripción (`ACTIVE`), habilita funciones y registra el cobro.      | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US31       | Pago rechazado impide la activación de la suscripción y registra el motivo de rechazo.         | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US32       | Activación única del periodo de prueba (`TRIAL_ACTIVE`) y bloqueo de segunda solicitud.        | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US32       | Expiración del periodo de prueba (`TRIAL_EXPIRED`) restringe el acceso a funciones pagadas.    | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US33       | Cambio de plan se programa para el siguiente ciclo y cancelación conserva acceso vigente.      | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US34       | Consulta de historial devuelve pagos ordenados con fecha, monto, plan asociado y estado.       | **Passed** |
 
 #### Evidencia de Ejecución de Pruebas
 
