@@ -703,3 +703,99 @@ El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el
 | Condori Lozano, Alessandro Ramiro | Servicios/API, configuración, versionado, colaboración, PDF y release | Configuración, Swagger, registro de versiones, acuerdos y release |
 
 Para la entrega se requiere una captura de GitHub Insights con el periodo del Sprint, una captura del tablero de Trello y un registro de los acuerdos o bloqueos. La imagen general de actividad de AV1 no está disponible en esta rama; no se sustituye por una captura de otro periodo.
+
+
+### 4.3. Validation Interviews
+
+En esta sección se registran las sesiones de validación realizadas con representantes de los segmentos objetivo, quienes interactúan con el Landing Page y con la aplicación móvil de Qlic para cumplir los User Goals definidos en el capítulo 3. El propósito es comprobar, con evidencia de uso real, si el producto permite completar las tareas principales sin ayuda y detectar problemas de usabilidad, arquitectura de información y diseño inclusivo antes de la entrega final.
+
+#### 4.3.1. Diseño de Entrevistas
+
+**Objetivo de las sesiones.** Verificar que usuarios de los segmentos PYMES y Hogares pueden completar de forma autónoma los flujos F1, F2 y F3 del prototipo y de la aplicación (crear una cuenta e iniciar sesión, atender una alerta de posible fuga y registrar un dispositivo con código QR), y que entienden la propuesta de valor presentada en el Landing Page.
+
+##### Participantes y muestra
+
+| Segmento | Perfil de participación | Sesiones en esta entrega | Sesiones previstas hasta el TB2 | Modalidad |
+|---|---|---:|---:|---|
+| **PYMES y comercios locales** | Propietario, administrador o responsable de mantenimiento de una PYME que participa en las decisiones sobre el consumo de agua. | 1 | 3 a 5 | Presencial en el negocio o videollamada, con autorización de grabación. |
+| **Hogares y familias** | Persona adulta que paga, revisa o decide sobre el recibo y el mantenimiento del agua del hogar. | 1 | 3 a 5 | Presencial o videollamada, con autorización de grabación. |
+
+Los participantes pueden ser personas que ya intervinieron en las entrevistas de Needfinding, lo que permite contrastar sus necesidades declaradas con su comportamiento frente al producto.
+
+##### Elementos incluidos en la sesión
+
+| Producto | Qué se muestra | Dispositivo |
+|---|---|---|
+| Landing Page | Versión desplegada, en su vista para navegador móvil y de escritorio. | Computadora o celular del participante. |
+| Aplicación móvil | APK instalado y conectado al API desplegado, distribuido mediante Firebase App Distribution. | Celular físico (el del participante o el del equipo). |
+
+##### User Flows incluidos en la validación
+
+| Flujo | User Goal | User Stories | Ruta esperada (happy path) |
+|---|---|---|---|
+| F1 | Acceder a la aplicación para monitorear el consumo | US05, US06 | Sign in → Create account → aceptar términos → Dashboard |
+| F2 | Actuar a tiempo ante una fuga | US15, US16, US20 | Notificación push → Alert detail → marcar la alerta como atendida |
+| F3 | Registrar un dispositivo nuevo | US10, US11, US12 | Add device (código QR) → Assign Water Point → Devices |
+
+##### Tareas de la sesión
+
+Las consignas se redactan sin nombrar botones ni pantallas, para observar si el participante encuentra el camino por sí mismo. El escenario se adapta a cada segmento: en PYMES, "administras una lavandería y quieres controlar el agua de tu local"; en Hogares, "eres quien paga el recibo de agua de tu casa".
+
+| Id | Producto | Flujo | Consigna al participante | Criterio de éxito |
+|---|---|---|---|---|
+| T1 | Landing Page | — (US01, US02) | "Entra a esta página y cuéntame con tus palabras qué hace Qlic y cuál plan elegirías." | Explica correctamente el propósito del servicio e identifica un plan. |
+| T2 | Aplicación | F1 | "Crea una cuenta para usar Qlic y entra a la aplicación." | Completa el registro, acepta los términos y llega al Dashboard sin ayuda. |
+| T3 | Aplicación | F3 | "Acaban de instalar un sensor nuevo. Regístralo en tu cuenta e indica en qué punto de agua está." | El dispositivo queda vinculado y asignado a un Water Point en menos de 10 minutos y sin ayuda. |
+| T4 | Aplicación | F2 | "Te llega esta notificación. Cuéntame qué está pasando y qué harías." | Identifica dónde ocurre el problema, qué tan grave es y la acción recomendada, y marca la alerta como atendida. |
+
+La tarea T3 contrasta directamente la Hipótesis 3 (más del 85 % de los usuarios vincula su dispositivo en menos de 10 minutos sin asistencia técnica). La tarea T4 evalúa la comprensión de la alerta que pidieron los entrevistados en el Needfinding; la hipótesis sobre su atención en 24 horas solo puede comprobarse con uso prolongado y no en una sesión.
+
+##### Qué se mide
+
+| Medida | Cómo se registra |
+|---|---|
+| Resultado de cada tarea | Completó sin ayuda · Completó con ayuda · No completó. |
+| Tiempo por tarea | Cronometrado por el anotador desde que termina la consigna. |
+| Errores y dudas | Anotados por el anotador con el minuto del video. |
+| Facilidad percibida | Pregunta final de cada tarea: "Del 1 (muy difícil) al 7 (muy fácil), ¿qué tan fácil fue?" |
+| Problemas de usabilidad | Se puntúan con la escala de severidad de 1 a 4 del formato de evaluación según heurísticas (4.3.3). |
+
+Los problemas se clasifican según tres grupos de criterios: heurísticas de usabilidad (visibilidad del estado del sistema, consistencia, prevención de errores, control del usuario, ayuda para reconocer errores), arquitectura de información (si el contenido es fácil de encontrar y de usar) y diseño inclusivo (experiencias comparables, texto alternativo, contraste y tamaño de los elementos táctiles).
+
+##### Guion de la sesión (15 a 20 minutos)
+
+1. **Bienvenida y consentimiento (1 min).** Se explica que se prueba el producto y no a la persona, y se pide autorización para grabar.
+2. **Contexto (2 min).** "¿Cómo controlas hoy el consumo de agua en tu negocio u hogar?" y "¿Qué usas habitualmente en tu celular?"
+3. **Tareas T1 a T4 (10 a 12 min).** La persona piensa en voz alta. El moderador no explica la interfaz; solo interviene si el participante lleva más de dos minutos bloqueado.
+4. **Preguntas finales (3 min).**
+  - ¿Qué fue lo más difícil o confuso?
+  - ¿Qué cambiarías o agregarías?
+  - ¿Qué tan clara te resultó la alerta?
+  - ¿Usarías Qlic en tu negocio u hogar? ¿Qué te haría dudar?
+5. **Cierre (1 min).** Se agradece y se confirma el uso del video.
+
+##### Preparación previa
+
+- El API desplegado debe estar activo y respondiendo antes de empezar.
+- El APK debe estar instalado en el celular de la sesión.
+- Debe haber un código QR de sensor disponible, impreso o en pantalla, para T3.
+- La alerta de fuga de T4 debe haberse generado antes en la cuenta del participante.
+- La sesión se graba en video (pantalla del celular y rostro del participante), con un moderador y un anotador.
+- Cada video se edita a 3 a 5 minutos por entrevista, con título que indique el nombre del participante, el segmento y la fecha, y se consolida en el archivo `upc-pre-202620-1acc0238-13984-qlic-validation-av2.mp4`.
+
+#### 4.3.2. Registro de Entrevistas
+
+> *Se completa después de realizar las sesiones. Una ficha por entrevista.*
+
+| Campo | Registro |
+|---|---|
+| Nombre y apellidos | **[COMPLETAR]** |
+| Edad | **[COMPLETAR]** |
+| Distrito | **[COMPLETAR]** |
+| Segmento | **[PYMES / Hogares]** |
+| Fecha | **[AAAA-MM-DD]** |
+| Inicio y duración en el video | **[hh:mm:ss]** · **[mm:ss]** |
+| Enlace del video (OneDrive) | **[PEGAR URL]** |
+| Captura del video | **[INSERTAR imagen]** |
+| Resumen | Principales apreciaciones del participante sobre cada tarea (T1 a T4): qué logró, dónde dudó, qué comentó y qué problemas se observaron. |
+
