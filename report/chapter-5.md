@@ -127,7 +127,9 @@ Gradle. (s. f.). *Toolchains for JVM projects*. https://docs.gradle.org/current/
 
 JetBrains. (s. f.). *Coding conventions*. Kotlin Documentation. https://kotlinlang.org/docs/coding-conventions.html
 
-Render. (s. f.). *Deploy for free*. https://render.com/docs/free
+Render. (s. f.-a). *Blueprint YAML reference*. https://render.com/docs/blueprint-spec
+
+Render. (s. f.-b). *Deploy for free*. https://render.com/docs/free
 
 Spring. (s. f.-a). *OAuth 2.0 Resource Server JWT*. Spring Security Reference. https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/jwt.html
 
@@ -169,6 +171,7 @@ En este anexo se registran los enlaces privados a los videos de exposición de c
 |---|---|---|---|
 | AV1 | `upc-pre-202620-1acc0238-13984-wasd-expo-av1.mp4` | Startup Profile, Solution Profile, entrevistas, needfinding y diseño de la solución (Capítulos I y II) | [COMPLETAR: enlace al video de AV1] |
 | TB1 | `upc-pre-202620-1acc0238-13984-wasd-expo-tb1.mp4` | Solution UI/UX Design (Capítulo III) e implementación del Sprint 1 (Capítulo IV) | [COMPLETAR: enlace al video de TB1] |
+| AV2 | `upc-pre-202620-1acc0238-13984-wasd-expo-av2.mp4` | Implementación del Sprint 2 (Capítulo IV), Validation Interviews (4.3) y avance de las aplicaciones móviles | [COMPLETAR: enlace al video de AV2] |
 
 Adicionalmente, el informe referencia los siguientes videos de evidencia, también publicados en el OneDrive del curso:
 
@@ -177,6 +180,8 @@ Adicionalmente, el informe referencia los siguientes videos de evidencia, tambi�
 | Entrevistas de needfinding | `upc-pre-202620-1acc0238-13984-wasd-needfinding-av1.mp4` | 2.2.2. Registro de entrevistas | [COMPLETAR: enlace] |
 | Navegación del prototipo | `upc-pre-202620-1acc0238-13984-wasd-prototypenavigation-tb1.mp4` | 3.1.4.5. Mobile Applications Prototyping | [COMPLETAR: enlace] |
 | Navegación del producto | `upc-pre-202620-1acc0238-13984-wasd-productnavigation-tb1.mp4` | 4.2.1.6. Execution Evidence for Sprint Review | [COMPLETAR: enlace] |
+| About the Team | `upc-pre-202620-1acc0238-13984-wasd-abouttheteam-av2.mp4` | Presentación del equipo WASD y de su forma de trabajo; enlazado también desde la sección About the Team del Landing Page | [COMPLETAR: enlace] |
+| Entrevistas de validación | `upc-pre-202620-1acc0238-13984-qlic-validation-av2.mp4` | 4.3.2. Registro de Entrevistas | [COMPLETAR: enlace] |
 
 <div style="page-break-before: always;"></div>
 
@@ -194,7 +199,7 @@ Este anexo centraliza los enlaces a los artefactos elaborados en las herramienta
 | Diagramas de clases y de base de datos | PlantUML | 2.6.x.6 | Código fuente incluido en el Capítulo II |
 | Wireframes, mock-ups y prototipo del Landing Page y de la aplicación móvil | Figma | 3.1.3 y 3.1.4 | [COMPLETAR: enlace al archivo de Figma] |
 | Wireflow y User Flow diagrams | LucidChart | 3.1.4.2 y 3.1.4.4 | [COMPLETAR: enlace al documento de LucidChart] |
-| Product Backlog y Sprint Backlog | Trello | 2.4.3 y 4.2.1.3 | https://trello.com/invite/b/6aa1e6966e4df21cb3a4eef9/ATTIe6a46d0c84f618e9bccb9c4de3ce13f711448192/product-backlog-qlic |
+| Product Backlog y Sprint Backlog | Trello | 2.4.3, 4.2.1.3 y 4.2.2.3 | https://trello.com/invite/b/6aa1e6966e4df21cb3a4eef9/ATTIe6a46d0c84f618e9bccb9c4de3ce13f711448192/product-backlog-qlic |
 
 **Repositorios y productos desplegados**
 
@@ -203,6 +208,8 @@ Este anexo centraliza los enlaces a los artefactos elaborados en las herramienta
 | Project Report | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report | No aplica |
 | Landing Page | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page | https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/ |
 | RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api | https://qlic-backend-api.onrender.com/swagger-ui.html |
+| Especificación OpenAPI del RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api | https://qlic-backend-api.onrender.com/v3/api-docs |
+| Frontend Web | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-frontend-web | https://qlic-frontend-web-13984.web.app |
 
 <div style="page-break-before: always;"></div>
 
@@ -210,7 +217,7 @@ Este anexo centraliza los enlaces a los artefactos elaborados en las herramienta
 
 Los términos y condiciones de Qlic se exponen mediante un enlace en el footer del Landing Page y en la pantalla Create account de la aplicación móvil, donde el suscriptor debe aceptarlos para registrar su cuenta (US05 y US38). Su redacción aplica los principios del Software Engineering Code of Ethics and Professional Practice de ACM e IEEE Computer Society, en particular los de interés público, cliente y empleador, y producto (Gotterbarn et al., 1999); los deberes de veracidad y de responsabilidad profesional del Código de Ética del Colegio de Ingenieros del Perú (Colegio de Ingenieros del Perú, 2018); y los principios de consentimiento, finalidad y seguridad de la Ley N.° 29733, Ley de Protección de Datos Personales (Congreso de la República del Perú, 2011). En consecuencia, el texto describe con veracidad el alcance del servicio, no promete resultados que el producto no garantiza y explica qué datos se recopilan y con qué finalidad.
 
-El texto se publica en inglés, idioma por defecto del producto, y se muestra en español latinoamericano cuando el usuario selecciona ese idioma.
+El texto se publica en inglés, idioma por defecto del producto, y se muestra en español latinoamericano cuando el usuario selecciona ese idioma. Desde el Sprint 2, el RESTful API expone la versión vigente del documento y su fecha de actualización en el endpoint público `GET /api/v1/terms-of-service/current` (US38), que el Landing Page y la pantalla Create account consultan según el encabezado `Accept-Language`.
 
 **Qlic Terms and Conditions**
 
