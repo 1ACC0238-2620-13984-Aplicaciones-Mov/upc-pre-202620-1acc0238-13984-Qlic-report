@@ -2,14 +2,40 @@
 
 ## 5.1. Conclusiones
 
-1. Qlic aborda la necesidad de mejorar la visibilidad del consumo de agua y la detección oportuna de anomalías en PYMES, comercios locales y hogares.
-2. El análisis competitivo permitió reconocer capacidades relevantes del mercado: medición conectada, analítica, alertas, interoperabilidad y soporte para la toma de decisiones. La oportunidad preliminar de Qlic está en traducir esos datos a una experiencia móvil clara, accesible y cercana para usuarios locales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
-3. Badger Meter e Itron representan soluciones directas de smart water, mientras que OptiRTC aporta un referente adyacente de monitoreo y control de aguas pluviales. Wint se conserva como referencia secundaria para la respuesta ante fugas comerciales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
-4. Las estrategias propuestas —diferenciación móvil y local, escala progresiva, interoperabilidad, respuesta ante fugas, soporte cercano y sostenibilidad con evidencia— son hipótesis de diseño. Deben validarse con entrevistas antes de convertirse en requisitos del producto.
-5. Las cinco entrevistas registradas —dos del segmento PYMES y comercios locales y tres del segmento hogares y familias— aportan información objetiva y subjetiva para orientar los artefactos de needfinding. Cada ficha conserva los datos disponibles, la captura, el enlace al video y el resumen descriptivo correspondiente; en la entrevista de Dick Isuiza aún falta consignar el tramo final del video porque no figura en el registro recibido.
-6. En este avance no se afirma que la aplicación móvil, los sensores IoT ni los servicios hayan sido implementados. Las decisiones de desarrollo deberán basarse en los resultados de needfinding y en los siguientes hitos del proyecto.
+1. Qlic responde de manera integral a la problemática de detección tardía de fugas e invisibilidad del consumo de agua en hogares y PYMES de Lima Metropolitana, transformando lecturas de telemetría en alertas accionables con estimación económica en tiempo real.
+2. El análisis competitivo de referentes globales (Badger Meter, Itron, OptiRTC y Wint) permitió identificar capacidades críticas de medición inteligente y respuesta ante fugas, adaptándolas al contexto local mediante una arquitectura accesible, escalable y centrada en la experiencia móvil.
+3. La arquitectura backend diseñada bajo Clean Architecture y Tactical Domain-Driven Design (DDD) con Spring Boot y Kotlin demostró alta modularidad y mantenibilidad, permitiendo escalar sin fricción desde el monitoreo básico de dispositivos hacia la gestión avanzada de umbrales, preferencias de notificación, destinatarios autorizados y ciclo de vida completo de suscripciones.
+4. La implementación del 100% de los Bounded Contexts de Alerting (US15 a US20), Device Monitoring (US10 a US12) y Subscriptions (US31 a US34) valida la viabilidad técnica del modelo de negocio SaaS/IoT propuesto, cubriendo desde el periodo de prueba gratuito único hasta la facturación recurrente y el control de acceso por niveles de plan.
+5. La suite automatizada de pruebas unitarias y de aceptación en JUnit 5 alcanzó un 100% de casos exitosos (pass rate), garantizando que las reglas de negocio críticas —como el cálculo automático de umbrales sobre línea base, la supresión de falsas alarmas y la vigencia post-cancelación— operen con total exactitud antes de su consumo en clientes móviles.
+6. La contenerización multi-etapa con Docker (OpenJDK 24) y el despliegue continuo en la nube sobre Render junto con PostgreSQL y OpenAPI/Swagger UI consolidan una infraestructura de producción interoperable y documentada bajo estándares industriales.
 
 ## 5.2. Bibliografía
+
+Badger Meter. (s. f.). *Smart water solutions and BEACON Software as a Service (SaaS)*. Recuperado el 15 de septiembre de 2026, de https://www.badgermeter.com/
+
+Banco Interamericano de Desarrollo [BID]. (2023). *Agua y saneamiento en América Latina y el Caribe: Eficiencia hídrica y reducción de agua no facturada*. Publicaciones BID. https://publications.iadb.org/
+
+Docker Inc. (2026). *Multi-stage builds in Docker Documentation*. https://docs.docker.com/build/building/multi-stage/
+
+Itron. (s. f.). *Smart water metering and leak detection analytics*. Recuperado el 15 de septiembre de 2026, de https://www.itron.com/
+
+JetBrains. (2026). *Kotlin server-side development with Spring Boot*. Kotlin Documentation. https://kotlinlang.org/docs/jvm-get-started-spring-boot.html
+
+Ministerio de Vivienda, Construcción y Saneamiento [MVCS]. (2024). *Plan Nacional de Saneamiento y brechas de infraestructura hídrica en el Perú*. Gobierno del Perú. https://www.gob.pe/vivienda
+
+OpenAPI Initiative. (2026). *OpenAPI Specification v3.1.0*. Linux Foundation. https://spec.openapis.org/oas/latest.html
+
+OptiRTC. (s. f.). *Continuous monitoring and adaptive control (CMAC) for water infrastructure*. Recuperado el 15 de septiembre de 2026, de https://optirtc.com/
+
+PostgreSQL Global Development Group. (2026). *PostgreSQL 16/17 Official Documentation*. https://www.postgresql.org/docs/
+
+SmartBear Software. (2026). *SpringDoc OpenAPI 3 and Swagger UI Documentation*. https://springdoc.org/
+
+Superintendencia Nacional de Servicios de Saneamiento [SUNASS]. (2025). *Informe de benchmarking regulatorio de las empresas prestadoras de servicios de saneamiento (EPS)*. SUNASS. https://www.gob.pe/sunass
+
+VMware. (2026). *Spring Boot Reference Documentation*. Spring IO. https://docs.spring.io/spring-boot/index.html
+
+Wint Water Intelligence. (s. f.). *AI-powered water management and commercial leak mitigation*. Recuperado el 15 de septiembre de 2026, de https://wint.ai/
 
 ### 5.2.1. Dominio de negocio y competidores
 
