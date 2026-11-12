@@ -313,28 +313,105 @@ La solución desacopla la lógica de negocio en dos Bounded Contexts principales
 
 ---
 
-#### Bounded Context: Alerting
+#### Bounded Context: Alerting 
 
-* **US15: Anomaly evaluation**
-    * **Descripción:** Ingesta y analiza lecturas de telemetría de flujo hídrico para evaluar anomalías frente a umbrales configurados. Determina la severidad (`CRITICAL`, `MODERATE`, `INFORMATIONAL`), calculando el volumen derramado acumulado y su costo económico estimado en moneda local (PEN).
-    * **Endpoint:** `POST /api/v1/alerts/evaluations`
-    * **Escenario de Alerta Positiva (Flujo Sostenido):** Retorno de código `201 Created` con la alerta de fuga persistida y la acción de mitigación recomendada.
-    * **Escenario de Contorno (Lectura Aislada / Falso Positivo):** Retorno de código `204 No Content`, validando que consumos transitorios no disparen falsas alarmas.
-    * **Evidencias de ejecución (Postman):**
+* **US15 & US16: Evaluación de lecturas anómalas, listado y consulta de detalle de alerta**
+  * **Descripción:** Ingesta lecturas de caudal para detectar fugas sostenidas integrando ahora la resolución dinámica de umbrales por Water Point, el filtro de preferencias de notificación push, el despacho automático a destinatarios autorizados y la consulta individual del detalle de cada alerta (`Alert Detail`).
+  * **Endpoints:**
+    * `POST /api/v1/alerts/evaluations` (`201 Created` / `204 No Content`)
+    * `GET /api/v1/alerts?accountId={accountId}` (`200 OK`)
+    * `GET /api/v1/alerts/{alertId}?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
 
-![alertings_POST_201.png](../images/postman_evidence/alertings_POST_201.png)
-
-![alertings_POST_204.png](../images/postman_evidence/alertings_POST_204.png)
+![swagger1.png](../images/postman_evidence/swagger1.png)
 
 ---
 
-* **US16: Alert retrieval**
-    * **Descripción:** Obtiene la relación de alertas preventivas y críticas activas asociadas a una cuenta para su visualización y priorización en el cliente móvil.
-    * **Endpoint:** `GET /api/v1/alerts?accountId={accountId}`
-    * **Código de respuesta:** `200 OK`
-    * **Evidencia de ejecución (Postman):**
+* **US17: Configurar el umbral de consumo**
+  * **Descripción:** Permite al suscriptor definir un umbral personalizado (`USER_DEFINED`) para un Water Point y periodo específico. En caso de no definir un valor manual (`customLimitLitersPerHour = null`), el dominio calcula automáticamente un umbral de protección (`SYSTEM_CALCULATED`) equivalente al +25% sobre la línea base histórica del punto de agua.
+  * **Endpoints:**
+    * `PUT /api/v1/alerts/thresholds` (`200 OK`)
+    * `GET /api/v1/alerts/thresholds?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
 
-![alerts_GET.png](../images/postman_evidence/alerts_GET.png)
+![swagger2.png](../images/postman_evidence/swagger2.png)
+
+---
+
+* **US18: Limitar la frecuencia de notificaciones**
+  * **Descripción:** Permite configurar la ventana temporal de agrupación de anomalías (`groupingWindowMinutes`) y el nivel mínimo de urgencia (`INFORMATIONAL`, `MODERATE`, `CRITICAL`) requerido para emitir notificaciones push, evitando la saturación de alertas ante variaciones menores.
+  * **Endpoints:**
+    * `PUT /api/v1/alerts/preferences` (`200 OK`)
+    * `GET /api/v1/alerts/preferences?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger3.png](../images/postman_evidence/swagger3.png)
+
+---
+
+* **US19: Notificar a usuarios autorizados**
+  * **Descripción:** Permite al titular de la cuenta registrar usuarios adicionales (familiares o encargados de local), habilitar o deshabilitar su recepción de alertas y despachar notificaciones push a cada destinatario activo cuando se detecta una fuga.
+  * **Endpoints:**
+    * `POST /api/v1/alerts/recipients` (`201 Created`)
+    * `GET /api/v1/alerts/recipients?accountId={accountId}` (`200 OK`)
+    * `PATCH /api/v1/alerts/recipients/{recipientId}/toggle` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger4.png](../images/postman_evidence/swagger4.png)
+
+---
+
+* **US20: Confirmar la atención de una alerta**
+  * **Descripción:** Permite marcar una alerta activa como atendida (`ACKNOWLEDGED`), registrando en el historial la acción correctiva ejecutada por el suscriptor y preservando la trazabilidad en caso de reaparición de la anomalía.
+  * **Endpoint:**
+    * `PATCH /api/v1/alerts/{alertId}/acknowledge` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger5.png](../images/postman_evidence/swagger5.png)
+
+---
+
+#### Bounded Context: Subscriptions
+
+* **US31: Contratar un plan de suscripción**
+  * **Descripción:** Procesa la contratación de planes para los segmentos Hogares (`HOME_BASIC`, `HOME_PRO`) y PYMES (`PYME_BUSINESS`, `PYME_ENTERPRISE`). Si el pago es confirmado, activa la suscripción por 30 días y habilita el límite correspondiente de Water Points (`201 Created`); si el medio de pago es rechazado, registra el intento fallido y mantiene restringidas las funciones sin activar el plan (`402 Payment Required`).
+  * **Endpoint:** `POST /api/v1/subscriptions`
+  * **Evidencia de ejecución:**
+
+![swagger6.png](../images/postman_evidence/swagger6.png)
+
+---
+
+* **US32: Acceder a un periodo de prueba**
+  * **Descripción:** Otorga por única vez un periodo de prueba gratuito (`TRIAL_ACTIVE`) de 14 días para suscriptores nuevos, indicando su fecha de término. Si el suscriptor intenta solicitar un segundo periodo de prueba, el dominio rechaza la operación (`409 Conflict`). Al concluir el periodo sin contratar un plan, el estado pasa a `TRIAL_EXPIRED` y restringe las funcionalidades pagadas.
+  * **Endpoints:**
+    * `POST /api/v1/subscriptions/trial` (`201 Created` / `409 Conflict`)
+    * `GET /api/v1/subscriptions/current?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger7y.png](../images/postman_evidence/swagger7y.png)
+
+---
+
+* **US33: Cambiar o cancelar el plan contratado**
+  * **Descripción:** Permite programar el cambio hacia un nuevo plan aplicable a partir del siguiente ciclo de facturación (`nextBillingPlan`), o solicitar la cancelación de la suscripción (`CANCELLED_PENDING_EXPIRATION`), desactivando cobros futuros (`autoRenew = false`) pero manteniendo el acceso activo hasta la fecha de término del periodo pagado.
+  * **Endpoints:**
+    * `PATCH /api/v1/subscriptions/{subscriptionId}/plan` (`200 OK`)
+    * `POST /api/v1/subscriptions/{subscriptionId}/cancel` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger8.1.png](../images/postman_evidence/swagger8.1.png)
+
+![swagger8.png](../images/postman_evidence/swagger8.png)
+
+---
+
+* **US34: Consultar el historial de pagos**
+  * **Descripción:** Recupera el listado cronológico de transacciones del suscriptor, detallando fecha de operación, monto en soles (PEN), plan asociado, medio de pago y estado (`CONFIRMED` o `REJECTED`).
+  * **Endpoint:** `GET /api/v1/subscriptions/payments?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger9.png](../images/postman_evidence/swagger9.png)
 
 ---
 
