@@ -63,12 +63,9 @@ La sección concluye con la elaboración del Lean UX Canvas, herramienta central
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-1.2.2.1. Lean UX Problem Statement
+Las PYMES y los hogares urbanos de Lima necesitan mantener bajo control su consumo de agua para cuidar sus costos y evitar daños en sus instalaciones. Hoy lo hacen revisando el recibo mensual y con inspecciones manuales, como registros en libreta o recorridos visuales.
 
-El estado actual de la gestión del agua en microempresas (PYMES) y hogares se ha enfocado tradicionalmente en un control reactivo basado en la recepción del recibo mensual emitido por la empresa prestadora y en revisiones manuales aisladas. Esta dependencia de datos a mes vencido no resuelve la falta de visibilidad del consumo en tiempo real ni permite identificar filtraciones ocultas en tuberías e instalaciones sanitarias de forma oportuna. Como consecuencia, los usuarios enfrentan sobrecostos significativos en su facturación, desperdicio innecesario del recurso y un riesgo latente de deterioro estructural en sus inmuebles.
-
-Frente a esta situación, se plantea la siguiente interrogante de diseño:
-¿Cómo podríamos brindar a los responsables de comercios y hogares visibilidad inmediata y advertencias tempranas sobre su consumo de agua para que puedan tomar decisiones de control oportunas y prevenir desperdicios antes de la llegada de la factura?
+¿Cómo podríamos ayudar a los responsables de PYMES y hogares a detectar a tiempo un consumo anormal de agua, para que decidan y actúen antes de que el desperdicio se refleje en su recibo?
 #### 1.2.2.2. Lean UX Assumptions
 
 | Tipo de Assumption                       | Enunciados de Creencias (Assumptions)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

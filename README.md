@@ -32,7 +32,7 @@
    <br>
    <p><strong>Período 202620</strong></p>
    <br>
-   <p><strong>Octubre 2026</strong></p>
+   <p><strong>Noviembre 2026</strong></p>
 </div>
 
 <div style="page-break-before: always;"></div>
@@ -65,6 +65,9 @@
 | 3.1     | 2026-10-06  | Conde Huashuayo, Sebasthian Alex | Desarrollo de Style Guidelines, Information Architecture y artefactos UI/UX del Landing Page y de la aplicación móvil para sustentar la propuesta visual del Sprint 1. |
 | 3.2     | 2026-10-06  | Condori Lozano, Alessandro Ramiro | Consolidación de wireflows y user flows móviles, configuración y documentación de servicios, y coordinación de la integración del informe para la entrega TB1. |
 | 3.3     | 2026-10-06  | Avila Palacios, Aaron Alexander | Incorporación de la captura de Contributors de GitHub como evidencia visual de la colaboración del equipo durante TB1. |
+| 3.4     | 2026-11-04  | Briceño Llanos, Ayrton Omar        | Implementación del 100% del API de Subscriptions (US31 a US34) y extensión del contexto Alerting (US17 a US20); redacción de las secciones 4.2.2.4 (Development Evidence for Sprint Review) y 4.2.2.5 (Testing Suite Evidence), actualización de Conclusiones (5.1), Bibliografía (5.2) e incorporación del aporte individual para ABET Student Outcome 7 (AV2).                                       |
+| 3.5     | 2026-11-10  | Condori Lozano, Alessandro Ramiro  | Implementación en el RESTful API de IAM restante (US07, US08 y US09), Consumption Analytics (US24) y Support (US35 a US38), con despliegue en Render mediante Blueprint y PostgreSQL; actualización de la sección 4.1 (Software Configuration Management), redacción de 4.2.2.7 (Services Documentation Evidence for Sprint Review), registro de los commits pendientes de 4.2.1.7, actualización de la carátula, del Registro de Versiones, de la tabla de contenidos, del Project Report Collaboration Insights (AV2), de los Anexos B, C y D, de la bibliografía y del aporte individual para ABET Student Outcome 7 (AV2). |
+
 # Project Report Collaboration Insights
 
 **Organización de GitHub:** **https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov**
@@ -111,6 +114,23 @@ Para la entrega TB1, el equipo mantuvo la organización por capítulos en el rep
 *Figura 2.* Analítica de contribuciones del repositorio del Project Report durante TB1.
 
 **Interpretación del equipo:** Durante TB1 la actividad se distribuyó entre la documentación del diseño de la solución (Capítulo III), la configuración y documentación de la implementación (Capítulo IV) y la construcción de los servicios RESTful del Sprint 1. La separación por repositorio y por rama permitió que el desarrollo del backend avanzara en paralelo con la redacción del informe, y que cada integración a la rama principal quedara registrada con un commit de merge trazable.
+
+
+## Entrega AV2
+
+Para la entrega AV2, correspondiente al Sprint 2, el equipo mantuvo GitFlow en los repositorios de la organización y amplió el trabajo en ramas de funcionalidad por bounded context. En el repositorio `qlic-backend-api`, Alerting (US17 a US20) y Subscriptions (US31 a US34) se desarrollaron en `feature/alerting-management` y `feature/subscriptions-context`, integradas mediante Pull Request; IAM (US07 a US09), Support (US35 a US38) y Consumption Analytics (US24) se desarrollaron en `feature/iam-account-management`, `feature/support-incidents` y `feature/consumption-off-hours`, y la configuración de despliegue en Render con PostgreSQL, en `feature/render-postgresql`. Cada historia se registró con commits que siguen Conventional Commits y separan dominio, aplicación, infraestructura, interfaces y pruebas, lo que permite identificar en el historial el aporte de cada integrante. En el Project Report, las ramas `feature/caratula`, `feature/chapter-4` y `feature/chapter-5` concentraron las actualizaciones del Sprint 2.
+
+**Evidencia de colaboración:**
+
+![Analítica de contribuciones del repositorio del Project Report durante AV2](images/collaboration/av2_report_git.png)
+
+*Figura 3.* Analítica de contribuciones del repositorio del Project Report durante AV2.
+
+![Analítica de contribuciones del repositorio del RESTful API durante AV2](images/collaboration/av2_backend_git.png)
+
+*Figura 4.* Analítica de contribuciones del repositorio `qlic-backend-api` durante AV2.
+
+**Interpretación del equipo:** En AV2 la actividad se concentró en el RESTful API, que pasó de tres a seis bounded contexts, y en el Capítulo IV del informe. Trabajar en ramas por bounded context permitió que los integrantes implementaran Alerting, Subscriptions, IAM, Support y Consumption Analytics en paralelo sin conflictos en el código de dominio, y que las integraciones a `main` quedaran registradas con su commit de merge.
 
 ---
 
@@ -233,6 +253,11 @@ Para la entrega TB1, el equipo mantuvo la organización por capítulos en el rep
             - [4.2.1.7. Services Documentation Evidence for Sprint Review](#4217-services-documentation-evidence-for-sprint-review)
             - [4.2.1.8. Software Deployment Evidence for Sprint Review](#4218-software-deployment-evidence-for-sprint-review)
             - [4.2.1.9. Team Collaboration Insights during Sprint](#4219-team-collaboration-insights-during-sprint)
+        - [4.2.2. Sprint 2](#422-sprint-2)
+            - [4.2.2.7. Services Documentation Evidence for Sprint Review](#4227-services-documentation-evidence-for-sprint-review)
+    - [4.3. Validation Interviews](#43-validation-interviews)
+        - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+        - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
 - [Capítulo V: Conclusiones, Bibliografía y Anexos](#capítulo-v-conclusiones-bibliografía-y-anexos)
     - [5.1. Conclusiones](#51-conclusiones)
     - [5.2. Bibliografía](#52-bibliografía)
@@ -256,10 +281,10 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC – Student Outcome 7.
 
-| Criterio específico                                                                                                                     | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Conclusiones                                         |
-|-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Avila Palacios, Aaron Alexander**<br>*AV1:* Investigué las capacidades de monitoreo hídrico, detección de fugas y alertas móviles de Wint, Flo by Moen y Phyn. Transformé los hallazgos en el Competitive Analysis Landscape, el análisis SWOT y las estrategias de diferenciación de Qlic. Asimismo, diseñé el protocolo semiestructurado y la plantilla de registro de entrevistas para PYMES y hogares, vinculando cada pregunta con variables necesarias para los User Personas.<br>*TB1:* Apliqué conocimientos de SEO, meta tags, i18n, diseño responsive, GitHub Pages y documentación de sprints para implementar y evidenciar el Landing Page de Qlic.<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* Investigué y apliqué de forma autónoma la metodología Lean UX para estructurar los supuestos del proyecto en cinco categorías formales y formular hipótesis testeables con criterios de validación medibles. Asimismo, analicé normativas y reportes estadísticos actualizados (SUNASS, MVCS, BID) y estándares de citación APA 7 para contextualizar con rigor técnico la problemática hídrica del producto Qlic.<br>*TB1:* Apliqué Spring Boot con Kotlin, Clean Architecture, persistencia JPA, pruebas unitarias y Docker para implementar Device Monitoring y Alerting del RESTful API.<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Apliqué técnicas de needfinding para convertir las entrevistas en User Personas, User Task Matrix, User Journey y Empathy Maps. También estudié EventStorming y Ubiquitous Language para representar el dominio de Qlic y conectar las necesidades de PYMES y hogares con una solución móvil e IoT.<br>*TB1:* Apliqué Material Design, arquitectura de información y criterios de accesibilidad para elaborar las guías visuales, wireframes y mock-ups del Landing Page y de la aplicación móvil.<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* Revisé y adapté la descripción de la startup WASD al enfoque del curso de Aplicaciones para Dispositivos Móviles, manteniendo la propuesta de valor de Qlic como solución móvil conectada con dispositivos IoT. Asimismo, completé mi perfil de integrante con información sobre mi formación en Ingeniería de Software, experiencia en el área de sistemas y habilidades técnicas.<br>*TB1:* Apliqué documentación OpenAPI/Swagger, configuración de servicios, GitFlow y Conventional Commits para consolidar la evidencia técnica y la integración del informe.<br><br> | *AV1:* Como equipo, actualizamos conocimientos de benchmarking, Lean UX, entrevistas, needfinding y modelado del dominio. La integración de estos aprendizajes permitió reducir supuestos y sustentar la propuesta móvil de Qlic en evidencia de usuarios y criterios técnicos.<br>*TB1:* Durante el Sprint 1, el equipo convirtió nuevos conocimientos de diseño web, desarrollo backend, pruebas, documentación de APIs y control de versiones en artefactos verificables del Landing Page, RESTful API e informe. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  | **Avila Palacios, Aaron Alexander**<br>*AV1:* Identifiqué que el desarrollo profesional en aplicaciones móviles exige actualizar de manera continua competencias en arquitectura móvil, integración de servicios IoT, investigación UX y accesibilidad. Por ello definí objetivos SMART orientados a construir un portafolio móvil verificable y a incorporarme a un rol de desarrollo móvil después de la graduación.<br>*TB1:* Reforcé de forma autónoma mis conocimientos de SEO técnico, internacionalización, despliegue estático y trazabilidad de evidencias mediante Git y GitHub Pages.<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* Reconocí la importancia de la capacitación continua al formular mis metas profesionales post-graduación bajo el estándar SMART, identificando que la certificación internacional de inglés y el dominio de nuevas arquitecturas de software son esenciales para mantener la competitividad profesional ante las constantes demandas de la industria tecnológica.<br>*TB1:* Fortalecí el aprendizaje continuo en desarrollo backend, testing automatizado y despliegue de servicios al implementar y documentar los bounded contexts del Sprint 1.<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Reconocí que el desarrollo móvil requiere aprendizaje continuo en Kotlin, arquitectura, integración de APIs e IoT, UX y accesibilidad. La elaboración de los artefactos de needfinding me mostró la importancia de validar las decisiones con usuarios y de actualizarme mediante documentación y buenas prácticas.<br>*TB1:* Consolidé el aprendizaje de herramientas y prácticas de diseño UI/UX para mantener consistencia entre las versiones web y móvil de Qlic.<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* Reconocí la importancia del aprendizaje permanente para fortalecer mis competencias en desarrollo de software y aplicaciones móviles. A partir de mi experiencia en el área de sistemas de un grupo de clínicas, identifiqué la necesidad de seguir actualizándome en frameworks, integración de servicios, bases de datos, control de versiones y buenas prácticas de desarrollo para responder a necesidades reales de las organizaciones.<br>*TB1:* Continué aprendiendo sobre documentación OpenAPI, configuración cloud, colaboración GitFlow y consolidación de entregables para integrar cambios de distintos repositorios.<br><br> | *AV1:* El equipo reconoce que la mejora continua será necesaria para validar y desarrollar Qlic. Mantendremos objetivos de aprendizaje, revisión de documentación y validación con usuarios en los siguientes hitos del proyecto.<br>*TB1:* El trabajo evidenció que el aprendizaje permanente permite resolver necesidades nuevas del Sprint, coordinar productos con tecnologías distintas y mejorar la calidad de las evidencias antes de cada entrega. |
+| Criterio específico                                                                                                                     | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Avila Palacios, Aaron Alexander**<br>*AV1:* Investigué las capacidades de monitoreo hídrico, detección de fugas y alertas móviles de Wint, Flo by Moen y Phyn. Transformé los hallazgos en el Competitive Analysis Landscape, el análisis SWOT y las estrategias de diferenciación de Qlic. Asimismo, diseñé el protocolo semiestructurado y la plantilla de registro de entrevistas para PYMES y hogares, vinculando cada pregunta con variables necesarias para los User Personas.<br>*TB1:* Apliqué conocimientos de SEO, meta tags, i18n, diseño responsive, GitHub Pages y documentación de sprints para implementar y evidenciar el Landing Page de Qlic.<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* Investigué y apliqué de forma autónoma la metodología Lean UX para estructurar los supuestos del proyecto en cinco categorías formales y formular hipótesis testeables con criterios de validación medibles. Asimismo, analicé normativas y reportes estadísticos actualizados (SUNASS, MVCS, BID) y estándares de citación APA 7 para contextualizar con rigor técnico la problemática hídrica del producto Qlic.<br>*TB1:* Apliqué Spring Boot con Kotlin, Clean Architecture, persistencia JPA, pruebas unitarias y Docker para implementar Device Monitoring y Alerting del RESTful API.<br> *AV2:* Identifiqué la necesidad de profundizar en el modelado táctico de reglas de negocio complejas bajo Domain-Driven Design (DDD) para soportar la configuración dinámica de umbrales hídricos, políticas de supresión de notificaciones push y máquinas de estado para el ciclo de vida de suscripciones SaaS (periodos de prueba únicos, cambios diferidos de plan y cancelaciones con acceso remanente). Asimismo, investigué el flujo colaborativo de integración continua con GitFlow (ramas, Pull Requests y Conventional Commits) y el diseño de pruebas de aceptación automatizadas basadas en escenarios BDD con JUnit 5 para asegurar la calidad del backend antes de su integración móvil. <br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Apliqué técnicas de needfinding para convertir las entrevistas en User Personas, User Task Matrix, User Journey y Empathy Maps. También estudié EventStorming y Ubiquitous Language para representar el dominio de Qlic y conectar las necesidades de PYMES y hogares con una solución móvil e IoT.<br>*TB1:* Apliqué Material Design, arquitectura de información y criterios de accesibilidad para elaborar las guías visuales, wireframes y mock-ups del Landing Page y de la aplicación móvil.<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* Revisé y adapté la descripción de la startup WASD al enfoque del curso de Aplicaciones para Dispositivos Móviles, manteniendo la propuesta de valor de Qlic como solución móvil conectada con dispositivos IoT. Asimismo, completé mi perfil de integrante con información sobre mi formación en Ingeniería de Software, experiencia en el área de sistemas y habilidades técnicas.<br>*TB1:* Apliqué documentación OpenAPI/Swagger, configuración de servicios, GitFlow y Conventional Commits para consolidar la evidencia técnica y la integración del informe.<br>*AV2:* Investigué y apliqué autorización basada en *claims* y *scopes* de JWT con Spring Security para implementar el acceso compartido con permisos diferenciados (US08), el restablecimiento de contraseña con tokens de un solo uso (US07) y el aislamiento de datos por cuenta. Asimismo, apliqué *anti-corruption layers* entre bounded contexts para integrar Support y Consumption Analytics con Alerting, Device Monitoring y Subscriptions, y configuré la infraestructura como código con un Blueprint de Render y PostgreSQL.<br><br> | *AV1:* Como equipo, actualizamos conocimientos de benchmarking, Lean UX, entrevistas, needfinding y modelado del dominio. La integración de estos aprendizajes permitió reducir supuestos y sustentar la propuesta móvil de Qlic en evidencia de usuarios y criterios técnicos.<br>*TB1:* Durante el Sprint 1, el equipo convirtió nuevos conocimientos de diseño web, desarrollo backend, pruebas, documentación de APIs y control de versiones en artefactos verificables del Landing Page, RESTful API e informe. <br><br>*AV2:* La aplicación rigurosa de patrones tácticos de DDD, pruebas automatizadas orientadas a comportamiento (BDD) en JUnit 5 y flujos de trabajo estandarizados con GitFlow permitió escalar la plataforma Qlic incorporando la gestión avanzada de alertas y el motor completo de suscripciones y pagos sin comprometer la integridad arquitectónica. Se concluye que el aprendizaje autónomo y continuo en prácticas modernas de ingeniería de software garantiza entregas incrementales confiables, trazables y listas para su consumo en entornos de producción. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  | **Avila Palacios, Aaron Alexander**<br>*AV1:* Identifiqué que el desarrollo profesional en aplicaciones móviles exige actualizar de manera continua competencias en arquitectura móvil, integración de servicios IoT, investigación UX y accesibilidad. Por ello definí objetivos SMART orientados a construir un portafolio móvil verificable y a incorporarme a un rol de desarrollo móvil después de la graduación.<br>*TB1:* Reforcé de forma autónoma mis conocimientos de SEO técnico, internacionalización, despliegue estático y trazabilidad de evidencias mediante Git y GitHub Pages.<br><br>**Briceño Llanos, Ayrton Omar**<br>*AV1:* Reconocí la importancia de la capacitación continua al formular mis metas profesionales post-graduación bajo el estándar SMART, identificando que la certificación internacional de inglés y el dominio de nuevas arquitecturas de software son esenciales para mantener la competitividad profesional ante las constantes demandas de la industria tecnológica.<br>*TB1:* Fortalecí el aprendizaje continuo en desarrollo backend, testing automatizado y despliegue de servicios al implementar y documentar los bounded contexts del Sprint 1.<br>*AV2:* Apliqué los conocimientos adquiridos implementando el 100% de los endpoints RESTful restantes del Bounded Context de *Alerting* (US17, US18, US19 y US20) y la totalidad del Bounded Context de *Subscriptions* (US31, US32, US33 y US34) en Spring Boot con Kotlin y persistencia JPA sobre PostgreSQL. Desarrollé las suites de pruebas unitarias y de aceptación `AlertManagementCommandHandlerTest` y `SubscriptionCommandHandlerTest` en JUnit 5 logrando un 100% de casos aprobados sobre todos los criterios Dado-Cuando-Entonces, y gestioné el versionamiento mediante ramas `feature/alerting-management` y `feature/subscriptions-context` integradas vía Pull Request hacia el despliegue en producción en Render con documentación viva en Swagger UI.<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Reconocí que el desarrollo móvil requiere aprendizaje continuo en Kotlin, arquitectura, integración de APIs e IoT, UX y accesibilidad. La elaboración de los artefactos de needfinding me mostró la importancia de validar las decisiones con usuarios y de actualizarme mediante documentación y buenas prácticas.<br>*TB1:* Consolidé el aprendizaje de herramientas y prácticas de diseño UI/UX para mantener consistencia entre las versiones web y móvil de Qlic.<br><br>**Condori Lozano, Alessandro Ramiro**<br>*AV1:* Reconocí la importancia del aprendizaje permanente para fortalecer mis competencias en desarrollo de software y aplicaciones móviles. A partir de mi experiencia en el área de sistemas de un grupo de clínicas, identifiqué la necesidad de seguir actualizándome en frameworks, integración de servicios, bases de datos, control de versiones y buenas prácticas de desarrollo para responder a necesidades reales de las organizaciones.<br>*TB1:* Continué aprendiendo sobre documentación OpenAPI, configuración cloud, colaboración GitFlow y consolidación de entregables para integrar cambios de distintos repositorios.<br>*AV2:* Reconocí que la seguridad y la privacidad de los datos de los suscriptores exigen actualizarse de forma continua en estándares como OAuth 2.0, JWT y la Ley N.° 29733, así como en prácticas de infraestructura como código, por lo que incorporé su revisión a mi plan de aprendizaje para las siguientes entregas.<br><br>         | *AV1:* El equipo reconoce que la mejora continua será necesaria para validar y desarrollar Qlic. Mantendremos objetivos de aprendizaje, revisión de documentación y validación con usuarios en los siguientes hitos del proyecto.<br>*TB1:* El trabajo evidenció que el aprendizaje permanente permite resolver necesidades nuevas del Sprint, coordinar productos con tecnologías distintas y mejorar la calidad de las evidencias antes de cada entrega.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 <div style="page-break-before: always;"></div>
 
@@ -295,7 +320,6 @@ En esta sección cada integrante del equipo formula un plan con al menos dos obj
 | 1 | Desarrollar y publicar una aplicación móvil funcional relacionada con la gestión de recursos durante los 12 meses posteriores a mi graduación. | Diseñar y desarrollar una aplicación móvil que integre una interfaz intuitiva, consumo de una API REST, almacenamiento de datos y una funcionalidad útil para usuarios reales. | Publicar un repositorio documentado, una demostración funcional y completar al menos 20 pruebas o casos de validación. | Dedicar seis horas semanales al aprendizaje y desarrollo, utilizando recursos oficiales, proyectos prácticos y revisiones periódicas. | Me permitirá fortalecer mis competencias en desarrollo móvil y aplicar los conocimientos adquiridos en la carrera y en mi experiencia laboral en sistemas. | Completar y publicar la aplicación dentro de los 12 meses posteriores a la graduación. |
 | 2 | Conseguir una posición como desarrollador de software junior o desarrollador de aplicaciones móviles dentro de los 12 meses posteriores a mi graduación. | Preparar un CV técnico, portafolio y postular a oportunidades relacionadas con desarrollo web, backend o aplicaciones móviles. | Realizar al menos 20 postulaciones, completar cinco simulaciones de entrevistas técnicas y participar en procesos de selección. | Mantener una rutina semanal de preparación, mejorar mis conocimientos de JavaScript, Java, bases de datos, frameworks y control de versiones. | Permitirá consolidar mi desarrollo profesional y aprovechar mi experiencia previa en el área de sistemas de una organización de salud. | Conseguir una oferta laboral dentro de los 12 meses posteriores a la graduación. |
 ---
-
 
 # Capítulo I: Presentación
 
@@ -362,12 +386,9 @@ La sección concluye con la elaboración del Lean UX Canvas, herramienta central
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-1.2.2.1. Lean UX Problem Statement
+Las PYMES y los hogares urbanos de Lima necesitan mantener bajo control su consumo de agua para cuidar sus costos y evitar daños en sus instalaciones. Hoy lo hacen revisando el recibo mensual y con inspecciones manuales, como registros en libreta o recorridos visuales.
 
-El estado actual de la gestión del agua en microempresas (PYMES) y hogares se ha enfocado tradicionalmente en un control reactivo basado en la recepción del recibo mensual emitido por la empresa prestadora y en revisiones manuales aisladas. Esta dependencia de datos a mes vencido no resuelve la falta de visibilidad del consumo en tiempo real ni permite identificar filtraciones ocultas en tuberías e instalaciones sanitarias de forma oportuna. Como consecuencia, los usuarios enfrentan sobrecostos significativos en su facturación, desperdicio innecesario del recurso y un riesgo latente de deterioro estructural en sus inmuebles.
-
-Frente a esta situación, se plantea la siguiente interrogante de diseño:
-¿Cómo podríamos brindar a los responsables de comercios y hogares visibilidad inmediata y advertencias tempranas sobre su consumo de agua para que puedan tomar decisiones de control oportunas y prevenir desperdicios antes de la llegada de la factura?
+¿Cómo podríamos ayudar a los responsables de PYMES y hogares a detectar a tiempo un consumo anormal de agua, para que decidan y actúen antes de que el desperdicio se refleje en su recibo?
 #### 1.2.2.2. Lean UX Assumptions
 
 | Tipo de Assumption                       | Enunciados de Creencias (Assumptions)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -489,7 +510,6 @@ Evitar sobrecostos inesperados en la facturación mensual de agua, mitigar el de
 
 **Sustento estadístico:**  
 De acuerdo con la U.S. Environmental Protection Agency [EPA] (2024), aproximadamente el 12 % del volumen promedio de agua consumido en los hogares corresponde a fugas internas no detectadas a tiempo. Asimismo, en el contexto peruano, la Superintendencia Nacional de Servicios de Saneamiento [SUNASS] (2023) señala que hasta el 45 % del agua potable producida se pierde en redes y conexiones domiciliarias deficientes.
-
 
 # Capítulo II: Requirements Development and Software Solution Design
 
@@ -3379,7 +3399,6 @@ TechnicianRepository ..> Technician : administra >
 
 La distribución evidencia la concentración de complejidad de dominio en los dos contextos core, conforme a lo establecido en el Candidate Context Discovery de la sección 2.5.1.1. En total, el modelo táctico comprende 8 agregados, 116 clases de dominio y 27 tablas de persistencia distribuidas en los seis bounded contexts.
 
-
 # Capítulo III: Solution UI/UX Design
 
 ## 3.1. Product design
@@ -3860,7 +3879,6 @@ El prototipo de la aplicación móvil se construyó en Figma enlazando los mock-
 | F4. Revisar el nivel de los tanques | Evitar quedarse sin agua | US28 | Business › Tanks → detalle del tanque | Tanque con nivel bajo → indicador de advertencia en "Tanks to refill" |
 | F5. Solicitar ayuda | Resolver un problema sin salir de la aplicación | US35 | More → Support → formulario → "Submit ticket" → ticket en estado "Open" | Campo obligatorio vacío → mensaje bajo el campo |
 
-
 # Capítulo IV: Product Implementation & Validation
 
 ## 4.1. Software Configuration Management
@@ -3932,6 +3950,7 @@ El código fuente de cada producto se gestiona en un repositorio independiente d
 | Project Report | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report | `master` |
 | RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api | `main` |
 | Landing Page | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page | `main` |
+| Frontend Web | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-frontend-web | `main` |
 
 **Modelo de ramas: GitFlow**
 
@@ -3941,7 +3960,7 @@ El equipo adopta el modelo GitFlow propuesto por Driessen (2010), que separa el 
 |---|---|---|---|
 | `master` / `main` | — | — | Contiene únicamente versiones publicadas; cada merge corresponde a un release etiquetado. El Project Report utiliza `master` y los repositorios de código, `main`. |
 | `develop` | `master` / `main` | `release/*` | Integra las funcionalidades terminadas del Sprint en curso. |
-| `feature/*` | `develop` | `develop` | Una rama por historia o grupo de historias, con nombre en *kebab-case* (por ejemplo, `feature/iam-authentication` o `feature/chapter-4`). |
+| `feature/*` | `develop` | `develop` | Una rama por historia o grupo de historias, con nombre en *kebab-case* (por ejemplo, `feature/iam-authentication`, `feature/support-incidents` o `feature/chapter-4`). |
 | `release/*` | `develop` | `master` / `main` y `develop` | Prepara una entrega: se ajustan versión, documentación y correcciones menores (por ejemplo, `release/v1.1.0`). |
 | `hotfix/*` | `master` / `main` | `master` / `main` y `develop` | Corrige un error detectado en una versión publicada (por ejemplo, `hotfix/v1.1.1`). |
 
@@ -3962,7 +3981,7 @@ Los mensajes de commit siguen la especificación Conventional Commits 1.0.0, con
 | `docs` | Cambios en documentación o en el Project Report | `docs(chapter-4): add software configuration management` |
 | `test` | Pruebas nuevas o corregidas | `test(iam): add unit tests for registration and authentication` |
 | `refactor` | Cambio interno sin alterar el comportamiento | `refactor(monitoring): extract device resource assembler` |
-| `chore` | Configuración, dependencias o tareas de mantenimiento | `chore(deploy): add Dockerfile and prod profile` |
+| `chore` | Configuración, dependencias o tareas de mantenimiento | `chore(deploy): add Render Blueprint with managed PostgreSQL` |
 
 La descripción se redacta en inglés, en modo imperativo y sin punto final, de modo que el historial pueda leerse como una secuencia de acciones sobre el producto.
 
@@ -3987,9 +4006,11 @@ Se aplican las Kotlin Coding Conventions (JetBrains, s. f.), la Android Kotlin S
 El código se organiza por bounded context y, dentro de cada uno, por las cuatro capas definidas en la sección 2.6 (`domain`, `application`, `interfaces`, `infrastructure`), respetando los sufijos `Command`, `CommandHandler`, `Query`, `Controller`, `Resource`, `RepositoryImpl` y `Adapter`. Adicionalmente:
 
 - Los endpoints se versionan y nombran con sustantivos en plural y en *kebab-case* bajo el prefijo `/api/v1` (por ejemplo, `/api/v1/devices/{id}/water-point`).
-- Los verbos HTTP y los códigos de estado se utilizan según su semántica estándar (Fielding et al., 2022): `201 Created` al crear un recurso, `400 Bad Request` ante datos inválidos, `401 Unauthorized` ante credenciales ausentes o inválidas y `409 Conflict` ante un recurso duplicado.
+- Los verbos HTTP y los códigos de estado se utilizan según su semántica estándar (Fielding et al., 2022): `201 Created` al crear un recurso, `400 Bad Request` ante datos inválidos, `401 Unauthorized` ante credenciales ausentes o inválidas, `403 Forbidden` cuando el usuario autenticado no cuenta con el permiso requerido, `404 Not Found` cuando el recurso no existe o no pertenece a la cuenta, y `409 Conflict` ante un recurso duplicado o un cambio de estado no permitido.
 - Los errores se devuelven con el formato *Problem Details for HTTP APIs* (`application/problem+json`), definido en el RFC 9457 (Nottingham et al., 2023).
 - Las tablas y columnas de la base de datos se nombran en *snake_case* y en plural (`subscribers`, `password_hash`).
+- La cuenta y el permiso del solicitante se obtienen del token de acceso y no de un parámetro enviado por el cliente; los endpoints de IAM, Consumption Analytics y Support incorporados en el Sprint 2 siguen esta regla, de modo que un usuario solo opera sobre la cuenta de su sesión.
+- La integración entre bounded contexts se realiza mediante interfaces del dominio (por ejemplo, `PlanEntitlementProvider` o `AlertDataProvider`) implementadas por adaptadores de la capa de infraestructura (*anti-corruption layer*), sin que un contexto acceda a las clases de dominio de otro desde sus capas de dominio o aplicación.
 - Los mensajes del API se escriben en inglés por defecto y se traducen al español latinoamericano en archivos de recursos (`messages.properties` y `messages_es_419.properties`), seleccionados según el encabezado `Accept-Language`.
 
 **Dart (Mobile App multiplataforma)**
@@ -4031,26 +4052,28 @@ La aplicación define dos perfiles de Spring Boot (Spring, s. f.-b):
 | `dev` (por defecto) | `application-dev.properties` | H2 en memoria, con consola en `/h2-console` | Desarrollo y pruebas locales |
 | `prod` | `application-prod.properties` | PostgreSQL administrado por el proveedor de nube | Entorno desplegado |
 
-Pasos de despliegue en Render (Render, s. f.):
+Desde el Sprint 2, la infraestructura del RESTful API en Render se declara como código en el archivo `render.yaml` (*Blueprint*) de la raíz del repositorio, que define el *Web Service* Docker y la base de datos PostgreSQL administrada y los enlaza mediante variables de entorno, sin versionar credenciales (Render, s. f.-a). Pasos de despliegue:
 
-1. Crear una base de datos PostgreSQL en Render y anotar su *host*, nombre de base, usuario y contraseña.
-2. Crear un *Web Service* conectado al repositorio `qlic-backend-api`, rama `main`, con entorno de ejecución Docker; Render detecta el `Dockerfile` de la raíz.
-3. Registrar en el servicio las variables de entorno indicadas en la tabla *Configuración del entorno `prod`*, presentada a continuación.
-4. Render construye la imagen, la ejecuta y expone el servicio en `https://qlic-backend-api.onrender.com`; cada merge a `main` dispara un nuevo despliegue automático. El `Dockerfile` inicia la aplicación con el puerto de la variable `PORT` asignada por la plataforma (`-Dserver.port=${PORT:-8080}`).
-5. Verificar el despliegue accediendo a `https://qlic-backend-api.onrender.com/swagger-ui.html`.
+1. En Render, seleccionar *New › Blueprint* y elegir el repositorio `qlic-backend-api`; Render lee el `render.yaml` y muestra los recursos que creará: la base de datos `qlic-postgres` y el servicio `qlic-backend-api`.
+2. Confirmar la creación. Render aprovisiona PostgreSQL e inyecta en el servicio su *host*, puerto, nombre de base, usuario y contraseña (`fromDatabase`), y genera un valor aleatorio para `JWT_SECRET` (`generateValue`).
+3. Render construye la imagen a partir del `Dockerfile`, la ejecuta con el perfil `prod` y expone el servicio en `https://qlic-backend-api.onrender.com`; cada merge a `main` dispara un nuevo despliegue automático. El `Dockerfile` inicia la aplicación con el puerto de la variable `PORT` asignada por la plataforma (`-Dserver.port=${PORT:-8080}`).
+4. Al iniciar contra una base vacía, Hibernate crea las tablas (`ddl-auto=update`) y el *seeder* de Support registra los técnicos y la versión vigente de los términos y condiciones.
+5. Verificar el despliegue en `https://qlic-backend-api.onrender.com/swagger-ui.html`; Render utiliza `/v3/api-docs` como *health check* del servicio.
 
 **Configuración del entorno `prod`**
 
-| Variable | Valor |
-|---|---|
-| `SPRING_PROFILES_ACTIVE` | `prod` |
-| `SPRING_DATASOURCE_URL` | `jdbc:postgresql://<host>:5432/<base>` |
-| `SPRING_DATASOURCE_USERNAME` | Usuario de la base de datos |
-| `SPRING_DATASOURCE_PASSWORD` | Contraseña de la base de datos |
-| `JWT_SECRET` | Clave de firma HS256 de al menos 32 caracteres |
-| `JWT_EXPIRATION_MINUTES` | Vigencia del token de acceso; por defecto, 1440 |
+| Variable | Origen | Valor |
+|---|---|---|
+| `SPRING_PROFILES_ACTIVE` | `render.yaml` | `prod` |
+| `DB_HOST`, `DB_PORT`, `DB_NAME` | Base de datos de Render (`fromDatabase`) | Datos de conexión de PostgreSQL; el perfil `prod` construye con ellos la URL `jdbc:postgresql://<host>:<puerto>/<base>` |
+| `SPRING_DATASOURCE_USERNAME` | Base de datos de Render | Usuario de la base de datos |
+| `SPRING_DATASOURCE_PASSWORD` | Base de datos de Render | Contraseña de la base de datos |
+| `SPRING_DATASOURCE_URL` | Opcional | Reemplaza la URL construida, por ejemplo, para usar una base externa |
+| `JWT_SECRET` | Generado por Render | Clave de firma HS256 de al menos 32 caracteres |
+| `JWT_EXPIRATION_MINUTES` | Opcional | Vigencia del token de acceso; por defecto, 1440 |
+| `PASSWORD_RESET_EXPOSE_TOKEN` | `render.yaml` | `true` mientras no se integre un proveedor de correo: el token de restablecimiento (US07) se devuelve en la respuesta para la validación |
 
-Dado que el plan gratuito de Render suspende el servicio tras un periodo de inactividad y limita la vigencia de la base de datos gratuita (Render, s. f.), la primera solicitud después de un periodo sin uso puede demorar algunos segundos; esta restricción es aceptable para la etapa de validación académica del producto.
+Dado que el plan gratuito de Render suspende el servicio tras un periodo de inactividad y limita la vigencia de la base de datos gratuita (Render, s. f.-b), la primera solicitud después de un periodo sin uso puede demorar algunos segundos; esta restricción es aceptable para la etapa de validación académica del producto.
 
 **Mobile Apps — Firebase App Distribution**
 
@@ -4178,26 +4201,103 @@ La solución desacopla la lógica de negocio en dos Bounded Contexts principales
 
 #### Bounded Context: Alerting
 
-* **US15: Anomaly evaluation**
-    * **Descripción:** Ingesta y analiza lecturas de telemetría de flujo hídrico para evaluar anomalías frente a umbrales configurados. Determina la severidad (`CRITICAL`, `MODERATE`, `INFORMATIONAL`), calculando el volumen derramado acumulado y su costo económico estimado en moneda local (PEN).
-    * **Endpoint:** `POST /api/v1/alerts/evaluations`
-    * **Escenario de Alerta Positiva (Flujo Sostenido):** Retorno de código `201 Created` con la alerta de fuga persistida y la acción de mitigación recomendada.
-    * **Escenario de Contorno (Lectura Aislada / Falso Positivo):** Retorno de código `204 No Content`, validando que consumos transitorios no disparen falsas alarmas.
-    * **Evidencias de ejecución (Postman):**
+* **US15 & US16: Evaluación de lecturas anómalas, listado y consulta de detalle de alerta**
+  * **Descripción:** Ingesta lecturas de caudal para detectar fugas sostenidas integrando ahora la resolución dinámica de umbrales por Water Point, el filtro de preferencias de notificación push, el despacho automático a destinatarios autorizados y la consulta individual del detalle de cada alerta (`Alert Detail`).
+  * **Endpoints:**
+    * `POST /api/v1/alerts/evaluations` (`201 Created` / `204 No Content`)
+    * `GET /api/v1/alerts?accountId={accountId}` (`200 OK`)
+    * `GET /api/v1/alerts/{alertId}?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
 
-![alertings_POST_201.png](images/postman_evidence/alertings_POST_201.png)
-
-![alertings_POST_204.png](images/postman_evidence/alertings_POST_204.png)
+![swagger1.png](images/postman_evidence/swagger1.png)
 
 ---
 
-* **US16: Alert retrieval**
-    * **Descripción:** Obtiene la relación de alertas preventivas y críticas activas asociadas a una cuenta para su visualización y priorización en el cliente móvil.
-    * **Endpoint:** `GET /api/v1/alerts?accountId={accountId}`
-    * **Código de respuesta:** `200 OK`
-    * **Evidencia de ejecución (Postman):**
+* **US17: Configurar el umbral de consumo**
+  * **Descripción:** Permite al suscriptor definir un umbral personalizado (`USER_DEFINED`) para un Water Point y periodo específico. En caso de no definir un valor manual (`customLimitLitersPerHour = null`), el dominio calcula automáticamente un umbral de protección (`SYSTEM_CALCULATED`) equivalente al +25% sobre la línea base histórica del punto de agua.
+  * **Endpoints:**
+    * `PUT /api/v1/alerts/thresholds` (`200 OK`)
+    * `GET /api/v1/alerts/thresholds?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
 
-![alerts_GET.png](images/postman_evidence/alerts_GET.png)
+![swagger2.png](images/postman_evidence/swagger2.png)
+
+---
+
+* **US18: Limitar la frecuencia de notificaciones**
+  * **Descripción:** Permite configurar la ventana temporal de agrupación de anomalías (`groupingWindowMinutes`) y el nivel mínimo de urgencia (`INFORMATIONAL`, `MODERATE`, `CRITICAL`) requerido para emitir notificaciones push, evitando la saturación de alertas ante variaciones menores.
+  * **Endpoints:**
+    * `PUT /api/v1/alerts/preferences` (`200 OK`)
+    * `GET /api/v1/alerts/preferences?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger3.png](images/postman_evidence/swagger3.png)
+
+---
+
+* **US19: Notificar a usuarios autorizados**
+  * **Descripción:** Permite al titular de la cuenta registrar usuarios adicionales (familiares o encargados de local), habilitar o deshabilitar su recepción de alertas y despachar notificaciones push a cada destinatario activo cuando se detecta una fuga.
+  * **Endpoints:**
+    * `POST /api/v1/alerts/recipients` (`201 Created`)
+    * `GET /api/v1/alerts/recipients?accountId={accountId}` (`200 OK`)
+    * `PATCH /api/v1/alerts/recipients/{recipientId}/toggle` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger4.png](images/postman_evidence/swagger4.png)
+
+---
+
+* **US20: Confirmar la atención de una alerta**
+  * **Descripción:** Permite marcar una alerta activa como atendida (`ACKNOWLEDGED`), registrando en el historial la acción correctiva ejecutada por el suscriptor y preservando la trazabilidad en caso de reaparición de la anomalía.
+  * **Endpoint:**
+    * `PATCH /api/v1/alerts/{alertId}/acknowledge` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger5.png](images/postman_evidence/swagger5.png)
+
+---
+
+#### Bounded Context: Subscriptions
+
+* **US31: Contratar un plan de suscripción**
+  * **Descripción:** Procesa la contratación de planes para los segmentos Hogares (`HOME_BASIC`, `HOME_PRO`) y PYMES (`PYME_BUSINESS`, `PYME_ENTERPRISE`). Si el pago es confirmado, activa la suscripción por 30 días y habilita el límite correspondiente de Water Points (`201 Created`); si el medio de pago es rechazado, registra el intento fallido y mantiene restringidas las funciones sin activar el plan (`402 Payment Required`).
+  * **Endpoint:** `POST /api/v1/subscriptions`
+  * **Evidencia de ejecución:**
+
+![swagger6.png](images/postman_evidence/swagger6.png)
+
+---
+
+* **US32: Acceder a un periodo de prueba**
+  * **Descripción:** Otorga por única vez un periodo de prueba gratuito (`TRIAL_ACTIVE`) de 14 días para suscriptores nuevos, indicando su fecha de término. Si el suscriptor intenta solicitar un segundo periodo de prueba, el dominio rechaza la operación (`409 Conflict`). Al concluir el periodo sin contratar un plan, el estado pasa a `TRIAL_EXPIRED` y restringe las funcionalidades pagadas.
+  * **Endpoints:**
+    * `POST /api/v1/subscriptions/trial` (`201 Created` / `409 Conflict`)
+    * `GET /api/v1/subscriptions/current?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger7y.png](images/postman_evidence/swagger7y.png)
+
+---
+
+* **US33: Cambiar o cancelar el plan contratado**
+  * **Descripción:** Permite programar el cambio hacia un nuevo plan aplicable a partir del siguiente ciclo de facturación (`nextBillingPlan`), o solicitar la cancelación de la suscripción (`CANCELLED_PENDING_EXPIRATION`), desactivando cobros futuros (`autoRenew = false`) pero manteniendo el acceso activo hasta la fecha de término del periodo pagado.
+  * **Endpoints:**
+    * `PATCH /api/v1/subscriptions/{subscriptionId}/plan` (`200 OK`)
+    * `POST /api/v1/subscriptions/{subscriptionId}/cancel` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger8.1.png](images/postman_evidence/swagger8.1.png)
+
+![swagger8.png](images/postman_evidence/swagger8.png)
+
+---
+
+* **US34: Consultar el historial de pagos**
+  * **Descripción:** Recupera el listado cronológico de transacciones del suscriptor, detallando fecha de operación, monto en soles (PEN), plan asociado, medio de pago y estado (`CONFIRMED` o `REJECTED`).
+  * **Endpoint:** `GET /api/v1/subscriptions/payments?accountId={accountId}` (`200 OK`)
+  * **Evidencia de ejecución:**
+
+![swagger9.png](images/postman_evidence/swagger9.png)
 
 ---
 
@@ -4221,13 +4321,23 @@ Para garantizar la estabilidad del software y el cumplimiento estricto de las re
 
 #### Matriz de Casos de Prueba Automatizados
 
-| Bounded Context | Clase de Prueba | Caso de Prueba / Escenario | Resultado |
-| :--- | :--- | :--- | :--- |
-| **Alerting** | `AnomalyDetectionServiceTest` | Flujo sostenido sobre el umbral genera alerta `CRITICAL` con cálculo de volumen y costo. | **Passed** |
-| **Alerting** | `AnomalyDetectionServiceTest` | Lectura transitoria aislada superior al umbral no genera alerta (`null`). | **Passed** |
-| **Alerting** | `AnomalyDetectionServiceTest` | Consumo dentro de límites estándar retorna evaluación limpia sin alertas. | **Passed** |
-| **Monitoring** | `DeviceCommandHandlerTest` | Registro de nuevo dispositivo IoT mediante payload QR persiste con estado `ONLINE` y batería en 100%. | **Passed** |
-| **Monitoring** | `DeviceCommandHandlerTest` | Asignación de Water Point actualiza la referencia de infraestructura hidráulica en el dispositivo. | **Passed** |
+| Bounded Context   | Clase de Prueba                     | User Story | Escenario BDD Validado                                                                         | Resultado  |
+|:------------------|:------------------------------------|:-----------|:-----------------------------------------------------------------------------------------------|:-----------|
+| **Alerting**      | `AnomalyDetectionServiceTest`       | US15       | Flujo sostenido superior al umbral genera alerta `CRITICAL` con volumen y costo estimado.      | **Passed** |
+| **Alerting**      | `AnomalyDetectionServiceTest`       | US15       | Lectura aislada no sostenida es descartada (`null`) previniendo falsos positivos.              | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US17       | Definición de umbral propio aplica valor personalizado (`USER_DEFINED`).                       | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US17       | Ausencia de umbral propio calcula automáticamente +25% sobre línea base (`SYSTEM_CALCULATED`). | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US18       | Supresión de notificación push cuando la urgencia es inferior al mínimo configurado.           | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US19       | Despacho de notificaciones únicamente a los usuarios autorizados habilitados en la cuenta.     | **Passed** |
+| **Alerting**      | `AlertManagementCommandHandlerTest` | US20       | Confirmación de atención cambia estado a `ACKNOWLEDGED` y registra la acción realizada.        | **Passed** |
+| **Monitoring**    | `DeviceCommandHandlerTest`          | US10       | Registro de sensor mediante QR persiste dispositivo con estado `ONLINE` y batería al 100%.     | **Passed** |
+| **Monitoring**    | `DeviceCommandHandlerTest`          | US11       | Asignación de Water Point vincula correctamente el identificador de punto hidráulico.          | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US31       | Pago confirmado activa la suscripción (`ACTIVE`), habilita funciones y registra el cobro.      | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US31       | Pago rechazado impide la activación de la suscripción y registra el motivo de rechazo.         | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US32       | Activación única del periodo de prueba (`TRIAL_ACTIVE`) y bloqueo de segunda solicitud.        | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US32       | Expiración del periodo de prueba (`TRIAL_EXPIRED`) restringe el acceso a funciones pagadas.    | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US33       | Cambio de plan se programa para el siguiente ciclo y cancelación conserva acceso vigente.      | **Passed** |
+| **Subscriptions** | `SubscriptionCommandHandlerTest`    | US34       | Consulta de historial devuelve pagos ordenados con fecha, monto, plan asociado y estado.       | **Passed** |
 
 #### Evidencia de Ejecución de Pruebas
 
@@ -4525,13 +4635,13 @@ WWW-Authenticate: Bearer
 | qlic-backend-api | `main` | `7e2eca3` | feat(alerting): implement US15 and US16 for leak detection evaluation and account alert retrieval | 2026-10-01 |
 | qlic-backend-api | `main` | `e7d8b17` | feat(monitoring): implement US10, US11, and US12 for QR device onboarding, water point linking, and telemetry status | 2026-10-01 |
 | qlic-backend-api | `main` | `c224c3f` | feat(docker): add multi-stage Dockerfile for cloud deployment | 2026-10-02 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | feat(iam): add domain layer for subscriber accounts (US05, US06) | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | feat(iam): implement sign-up and sign-in command handlers | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | feat(iam): expose authentication endpoints with JWT security (TS01) | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | feat(i18n): add en_US and es_419 message bundles for IAM responses | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | docs(api): configure OpenAPI 3 and Swagger UI with bearer authentication | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | test(iam): add unit and integration tests for registration and authentication | 2026-10-05 |
-| qlic-backend-api | `feature/iam-authentication` | [COMPLETAR] | chore(config): add dev and prod profiles and project README | 2026-10-05 |
+| qlic-backend-api | `feature/iam-authentication` | `dc5424d` | feat(iam): add domain layer for subscriber accounts (US05, US06) | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `21a5cc4` | feat(iam): implement sign-up and sign-in command handlers | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `64be58e` | feat(iam): expose authentication endpoints with JWT security (TS01) | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `efc8893` | feat(i18n): add en_US and es_419 message bundles for IAM responses | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `a77aefc` | docs(api): configure OpenAPI 3 and Swagger UI with bearer authentication | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `12a8cee` | test(iam): add unit and integration tests for registration and authentication | 2026-10-06 |
+| qlic-backend-api | `feature/iam-authentication` | `24c3ea1` | chore(config): add dev and prod profiles and project README | 2026-10-06 |
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
@@ -4567,23 +4677,524 @@ El equipo declara el uso de GitHub, GitFlow, Trello y WhatsApp para organizar el
 
 Para la entrega se requiere una captura de GitHub Insights con el periodo del Sprint, una captura del tablero de Trello y un registro de los acuerdos o bloqueos. La imagen general de actividad de AV1 no está disponible en esta rama; no se sustituye por una captura de otro periodo.
 
+### 4.2.2. Sprint 2
+
+#### 4.2.2.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la documentación de los servicios RESTful implementados durante el Sprint 2. Al igual que en el Sprint 1, la especificación OpenAPI 3 se genera a partir del código fuente en Kotlin con springdoc-openapi y se publica mediante Swagger UI, por lo que se mantiene sincronizada con la implementación (OpenAPI Initiative, 2021; springdoc, s. f.). En este Sprint, el RESTful API pasa de tres a seis bounded contexts: se completan IAM (US07, US08 y US09), Alerting (US16 a US20) y Subscriptions (US31 a US34), y se incorporan Consumption Analytics (US24), la ingesta de lecturas de consumo en Device Monitoring y Support (US35 a US38). Los nuevos controllers de IAM, Consumption Analytics y Support documentan en Swagger UI el resumen, la descripción, los códigos de respuesta y valores de ejemplo de cada operación.
+
+Dos decisiones de diseño del Sprint 2 se reflejan en la documentación. Primero, los endpoints nuevos de IAM, Consumption Analytics y Support obtienen la cuenta y el permiso del solicitante a partir del token de acceso, por lo que no reciben un `accountId` en la solicitud: el token emitido al iniciar sesión incluye las *claims* `accountId`, `permission` (`OWNER`, `OPERATOR` o `VIEWER`) y `scope` (Jones et al., 2015). Segundo, el acceso compartido de US08 se aplica en la cadena de filtros de Spring Security (Spring, s. f.-a): las solicitudes `POST`, `PUT`, `PATCH` y `DELETE` sobre dispositivos, alertas, consumo, incidencias y suscripciones exigen el *scope* `account:write`, que no se otorga a los usuarios con permiso `VIEWER`; en ese caso el API responde `403 Forbidden` con el formato *Problem Details for HTTP APIs* (Nottingham et al., 2023).
+
+**Acceso a la documentación**
+
+| Recurso | URL |
+|---|---|
+| Swagger UI (entorno desplegado) | https://qlic-backend-api.onrender.com/swagger-ui.html |
+| Especificación OpenAPI en JSON | https://qlic-backend-api.onrender.com/v3/api-docs |
+| Swagger UI (entorno local) | http://localhost:8080/swagger-ui.html |
+| Repositorio del RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api |
+
+**Endpoints documentados en el Sprint 2**
+
+| Sección | Acción implementada | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuestas | Historia |
+|---|---|---|---|---|---|---|
+| Authentication | Iniciar sesión en la cuenta propia o en una cuenta compartida | POST | `/api/v1/authentication/sign-in` | Body: `email`, `password`, `accountId` (opcional) | `200` token con `permission` · `401` credenciales inválidas · `403` cuenta no compartida con el suscriptor | US06, US08 |
+| Password Reset | Solicitar un enlace de restablecimiento de contraseña | POST | `/api/v1/authentication/password-reset/request` | Body: `email` | `202` solicitud aceptada (misma respuesta si el correo no existe) · `400` solicitud incompleta | US07 |
+| Password Reset | Definir una nueva contraseña con el token del enlace | POST | `/api/v1/authentication/password-reset/confirm` | Body: `token`, `newPassword` (8 a 72 caracteres) | `204` contraseña actualizada · `400` token vencido, usado o inexistente | US07 |
+| Shared Access | Invitar a un usuario a la cuenta | POST | `/api/v1/invitations` | Body: `email`, `permission` (`VIEWER` u `OPERATOR`) | `201` invitación registrada y notificada · `403` el solicitante no es el titular · `409` límite del plan alcanzado o persona ya invitada | US08 |
+| Shared Access | Consultar las invitaciones emitidas por la cuenta | GET | `/api/v1/invitations` | — | `200` relación de invitaciones con su estado | US08 |
+| Shared Access | Consultar las invitaciones recibidas pendientes | GET | `/api/v1/invitations/received` | — | `200` relación de invitaciones dirigidas al correo de la sesión | US08 |
+| Shared Access | Aceptar una invitación | POST | `/api/v1/invitations/{invitationId}/acceptance` | Path: `invitationId` | `201` acceso otorgado · `403` invitación dirigida a otro correo · `409` invitación vencida o ya utilizada | US08 |
+| Shared Access | Consultar los usuarios autorizados de la cuenta | GET | `/api/v1/authorized-users` | — | `200` relación de usuarios con su nivel de permiso | US08 |
+| Shared Access | Revocar el acceso de un usuario autorizado | DELETE | `/api/v1/authorized-users/{authorizedUserId}` | Path: `authorizedUserId` | `204` acceso revocado · `403` el solicitante no es el titular · `404` usuario inexistente en la cuenta | US08 |
+| Accounts | Consultar las cuentas compartidas con el suscriptor | GET | `/api/v1/accounts/shared-with-me` | — | `200` relación de cuentas con el permiso otorgado | US08 |
+| Accounts | Consultar el perfil y la cuenta de la sesión | GET | `/api/v1/accounts/me` | — | `200` perfil, nombre del local y permiso | US09 |
+| Accounts | Actualizar los datos del perfil | PUT | `/api/v1/accounts/me` | Body: `fullName`, `phone` (opcional), `accountName` (opcional, solo titular) | `200` perfil actualizado · `400` dato obligatorio vacío, indicado en `errors` · `403` renombrar el local sin ser titular | US09 |
+| leak-alert-controller | Consultar el detalle de una alerta | GET | `/api/v1/alerts/{alertId}?accountId={accountId}` | Path: `alertId` · Query: `accountId` | `200` alerta · `404` alerta inexistente | US16 |
+| leak-alert-controller | Configurar el umbral de consumo de un Water Point | PUT | `/api/v1/alerts/thresholds` | Body: `accountId`, `waterPointId`, `period`, `customLimitLitersPerHour` (opcional), `baselineLitersPerHour` | `200` umbral `USER_DEFINED` o `SYSTEM_CALCULATED` | US17 |
+| leak-alert-controller | Consultar los umbrales de la cuenta | GET | `/api/v1/alerts/thresholds?accountId={accountId}` | Query: `accountId` | `200` relación de umbrales | US17 |
+| leak-alert-controller | Configurar las preferencias de notificación | PUT | `/api/v1/alerts/preferences` | Body: `accountId`, `groupingWindowMinutes`, `minimumUrgency` | `200` preferencias registradas | US18 |
+| leak-alert-controller | Consultar las preferencias de notificación | GET | `/api/v1/alerts/preferences?accountId={accountId}` | Query: `accountId` | `200` preferencias | US18 |
+| leak-alert-controller | Registrar un destinatario de alertas | POST | `/api/v1/alerts/recipients` | Body: `accountId`, `fullName`, `email`, `devicePushToken`, `enabled` | `201` destinatario registrado | US19 |
+| leak-alert-controller | Consultar los destinatarios de alertas | GET | `/api/v1/alerts/recipients?accountId={accountId}` | Query: `accountId` | `200` relación de destinatarios | US19 |
+| leak-alert-controller | Habilitar o deshabilitar un destinatario | PATCH | `/api/v1/alerts/recipients/{recipientId}/toggle` | Path: `recipientId` · Body: `enabled` | `200` destinatario actualizado | US19 |
+| leak-alert-controller | Confirmar la atención de una alerta | PATCH | `/api/v1/alerts/{alertId}/acknowledge` | Path: `alertId` · Body: `accountId`, `actionTaken` | `200` alerta en estado `ACKNOWLEDGED` | US20 |
+| subscription-controller | Contratar un plan de suscripción | POST | `/api/v1/subscriptions` | Body: `accountId`, `plan`, `paymentMethod`, `simulatePaymentRejected` | `201` suscripción activa · `402` pago rechazado | US31 |
+| subscription-controller | Activar el periodo de prueba | POST | `/api/v1/subscriptions/trial` | Body: `accountId` | `201` prueba activa · `409` prueba ya utilizada | US32 |
+| subscription-controller | Consultar la suscripción vigente | GET | `/api/v1/subscriptions/current?accountId={accountId}` | Query: `accountId` | `200` suscripción · `404` sin suscripción | US32 |
+| subscription-controller | Cambiar el plan para el siguiente periodo | PATCH | `/api/v1/subscriptions/{subscriptionId}/plan` | Path: `subscriptionId` · Body: `newPlan` | `200` cambio programado | US33 |
+| subscription-controller | Cancelar la suscripción | POST | `/api/v1/subscriptions/{subscriptionId}/cancel` | Path: `subscriptionId` | `200` acceso vigente hasta el fin del periodo | US33 |
+| subscription-controller | Consultar el historial de pagos | GET | `/api/v1/subscriptions/payments?accountId={accountId}` | Query: `accountId` | `200` pagos con fecha, monto, plan y estado | US34 |
+| Consumption Readings | Registrar una lectura de consumo de un dispositivo | POST | `/api/v1/consumption-readings` | Body: `deviceId`, `volumeLiters`, `recordedAt` (opcional) | `201` lectura registrada · `404` dispositivo inexistente en la cuenta · `409` dispositivo sin Water Point | US24 |
+| Consumption Reports | Declarar el horario de actividad del local | PUT | `/api/v1/consumption/activity-schedule` | Body: `openingTime`, `closingTime`, `activeDays` | `200` horario registrado · `400` horario inválido | US24 |
+| Consumption Reports | Consultar el horario de actividad del local | GET | `/api/v1/consumption/activity-schedule` | — | `200` horario · `404` horario no declarado | US24 |
+| Consumption Reports | Consultar el consumo dentro y fuera del horario de actividad | GET | `/api/v1/consumption/reports/activity-hours?from={fecha}&to={fecha}` | Query: `from`, `to` (ISO 8601) | `200` reporte del periodo · `400` periodo inválido | US24 |
+| Incidents | Registrar una incidencia | POST | `/api/v1/incidents` | Body: `description`, `deviceId`, `waterPointId` o `alertId` | `201` incidencia en estado `PENDING` · `400` sin descripción o sin activo afectado · `404` dispositivo o alerta de otra cuenta · `409` alerta no activa | US35 |
+| Incidents | Consultar las incidencias de la cuenta | GET | `/api/v1/incidents` | — | `200` incidencias con fecha de registro, dispositivo y estado | US37 |
+| Incidents | Consultar el detalle de una incidencia | GET | `/api/v1/incidents/{incidentId}` | Path: `incidentId` | `200` incidencia · `404` incidencia inexistente en la cuenta | US37 |
+| Incidents | Solicitar una visita técnica | POST | `/api/v1/incidents/{incidentId}/technical-visit` | Path: `incidentId` · Body: `preferredDate`, `fromTime`, `toTime`, `notes` (opcional) | `201` incidencia en `VISIT_REQUESTED` · `403` plan sin cobertura · `409` incidencia no pendiente | US36 |
+| Support Staff | Asignar un técnico a la visita | POST | `/api/v1/incidents/{incidentId}/technical-visit/assignment` | Path: `incidentId` · Body: `technicianId` (opcional), `scheduledAt` | `200` incidencia en `IN_PROGRESS` y suscriptor notificado · `409` sin visita solicitada | US36 |
+| Support Staff | Registrar la resolución de una incidencia | POST | `/api/v1/incidents/{incidentId}/resolution` | Path: `incidentId` · Body: `description` | `200` incidencia en `RESOLVED` · `409` incidencia ya resuelta | US37 |
+| Support Staff | Consultar los técnicos activos | GET | `/api/v1/technicians` | — | `200` relación de técnicos | US36 |
+| Terms of Service | Consultar los términos y condiciones vigentes | GET | `/api/v1/terms-of-service/current` | Header: `Accept-Language` (opcional) | `200` documento con versión y fecha de actualización | US38 |
+
+Todos los endpoints de la tabla, salvo los de Password Reset y Terms of Service, exigen el encabezado `Authorization: Bearer <token>` y responden `401 Unauthorized` sin él (TS01).
+
+**Ejemplos de llamada y respuesta — IAM**
+
+*Solicitud de restablecimiento (US07 - Escenario 1).* El API emite un token de un solo uso con 30 minutos de vigencia y envía el enlace al correo. La respuesta es la misma cuando el correo no está registrado, de modo que no revela qué cuentas existen. Mientras no se integre un proveedor de correo, el token se incluye en la respuesta para la validación del flujo.
+
+```http
+POST /api/v1/authentication/password-reset/request
+Content-Type: application/json
+
+{ "email": "claudia.morales@example.com" }
+```
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+{
+  "message": "If the email belongs to a Qlic account, a reset link valid for a limited time was sent to it.",
+  "resetToken": "Jx2f9QmKc7bV1sT0aLwE4nR8yP6uZ3dH5gN-oY1iK2A",
+  "expiresAt": "2026-11-10T21:45:00Z"
+}
+```
+
+*Enlace vencido (US07 - Escenario 2).* El API rechaza la operación e indica que se debe solicitar un nuevo enlace.
+
+```http
+POST /api/v1/authentication/password-reset/confirm
+Accept-Language: es-419
+Content-Type: application/json
+
+{ "token": "Jx2f9QmKc7bV1sT0aLwE4nR8yP6uZ3dH5gN-oY1iK2A", "newPassword": "NuevaClave2026!" }
+```
+
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/problem+json
+
+{
+  "type": "about:blank",
+  "title": "Bad Request",
+  "status": 400,
+  "detail": "El enlace de restablecimiento venció. Solicite un nuevo enlace para definir su contraseña.",
+  "instance": "/api/v1/authentication/password-reset/confirm",
+  "code": "iam.reset-token.expired"
+}
+```
+
+*Invitación de un usuario adicional (US08 - Escenario 1).* Solo el titular puede invitar; la cantidad de usuarios adicionales depende del plan vigente (uno en el periodo de prueba y en Home Basic, tres en Home Pro, cinco en PYME Business y diez en PYME Enterprise).
+
+```http
+POST /api/v1/invitations
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{ "email": "jorge.quispe@example.com", "permission": "VIEWER" }
+```
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "0b6f3d2a-8e1c-4a7b-9f2d-6c5e4a3b2d10",
+  "accountId": "c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61",
+  "accountName": null,
+  "invitedEmail": "jorge.quispe@example.com",
+  "permission": "VIEWER",
+  "state": "PENDING",
+  "createdAt": "2026-11-10T20:30:00Z",
+  "expiresAt": "2026-11-17T20:30:00Z"
+}
+```
+
+*Acceso de solo consulta (US08 - Escenario 2).* El invitado acepta la invitación e inicia sesión en la cuenta compartida enviando su `accountId`; el token emitido lleva `permission: VIEWER`. Con ese token puede consultar los dispositivos, pero al intentar modificar su configuración el API rechaza la operación.
+
+```http
+POST /api/v1/authentication/sign-in
+Content-Type: application/json
+
+{ "email": "jorge.quispe@example.com", "password": "Qlic2026!", "accountId": "c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61" }
+```
+
+```http
+PATCH /api/v1/devices/5a9e2c7b-1d4f-4e8a-b3c6-7f2d9a1e5b80/water-point
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...(token VIEWER)
+Content-Type: application/json
+
+{ "waterPointId": "7d3f1b2a-9c4e-4f6a-8b1d-2e5c7a9f0b13" }
+```
+
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/problem+json
+
+{
+  "type": "about:blank",
+  "title": "Forbidden",
+  "status": 403,
+  "detail": "You do not have the permission required for this operation.",
+  "instance": "/api/v1/devices/5a9e2c7b-1d4f-4e8a-b3c6-7f2d9a1e5b80/water-point",
+  "code": "iam.permission.denied"
+}
+```
+
+*Actualización del perfil (US09 - Escenarios 1 y 2).* Los cambios se reflejan en las siguientes consultas de `GET /api/v1/accounts/me`. Si el nombre completo se envía vacío, el API no registra los cambios e indica el dato pendiente en `errors`.
+
+```http
+PUT /api/v1/accounts/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{ "fullName": "Claudia Morales Ríos", "phone": "+51912345678", "accountName": "Bodega Morales - Surco" }
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "subscriberId": "8f2c6a1e-4b7d-4c1a-9e3f-2d5b7a9c1e40",
+  "accountId": "c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61",
+  "email": "claudia.morales@example.com",
+  "fullName": "Claudia Morales Ríos",
+  "phone": "+51912345678",
+  "accountName": "Bodega Morales - Surco",
+  "permission": "OWNER",
+  "memberSince": "2026-10-05T15:04:12.381Z"
+}
+```
+
+```http
+HTTP/1.1 400 Bad Request
+Content-Type: application/problem+json
+
+{
+  "type": "about:blank",
+  "title": "Bad Request",
+  "status": 400,
+  "detail": "One or more fields are not valid.",
+  "instance": "/api/v1/accounts/me",
+  "code": "error.validation",
+  "errors": { "fullName": "Full name is required." }
+}
+```
+
+**Ejemplos de llamada y respuesta — Consumption Analytics**
+
+*Consumo fuera del horario de actividad (US24 - Escenario 1).* El suscriptor declara el horario del local (de 08:00 a 20:00, de lunes a sábado). El reporte agrega las lecturas del periodo por Water Point y diferencia el volumen registrado dentro y fuera de ese horario; los Water Points se ordenan por el consumo fuera de horario, de modo que el desperdicio más relevante aparece primero. Si el local no declaró su horario, el reporte devuelve solo los totales (`scheduleDefined: false`).
+
+```http
+PUT /api/v1/consumption/activity-schedule
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{
+  "openingTime": "08:00",
+  "closingTime": "20:00",
+  "activeDays": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"]
+}
+```
+
+```http
+GET /api/v1/consumption/reports/activity-hours?from=2026-11-02&to=2026-11-08
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "from": "2026-11-02",
+  "to": "2026-11-08",
+  "scheduleDefined": true,
+  "schedule": {
+    "openingTime": "08:00",
+    "closingTime": "20:00",
+    "activeDays": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"],
+    "updatedAt": null
+  },
+  "totalLiters": 1250.00,
+  "withinActivityLiters": 1010.00,
+  "outsideActivityLiters": 240.00,
+  "outsideActivityPercentage": 19.20,
+  "byWaterPoint": [
+    {
+      "waterPointId": "7d3f1b2a-9c4e-4f6a-8b1d-2e5c7a9f0b13",
+      "totalLiters": 820.00,
+      "withinActivityLiters": 640.00,
+      "outsideActivityLiters": 180.00
+    },
+    {
+      "waterPointId": "2c8e5f1a-3b7d-4e9c-a6f2-1d4b8c7e9a05",
+      "totalLiters": 430.00,
+      "withinActivityLiters": 370.00,
+      "outsideActivityLiters": 60.00
+    }
+  ]
+}
+```
+
+**Ejemplos de llamada y respuesta — Support**
+
+*Registro de una incidencia desde una alerta (US35 - Escenario 2).* Al enviar el `alertId` de una alerta activa, la incidencia se crea en estado `PENDING`, con origen `ALERT_DERIVED` y asociada al Water Point de la alerta. Sin dispositivo, Water Point ni alerta, el API responde `400` con el código `support.incident.asset-required`.
+
+```http
+POST /api/v1/incidents
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{
+  "description": "Confirmed leak under the kitchen sink.",
+  "alertId": "e18b4c2d-6a7f-4b3e-9d1c-0f5a2b8c7d64"
+}
+```
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "9c1d7e4b-2a6f-4c8d-b5e3-7f0a1b2c3d48",
+  "accountId": "c41d8e7a-2f6b-4a9d-8c3e-5b1a7f9d2e61",
+  "description": "Confirmed leak under the kitchen sink.",
+  "deviceId": null,
+  "waterPointId": "7d3f1b2a-9c4e-4f6a-8b1d-2e5c7a9f0b13",
+  "alertId": "e18b4c2d-6a7f-4b3e-9d1c-0f5a2b8c7d64",
+  "origin": "ALERT_DERIVED",
+  "state": "PENDING",
+  "registeredAt": "2026-11-10T20:41:05Z",
+  "updatedAt": "2026-11-10T20:41:05Z",
+  "technicalVisit": null,
+  "resolution": null,
+  "resolvedAt": null
+}
+```
+
+*Solicitud de visita técnica (US36 - Escenario 1).* La incidencia debe estar en estado `PENDING` y el plan vigente debe cubrir la visita; la incidencia pasa a `VISIT_REQUESTED`.
+
+```http
+POST /api/v1/incidents/9c1d7e4b-2a6f-4c8d-b5e3-7f0a1b2c3d48/technical-visit
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{ "preferredDate": "2026-11-13", "fromTime": "09:00", "toTime": "13:00", "notes": "Ask for Claudia at the store." }
+```
+
+*Asignación del técnico (US36 - Escenario 2).* El personal de soporte registra la fecha programada; si no indica el técnico, se asigna el de menor carga de visitas en atención. El API notifica al suscriptor y la incidencia pasa a `IN_PROGRESS`; la respuesta se muestra en extracto.
+
+```http
+POST /api/v1/incidents/9c1d7e4b-2a6f-4c8d-b5e3-7f0a1b2c3d48/technical-visit/assignment
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+
+{ "scheduledAt": "2026-11-13T10:00:00" }
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "9c1d7e4b-2a6f-4c8d-b5e3-7f0a1b2c3d48",
+  "state": "IN_PROGRESS",
+  "technicalVisit": {
+    "id": "4e2a9b7c-1f3d-4a6e-8c5b-0d9f2e1a7b36",
+    "preferredDate": "2026-11-13",
+    "fromTime": "09:00",
+    "toTime": "13:00",
+    "notes": "Ask for Claudia at the store.",
+    "state": "ASSIGNED",
+    "technicianId": "a3f1c8e2-5b7d-4d9a-b2e6-8c1f0a4d7e93",
+    "technicianName": "Miguel Torres",
+    "scheduledAt": "2026-11-13T10:00",
+    "requestedAt": "2026-11-10T20:45:12Z"
+  }
+}
+```
+
+*Seguimiento de incidencias (US37 - Escenario 1).* `GET /api/v1/incidents` devuelve las incidencias de la cuenta, de la más reciente a la más antigua, con su fecha de registro (`registeredAt`), dispositivo asociado (`deviceId`) y estado actual (`PENDING`, `VISIT_REQUESTED`, `IN_PROGRESS` o `RESOLVED`), con la misma estructura del ejemplo anterior.
+
+*Términos y condiciones (US38 - Escenario 1).* El endpoint es público, porque el documento se muestra en el Landing Page y en la pantalla Create account antes de que exista una sesión; devuelve la versión vigente y su fecha de actualización en el idioma solicitado.
+
+```http
+GET /api/v1/terms-of-service/current
+Accept-Language: es-419
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "version": "1.0",
+  "language": "es",
+  "title": "Términos y condiciones de Qlic",
+  "content": "1. Aceptación de los términos. Al crear una cuenta de Qlic usted acepta estos Términos y Condiciones...",
+  "updatedOn": "2026-10-06"
+}
+```
+
+**Commits relacionados con la documentación de servicios**
+
+| Repositorio | Branch | Commit ID | Mensaje del commit | Fecha |
+|---|---|---|---|---|
+| qlic-backend-api | `feature/alerting-management` | `32ed811` | feat(alerting): implement US17, US18, US19, and US20 with JUnit 5 unit tests | 2026-11-03 |
+| qlic-backend-api | `feature/subscriptions-context` | `0aede0a` | feat(subscriptions): implement US31, US32, US33, and US34 with JUnit 5 test suite | 2026-11-03 |
+| qlic-backend-api | `feature/iam-account-management` | `a1a5bdb` | feat(shared): add HTTP-mapped domain exception categories and JWT claim helpers | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `831aa72` | feat(iam): add domain model for password reset, invitations and authorized users (US07, US08, US09) | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `1a25142` | feat(iam): implement password reset, invitation, shared sign-in and profile handlers | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `ac0365e` | feat(iam): persist access management, plan entitlement ACL and VIEWER write restriction | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `02ff499` | feat(iam): expose password reset, shared access and profile endpoints with i18n messages | 2026-11-10 |
+| qlic-backend-api | `feature/iam-account-management` | `ab4d5ff` | test(iam): add unit and integration tests for US07, US08 and US09 | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `dd280a7` | feat(support): add incident, technical visit and terms of service domain model (US35-US38) | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `045cf4f` | feat(support): implement incident registration, visit request, technician assignment and queries | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `39d2409` | feat(support): persist incidents, add ACL adapters to alerting, monitoring and subscriptions and seed reference data | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `1784567` | feat(support): expose incidents, support staff and terms of service endpoints with i18n messages | 2026-11-10 |
+| qlic-backend-api | `feature/support-incidents` | `491fe8a` | test(support): add unit and integration tests for US35, US36, US37 and US38 | 2026-11-10 |
+| qlic-backend-api | `feature/consumption-off-hours` | `8cca8da` | feat(monitoring): add consumption reading ingestion per Water Point | 2026-11-10 |
+| qlic-backend-api | `feature/consumption-off-hours` | `901d92e` | feat(consumption): implement activity schedule and off-hours consumption report (US24) | 2026-11-10 |
+| qlic-backend-api | `feature/consumption-off-hours` | `b8d142f` | test(consumption): add aggregation and integration tests for US24 | 2026-11-10 |
+| qlic-backend-api | `feature/render-postgresql` | `ea93052` | chore(deploy): add Render Blueprint with managed PostgreSQL and document Sprint 2 endpoints | 2026-11-10 |
+
+
+### 4.3. Validation Interviews
+
+En esta sección se registran las sesiones de validación realizadas con representantes de los segmentos objetivo, quienes interactúan con el Landing Page y con la aplicación móvil de Qlic para cumplir los User Goals definidos en el capítulo 3. El propósito es comprobar, con evidencia de uso real, si el producto permite completar las tareas principales sin ayuda y detectar problemas de usabilidad, arquitectura de información y diseño inclusivo antes de la entrega final.
+
+#### 4.3.1. Diseño de Entrevistas
+
+**Objetivo de las sesiones.** Verificar que usuarios de los segmentos PYMES y Hogares pueden completar de forma autónoma los flujos F1, F2 y F3 del prototipo y de la aplicación (crear una cuenta e iniciar sesión, atender una alerta de posible fuga y registrar un dispositivo con código QR), y que entienden la propuesta de valor presentada en el Landing Page.
+
+##### Participantes y muestra
+
+| Segmento | Perfil de participación | Sesiones en esta entrega | Sesiones previstas hasta el TB2 | Modalidad |
+|---|---|---:|---:|---|
+| **PYMES y comercios locales** | Propietario, administrador o responsable de mantenimiento de una PYME que participa en las decisiones sobre el consumo de agua. | 1 | 3 a 5 | Presencial en el negocio o videollamada, con autorización de grabación. |
+| **Hogares y familias** | Persona adulta que paga, revisa o decide sobre el recibo y el mantenimiento del agua del hogar. | 1 | 3 a 5 | Presencial o videollamada, con autorización de grabación. |
+
+Los participantes pueden ser personas que ya intervinieron en las entrevistas de Needfinding, lo que permite contrastar sus necesidades declaradas con su comportamiento frente al producto.
+
+##### Elementos incluidos en la sesión
+
+| Producto | Qué se muestra | Dispositivo |
+|---|---|---|
+| Landing Page | Versión desplegada, en su vista para navegador móvil y de escritorio. | Computadora o celular del participante. |
+| Aplicación móvil | APK instalado y conectado al API desplegado, distribuido mediante Firebase App Distribution. | Celular físico (el del participante o el del equipo). |
+
+##### User Flows incluidos en la validación
+
+| Flujo | User Goal | User Stories | Ruta esperada (happy path) |
+|---|---|---|---|
+| F1 | Acceder a la aplicación para monitorear el consumo | US05, US06 | Sign in → Create account → aceptar términos → Dashboard |
+| F2 | Actuar a tiempo ante una fuga | US15, US16, US20 | Notificación push → Alert detail → marcar la alerta como atendida |
+| F3 | Registrar un dispositivo nuevo | US10, US11, US12 | Add device (código QR) → Assign Water Point → Devices |
+
+##### Tareas de la sesión
+
+Las consignas se redactan sin nombrar botones ni pantallas, para observar si el participante encuentra el camino por sí mismo. El escenario se adapta a cada segmento: en PYMES, "administras una lavandería y quieres controlar el agua de tu local"; en Hogares, "eres quien paga el recibo de agua de tu casa".
+
+| Id | Producto | Flujo | Consigna al participante | Criterio de éxito |
+|---|---|---|---|---|
+| T1 | Landing Page | — (US01, US02) | "Entra a esta página y cuéntame con tus palabras qué hace Qlic y cuál plan elegirías." | Explica correctamente el propósito del servicio e identifica un plan. |
+| T2 | Aplicación | F1 | "Crea una cuenta para usar Qlic y entra a la aplicación." | Completa el registro, acepta los términos y llega al Dashboard sin ayuda. |
+| T3 | Aplicación | F3 | "Acaban de instalar un sensor nuevo. Regístralo en tu cuenta e indica en qué punto de agua está." | El dispositivo queda vinculado y asignado a un Water Point en menos de 10 minutos y sin ayuda. |
+| T4 | Aplicación | F2 | "Te llega esta notificación. Cuéntame qué está pasando y qué harías." | Identifica dónde ocurre el problema, qué tan grave es y la acción recomendada, y marca la alerta como atendida. |
+
+La tarea T3 contrasta directamente la Hipótesis 3 (más del 85 % de los usuarios vincula su dispositivo en menos de 10 minutos sin asistencia técnica). La tarea T4 evalúa la comprensión de la alerta que pidieron los entrevistados en el Needfinding; la hipótesis sobre su atención en 24 horas solo puede comprobarse con uso prolongado y no en una sesión.
+
+##### Qué se mide
+
+| Medida | Cómo se registra |
+|---|---|
+| Resultado de cada tarea | Completó sin ayuda · Completó con ayuda · No completó. |
+| Tiempo por tarea | Cronometrado por el anotador desde que termina la consigna. |
+| Errores y dudas | Anotados por el anotador con el minuto del video. |
+| Facilidad percibida | Pregunta final de cada tarea: "Del 1 (muy difícil) al 7 (muy fácil), ¿qué tan fácil fue?" |
+| Problemas de usabilidad | Se puntúan con la escala de severidad de 1 a 4 del formato de evaluación según heurísticas (4.3.3). |
+
+Los problemas se clasifican según tres grupos de criterios: heurísticas de usabilidad (visibilidad del estado del sistema, consistencia, prevención de errores, control del usuario, ayuda para reconocer errores), arquitectura de información (si el contenido es fácil de encontrar y de usar) y diseño inclusivo (experiencias comparables, texto alternativo, contraste y tamaño de los elementos táctiles).
+
+##### Guion de la sesión (15 a 20 minutos)
+
+1. **Bienvenida y consentimiento (1 min).** Se explica que se prueba el producto y no a la persona, y se pide autorización para grabar.
+2. **Contexto (2 min).** "¿Cómo controlas hoy el consumo de agua en tu negocio u hogar?" y "¿Qué usas habitualmente en tu celular?"
+3. **Tareas T1 a T4 (10 a 12 min).** La persona piensa en voz alta. El moderador no explica la interfaz; solo interviene si el participante lleva más de dos minutos bloqueado.
+4. **Preguntas finales (3 min).**
+  - ¿Qué fue lo más difícil o confuso?
+  - ¿Qué cambiarías o agregarías?
+  - ¿Qué tan clara te resultó la alerta?
+  - ¿Usarías Qlic en tu negocio u hogar? ¿Qué te haría dudar?
+5. **Cierre (1 min).** Se agradece y se confirma el uso del video.
+
+##### Preparación previa
+
+- El API desplegado debe estar activo y respondiendo antes de empezar.
+- El APK debe estar instalado en el celular de la sesión.
+- Debe haber un código QR de sensor disponible, impreso o en pantalla, para T3.
+- La alerta de fuga de T4 debe haberse generado antes en la cuenta del participante.
+- La sesión se graba en video (pantalla del celular y rostro del participante), con un moderador y un anotador.
+- Cada video se edita a 3 a 5 minutos por entrevista, con título que indique el nombre del participante, el segmento y la fecha, y se consolida en el archivo `upc-pre-202620-1acc0238-13984-qlic-validation-av2.mp4`.
+
+#### 4.3.2. Registro de Entrevistas
+
+> *Se completa después de realizar las sesiones. Una ficha por entrevista.*
+
+| Campo | Registro |
+|---|---|
+| Nombre y apellidos | **[COMPLETAR]** |
+| Edad | **[COMPLETAR]** |
+| Distrito | **[COMPLETAR]** |
+| Segmento | **[PYMES / Hogares]** |
+| Fecha | **[AAAA-MM-DD]** |
+| Inicio y duración en el video | **[hh:mm:ss]** · **[mm:ss]** |
+| Enlace del video (OneDrive) | **[PEGAR URL]** |
+| Captura del video | **[INSERTAR imagen]** |
+| Resumen | Principales apreciaciones del participante sobre cada tarea (T1 a T4): qué logró, dónde dudó, qué comentó y qué problemas se observaron. |
 
 # Capítulo V: Conclusiones, Bibliografía y Anexos
 
 ## 5.1. Conclusiones
 
-## 5.1. Conclusiones
-
-1. Qlic aborda la necesidad de mejorar la visibilidad del consumo de agua y la detección oportuna de anomalías en PYMES, comercios locales y hogares.
-2. El análisis competitivo permitió reconocer capacidades relevantes del mercado: medición conectada, analítica, alertas, interoperabilidad y soporte para la toma de decisiones. La oportunidad preliminar de Qlic está en traducir esos datos a una experiencia móvil clara, accesible y cercana para usuarios locales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
-3. Badger Meter e Itron representan soluciones directas de smart water, mientras que OptiRTC aporta un referente adyacente de monitoreo y control de aguas pluviales. Wint se conserva como referencia secundaria para la respuesta ante fugas comerciales (Badger Meter, s. f.; Itron, s. f.; Opti, s. f.; Wint, s. f.).
-4. Las estrategias propuestas —diferenciación móvil y local, escala progresiva, interoperabilidad, respuesta ante fugas, soporte cercano y sostenibilidad con evidencia— se consolidaron como guías directas para la definición de los Bounded Contexts y la arquitectura de software.
-5. Las cinco entrevistas registradas —dos del segmento PYMES y comercios locales y tres del segmento hogares y familias— aportaron información objetiva y subjetiva fundamental para delimitar las reglas de negocio, los umbrales de flujo volumétrico y los requerimientos de priorización visual de alertas.
-6. Se completó con éxito el desarrollo del backend bajo el framework Spring Boot y lenguaje Kotlin, estructurado bajo Clean Architecture y Tactical DDD en dos Bounded Contexts operativos: Alerting (US15, US16) y Device Monitoring (US10, US11, US12).
-7. La suite de pruebas unitarias implementada con JUnit 5 alcanzó un 100% de efectividad (pass rate) sobre las reglas de negocio críticas, garantizando la correcta evaluación de anomalías volumétricas sin incurrir en falsos positivos ante flujos transitorios.
-8. La solución Web Service fue contenerizada y desplegada exitosamente en producción sobre la plataforma Render, integrando una base de datos relacional PostgreSQL administrada y una interfaz interactiva OpenAPI/Swagger plenamente operativa para el consumo de clientes móviles.
+1. Qlic responde de manera integral a la problemática de detección tardía de fugas e invisibilidad del consumo de agua en hogares y PYMES de Lima Metropolitana, transformando lecturas de telemetría en alertas accionables con estimación económica en tiempo real.
+2. El análisis competitivo de referentes globales (Badger Meter, Itron, OptiRTC y Wint) permitió identificar capacidades críticas de medición inteligente y respuesta ante fugas, adaptándolas al contexto local mediante una arquitectura accesible, escalable y centrada en la experiencia móvil.
+3. La arquitectura backend diseñada bajo Clean Architecture y Tactical Domain-Driven Design (DDD) con Spring Boot y Kotlin demostró alta modularidad y mantenibilidad, permitiendo escalar sin fricción desde el monitoreo básico de dispositivos hacia la gestión avanzada de umbrales, preferencias de notificación, destinatarios autorizados y ciclo de vida completo de suscripciones.
+4. La implementación del 100% de los Bounded Contexts de Alerting (US15 a US20), Device Monitoring (US10 a US12) y Subscriptions (US31 a US34) valida la viabilidad técnica del modelo de negocio SaaS/IoT propuesto, cubriendo desde el periodo de prueba gratuito único hasta la facturación recurrente y el control de acceso por niveles de plan.
+5. La suite automatizada de pruebas unitarias y de aceptación en JUnit 5 alcanzó un 100% de casos exitosos (pass rate), garantizando que las reglas de negocio críticas —como el cálculo automático de umbrales sobre línea base, la supresión de falsas alarmas y la vigencia post-cancelación— operen con total exactitud antes de su consumo en clientes móviles.
+6. La contenerización multi-etapa con Docker (OpenJDK 24) y el despliegue continuo en la nube sobre Render junto con PostgreSQL y OpenAPI/Swagger UI consolidan una infraestructura de producción interoperable y documentada bajo estándares industriales.
 
 ## 5.2. Bibliografía
+
+Badger Meter. (s. f.). *Smart water solutions and BEACON Software as a Service (SaaS)*. Recuperado el 15 de septiembre de 2026, de https://www.badgermeter.com/
+
+Banco Interamericano de Desarrollo [BID]. (2023). *Agua y saneamiento en América Latina y el Caribe: Eficiencia hídrica y reducción de agua no facturada*. Publicaciones BID. https://publications.iadb.org/
+
+Docker Inc. (2026). *Multi-stage builds in Docker Documentation*. https://docs.docker.com/build/building/multi-stage/
+
+Itron. (s. f.). *Smart water metering and leak detection analytics*. Recuperado el 15 de septiembre de 2026, de https://www.itron.com/
+
+JetBrains. (2026). *Kotlin server-side development with Spring Boot*. Kotlin Documentation. https://kotlinlang.org/docs/jvm-get-started-spring-boot.html
+
+Ministerio de Vivienda, Construcción y Saneamiento [MVCS]. (2024). *Plan Nacional de Saneamiento y brechas de infraestructura hídrica en el Perú*. Gobierno del Perú. https://www.gob.pe/vivienda
+
+OpenAPI Initiative. (2026). *OpenAPI Specification v3.1.0*. Linux Foundation. https://spec.openapis.org/oas/latest.html
+
+OptiRTC. (s. f.). *Continuous monitoring and adaptive control (CMAC) for water infrastructure*. Recuperado el 15 de septiembre de 2026, de https://optirtc.com/
+
+PostgreSQL Global Development Group. (2026). *PostgreSQL 16/17 Official Documentation*. https://www.postgresql.org/docs/
+
+SmartBear Software. (2026). *SpringDoc OpenAPI 3 and Swagger UI Documentation*. https://springdoc.org/
+
+Superintendencia Nacional de Servicios de Saneamiento [SUNASS]. (2025). *Informe de benchmarking regulatorio de las empresas prestadoras de servicios de saneamiento (EPS)*. SUNASS. https://www.gob.pe/sunass
+
+VMware. (2026). *Spring Boot Reference Documentation*. Spring IO. https://docs.spring.io/spring-boot/index.html
+
+Wint Water Intelligence. (s. f.). *AI-powered water management and commercial leak mitigation*. Recuperado el 15 de septiembre de 2026, de https://wint.ai/
 
 ### 5.2.1. Dominio de negocio y competidores
 
@@ -4675,7 +5286,9 @@ Gradle. (s. f.). *Toolchains for JVM projects*. https://docs.gradle.org/current/
 
 JetBrains. (s. f.). *Coding conventions*. Kotlin Documentation. https://kotlinlang.org/docs/coding-conventions.html
 
-Render. (s. f.). *Deploy for free*. https://render.com/docs/free
+Render. (s. f.-a). *Blueprint YAML reference*. https://render.com/docs/blueprint-spec
+
+Render. (s. f.-b). *Deploy for free*. https://render.com/docs/free
 
 Spring. (s. f.-a). *OAuth 2.0 Resource Server JWT*. Spring Security Reference. https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/jwt.html
 
@@ -4717,6 +5330,7 @@ En este anexo se registran los enlaces privados a los videos de exposición de c
 |---|---|---|---|
 | AV1 | `upc-pre-202620-1acc0238-13984-wasd-expo-av1.mp4` | Startup Profile, Solution Profile, entrevistas, needfinding y diseño de la solución (Capítulos I y II) | [COMPLETAR: enlace al video de AV1] |
 | TB1 | `upc-pre-202620-1acc0238-13984-wasd-expo-tb1.mp4` | Solution UI/UX Design (Capítulo III) e implementación del Sprint 1 (Capítulo IV) | [COMPLETAR: enlace al video de TB1] |
+| AV2 | `upc-pre-202620-1acc0238-13984-wasd-expo-av2.mp4` | Implementación del Sprint 2 (Capítulo IV), Validation Interviews (4.3) y avance de las aplicaciones móviles | [COMPLETAR: enlace al video de AV2] |
 
 Adicionalmente, el informe referencia los siguientes videos de evidencia, también publicados en el OneDrive del curso:
 
@@ -4725,6 +5339,8 @@ Adicionalmente, el informe referencia los siguientes videos de evidencia, tambi�
 | Entrevistas de needfinding | `upc-pre-202620-1acc0238-13984-wasd-needfinding-av1.mp4` | 2.2.2. Registro de entrevistas | [COMPLETAR: enlace] |
 | Navegación del prototipo | `upc-pre-202620-1acc0238-13984-wasd-prototypenavigation-tb1.mp4` | 3.1.4.5. Mobile Applications Prototyping | [COMPLETAR: enlace] |
 | Navegación del producto | `upc-pre-202620-1acc0238-13984-wasd-productnavigation-tb1.mp4` | 4.2.1.6. Execution Evidence for Sprint Review | [COMPLETAR: enlace] |
+| About the Team | `upc-pre-202620-1acc0238-13984-wasd-abouttheteam-av2.mp4` | Presentación del equipo WASD y de su forma de trabajo; enlazado también desde la sección About the Team del Landing Page | [COMPLETAR: enlace] |
+| Entrevistas de validación | `upc-pre-202620-1acc0238-13984-qlic-validation-av2.mp4` | 4.3.2. Registro de Entrevistas | [COMPLETAR: enlace] |
 
 <div style="page-break-before: always;"></div>
 
@@ -4742,7 +5358,7 @@ Este anexo centraliza los enlaces a los artefactos elaborados en las herramienta
 | Diagramas de clases y de base de datos | PlantUML | 2.6.x.6 | Código fuente incluido en el Capítulo II |
 | Wireframes, mock-ups y prototipo del Landing Page y de la aplicación móvil | Figma | 3.1.3 y 3.1.4 | [COMPLETAR: enlace al archivo de Figma] |
 | Wireflow y User Flow diagrams | LucidChart | 3.1.4.2 y 3.1.4.4 | [COMPLETAR: enlace al documento de LucidChart] |
-| Product Backlog y Sprint Backlog | Trello | 2.4.3 y 4.2.1.3 | https://trello.com/invite/b/6aa1e6966e4df21cb3a4eef9/ATTIe6a46d0c84f618e9bccb9c4de3ce13f711448192/product-backlog-qlic |
+| Product Backlog y Sprint Backlog | Trello | 2.4.3, 4.2.1.3 y 4.2.2.3 | https://trello.com/invite/b/6aa1e6966e4df21cb3a4eef9/ATTIe6a46d0c84f618e9bccb9c4de3ce13f711448192/product-backlog-qlic |
 
 **Repositorios y productos desplegados**
 
@@ -4751,6 +5367,8 @@ Este anexo centraliza los enlaces a los artefactos elaborados en las herramienta
 | Project Report | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/upc-pre-202620-1acc0238-13984-Qlic-report | No aplica |
 | Landing Page | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-landing-page | https://1acc0238-2620-13984-aplicaciones-mov.github.io/qlic-landing-page/ |
 | RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api | https://qlic-backend-api.onrender.com/swagger-ui.html |
+| Especificación OpenAPI del RESTful API | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-backend-api | https://qlic-backend-api.onrender.com/v3/api-docs |
+| Frontend Web | https://github.com/1ACC0238-2620-13984-Aplicaciones-Mov/qlic-frontend-web | https://qlic-frontend-web-13984.web.app |
 
 <div style="page-break-before: always;"></div>
 
@@ -4758,7 +5376,7 @@ Este anexo centraliza los enlaces a los artefactos elaborados en las herramienta
 
 Los términos y condiciones de Qlic se exponen mediante un enlace en el footer del Landing Page y en la pantalla Create account de la aplicación móvil, donde el suscriptor debe aceptarlos para registrar su cuenta (US05 y US38). Su redacción aplica los principios del Software Engineering Code of Ethics and Professional Practice de ACM e IEEE Computer Society, en particular los de interés público, cliente y empleador, y producto (Gotterbarn et al., 1999); los deberes de veracidad y de responsabilidad profesional del Código de Ética del Colegio de Ingenieros del Perú (Colegio de Ingenieros del Perú, 2018); y los principios de consentimiento, finalidad y seguridad de la Ley N.° 29733, Ley de Protección de Datos Personales (Congreso de la República del Perú, 2011). En consecuencia, el texto describe con veracidad el alcance del servicio, no promete resultados que el producto no garantiza y explica qué datos se recopilan y con qué finalidad.
 
-El texto se publica en inglés, idioma por defecto del producto, y se muestra en español latinoamericano cuando el usuario selecciona ese idioma.
+El texto se publica en inglés, idioma por defecto del producto, y se muestra en español latinoamericano cuando el usuario selecciona ese idioma. Desde el Sprint 2, el RESTful API expone la versión vigente del documento y su fecha de actualización en el endpoint público `GET /api/v1/terms-of-service/current` (US38), que el Landing Page y la pantalla Create account consultan según el encabezado `Accept-Language`.
 
 **Qlic Terms and Conditions**
 
@@ -4789,4 +5407,3 @@ El texto se publica en inglés, idioma por defecto del producto, y se muestra en
 **12. Changes to these terms.** We will notify you of relevant changes through the application or by email before they take effect. Continuing to use the service after that date means that you accept the new terms.
 
 **13. Applicable law and contact.** These terms are governed by the laws of Peru. For questions or requests about these terms or your personal data, contact us at [COMPLETAR: correo de contacto del equipo].
-
