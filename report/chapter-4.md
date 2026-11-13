@@ -1262,16 +1262,80 @@ Los problemas se clasifican según tres grupos de criterios: heurísticas de usa
 
 #### 4.3.2. Registro de Entrevistas
 
-> *Se completa después de realizar las sesiones. Una ficha por entrevista.*
-
 | Campo | Registro |
 |---|---|
-| Nombre y apellidos | **[COMPLETAR]** |
-| Edad | **[COMPLETAR]** |
-| Distrito | **[COMPLETAR]** |
-| Segmento | **[PYMES / Hogares]** |
-| Fecha | **[AAAA-MM-DD]** |
-| Inicio y duración en el video | **[hh:mm:ss]** · **[mm:ss]** |
-| Enlace del video (OneDrive) | **[PEGAR URL]** |
-| Captura del video | **[INSERTAR imagen]** |
-| Resumen | Principales apreciaciones del participante sobre cada tarea (T1 a T4): qué logró, dónde dudó, qué comentó y qué problemas se observaron. |
+| Nombre y apellidos |  |
+| Edad | |
+| Distrito |  |
+| Segmento |  |
+| Fecha |  |
+| Inicio y duración en el video |  |
+| Enlace del video (OneDrive) |  |
+| Captura del video |  |
+| Resumen |  |
+
+#### 4.3.3. Evaluaciones según heurísticas
+
+**UX Heuristics & Principles Evaluation**
+Usability · Inclusive Design · Information Architecture
+
+| Campo | Detalle |
+|---|---|
+| **CARRERA** | Ingeniería de Software |
+| **CURSO** | 1ACC0238 Aplicaciones para Dispositivos Móviles |
+| **NRC** | 13984 |
+| **PROFESOR** | Quevedo Velasco, David Gerardo |
+| **AUDITOR** | WASD |
+| **CLIENTE(S)** |  |
+
+**SITE o APP A EVALUAR:** Qlic – Landing Page y aplicación móvil (Android).
+
+
+**TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. T1. Conocer la propuesta de valor y los planes en el Landing Page.
+2. T2. Crear una cuenta e iniciar sesión (F1).
+3. T3. Registrar un dispositivo con código QR y asignarlo a un Water Point (F3).
+4. T4. Atender una alerta de posible fuga (F2).
+
+No están incluidas en esta versión de la evaluación las siguientes tareas: **[AJUSTAR a lo que realmente no se probó, por ejemplo: contratar un plan, compartir el acceso con otro usuario, consultar reportes de consumo, solicitar una visita técnica]**.
+
+**ESCALA DE SEVERIDAD**
+
+| Nivel | Descripción |
+|---|---|
+| 1 | **Problema superficial:** el usuario lo supera con facilidad y ocurre con muy poca frecuencia. No necesita corregirse salvo que haya tiempo disponible. |
+| 2 | **Problema menor:** ocurre con algo más de frecuencia o es un poco más difícil de superar. Se le asigna prioridad baja para el siguiente lanzamiento. |
+| 3 | **Problema mayor:** ocurre con frecuencia o los usuarios no logran resolverlo. Es importante corregirlo y se le asigna prioridad alta. |
+| 4 | **Problema muy grave:** impide al usuario continuar con el uso de la herramienta. Debe corregirse antes del lanzamiento. |
+
+**TABLA RESUMEN**
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---:|---|---:|---|
+| 1 |  |  |  |
+| 2 | |  |  |
+| 3 |  |  |  |
+
+**DESCRIPCIÓN DE PROBLEMAS**
+
+##### PROBLEMA #1: [título corto]
+
+- **Severidad:** 
+- **Heurística violada:** 
+- **Tarea y participante:** 
+- **Problema:** 
+- **Captura:** 
+- **Recomendación:** 
+
+*(Repetir el bloque por cada problema de la tabla resumen.)*
+
+**Criterios de referencia para clasificar**
+
+| Grupo | Heurísticas y principios considerados |
+|---|---|
+| Usability | Visibilidad del estado del sistema · Coincidencia con el mundo real · Libertad y control del usuario · Consistencia y estándares · Prevención de errores · Reconocer antes que recordar · Ayuda para reconocer y corregir errores |
+| Inclusive Design | Proporciona experiencias comparables · Texto alternativo en imágenes · Contraste y tamaño de los elementos táctiles · Considera distintas situaciones de uso |
+| Information Architecture | Is it findable? · Is it usable? · Etiquetas claras (Labelling) · Navegación coherente |
