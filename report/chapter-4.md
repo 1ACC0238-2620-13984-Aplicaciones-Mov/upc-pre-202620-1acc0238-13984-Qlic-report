@@ -318,7 +318,7 @@ La solución desacopla la lógica de negocio en dos Bounded Contexts principales
 
 ---
 
-#### Bounded Context: Alerting 
+#### Bounded Context: Alerting
 
 * **US15 & US16: Evaluación de lecturas anómalas, listado y consulta de detalle de alerta**
   * **Descripción:** Ingesta lecturas de caudal para detectar fugas sostenidas integrando ahora la resolución dinámica de umbrales por Water Point, el filtro de preferencias de notificación push, el despacho automático a destinatarios autorizados y la consulta individual del detalle de cada alerta (`Alert Detail`).
